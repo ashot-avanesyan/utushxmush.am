@@ -57,7 +57,11 @@ label#participants
 	float: right;
 	margin-left: 200px;
 }
-
+<!--AUTHOR:Ashot_Erik-->
+ body {margin-left: 500px;}
+ #start {margin-left: 53px;}
+ #time  {margin-left: 140px;}
+ #finish {margin-left: 35px;}
 
 
 
