@@ -20,7 +20,7 @@ body { margin: 2%;
 }
 p { color:green}
 ul#menu {
-    padding: 20px 70px;
+    padding: 2% 3%;
 }
 
 ul#menu li {
@@ -53,7 +53,7 @@ label#participants {
 }
 .inputParticipants {
 	float: right;
-	margin-left: 20px;
+	margin-left: 5%;
 }
 /*AUTHOR:Ashot_Erik */
  #transport {margin-left: 33%;}
