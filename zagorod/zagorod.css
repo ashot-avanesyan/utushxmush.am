@@ -54,8 +54,8 @@ label#participants {
 	float: right;
 	margin-left: 20px;
 }
-<!--AUTHOR:Ashot_Erik-->
- body {margin-left: 500px;}
+/*AUTHOR:Ashot_Erik */
+ #transport {margin-left: 400px;}
  #start {margin-left: 53px;}
  #time  {margin-left: 140px;}
  #finish {margin-left: 35px;}
