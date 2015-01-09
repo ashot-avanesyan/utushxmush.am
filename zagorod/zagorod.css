@@ -19,7 +19,7 @@ body { margin: 2%;
      margin-right: 15%;
 }
 p { color:green}
-ul#menu {
+:ul#menu {
     padding: 2% 3%;
 }
 
@@ -39,7 +39,8 @@ ul#menu li a:hover {
     background-color: orange;
 }
 
-/* Arman_Armie */
+
+/* Arman_Armine */
 h2 {
 	text-shadow: 2px 2px 3px slategray;
     color: darkred;
