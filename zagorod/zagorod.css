@@ -14,12 +14,12 @@ body { margin: 5px;
      border-width: 10px;
      border-color: green;
      height: 780px;
-     margin-left: 300px;
-     margin-right:300px
+     margin-left: 250px;
+     margin-right:250px
 }
 p { color:green}
 ul#menu {
-    padding: 20px 100px;
+    padding: 20px 70px;
 }
 
 ul#menu li {
@@ -40,22 +40,19 @@ ul#menu li a:hover {
 
 
 /* Arman_Armine */
-form#amountParticipants 
-{
+form#amountParticipants {
 	margin: 200px 400px;
 	padding: 10px;
 	width: 460px;
 	height: 200px;
 }
-label#participants 
-{
+label#participants {
 	position: absolute;
 	float: right;
 }
-.inputParticipants 
-{
+.inputParticipants {
 	float: right;
-	margin-left: 200px;
+	margin-left: 20px;
 }
 <!--AUTHOR:Ashot_Erik-->
  body {margin-left: 500px;}
