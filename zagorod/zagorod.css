@@ -38,7 +38,11 @@ ul#menu li a {
 ul#menu li a:hover {
     background-color: orange;
 }
-
+img {
+     background-color: no-repeat;
+     background-position: right top;
+     margin-left: 1520;
+    } 
 
 /* Arman_Armine */
 form#amountParticipants {
