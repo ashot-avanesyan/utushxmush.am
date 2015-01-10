@@ -67,10 +67,6 @@ label#participants {
 	margin-left: 5%;
 }
 /*AUTHOR:Ashot_Erik */
- #transport {margin-left: 12%;}
- #start {margin-left: 49% ;}
- #time  {margin-left: 58.5%;}
- #finish {margin-left:63%;}
-
+#googleMap {width: 500px; height:380px;}
 
 
