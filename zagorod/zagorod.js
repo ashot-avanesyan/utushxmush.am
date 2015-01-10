@@ -1,5 +1,4 @@
-<!--Ashot_Erik-->
-rc="http://maps.googleapis.com/maps/api/js">
+/* Ashot_Erik */
  function initialize() 
         {
        var mapProp = {
