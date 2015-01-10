@@ -9,6 +9,7 @@ body { margin: 2%;
     padding: 5px;
     margin: 5px; 
     font-size:30px;
+    color:green;
 }
 .two {
      border-style: solid;
@@ -18,7 +19,7 @@ body { margin: 2%;
      margin-left: 15%;
      margin-right: 15%;
 }
-p { color:green}
+
 ul#menu {
     padding: 2% 3%;
 }
