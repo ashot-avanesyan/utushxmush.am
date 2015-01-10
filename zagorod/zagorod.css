@@ -19,7 +19,7 @@ body { margin: 2%;
      margin-right: 15%;
 }
 p { color:green}
-:ul#menu {
+ul#menu {
     padding: 2% 3%;
 }
 
@@ -41,16 +41,11 @@ ul#menu li a:hover {
 
 
 /* Arman_Armine */
-h2 {
-	text-shadow: 2px 2px 3px slategray;
-    color: darkred;
-	text-align: center;
-}
 form#amountParticipants {
-	margin: auto 30% 15% 30%;
-	padding: 20px;
-	width: 460px;
-	height: 200px;
+	margin: 0% 40% 10% 12%;
+	padding: 0%;
+	width: 70%;
+	height: 20%;
 }
 label#participants {
 	position: absolute;
@@ -61,10 +56,10 @@ label#participants {
 	margin-left: 5%;
 }
 /*AUTHOR:Ashot_Erik */
- #transport {margin-left: 33%;}
- #start {margin-left: 53px ;}
- #time  {margin-left: 140px;}
- #finish {margin-left: 35px;}
+ #transport {margin-left: 12%;}
+ #start {margin-left: 49% ;}
+ #time  {margin-left: 58%;}
+ #finish {margin-left:62%;}
 
 
 
