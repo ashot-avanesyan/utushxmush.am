@@ -46,11 +46,17 @@ img {
     } 
 
 /* Arman_Armine */
+h2 
+{
+    text-shadow: 2px 2px 3px slategray;
+    color: darkred;
+    text-align: center;
+}
 form#amountParticipants {
-	margin: 0% 40% 10% 12%;
-	padding: 0%;
-	width: 70%;
-	height: 20%;
+	margin: auto 30% 15% 30%;
+	padding: 20px;
+	width: 460px;
+	height: 200px;
 }
 label#participants {
 	position: absolute;
