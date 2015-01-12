@@ -72,6 +72,13 @@ label#participants {
 	float: right;
 	margin-left: 5%;
 }
+table#barbecue
+{
+    margin-left: 16%;
+}
+table#barbecue td, tr {
+	padding: 0px 25px;
+}
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
 h3 
