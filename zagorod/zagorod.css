@@ -21,7 +21,7 @@ body { margin: 2%;
 }
 
 ul#menu {
-    padding: 2% 3%;
+    padding: 1% 2%;
 }
 
 ul#menu li {
@@ -42,11 +42,11 @@ ul#menu li a:hover {
 img {
      background-color: no-repeat;
      background-position: right top;
-     margin-left: 1400px;
+     margin-left: 1300px;
            
     } 
 
-h3
+h4
 {
    margin-left: 40px;
 } 
