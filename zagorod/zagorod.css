@@ -74,5 +74,9 @@ label#participants {
 }
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
-
-
+h3 
+{
+    text-shadow: 2px 2px 3px slategray;
+    color: darkred;
+    text-align: center;
+}
