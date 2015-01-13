@@ -48,21 +48,12 @@ img {
 
 h4
 {
-    margin-left: 200px;
-    text-shadow: 2px 2px 3px slategray;
-    color: darkred;
+   margin-left: 40px;
+} 
+select#lengthOfButton{
+	width: 100px;
 }
-table#xmichq
- { 
-   margin-left: 16%;
-}   
-
-table#xmichq td, tr {
-        padding: 0px 25px;
-        size: 10px;
-}
-
-/* Author: Arman_Armine */
+/* Arman_Armine */
 h2 
 {
     text-shadow: 2px 2px 3px slategray;
