@@ -48,10 +48,21 @@ img {
 
 h4
 {
-   margin-left: 40px;
-} 
+    margin-left: 130px;
+    text-shadow: 2px 2px 3px slategray;
+    color: darkred;
+}
+table#xmichq
+ { 
+   margin-left: 10%;
+}   
 
-/* Arman_Armine */
+table#xmichq td, tr {
+        padding: 0px 25px;
+        size: 20px;
+}
+
+/* Author: Arman_Armine */
 h2 
 {
     text-shadow: 2px 2px 3px slategray;
