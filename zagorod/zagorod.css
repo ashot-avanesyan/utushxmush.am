@@ -48,18 +48,18 @@ img {
 
 h4
 {
-    margin-left: 130px;
+    margin-left: 200px;
     text-shadow: 2px 2px 3px slategray;
     color: darkred;
 }
 table#xmichq
  { 
-   margin-left: 10%;
+   margin-left: 16%;
 }   
 
 table#xmichq td, tr {
         padding: 0px 25px;
-        size: 20px;
+        size: 10px;
 }
 
 /* Author: Arman_Armine */
