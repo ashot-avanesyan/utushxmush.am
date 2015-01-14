@@ -13,6 +13,7 @@ body { margin: 2%;
 }
 div#sizeOfDiv {
      border-style: solid;
+     border-width: 10px;
      border: 10px solid;
      border-color: green;
      margin-left: 15%;
@@ -51,12 +52,12 @@ h4
     text-shadow: 2px 2px 3px slategray;
     color: darkred;
 }
-table#xmichq
+table#drinkable
  { 
    margin-left: 16%;
 }   
 
-table#xmichq td, tr {
+table#drinkable td, tr {
         padding: 0px 25px;
         size: 10px;
 }
@@ -72,10 +73,9 @@ h2
     text-align: center;
 }
 form#amountParticipants {
-	margin: auto 30% 15% 15%;
+	margin: auto 30% 2% 15%;
 	padding: 20px;
 	width: 460px;
-	height: 200px;
 }
 label#participants {
 	position: absolute;

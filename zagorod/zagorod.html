@@ -14,15 +14,15 @@
      
     <div id = "sizeOfDiv">
       <ul id="menu">
-        <li><a href="#">Մասնակիցներ</a></li>
-        <li><a href="#">Տրանսպորտ</a></li>
-        <li><a href="#">Ժամանցի վայր</a></li>
-        <li><a href="#">Ճաշացանկ</a></li>
-        <li><a href="#">Գիշերակաց</a></li>
-        <li><a href="#">Պարագաներ</a></li>
+        <li><a href="#participants">Մասնակիցներ</a></li>
+        <li><a href="#transport">Տրանսպորտ</a></li>
+        <li><a href="#placeOfFun">Ժամանցի վայր</a></li>
+        <li><a href="#menu">Ճաշացանկ</a></li>
+        <li><a href="#overnight">Գիշերակաց</a></li>
+        <li><a href="#accessories">Պարագաներ</a></li>
       </ul>
 <!--Arman_Armine -->
-	<h2>Մասնակիցներ</h2>
+	<h2><a id = "participants">Մասնակիցներ</a></h2>
 	<form id = "amountParticipants">
         <label id = "Participants">Մասնակիցների քանակ</label>
         <input type = "number" min = "0" class = "inputParticipants"><br><br>
@@ -34,7 +34,8 @@
         <input type = "number" min = "0" class = "inputParticipants"><br><br>
         </form>
   
-        <h2>Խորոված</h2>
+        <h2><a id = "menu">Ճաշացանկ</a></h2>
+        <h3>Խորոված</h3>
         <table id = "barbecue">
          <tr>
            <td><p><input type="checkbox" value ="pig">Խոզ</p></td>
@@ -91,7 +92,7 @@
 <!--Author: Nara_Syuzi-->
       <h3>Խմիչք</h3>
         <h4><b> Ալկոհոլային</b></h4>
-        <table id = "xmichq">
+        <table id = "drinkable">
           <tr>
             <td><p> <input type="checkbox" name="spice" value="Salt">Օղի </p></td>    
             <td>   
@@ -133,7 +134,7 @@
           </tr>
         </table>
             <h4><b>Ոչ ալկոհոլային</b></h4>
-        <table id = "xmichq">
+        <table id = "drinkable">
             <tr>
             <td><p><input type="checkbox" name="spice" value="Salt">Հյութեր</p></td>
             <td>
@@ -165,7 +166,7 @@
             <td>
               <select name="character" id = "lengthOfButton">
                 <option value="Jermuk">Ջերմուկ</option>
-                <option value="Bjjni">Բջջնի</option>
+                <option value="Bjni">Բջնի</option>
                 <option value="Byuregh">Բյուրեղ</option>
                 <option value="Noy">Նոյ</option>
                 <option value="Arzni">Արզնի</option> 
@@ -175,7 +176,7 @@
            <tr>
         </table>
 <!--AUTHOR:Ashot_Erik-->
-               <h2>Բանջարեղեն</h2>
+               <h3>Բանջարեղեն</h3>
         <table id = "barbecue">
          <tr>
            <td><p><input type="checkbox" value ="tomato">Լոլիկ</p></td>
@@ -209,7 +210,7 @@
         </tr>
            </table>
 
-       <h2>Տրանսպորտ</h2>
+       <h2><a id = "transport">Տրանսպորտ</a></h2>
        <form id = "amountParticipants">
                 <label  id= "Participants">  Մեկնման վայր </label>
                 <input  size="12" type="text" name="fname" class = "inputParticipants">   <br> <br>
@@ -222,7 +223,7 @@
                 <label id = "Participants"> Տրանսպորտի ծախսը  </label>
                 <input size="12"  type="text" name= "fname" class = "inputParticipants">  <br> <br>
        </form>
-       <h2>Գիշերակաց</h2>
+       <h2><a id = "overnight">Գիշերակաց</a></h2>
          <table id = "barbecue">
          <tr>
           <td><p><input type="checkbox" value = "overnight">Հյուրանոց</p></td>
@@ -240,20 +241,20 @@
           <td><input type = "text" placeholder = "դր" size = "5"></td>
            </tr>
          </table>
-          <h2>Պարագաներ</h2>
+          <h2><a id = "accessories">Պարագաներ</a></h2>
         <table id = "barbecue">
          <tr>
-           <td><p><input type="checkbox" value ="tomato">Առային բուժօգնության պարագան</p></td>
+           <td><p><input type="checkbox" value ="tomato">Առաջին բուժօգնության պարագաներ</p></td>
            <td><input type = "text" placeholder ="կգ" size = "5"></td>
            <td><input type = "text" placeholder ="դր" size = "5"></td>
          </tr>
          <tr>
-           <td><p><input type="checkbox" value ="cucumbers">սպասք</p></td>
+           <td><p><input type="checkbox" value ="cucumbers">Սպասք</p></td>
                    <td><input type = "text" placeholder ="կգ" size = "5"></td>
            <td><input type = "text" placeholder ="դր" size = "5"></td>
          </tr>
          <tr>
-           <td><p><input type="checkbox" value ="eggplant">շամփուր</p></td>
+           <td><p><input type="checkbox" value ="eggplant">Շամփուր</p></td>
            <td><input type = "text" placeholder ="կգ" size = "5"></td>
            <td><input type = "text" placeholder ="դր" size = "5"></td>
                 </tr>
@@ -263,12 +264,12 @@
            <td><input type = "text" placeholder ="դր" size = "5"></td>
         </tr>
         <tr>
-          <td><p><input type="checkbox" value ="greens">ինքնաեռ</p></td>
+          <td><p><input type="checkbox" value ="greens">Ինքնաեռ</p></td>
           <td><input type = "text" placeholder ="կգ" size = "5"></td>
           <td><input type = "text" placeholder ="դր" size = "5"></td>
         </tr>
         <tr>
-          <td><p><input type="checkbox" value ="greens">ծացկոցներ</p></td>
+          <td><p><input type="checkbox" value ="greens">Ծածկոցներ</p></td>
           <td><input type = "text" placeholder ="կգ" size = "5"></td>
           <td><input type = "text" placeholder ="դր" size = "5"></td>
         </tr>
