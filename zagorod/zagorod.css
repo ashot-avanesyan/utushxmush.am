@@ -11,11 +11,10 @@ body { margin: 2%;
     font-size:30px;
     color:green;
 }
-.two {
+div#sizeOfDiv {
      border-style: solid;
-     border-width: 10px;
+     border: 10px solid;
      border-color: green;
-     height:300%;
      margin-left: 15%;
      margin-right: 15%;
 }
