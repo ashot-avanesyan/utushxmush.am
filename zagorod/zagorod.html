@@ -5,6 +5,18 @@
      <link rel="stylesheet" type="text/css" href="zagorod.css">
      <script src="zagorod.js"></script>
      <script  src="http://maps.googleapis.com/maps/api/js">   </script>
+     <script>
+           function initialize() 
+                   {
+                       var mapProp = {
+                                       center:new google.maps.LatLng(39.8272818, 46.7625134),
+                                       zoom:9,
+                                       mapTypeId:google.maps.MapTypeId.ROADMAP
+                                      };
+                       var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                   }
+         google.maps.event.addDomListener(window, 'load', initialize);
+     </script>
   </head>
 <body>
 <!--Syuzi_Nara -->
@@ -285,7 +297,9 @@
                 <input  size="12" type="text" name="fname" class = "inputParticipants">   <br> <br>
                 <label  id= "Participants"> Ժամանման վայր </label>
                 <input  size="12"  type="text" name="fname" class = "inputParticipants">  <br><br>
-
+                <table>
+                        <div id="googleMap" style="width:500px;height:380px;"></div>
+                </table>
                 <br>
                 <br>
                 <br>
