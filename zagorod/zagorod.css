@@ -100,3 +100,51 @@ h3
     color: darkred;
     text-align: center;
 }
+
+ ul#tabs li {
+	display: inline;
+	list-style: none;
+}
+ul#tabs li button {
+	background-color: #87ceeb;
+	color: #000000;
+	padding: 10px 50px;
+	text-decoration: none;
+	border-radius: 8px;
+	margin-bottom: -25px;
+}
+div#d1 {
+	width: auto;
+	height: 500px;
+	margin-top: -0.2%;
+	background-color: #87ceeb;
+}
+div#d2 {
+	width: auto;
+	height: 650px;
+	margin-top: -0.2%;
+	background-color: #87ceeb;
+//	display: none;
+}
+div#d3 {
+	width: auto;
+	height: auto;
+	margin-top: -0.2%;
+	background-color: #87ceeb;
+	display: none;
+}
+div#d4 {
+        width: auto;
+        height: 500px;
+        margin-top: -0.2%;
+        background-color: #87ceeb;
+        display: none;
+}
+div#d5 {
+        width: auto;
+        height: 500px;
+        margin-top: -0.2%;
+        background-color: #87ceeb;
+        display: none;
+}
+
