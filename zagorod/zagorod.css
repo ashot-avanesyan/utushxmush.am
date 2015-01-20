@@ -147,4 +147,66 @@ div#d5 {
         background-color: #87ceeb;
         display: none;
 }
+/* Ashot */
+ ul#glkhawor_meny li {
+display: inline;
+list-style: none;
+}
+ul#glkhawor_meny li button {
+background-color: #87ceeb;
+color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+   border-radius: 8px;
+margin-bottom: -25px;
+}
+div#transport {
+width: 800px;
+height: 600px;
+margin: -0.2% 3%;
+background-color: #87ceeb;
+}
+
+list-style: none;
+}
+ul#glkhawor_meny li button {
+background-color: #87ceeb;
+color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+   border-radius: 8px;
+margin-bottom: -25px;
+}
+
+
+ ul#chashacank li {
+display: inline;
+list-style: none;
+}
+ul#chashacank li button {
+background-color: #87ceeb;
+color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+   border-radius: 8px;
+margin-bottom: -25px;
+}
+div#xorovac {
+width: 800px;
+height: 600px;
+margin: -0.2% 3%;
+background-color: #87ceeb;
+}
+
+list-style: none;
+}
+ul#chashacank li button {
+background-color: #87ceeb;
+color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+   border-radius: 8px;
+margin-bottom: -25px;
+}
+
 

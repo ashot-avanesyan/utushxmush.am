@@ -17,60 +17,7 @@
                    }
          google.maps.event.addDomListener(window, 'load', initialize);
      </script>
-         <style>
-ul#tabs li {
-display: inline;
-list-style: none;
-}
-ul#tabs li button {
-background-color: #87ceeb;
-color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-   border-radius: 8px;
-margin-bottom: -25px;
-}
-div#d1 {
-width: 600px;
-height: 500px;
-margin: -0.2% 3%;
-background-color: #87ceeb;
-}
-div#d2 {
-width: 600px;
-height: 500px;
-margin: -0.2% 15.5%;
-background-color: #87ceeb;
-display: none;
-}
-div#d3 {
-width: 600px;
-height: 500px;
-margin: -0.2% 24.5%;
-background-color: #87ceeb;
-display: none;
-}
-</style>
- <script>
-function hide1() {
-document.getElementById("d2").style.display = "none";
-document.getElementById("d3").style.display = "none";
-document.getElementById("d1").style.display = "block";
-}
-
-function hide2() {
-document.getElementById("d1").style.display = "none";
-document.getElementById("d3").style.display = "none";
-document.getElementById("d2").style.display = "block";
-}
-
-function hide3() {
-document.getElementById("d1").style.display = "none";
-document.getElementById("d2").style.display = "none";
-document.getElementById("d3").style.display = "block";
-}
-</script>
-  </head>
+        </head>
 <body>
 
 <!--Syuzi_Nara -->
@@ -99,9 +46,57 @@ document.getElementById("d3").style.display = "block";
         <label id = "Participants">Մինչև 7 տարեկան երեխաներ</label>
         <input type = "number" min = "0" class = "inputParticipants"><br><br>
         </form>
-  
-        <h2><a id = "menu">Ճաշացանկ</a></h2>
-        <h3>Խորոված</h3>
+
+
+	<ul id = "glkhawor_meny">
+		<li>
+			<button onclick="hide1(), blur()">Տրանսպորտ</button>
+		</li>
+		<li>
+			<button onclick="hide2(), blur()">Ճաշացանկ</button>
+		</li>
+		<li>
+			<button onclick="hide3(), blur()">Գիշերակաց</button>
+		</li>
+		<li>
+			<button onclick="hide3(), blur()">Պարագաներ</button>
+		</li>
+	</ul>
+	<ul id = "chashacank">
+                <li>
+                        <button onclick="hide1(), blur()">Խորոված</button>
+                </li>
+                <li>
+                        <button onclick="hide2(), blur()">Խմիչք</button>
+                </li>
+                <li>
+                        <button onclick="hide3(), blur()">Բանջարեղեն</button>
+                </li>
+                <li>
+                        <button onclick="hide3(), blur()">Դեսերտ</button>
+                </li>
+        </ul>
+
+        <div id = "transport">
+		     <form id = "amountParticipants">
+                	<label  id= "Participants">  Մեկնման վայր </label>
+                	<input  size="12" type="text" name="fname" class = "inputParticipants">   <br> <br>
+                	<label  id= "Participants"> Ժամանման վայր </label>
+                	<input  size="12"  type="text" name="fname" class = "inputParticipants">  <br><br>
+                	    <table>
+                       		<div id="googleMap" style="width:500px;height:380px;"></div>
+               		    </table>
+                		<br>
+                		<br>
+                		<br>
+                	<label id = "Participants"> Տրանսպորտի ծախսը  </label>
+                	<input size="12"  type="text" name= "fname" class = "inputParticipants">  <br> <br>
+       		     </form>
+	</div>
+
+
+
+        <div id = "xorovac">
         <table id = "barbecue">
          <tr>
            <td><p><input type="checkbox" value ="pig">Խոզ</p></td>
@@ -537,24 +532,6 @@ document.getElementById("d3").style.display = "block";
 			<input type = "number" min = "0" class = "inputParticipants"><br><br>
 			</form>
                 </div>
-
-                <div id = "d2">
-		<h2><a id = "transport">Տրանսպորտ</a></h2>
-		     <form id = "amountParticipants">
-                	<label  id= "Participants">  Մեկնման վայր </label>
-                	<input  size="12" type="text" name="fname" class = "inputParticipants">   <br> <br>
-                	<label  id= "Participants"> Ժամանման վայր </label>
-                	<input  size="12"  type="text" name="fname" class = "inputParticipants">  <br><br>
-                	    <table>
-                       		<div id="googleMap" style="width:500px;height:380px;"></div>
-               		    </table>
-                		<br>
-                		<br>
-                		<br>
-                	<label id = "Participants"> Տրանսպորտի ծախսը  </label>
-                	<input size="12"  type="text" name= "fname" class = "inputParticipants">  <br> <br>
-       		     </form>
-		</div>
 
                 <div id = "d3">
         <h2><a id = "menu">Ճաշացանկ</a></h2>
