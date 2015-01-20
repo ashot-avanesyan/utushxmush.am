@@ -17,6 +17,59 @@
                    }
          google.maps.event.addDomListener(window, 'load', initialize);
      </script>
+         <style>
+ul#tabs li {
+display: inline;
+list-style: none;
+}
+ul#tabs li button {
+background-color: #87ceeb;
+color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+   border-radius: 8px;
+margin-bottom: -25px;
+}
+div#d1 {
+width: 600px;
+height: 500px;
+margin: -0.2% 3%;
+background-color: #87ceeb;
+}
+div#d2 {
+width: 600px;
+height: 500px;
+margin: -0.2% 15.5%;
+background-color: #87ceeb;
+display: none;
+}
+div#d3 {
+width: 600px;
+height: 500px;
+margin: -0.2% 24.5%;
+background-color: #87ceeb;
+display: none;
+}
+</style>
+ <script>
+function hide1() {
+document.getElementById("d2").style.display = "none";
+document.getElementById("d3").style.display = "none";
+document.getElementById("d1").style.display = "block";
+}
+
+function hide2() {
+document.getElementById("d1").style.display = "none";
+document.getElementById("d3").style.display = "none";
+document.getElementById("d2").style.display = "block";
+}
+
+function hide3() {
+document.getElementById("d1").style.display = "none";
+document.getElementById("d2").style.display = "none";
+document.getElementById("d3").style.display = "block";
+}
+</script>
   </head>
 <body>
 <!--Syuzi_Nara -->
@@ -90,7 +143,7 @@
        <td><input type = "text" placeholder ="դր" size = "5"></td>
      </tr>
      <tr>
-       <td><p><input type="checkbox" value ="internal organs">Ներքին օրգաններ</p></td>
+       <td><p><input type="checkbox" value ="internal organs">Խորոտիկ</p></td>
        <td><input type = "text" placeholder ="կգ" size = "5"></td>
        <td><input type = "text" placeholder ="դր" size = "5"></td>
      </tr>
@@ -103,10 +156,22 @@
 	   </table>
 <!--Author:   Nara_Syuzi-->
       <h3>Խմիչք</h3>
+<ul id = "tabs">
+<li>
+<button onclick="hide1(), blur()">Օղի</button>
+</li>
+<li>
+<button onclick="hide2(), blur()">Գինի</button>
+</li>
+<li>
+<button onclick="hide3(), blur()">Գարեջուր</button>
+</li>
+</ul>
         <h4><b> Ալկոհոլային</b></h4>
-        <table id = "drinkable">
-          <tr>
-            <td><p> <input type="checkbox" name="spice" value="Salt">Օղի </p></td>    
+       <div id = "d1"> 
+  <table>  
+           <td> <p id =oghi > 
+            <input type="checkbox" name="spice" value="Salt"> </p></td>    
             <td>   
                <select name="character" id = "lengthOfButton">
                  <option value="Nemiroff">Nemiroff</option>
@@ -115,12 +180,49 @@
                  <option value="Artsakh">Арцах</option>
                  <option value="Zima">Зима</option>
                  <option value="Zima">Այլ</option>
-            </td>
-            <td><input  size = "7" "text" placeholder ="քանակ"></td>
+            </td> </div>
+		<td><input  size = "7" "text" placeholder ="քանակ"></td>
             <td><input size = "7" "text" placeholder ="դր"></td>
-          </tr>
-          <tr>
-            <td><p><input type="checkbox" name="spice" value="Salt">Գինի</p></td>
+	<tr>
+
+
+           <td> <p id =oghi > 
+            <input type="checkbox" name="spice" value="Salt"> </p></td>    
+            <td>   
+               <select name="character" id = "lengthOfButton">
+                 <option value="Nemiroff">Nemiroff</option>
+                 <option value="Talka">Талка</option>
+                 <option value="5 ozer">5 озер</option>
+                 <option value="Artsakh">Арцах</option>
+                 <option value="Zima">Зима</option>
+                 <option value="Zima">Այլ</option>
+            </td> </div>
+		<td><input  size = "7" "text" placeholder ="քանակ"></td>
+            <td><input size = "7" "text" placeholder ="դր"></td>
+	<tr>
+
+           <td> <p id =oghi > 
+            <input type="checkbox" name="spice" value="Salt"> </p></td>    
+            <td>   
+               <select name="character" id = "lengthOfButton">
+                 <option value="Nemiroff">Nemiroff</option>
+                 <option value="Talka">Талка</option>
+                 <option value="5 ozer">5 озер</option>
+                 <option value="Artsakh">Арцах</option>
+                 <option value="Zima">Зима</option>
+                 <option value="Zima">Այլ</option>
+            </td> </div>
+		<td><input  size = "7" "text" placeholder ="քանակ"></td>
+            <td><input size = "7" "text" placeholder ="դր"></td>
+	<tr>
+
+           
+		
+  </table>
+</div>
+<div id = "d2">
+ 		<table>
+            <td><p><input id =wine type="checkbox" name="spice" value="Salt"></p></td>
             <td>
               <select name="character" id = "lengthOfButton">
                 <option value="Armenia">Armenia</option>
@@ -134,7 +236,42 @@
             <td><input size = "7" "text" placeholder ="դր"></td>
           </tr>
           <tr>
-            <td><p><input type="checkbox" name="spice" value="Salt">Գարեջուր</p></td>
+
+
+            <td><p><input id =wine type="checkbox" name="spice" value="Salt"></p></td>
+            <td>
+              <select name="character" id = "lengthOfButton">
+                <option value="Armenia">Armenia</option>
+                <option value="Areni">Արենի</option>
+                <option value="Kagor">Կագոր</option>
+                <option value="Sapiravi">Սապիրավի</option>
+                <option value="Shushi">Շուշի</option>
+                <option value="Zima">Այլ</option>
+            </td>
+            <td><input size = "7" "text" placeholder ="քանակ" ></td>
+            <td><input size = "7" "text" placeholder ="դր"></td>
+          </tr>
+          <tr>
+		</table>
+</div>
+
+<div id = "d3">
+		<table>
+            <td><p><input id =beer type="checkbox" name="spice" value="Salt"></p></td>
+            <td>
+              <select name="character" id = "lengthOfButton">
+                <option value="Gyumri">Գյումրի</option>
+                <option value="Miller">Miller</option>
+                <option value="Killikia">Killikia</option>
+                <option value="Kotayk">Kotayk</option>
+                <option value="Kellers Gold">Kellers Gold</option>
+                <option value="Zima">Այլ</option>
+            </td>
+            <td><input size = "7" "text" placeholder ="քանակ"></td>
+            <td><input size = "7" "text" placeholder ="դր"></td>
+          </tr>
+
+		<td><p><input id =beer type="checkbox" name="spice" value="Salt"></p></td>
             <td>
               <select name="character" id = "lengthOfButton">
                 <option value="Gyumri">Գյումրի</option>
@@ -148,6 +285,10 @@
             <td><input size = "7" "text" placeholder ="դր"></td>
           </tr>
         </table>
+
+</div>
+</body>
+</html> 
             <h4><b>Ոչ ալկոհոլային</b></h4>
         <table id = "drinkable">
             <tr>
@@ -230,7 +371,7 @@
                 <h3>Դեսերտ</h3>
         <table id = "barbecue">
          <tr>
-           <td><p><input type="checkbox" value ="tomato">կոնֆետ</p></td>
+           <td><p><input type="checkbox" value ="tomato">Կոնֆետ</p></td>
            <td><input type = "text" placeholder ="կգ" size = "5"></td>
            <td><input type = "text" placeholder ="դր" size = "5"></td>
          </tr>
@@ -240,8 +381,7 @@
            <td><input type = "text" placeholder ="դր" size = "5"></td>
          </tr>
          <tr>
-            <td><p><input type="checkbox" value ="eggplant">Պաղպաղակ</p></td>
-           <td><input type = "text" placeholder ="կգ" size = "5"></td>
+            <td><p><input type="checkbox" value ="eggplant">Պաղպաղակ</p></td>           <td><input type = "text" placeholder ="կգ" size = "5"></td>
            <td><input type = "text" placeholder ="դր" size = "5"></td>
                 </tr>
          <tr>
