@@ -10,18 +10,44 @@
        
          google.maps.event.addDomListener(window, 'load', initialize);
         }
+         google.maps.event.addDomListener(window, 'load', initialize);
 
-/* Arman_Armine */
-/* make a Calculator */
-function Calculator()
-{
-	var totalXmichq = 0; 
-	var c1 = document.getElementById('c1');
+  //Arman
+	function hide1() {
+		document.getElementById("d2").style.display = "none";
+		document.getElementById("d3").style.display = "none";
+		document.getElementById("d4").style.display = "none";
+                document.getElementById("d5").style.display = "none";
+		document.getElementById("d1").style.display = "block";
+	}
 
-	if ( c1.checked )
-		totalXmichq += 5000;
-}
+	function hide2() {
+		document.getElementById("d1").style.display = "none";
+		document.getElementById("d3").style.display = "none";
+ 	 	document.getElementById("d4").style.display = "none";
+                document.getElementById("d5").style.display = "none";
+		document.getElementById("d2").style.display = "block";
+	}
 
+	function hide3() {
+		document.getElementById("d1").style.display = "none";
+		document.getElementById("d2").style.display = "none";
+                document.getElementById("d4").style.display = "none";
+                document.getElementById("d5").style.display = "none";
+		document.getElementById("d3").style.display = "block";
+	}
+	function hide4() {
+                document.getElementById("d1").style.display = "none";
+                document.getElementById("d2").style.display = "none";
+                document.getElementById("d3").style.display = "none";
+                document.getElementById("d5").style.display = "none";
+                document.getElementById("d4").style.display = "block";
+        }
 
-/*print function */ 
-
+        function hide5() {
+                document.getElementById("d1").style.display = "none";
+                document.getElementById("d2").style.display = "none";
+                document.getElementById("d3").style.display = "none";
+                document.getElementById("d4").style.display = "none";
+                document.getElementById("d5").style.display = "block";
+	}	
