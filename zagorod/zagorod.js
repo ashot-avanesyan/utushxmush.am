@@ -37,12 +37,12 @@
                 document.getElementById("d1").style.display = "none";
                 document.getElementById("d2").style.display = "none";
                 document.getElementById("d3").style.display = "none";
-                document.getElementById("d4").style.display = "block";
+                document.getElementById("d2_2").style.display = "block";
         }
 
 
 
- function hide10_2() {
+ function hide1_20() {
                 document.getElementById("d2_2").style.display = "none";
                 document.getElementById("d2_3").style.display = "none";
                 document.getElementById("d2_4").style.display = "none";
@@ -50,7 +50,7 @@
 	        document.getElementById("d2_1").style.display = "block";
         }
 
-        function hide20_2() {
+        function hide2_20() {
                 document.getElementById("d2_1").style.display = "none";
                 document.getElementById("d2_3").style.display = "none";
                 document.getElementById("d2_4").style.display = "none";
@@ -58,21 +58,21 @@
 	        document.getElementById("d2_2").style.display = "block";
         }
 
-        function hide30_2() {
+        function hide3_20() {
                 document.getElementById("d2_1").style.display = "none";
                 document.getElementById("d2_2").style.display = "none";
                 document.getElementById("d2_4").style.display = "none";
                 document.getElementById("d2_5").style.display = "none";
 		document.getElementById("d2_3").style.display = "block";
         }
-        function hide40_2() {
+        function hide4_20() {
                 document.getElementById("d2_1").style.display = "none";
                 document.getElementById("d2_2").style.display = "none";
                 document.getElementById("d2_3").style.display = "none";
 		document.getElementById("d2_5").style.display = "none";
                 document.getElementById("d2_4").style.display = "block";
         }
-	function hide50_2() {
+	function hide5_20() {
                 document.getElementById("d2_1").style.display = "none";
                 document.getElementById("d2_2").style.display = "none";
                 document.getElementById("d2_3").style.display = "none";
@@ -80,7 +80,7 @@
                 document.getElementById("d2_5").style.display = "block";
         }
 
-
+0
 
 	function hide10_3() {
 		document.getElementById("d2_2_2").style.display = "none";
