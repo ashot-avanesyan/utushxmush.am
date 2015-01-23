@@ -37,7 +37,7 @@
                 document.getElementById("d1").style.display = "none";
                 document.getElementById("d2").style.display = "none";
                 document.getElementById("d3").style.display = "none";
-                document.getElementById("d2").style.display = "block";
+                document.getElementById("d4").style.display = "block";
         }
 
 
