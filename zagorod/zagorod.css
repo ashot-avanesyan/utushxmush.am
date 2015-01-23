@@ -344,9 +344,12 @@ display: none;
 div#d3 {
 width: auto;
 height: 500px;
-margin-left: 180px;
 background-color: #87ceeb;
 display: none;
+}
+div#d3_1 {
+height: 400px;
+margin-left: 180px;
 }
 div#d4 {
 width: auto;
@@ -355,7 +358,11 @@ margin: auto;
 background-color: #87ceeb;
 display: none;
 }
-
-list-style: none;
+div#d4_1 {
+height: 700px;
+margin-left: 100px;
 }
+
+
+
 
