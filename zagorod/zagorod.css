@@ -106,6 +106,7 @@ h3
  ul#glkhawor_meny li {
 display: inline;
 list-style: none;
+style = "text-align:center"
 }
 ul#glkhawor_meny li button {
 background-color: #87ceeb;
@@ -192,154 +193,154 @@ margin-bottom: -25px;
 
 
 div#d1 {
-width: 800px;
+width: 600px;
 height: 700px;
-margin: -0.2% 3%;
+margin: auto;
 background-color: #87ceeb;
 }
 div#d2 {
-width: 750px;
+width: 600px;
 height: 1000px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_1 {
-width: 800px;
+width: 600px;
 height: 600px;
-margin: -0.2% 3%;
+margin: auto;
 background-color: #87ceeb;
 }
 div#d2_2 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_3 {
 width: 800px;
 height: 500px;
-margin: -0.2% 24.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4 {
 width: 600px;
 height: 500px;
-margin: -0.2% 24.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_5 {
 width: 600px;
 height: 500px;
-margin: -0.2% 24.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_1 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_2 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_3 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_4 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2_1 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2_2 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2_3 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_3 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb; 
 display: none;
 }
 div#d2_4_1 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4_2 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4_3 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4_4 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
@@ -347,21 +348,21 @@ display: none;
 div#d2_5 {
 width: 600px;
 height: 750px;
-margin: -0.2% 15.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d3 {
 width: 800px;
 height: 500px;
-margin: -0.2% 24.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d4 {
 width: 600px;
 height: 500px;
-margin: -0.2% 24.5%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
