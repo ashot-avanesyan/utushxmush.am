@@ -84,43 +84,6 @@
 	}
 
 
-	function hide1_20() {
-                document.getElementById("d2_2").style.display = "none";
-                document.getElementById("d2_3").style.display = "none";
-                document.getElementById("d2_4").style.display = "none";
-        	document.getElementById("d2_5").style.display = "none";
-	        document.getElementById("d2_1").style.display = "block";
-        }
-
-        function hide2_20() {
-                document.getElementById("d2_1").style.display = "none";
-                document.getElementById("d2_3").style.display = "none";
-                document.getElementById("d2_4").style.display = "none";
-	        document.getElementById("d2_5").style.display = "none";
-	        document.getElementById("d2_2").style.display = "block";
-        }
-
-        function hide3_20() {
-                document.getElementById("d2_1").style.display = "none";
-                document.getElementById("d2_2").style.display = "none";
-                document.getElementById("d2_4").style.display = "none";
-                document.getElementById("d2_5").style.display = "none";
-		document.getElementById("d2_3").style.display = "block";
-        }
-        function hide4_20() {
-                document.getElementById("d2_1").style.display = "none";
-                document.getElementById("d2_2").style.display = "none";
-                document.getElementById("d2_3").style.display = "none";
-		document.getElementById("d2_5").style.display = "none";
-                document.getElementById("d2_4").style.display = "block";
-        }
-	function hide5_20() {
-                document.getElementById("d2_1").style.display = "none";
-                document.getElementById("d2_2").style.display = "none";
-                document.getElementById("d2_3").style.display = "none";
-                document.getElementById("d2_4").style.display = "none";
-                document.getElementById("d2_5").style.display = "block";
-        }
 
 
 
@@ -180,7 +143,7 @@
         function hide30_5() {
                 document.getElementById("d2_2_2_3").style.display = "none";
                 document.getElementById("d2_2_2_2").style.display = "none";
-                document.getElementById("d2_2_2_1").style.display = "block";
+                document.getElementById("d2_2_2_3").style.display = "block";
 	}
 
 
