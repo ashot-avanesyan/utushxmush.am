@@ -111,9 +111,9 @@ margin-bottom:"text-align:center";
 ul#glkhawor_meny li button {
 background-color: #87ceeb;
 color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-   border-radius: 8px;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 8px;
 margin-bottom: -50px;
 margin-right: 5px;
 }
@@ -126,9 +126,9 @@ list-style: none;
 ul#chashacank li button {
 background-color: #87ceeb;
 color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-   border-radius: 8px;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 8px;
 margin-bottom: -25px;
 }
 ul#xmichq li {
@@ -138,9 +138,9 @@ list-style: none;
 ul#xmichq li button {
 background-color: #87ceeb;
 color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-   border-radius: 8px;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 8px;
 margin-bottom: -25px;
 }
  ul#alkaholayin li {
@@ -151,9 +151,9 @@ style = "text-align:center"
 ul#alkaholayin li button {
 background-color: #87ceeb;
 color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-   border-radius: 8px;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 8px;
 margin-bottom: -25px;
 style = "text-align:center"
 }
@@ -164,9 +164,9 @@ list-style: none;
 ul#bnakan li button {
 background-color: #87ceeb;
 color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-   border-radius: 8px;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 8px;
 margin-bottom: -25px;
 }
 ul#desert li {
@@ -189,7 +189,7 @@ background-color: #87ceeb;
 }
 div#d2 {
 width: auto;
-height: 1000px;
+height: 650px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
@@ -202,145 +202,160 @@ background-color: #87ceeb;
 }
 div#d2_2 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_3 {
 width: auto;
-height: 500px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
+div#d2_3_1 {
+height: 400px;
+margin-left: 200px;
+} 
 div#d2_4 {
 width: auto;
-height: 500px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_5 {
 width: auto;
-height: 500px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_1 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_2 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_3 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_1_4 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2_1 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2_2 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_2_2_3 {
 width: auto;
-height: 750px;
+height: 500px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_3 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb; 
 display: none;
 }
 div#d2_4_1 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4_2 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4_3 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
 div#d2_4_4 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
-
+div#d2_4_ab {
+height: 300px;
+margin-left: 200px;
+}
+div#d2_4_cd {
+height: 200px
+margin-left: 400px;
+}
 div#d2_5 {
 width: auto;
-height: 750px;
+height: 600px;
 margin: auto;
 background-color: #87ceeb;
 display: none;
 }
+div#d2_5_1 {
+height: 200px;
+margin-left: 410px;
+} 
 div#d3 {
 width: auto;
 height: 500px;
@@ -359,10 +374,9 @@ background-color: #87ceeb;
 display: none;
 }
 div#d4_1 {
-height: 700px;
+height: 600px;
 margin-left: 100px;
 }
-
 
 
 
