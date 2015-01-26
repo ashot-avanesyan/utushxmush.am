@@ -32,13 +32,13 @@
 		document.getElementById("d2").style.display = "none";
                 document.getElementById("d4").style.display = "none";
 		document.getElementById("d3").style.display = "block";
-	}
-	function hide4() {
+	};
+   var  hide4 = function() {
                 document.getElementById("d1").style.display = "none";
                 document.getElementById("d2").style.display = "none";
                 document.getElementById("d3").style.display = "none";
                 document.getElementById("d4").style.display = "block";
-        }
+        }; 
 
 
 
@@ -91,7 +91,7 @@
 	function hide10_3() {
 		document.getElementById("d2_2_2").style.display = "none";
 		document.getElementById("d2_2_1").style.display = "block";
-	}
+	}; 
 
 	function hide20_3() {
 		document.getElementById("d2_2_1").style.display = "none";
@@ -169,3 +169,19 @@
                 document.getElementById("d").style.display = "block";
         }
 
+// Armine Calculator
+function participants()
+{       
+
+		var participantsInput1 = document.getElementById('participantsInput1').value;
+		var participantsInput2 = document.getElementById('participantsInput2').value;
+		var participantsInput3 = document.getElementById('participantsInput3').value;
+		var participantsInput4 = document.getElementById('participantsInput4').value;
+
+		if (participantsInput2 > participantsInput1)
+			window.alert("Error: You have inputed invalid numbers");
+		if (participantsInput1 < participantsInput3 + participantsInput2)
+			window.alert("Error: You have inputed invalid numbers");
+		if ( participantsInput1 <  (participantsInput2 +  participantsInput3 +  participantsInput4) )
+			window.alert("Error: You have inputed invalid numbers.");
+}
