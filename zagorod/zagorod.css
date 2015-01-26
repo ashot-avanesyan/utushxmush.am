@@ -16,8 +16,8 @@ div#sizeOfDiv {
      border-width: 10px;
      border: 10px solid;
      border-color: green;
-     margin-left: 15%;
-     margin-right: 15%;
+     margin-left: 22%;
+     margin-right: 22%;
 }
 
 ul#menu {
@@ -80,6 +80,10 @@ form#amountParticipants {
 label#participants {
 	position: absolute;
 	float: right;
+	size: 3%;
+}
+input#mass {
+width: 30%;
 }
 .inputParticipants {
 	float: right;
@@ -90,7 +94,7 @@ table#barbecue
     margin-left: 16%;
 }
 table#barbecue td, tr {
-	padding: 0px 25px;
+	padding: 0px 15px 0px 5px;
 }
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
