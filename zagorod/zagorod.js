@@ -172,16 +172,24 @@
 // Armine Calculator
 function participants()
 {       
+		var participantsInput1 = 0, participantsInput2 = 0, participantsInput3 = 0, participantsInput4 = 0;
 
-		var participantsInput1 = document.getElementById('participantsInput1').value;
-		var participantsInput2 = document.getElementById('participantsInput2').value;
-		var participantsInput3 = document.getElementById('participantsInput3').value;
-		var participantsInput4 = document.getElementById('participantsInput4').value;
+		participantsInput1 = document.getElementById('participantsInput1').value;
+	    participantsInput2 = document.getElementById('participantsInput2').value;
+	    participantsInput3 = document.getElementById('participantsInput3').value;
+		participantsInput4 = document.getElementById('participantsInput4').value;
 
-		if (participantsInput2 > participantsInput1)
-			window.alert("Error: You have inputed invalid numbers");
-		if (participantsInput1 < participantsInput3 + participantsInput2)
-			window.alert("Error: You have inputed invalid numbers");
-		if ( participantsInput1 <  (participantsInput2 +  participantsInput3 +  participantsInput4) )
-			window.alert("Error: You have inputed invalid numbers.");
+        window.alert("Hello.");
+ 
+		while (true)
+		{
+			if (participantsInput1 < participantsInput2)
+				window.alert("Error: You have inputed invalid numbers");
+				
+			if (participantsInput1 < ((participantsInput2 + participantsInput3))
+		    	window.alert("Error: You have inputed invalid numbers");
+				
+			if ( participantsInput1 <  (participantsInput2 +  participantsInput3 +  participantsInput4) )
+				window.alert("Error: You have inputed invalid numbers.");
+		}		
 }
