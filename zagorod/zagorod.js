@@ -168,7 +168,7 @@
                 document.getElementById("c").style.display = "none";
                 document.getElementById("d").style.display = "block";
         }
-
+/*
 // Armine Calculator
 function participants()
 {       
