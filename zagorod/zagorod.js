@@ -170,18 +170,57 @@
         }
 
 // Armine Calculator
-function participants()
+function participants2()
 {       
-
-		var participantsInput1 = document.getElementById('participantsInput1').value;
+		
+	 	var participantsInput1 = document.getElementById('participantsInput1').value;
 		var participantsInput2 = document.getElementById('participantsInput2').value;
-		var participantsInput3 = document.getElementById('participantsInput3').value;
-		var participantsInput4 = document.getElementById('participantsInput4').value;
 
-		if (participantsInput2 > participantsInput1)
+		window.alert(participantsInput1);
+		window.alert(participantsInput2);
+
+	    if (participantsInput1 < participantsInput2)
+		{
 			window.alert("Error: You have inputed invalid numbers");
-		if (participantsInput1 < participantsInput3 + participantsInput2)
-			window.alert("Error: You have inputed invalid numbers");
-		if ( participantsInput1 <  (participantsInput2 +  participantsInput3 +  participantsInput4) )
-			window.alert("Error: You have inputed invalid numbers.");
+
+	
+ 	    }
+		
+		
+
+}
+
+function participants3()
+{
+	
+	 	var participantsInput1 = document.getElementById('participantsInput1').value;
+		var participantsInput2 = document.getElementById('participantsInput2').value;
+		var	participantsInput3 = document.getElementById('participantsInput3').value;
+
+				
+			if (participantsInput1 < (participantsInput2 + participantsInput3))
+			{
+				window.alert("Error: You have inputed invalid numbers");
+			}
+           
+}
+
+function participants4()
+{ 
+	
+	 	var participantsInput1 = document.getElementById('participantsInput1').value;
+		var participantsInput2 = document.getElementById('participantsInput2').value;
+		var	participantsInput3 = document.getElementById('participantsInput3').value;
+		var	participantsInput4 = document.getElementById('participantsInput4').value;
+
+		alert( participantsInput1 );
+		alert( participantsInput2 );
+		alert( participantsInput3 );
+		alert( participantsInput4 );
+		
+			if ( participantsInput1 <  (participantsInput2 +  participantsInput3 +  participantsInput4) )
+			{
+				alert("Error: You have inputed invalid numbers.");
+				return;
+			}
 }
