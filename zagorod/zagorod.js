@@ -33,7 +33,7 @@
                 document.getElementById("d4").style.display = "none";
 		document.getElementById("d3").style.display = "block";
 	};
-   var  hide4 = function() {
+        function hide4() {
                 document.getElementById("d1").style.display = "none";
                 document.getElementById("d2").style.display = "none";
                 document.getElementById("d3").style.display = "none";

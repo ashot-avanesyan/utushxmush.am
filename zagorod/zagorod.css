@@ -82,7 +82,7 @@ label#participants {
 	float: right;
 	size: 3%;
 }
-input#mass {
+input.mass {
 width: 30%;
 }
 .inputParticipants {
@@ -329,12 +329,12 @@ width: auto;
 height: 600px;
 background-color: #87ceeb;
 display: none;
-margin-left: 180px;
+margin: auto;
 }
 div#d4 {
 width: auto;
 height: 600px;
 background-color: #87ceeb;
 display: none;
-margin-left: 100px;
+margin: auto ;
 }
