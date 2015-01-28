@@ -328,9 +328,12 @@ div#d3 {
 width: auto;
 height: 600px;
 background-color: #87ceeb;
-margin-left: 180px;
 display: none;
 margin: auto;
+}
+div#d3_1 {
+margin-left: 30%;
+height: 300px;
 }
 div#d4 {
 width: auto;
@@ -340,3 +343,8 @@ margin: auto;
 display: none;
 margin: auto ;
 }
+div#d4_1 {
+margin-left: 18%;
+height: 250px;
+}
+
