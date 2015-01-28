@@ -328,6 +328,7 @@ div#d3 {
 width: auto;
 height: 600px;
 background-color: #87ceeb;
+margin-left: 180px;
 display: none;
 margin: auto;
 }
@@ -335,6 +336,7 @@ div#d4 {
 width: auto;
 height: 600px;
 background-color: #87ceeb;
+margin: auto;
 display: none;
 margin: auto ;
 }
