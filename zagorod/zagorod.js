@@ -101,3 +101,27 @@ function participants4()
     	}		
 
 }
+
+// functions for barbecue 
+function initializeBarbecue(name)
+{
+	switch(name)
+	{
+		case pig:
+			document.getElementById("kgPig").value = 5;
+			document.getElementById("drPig").value = 3800;
+			break;
+		case lamb:
+			document.getElementById("kgLamb").value = 5;
+			document.getElementById("drLamb").value = 3000;
+			break;
+		case goat:
+			document.getElementById("kgGoat").value = 5;
+			document.getElementById("drGoat").value = 3500;
+			break;
+	   default: 
+			window.alert("This is default value.");
+			break;
+   }
+}
+
