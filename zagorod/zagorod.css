@@ -82,9 +82,9 @@ label#participants {
 	float: right;
 	size: 3%;
 }
-input.mass {
+/*input.mass {
 width: 30%;
-}
+}*/
 .inputParticipants {
 	float: right;
 	margin-left: 6%;
@@ -193,7 +193,7 @@ background-color: #87ceeb;
 }
 div#d2 {
 width: auto;
-height: 650px;
+height: 100%;
 margin: auto;
 background-color: #87ceeb;
 display: none;
@@ -264,7 +264,7 @@ display: none;
 div#d2_2_1_4 {
 width: auto;
 height: 500px;
-margin-left: 35%;
+margin-left: 10%;
 background-color: #87ceeb;
 display: none;
 }
@@ -331,20 +331,10 @@ background-color: #87ceeb;
 display: none;
 margin: auto;
 }
-div#d3_1 {
-margin-left: 30%;
-height: 300px;
-}
 div#d4 {
 width: auto;
 height: 600px;
 background-color: #87ceeb;
-margin: auto;
 display: none;
 margin: auto ;
 }
-div#d4_1 {
-margin-left: 18%;
-height: 250px;
-}
-
