@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html>
@@ -29,22 +30,10 @@
     </p>
      
     <div id = "sizeOfDiv">
-     <ul id="menu">
-      </ul> 
-<!--Arman_Armine -->
-	<h2><a id = "participants">Մասնակիցներ</a></h2>
-	<form id = "amountParticipants">
-        <label id = "Participants">Մասնակիցների քանակ</label>
-        <input type = "number" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
-        <label id = "Participants">Տղամարդիկ</label>
-        <input type = "number" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="participants2()"><br><br>
-        <label id = "Participants">Կանայք</label>
-        <input type = "number" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="participants3()"><br><br>
-        <label id = "Participants">Մինչև 7 տարեկան երեխաներ</label>
-        <input type = "number" min = "0" class = "inputParticipants" id = "participantsInput4" onblur="participants4()"><br><br>
-    </form>
-
 	<ul id = "glkhawor_meny" style="text-align:center">
+		<li>
+			<button onclick="hide5(), blur()">Մասնակիցներ</button>
+		</li>
 		<li>
 			<button onclick="hide1(), blur()">Տրանսպորտ</button>
 		</li>
@@ -58,6 +47,18 @@
 			<button onclick="hide4(), blur()">Պարագաներ</button>
 		</li>
 	</ul>
+	<div id="d">
+	<form id = "amountParticipants">
+        	<label id = "Participants">Մասնակիցների քանակ</label>
+        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
+        	<label id = "Participants">Տղամարդիկ</label>
+        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="participants2()"><br><br>
+        	<label id = "Participants">Կանայք</label>
+        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="participants3()"><br><br>
+        	<label id = "Participants">Մինչև 7 տարեկան երեխաներ</label>
+        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput4" onblur="participants4()"><br><br>
+    	</form>
+	</div>
         <div id = "d1">
 		     <form id = "amountParticipants">
                 	<label  id= "Participants">  Մեկնման վայր </label>
@@ -136,7 +137,7 @@
 					<td><p id = "pig price">= </p></td>
      				</tr>
      				<tr>
-     					<td><p><input type="checkbox" value ="etc">Այլ<input type = "text" placeholder="Անվանումը" size = "5"></p></td>
+     					<td><p><input type="checkbox" value ="etc">Այլ <input type = "text" placeholder="Անվանումը" size = "5"></p></td>
      					<td><input class="mass" type="number">կգ</td>
         	  			<td><p><input type = "text" size = "5">դր</p></td>
 					<td><p id = "pig price">= </p></td>
@@ -146,6 +147,7 @@
 					<ul id = "alkaholayin" style="text-align:center" >
 						<li><button onclick="hide20_2(), blur()">Խմիչք</button></li>
 				    	</ul>
+					<div id="d20_2">
 							<tr>
         							<td><p id =oghi ><input type="checkbox" name="spice" value="Salt"> </p></td>    
         							<td>
@@ -244,6 +246,7 @@
 												<td><p id = "pig price">= </p></td>
                             				</tr>
 						</table>
+					</div>
 			  <table id = "barbecue" >
 				<ul id = "desert" style="text-align:center" >
                		<li><button onclick="hide1_6(), blur()">Բանջարեղեն</button></li>
