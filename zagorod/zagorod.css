@@ -326,15 +326,21 @@ display: none;
 }
 div#d3 {
 width: auto;
-height: 600px;
+height: 500px;
 background-color: #87ceeb;
 display: none;
 margin: auto;
 }
+div#d3_1 {
+margin-left: 30%;
+}
 div#d4 {
 width: auto;
-height: 600px;
+height: 500px;
 background-color: #87ceeb;
 display: none;
 margin: auto ;
+}
+div#d4_1 {
+margin-left: 17%;
 }
