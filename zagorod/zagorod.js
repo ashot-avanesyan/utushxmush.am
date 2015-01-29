@@ -176,17 +176,11 @@ function participants2()
 	 	var participantsInput1 = document.getElementById('participantsInput1').value;
 		var participantsInput2 = document.getElementById('participantsInput2').value;
 
-		window.alert(participantsInput1);
-		window.alert(participantsInput2);
-
-	    if (participantsInput1 < participantsInput2)
-		{
-			window.alert("Error: You have inputed invalid numbers");
-
-	
- 	    }
-		
-		
+		if (Number(participantsInput1) < Number(participantsInput2))
+   		{
+			 window.alert("Error: Դուք մտցրել եք սխալ տվյալ։ Մասնակիցների ընդհանուր քանակը " + Number(participantsInput1)+  " է։");
+			 document.getElementById("participantsInput2").value = "";
+    	}	
 
 }
 
@@ -197,12 +191,14 @@ function participants3()
 		var participantsInput2 = document.getElementById('participantsInput2').value;
 		var	participantsInput3 = document.getElementById('participantsInput3').value;
 
+		var tempSum = Number(participantsInput2) + Number(participantsInput3);
+
+		if (Number(participantsInput1) < (tempSum))
+    	{ 
+        	window.alert("Error: Դուք մտցրել եք սխալ տվյալ։ Մասնակիցների ընդհանուր քանակը " + Number(participantsInput1)+  " է։");
+			document.getElementById("participantsInput3").value = "";
+    	}
 				
-			if (participantsInput1 < (participantsInput2 + participantsInput3))
-			{
-				window.alert("Error: You have inputed invalid numbers");
-			}
-           
 }
 
 function participants4()
@@ -213,14 +209,12 @@ function participants4()
 		var	participantsInput3 = document.getElementById('participantsInput3').value;
 		var	participantsInput4 = document.getElementById('participantsInput4').value;
 
-		alert( participantsInput1 );
-		alert( participantsInput2 );
-		alert( participantsInput3 );
-		alert( participantsInput4 );
-		
-			if ( participantsInput1 <  (participantsInput2 +  participantsInput3 +  participantsInput4) )
-			{
-				alert("Error: You have inputed invalid numbers.");
-				return;
-			}
+		var tempSum =Number(participantsInput2) + Number(participantsInput3) + Number(participantsInput4);
+
+		if (Number(participantsInput1) < tempSum)
+    	{
+			 window.alert("Error: Դուք մտցրել եք սխալ տվյալ։ Մասնակիցների ընդհանուր քանակը " + Number(participantsInput1)+  " է։"); 
+			 document.getElementById("participantsInput4").value = "";
+    	}		
+
 }
