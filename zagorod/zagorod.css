@@ -35,6 +35,11 @@ form.amountParticipants {
 	padding: 20px;
 	width: 460px;
 }
+table.margin{
+	margin: auto 30% 0% 15%;
+	padding: 20px;
+	width: 460px;
+}
 label#participants {
 	position: absolute;
 	float: right;
@@ -46,10 +51,6 @@ width: 40%;
 .inputParticipants {
 	float: right;
 	margin-left: 6%;
-}
-table.margin
-{
-    margin-left: 10%;
 }
  td {
 	padding: 10px 0px 0px 0px;
@@ -107,7 +108,7 @@ margin-bottom: -25px;
 }
 div#d1 {
 width: auto;
-height: 700px;
+height: 100%;
 margin: auto;
 background-color: #E0FFFF;
 }
@@ -120,28 +121,22 @@ display: none;
 }
 div#d3 {
 width: auto;
-height: 500px;
+height: 100%;
 background-color: #E0FFFF;
 display: none;
 margin: auto;
 }
-div#d3_1 {
-margin-left: 22%;
-}
 div#d4 {
 width: auto;
-height: 500px;
+height: 100%;
 background-color: #E0FFFF;
 display: none;
 margin: auto ;
 }
-div#d4_1 {
-margin-left: 10%; 
-}
 div#d {
 width: auto;
-height: 500px;
-	background-color: #E0FFFF;
+height: 100%;
+background-color: #E0FFFF;
 display: none;
 margin: auto ;
 }
