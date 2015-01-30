@@ -320,7 +320,7 @@ display: none;
 div#d {
 width: auto;
 height: 500px;
-margin-left: 35%;
+margin: auto;
 background-color: #87ceeb;
 display: none;
 }
