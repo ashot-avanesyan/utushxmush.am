@@ -26,16 +26,6 @@ img {
      margin-left: 1300px;
            
     } 
-
-table#drinkable
- { 
-   margin-left: 16px;
-}   
-
-table#drinkable td, tr {
-        padding: 0px 25px;
-        size: 10px;
-}
 select#lengthOfButton
 { 
    width:100px;
@@ -103,49 +93,11 @@ text-decoration: none;
 border-radius: 8px;
 margin-bottom: -25px;
 }
-ul#xmichq li {
+ li {
 display: inline;
 list-style: none;
 }
-ul#xmichq li button {
-background-color: #E0FFFF;
-color: #000000;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 8px;
-margin-bottom: -25px;
-}
- ul#alkaholayin li {
-display: inline;
-list-style: none;
-style = "text-align:center"
-}
-ul#alkaholayin li button {
-background-color: #E0FFFF;
-color: #000000;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 8px;
-margin-bottom: -25px;
-style = "text-align:center"
-}
-ul#bnakan li {
-display: inline;
-list-style: none;
-}
-ul#bnakan li button {
-background-color: #E0FFFF;
-color: #000000;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 8px;
-margin-bottom: -25px;
-}
-ul#desert li {
-display: inline;
-list-style: none;
-}
-ul#desert li button {
+li button {
 background-color: #E0FFFF;
 color: #000000;
 padding: 10px 20px;
