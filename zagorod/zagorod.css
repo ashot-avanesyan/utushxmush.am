@@ -125,12 +125,18 @@ background-color: #E0FFFF;
 display: none;
 margin: auto;
 }
+div#d3_1 {
+margin-left: 22%;
+}
 div#d4 {
 width: auto;
 height: 500px;
 background-color: #E0FFFF;
 display: none;
 margin: auto ;
+}
+div#d4_1 {
+margin-left: 10%; 
 }
 div#d {
 width: auto;
