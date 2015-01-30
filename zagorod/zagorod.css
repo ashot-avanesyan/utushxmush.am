@@ -1,6 +1,7 @@
 /*  Syuzi_Nara */
-body { margin: 2%;
-       font-size: 100%;
+body {	margin: 2%;
+      	font-size: 100%;
+	background-color: #FFE4B5;	
 }
  p.one {
     text-indent: 5px;
@@ -19,26 +20,6 @@ div#sizeOfDiv {
      margin-left: 22%;
      margin-right: 22%;
 }
-
-ul#menu {
-    padding: 1% 2%;
-}
-
-ul#menu li {
-    display: inline;
-}
-
-ul#menu li a {
-    background-color: black;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 4px 4px 0 0;
-}
-
-ul#menu li a:hover {
-    background-color: orange;
-}
 img {
      background-color: no-repeat;
      background-position: right top;
@@ -46,12 +27,6 @@ img {
            
     } 
 
-h4
-{
-    margin-left: 200px;
-    text-shadow: 2px 2px 3px slategray;
-    color: darkred;
-}
 table#drinkable
  { 
    margin-left: 16px;
@@ -65,14 +40,7 @@ select#lengthOfButton
 { 
    width:100px;
 }  
-/* Author: Arman_Armine */
-h2 
-{
-    text-shadow: 2px 2px 3px slategray;
-    color: darkred;
-    text-align: center;
-}
-form#amountParticipants {
+form.amountParticipants {
 	margin: auto 30% 2% 15%;
 	padding: 20px;
 	width: 460px;
@@ -82,9 +50,9 @@ label#participants {
 	float: right;
 	size: 3%;
 }
-/*input.mass {
+input.mass {
 width: 30%;
-}*/
+}
 .inputParticipants {
 	float: right;
 	margin-left: 6%;
@@ -113,7 +81,7 @@ list-style: none;
 margin-bottom:"text-align:center";
 }
 ul#glkhawor_meny li button {
-background-color: #87ceeb;
+background-color: #E0FFFF;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -128,7 +96,7 @@ display: inline;
 list-style: none;
 }
 ul#chashacank li button {
-background-color: #87ceeb;
+background-color: #E0FFFF;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -140,7 +108,7 @@ display: inline;
 list-style: none;
 }
 ul#xmichq li button {
-background-color: #87ceeb;
+background-color: #E0FFFF;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -153,7 +121,7 @@ list-style: none;
 style = "text-align:center"
 }
 ul#alkaholayin li button {
-background-color: #87ceeb;
+background-color: #E0FFFF;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -166,7 +134,7 @@ display: inline;
 list-style: none;
 }
 ul#bnakan li button {
-background-color: #87ceeb;
+background-color: #E0FFFF;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -178,7 +146,7 @@ display: inline;
 list-style: none;
 }
 ul#desert li button {
-background-color: #87ceeb;
+background-color: #E0FFFF;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -189,158 +157,33 @@ div#d1 {
 width: auto;
 height: 700px;
 margin: auto;
-background-color: #87ceeb;
+background-color: #E0FFFF;
 }
 div#d2 {
 width: auto;
 height: 100%;
 margin: auto;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_1 {
-width: auto;
-height: 600px;
-margin-left: 20%;
-background-color: #87ceeb;
-}
-div#d2_2 {
-width: auto;
-height: 600px;
-margin: auto;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_3 {
-width: auto;
-height: 600px;
-background-color: #87ceeb;
-display: none;
-margin-left: 20%;
-}
-div#d2_4 {
-width: auto;
-height: 600px;
-margin: auto;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_5 {
-width: auto;
-height: 600px;
-margin-left: 35%;
-background-color: #87ceeb;
-display: none;
-}
-}
-div#d2_2_1 {
-width: auto;
-height: 500px;
-margin: auto;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_1_1 {
-width: auto;
-height: 500px;
-margin-left: 35%;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_1_2 {
-width: auto;
-height: 500px;
-margin-left: 35%;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_1_3 {
-width: auto;
-height: 500px;
-margin-left: 35%;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_1_4 {
-width: auto;
-height: 500px;
-margin-left: 10%;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_2 {
-width: auto;
-height: 500px;
-margin: auto;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_2_1 {
-width: auto;
-height: 500px;
-margin-left: 30%;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_2_2 {
-width: auto;
-height: 500px;
-margin-left: 37%;
-background-color: #87ceeb;
-display: none;
-}
-div#d2_2_2_3 {
-width: auto;
-height: 500px;
-margin-left: 37%;
-background-color: #87ceeb;
-display: none;
-}
-div#a {
-width: auto;
-height: 500px;
-margin-left: 18%;
-background-color: #87ceeb;
-display: none;
-}
-div#b {
-width: auto;
-height: 500px;
-margin-left: 18%;
-background-color: #87ceeb;
-display: none;
-}
-div#c {
-width: auto;
-height: 500px;
-margin-left: 35%;
-background-color: #87ceeb;
-display: none;
-}
-div#d {
-width: auto;
-height: 500px;
-margin: auto;
-background-color: #87ceeb;
+background-color: #E0FFFF;
 display: none;
 }
 div#d3 {
 width: auto;
 height: 500px;
-background-color: #87ceeb;
+background-color: #E0FFFF;
 display: none;
 margin: auto;
-}
-div#d3_1 {
-margin-left: 30%;
 }
 div#d4 {
 width: auto;
 height: 500px;
-background-color: #87ceeb;
+background-color: #E0FFFF;
 display: none;
 margin: auto ;
 }
-div#d4_1 {
-margin-left: 17%;
+div#d {
+width: auto;
+height: 500px;
+	background-color: #E0FFFF;
+display: none;
+margin: auto ;
 }

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html>
@@ -48,7 +46,7 @@
 		</li>
 	</ul>
 	<div id="d">
-	<form id = "amountParticipants">
+	<form class = "amountParticipants">
         	<label id = "Participants">Մասնակիցների քանակ</label>
         	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
         	<label id = "Participants">Տղամարդիկ</label>
@@ -59,8 +57,8 @@
         	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput4" onblur="participants4()"><br><br>
     	</form>
 	</div>
-        <div id = "d1">
-		     <form id = "amountParticipants">
+        <div id= "d1">
+		     <form class= "amountParticipants">
                 	<label  id= "Participants">  Մեկնման վայր </label>
                 	<input  size="12" type="text" name="fname" class = "inputParticipants">   <br> <br>
                 	<label  id= "Participants"> Ժամանման վայր </label>
@@ -89,7 +87,7 @@
         			</tr> 
         			<tr>       
         				<td><p><input type="checkbox" value ="lamb" id = "lamb" onclick = "initializeBarbecue(lamb)">Գառ</p></td>
-					   	<td><input class= "mass" type = "number" min = "0" id = "kgLamb" disabled>կգ</td>
+					<td><input class= "mass" type = "number" min = "0" id = "kgLamb" disabled>կգ</td>
         				<td><p><input type = "text" size = "5"  id = "drLamb" disabled>դր</p></td>
 				     	<td><p id = "pig price">= </p></td>
         			</tr>
@@ -103,26 +101,26 @@
         				<td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeBarbecue(chicken)">Հավ</p></td>
         				<td><input class= "mass" type="number" min = "0" id = "kgChicken" disabled>կգ</td>
         	  			<td><p><input type = "text" size = "5" id = "drChicken" disabled>դր</p></td>
-					<td><p id = "pig price">= </p></td>
+					<td><p id = "price">= </p></td>
         			</tr> 
        				<tr>
         				<td><p><input type="checkbox" value ="wing" id = "wing" onclick = "initializeBarbecue(wing)">Թև</p></td>
         				<td><input class="mass" type = "number" min = "0" id = "kgWing" disabled>կգ</td>
         	  			<td><p><input type = "text" size = "5" id = "drWing" disabled>դր</p></td>
-					<td><p id = "pig price">= </p></td>
+					<td><p id = "price">= </p></td>
         			</tr>
        				<tr>  
 
         				<td><p><input type="checkbox" value ="haunch" id = "haunch" onclick = "initializeBarbecue(haunch)">Բուդ</p></td>
         				<td><input class="mass" type = "number" min = "0" id = "kgHaunch" disabled>կգ</td>
         	  			<td><p><input type = "text" size = "5" id = "drHaunch" disabled>դր</p></td>
-					<td><p id = "pig price">= </p></td>
+					<td><p id = "price">= </p></td>
         			</tr>
      				<tr>
        					<td><input type = "checkbox" value = "potatoes" id = "potatoes" onclick = "initializeBarbecue(potatoes)">Կարտոֆիլ</p></td>
        					<td><input class= "mass" type = "number" mim = "0" id = "kgPotatoes" disabled>կգ</td> 
         	  			<td><p><input type = "text" size = "5" id = "drPotatoes" disabled>դր</p></td>
-					<td><p id = "pig price">= </p></td>
+					<td><p id = "price">= </p></td>
      				</tr>
      				<tr>
      					<td><p><input type="checkbox" value ="anvil" id = "anvil" onclick = "initializeBarbecue(anvil)">Սալ</p></td>
@@ -161,7 +159,7 @@
            				  			</td> 
 		  						<td><input class="mount" type="number" placeholder ="քանակ" min="0">հատ</td>
 				        			<td><input size="5" type="text">դր</td>
-								<td><p id = "pig price">= </p></td>
+								<td><p id = "price">= </p></td>
 							</tr>
 							<tr>
           							<td><p><input id =wine type="checkbox" name="spice" value="Salt"></p></td>
@@ -176,7 +174,7 @@
             							</td>
             							<td><input class="mount" type="number" min="0" placeholder ="քանակ">հատ</td>
             							<td><input size="5" type="text">դր</td>
-								<td><p id = "pig price">= </p></td>
+								<td><p id = "price">= </p></td>
           						</tr>
         			    			<tr>
 						   		<td><p><input id =beer type="checkbox" name="spice" value="Salt"></p></td>
@@ -191,7 +189,7 @@
            					   	  	</td>
            					 	 	<td><input class="mount" size="5" type="number" placeholder ="քանակ">հատ</td>
            					 	 	<td><input size="5" type="text">դր</td>
-								<td><p id = "pig price">= </p></td>
+								<td><p id = "price">= </p></td>
           						</tr>
        						<tr>
 							<td><p><input id="other" type="checkbox" name="spice" value="Salt"></p></td>
@@ -206,7 +204,7 @@
            						</td>
            						<td><input size="5" type="number" placeholder ="քանակ">հատ</td>
 							<td><input size="5" type="text">դր</td>
-							<td><p id = "pig price">= </p></td>
+							<td><p id = "price">= </p></td>
           					</tr>
 				       		<tr>
 							<td><p><input id="other" type="checkbox" name="spice" value="Salt"></p></td>
@@ -221,7 +219,7 @@
             						</td>
 							<td><input size="5" type="number" placeholder ="քանակ">հատ</td>
 							<td><input size="5" type="text">դր</td>
-							<td><p id = "pig price">= </p></td>
+							<td><p id = "price">= </p></td>
           				     </tr>
 				  		<tr>
 							<td><p><input id="other" type="checkbox" name="spice" value="Salt"></p></td>
@@ -236,14 +234,14 @@
             						</td>
 							<td><input size="5" type="number" placeholder ="քանակ">հատ</td>
 							<td><input size="5" type="text">դր</td>
-							<td><p id = "pig price">= </p></td>
+							<td><p id = "price">= </p></td>
            		      			</tr>
                         				<tr>
                             					<td><p><input id="other" type="checkbox" name="spice" value="Salt"></p></td>
                                 				<td><input type="text" placeholder="Անավանումը"  size="7"></td>
                                 				<td><input size="5" type="number" placeholder ="քանակ" min="0">հատ</td>
                                 				<td><input size="5" type="text"  >դր</td>
-												<td><p id = "pig price">= </p></td>
+												<td><p id = "price">= </p></td>
                             				</tr>
 						</table>
 			  <table id = "barbecue" >
@@ -254,37 +252,37 @@
         			 	<td><p><input type="checkbox" value ="tomato">Լոլիկ</p></td>
         			 	<td><input class =  "mass" type = "number" mim = "0">կգ</td>
         			   	<td><input type = "text" size = "5">դր</td>
-						<td><p id = "pig price">= </p></td>
+						<td><p id = "price">= </p></td>
        				 </tr>
         			 <tr>
         			   	<td><p><input type="checkbox" value ="cucumbers">Վարունգ</p></td>
                 		   	<td><input class = "mass" type = "number" min = "0">կգ</td>
            				<td><input type = "text" size = "5">դր</td>
-						<td><p id = "pig price">= </p></td>
+						<td><p id = "price">= </p></td>
         			 </tr>
        				 <tr>
         				   <td><p><input type="checkbox" value ="eggplant">Սմբուկ</p></td>
         				   <td><input class = "mass" type = "number" min = "0">կգ</td>
         				   <td><input type = "text" size = "5">դր</td>
-						   <td><p id = "pig price">= </p></td>
+						   <td><p id = "price">= </p></td>
         		        </tr>
                 		<tr>
           				 <td><p><input type="checkbox" value ="onion">Սոխ</p></td>
           				 <td><input class = "mass" type = "number" min = "0">կգ</td>
           				 <td><input type = "text" size = "5">դր</td>
-						 <td><p id = "pig price">= </p></td>
+						 <td><p id = "price">= </p></td>
        				</tr>
        				<tr>
         				 <td><p><input type="checkbox" value ="greens">Կանաչի</p></td>
         				 <td><input class = "mass" type = "number" min = "0">կգ</td>
        					 <td><input type = "text" size = "5">դր</td>
-						 <td><p id = "pig price">= </p></td>
+						 <td><p id = "price">= </p></td>
        				 </tr>
        				 <tr>
        					  <td><p><input type="checkbox" value ="other">Այլ<input type ="text" placeholder="Անվանումը" size= "5"></p></td>
                          <td><input class = "mass" type = "number" min = "0">կգ</td>
         				  <td><input type = "text" size = "5">դր</td>
-						 <td><p id = "pig price">= </p></td>
+						 <td><p id = "price">= </p></td>
        				 </tr>
         		   </table>
 			  <table>
@@ -295,44 +293,44 @@
         						   <td><p><input type="checkbox" value ="Chocolates">Կոնֆետ</p></td>
         						   <td><input class="mass" type = "number" mim = "0">կգ</td>
         						   <td><input type = "text" size = "5">դր</td>
-						 		   <td><p id = "pig price">= </p></td>
+						 		   <td><p id = "price">= </p></td>
        						   </tr>
 						   	<tr>  
                            <td><p><input type="checkbox" value ="Chocolates">Շոկոլադ</p></td>
                                                            <td><input class ="mass" type = "number" min = "0">կգ</td>
                                                            <td><input type = "text" size = "5">դր</td>
-						 		   						   <td><p id = "pig price">= </p></td>
+						 		   <td><p id = "price">= </p></td>
        						   </tr>
                                                   </tr> 
 						  <tr>  
                                                            <td><p><input type="checkbox" value ="Lobe">Թխվացքաբլիթ</p></td>
                                                            <td><input class ="mass" type = "number" min = "0">կգ</td>
                                                            <td><input type = "text" size = "5">դր</td>
-						 		   						   <td><p id = "pig price">= </p></td>
+						 		    <td><p id = "price">= </p></td>
                                                   </tr> 
         				 <tr>
         				 	  <td><p><input type="checkbox" value ="Tea">Թեյ</p></td>
         				 	  <td><input class = "mass" type = "number" min = "0">կգ</td>
         				 	  <td><input type = "text"  size = "5">դր</td>
-						 	  <td><p id = "pig price">= </p></td>
+						 	  <td><p id = "price">= </p></td>
         				 </tr>
        					 <tr>
         					   <td><p><input type="checkbox" value ="Coffee">Սուրճ</p></td>
                 				   <td><input class = "mass" type = "number" mim = "0">կգ</td>
           				       	   <td><input type = "text" size = "5">դր</td>
-						 	  	   <td><p id = "pig price">= </p></td>
+						 	  	   <td><p id = "price">= </p></td>
          				 </tr>
         				 <tr>
         				 	  <td><p><input type="checkbox" value ="Instant coffee">Լուծվող սուրճ</p></td>
      					 	  <td><input class = "mass" type = "number" min = "0">հատ</td>
         				          <td><input type = "text" size = "5">դր</td> 
-						 	  	   <td><p id = "pig price">= </p></td>
+						 	  	   <td><p id = "price">= </p></td>
         			          </tr>
         				  <tr>
         					   <td><p><input type="checkbox" value ="Other">Այլ<input type="text" placeholder="Անվանումը" size= "5"></p></td>
 								<td><input class = "mass" type = "number" mim = "0">կգ</td>
         					   <td><input type = "text"size = "5">դր</td>
-						 	  	   <td><p id = "pig price">= </p></td>
+						 	  	   <td><p id = " price">= </p></td>
        				          </tr>
                                   		<tr>
 							<td><p><input id="other" type="checkbox" name="spice" value="Salt">Միրգ
@@ -346,7 +344,7 @@
                                 			</td>
 								<td><input class = "mass" type = "number" mim = "0">կգ</td>
                                 			<td><input size="5" type="text"  >դր</td>
-						 	  	   			<td><p id = "pig price">= </p></td>
+						 	  	  <td><p id = "price">= </p></td>
                               			</tr>
                                  		<tr>
                                                         <td><p><input id="other" type="checkbox" name="spice" value="Salt">Աղանդեր
@@ -360,7 +358,7 @@
                                                         </td>
 								<td><input class = "mass" type = "number" mim = "0">կգ</td>
                                                         <td><input size="5" type="text"  >դր</td>
-						 	  	   						<td><p id = "pig price">= </p></td>
+						 	  	   	<td><p id = "price">= </p></td>
                                                 </tr>
                             		<tr>
 						<td><p><input id="other" type="checkbox" name="spice" value="Salt">Հաց
@@ -374,7 +372,7 @@
                                 		</td>	
 								<td><input class = "mass" type = "number" mim = "0">հատ</td>
                                 		<td><input size="5" type="text">դր</td>
-						 	  	   		<td><p id = "pig price">= </p></td>
+						 	  	   <td><p id = "price">= </p></td>
                               		</tr>
 				</table>
 			</div>
@@ -385,19 +383,19 @@
         	  				<td><p><input type="checkbox" value = "overnight">Հյուրանոց</p></td>
         	  				<td><input type ="text" placeholder = "համար" size = "5"></td>
         		  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
+						 	<td><p id = "price">= </p></td>
         	 			</tr>
         	 			<tr>
         		  			<td><p><input type="checkbox" value = "tent">Վրան</p></td>
         		  			<td><input type = "text" placeholder = "քանակ" size = "5"></td>
-        		  			<td><input type = "text" placeholder = "դր" size = "5"><td>
-						 	<td><p id = "pig price">= </p></td>
+        		  			<td><input type = "text" placeholder = "դր" size = "5"></td>
+						 	<td><p id = "price">= </p></td>
         				</tr>
         				<tr>
         		  			<td><p><input type="checkbox" value = "other">Այլ</p></td>
         		  			<td><input type = "text" placeholder = "քանակ" size = "5"</td>
         		  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
+						 	<td><p id = "price">= </p></td>
  					</tr>
 				</table>
 				</div>
@@ -406,42 +404,44 @@
 				<div id = "d4_1">
         			<table id = "barbecue">
          				<tr>
-         		  			<td><p><input type="checkbox" value ="tomato">Առաջին բուժօգնության պարագաներ</p></td>
+         		  			<td><p><input type="checkbox" value ="First aid supplies">Առաջին բուժօգնության պարագաներ</p></td>
          		  			<td><input type = "text" placeholder ="կգ" size = "5"></td>
          		  			<td><input type = "text" placeholder ="դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
+						 	<td><p id = "price">= </p></td>
          				</tr>
          				<tr>                                                                                                             
-         	  				<td><p><input type="checkbox" value ="cucumbers">Սպասք</p></td>                                                                 				 <td><input type = "text" placeholder ="կգ" size = "5"></td>          	  											 <td><input type = "text" placeholder ="դր" size = "5"></td>            					
-         		  		</tr>	
+         	  				<td><p><input type="checkbox" value ="Utensil">Սպասք</p></td>                                                                 				 <td><input type = "text" placeholder ="կգ" size = "5"></td>          	  											 <td><input type = "text" placeholder ="դր" size = "5"></td>            					
+         		  			<td><p id = "price">= </p></td>
+                                        </tr>      
                                         <tr>
-                                                <td><p><input type="checkbox" value ="eggplant">Շամփուր</p></td>
+                                                <td><p><input type="checkbox" value ="Skewer">Շամփուր</p></td>
          		  			<td><input type = "text" placeholder ="կգ" size = "5"></td>
          		  			<td><input type = "text" placeholder ="դր" size = "5"></td>
+                			            <td><p id = "price">= </p></td>
                 			</tr>
-                			<tr>
-           					<td><p><input type="checkbox" value ="onion">ժամանցի պարագաներ (գնդակ, )</p></td>
+                                         <tr>
+           					<td><p><input type="checkbox" value ="Entertainment accessories">ժամանցի պարագաներ (գնդակ, )</p></td>
            					<td><input type = "text" placeholder ="կգ" size = "5"></td>
            					<td><input type = "text" placeholder ="դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
+						 	<td><p id = "price">= </p></td>
         				</tr>
        					<tr>
-        		  			<td><p><input type="checkbox" value ="greens">Ինքնաեռ</p></td>
+        		  			<td><p><input type="checkbox" value ="Tea urn">Ինքնաեռ</p></td>
         		  			<td><input type = "text" placeholder ="կգ" size = "5"></td>
         		  			<td><input type = "text" placeholder ="դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
+						 	<td><p id = "price">= </p></td>
         				</tr>
         				<tr>
-        		  			<td><p><input type="checkbox" value ="greens">Ծածկոցներ</p></td>
+        		  			<td><p><input type="checkbox" value ="Covers">Ծածկոցներ</p></td>
         		  			<td><input type = "text" placeholder ="կգ" size = "5"></td>
         		  			<td><input type = "text" placeholder ="դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
+						 	<td><p id = "price">= </p></td>
         				</tr>
         				<tr>
        			  			<td><p><input type="checkbox" value ="other">Այլ</p></td>
         		  			<td><input type = "text" placeholder ="կգ" size = "5"></td>
         		  			<td><input type = "text" placeholder ="դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
+						 	<td><p id = "price">= </p></td>
         				</tr>
            			</table>
 				</div>
