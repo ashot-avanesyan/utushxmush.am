@@ -258,11 +258,13 @@ function initializeBarbecue(name)
 			{
 				document.getElementById("drEtc").disabled = false;
 				document.getElementById("kgEtc").disabled = false;
+				document.getElementById("name").disabled = false;
 			}
 			else 
 			{
 				document.getElementById("drEtc").disabled = true;
 				document.getElementById("kgEtc").disabled = true;
+				document.getElementById("name").disabled = true;
 			}
 			break;
 	   default: 
