@@ -41,18 +41,18 @@ label#participants {
 	size: 3%;
 }
 input.mass {
-width: 30%;
+width: 40%;
 }
 .inputParticipants {
 	float: right;
 	margin-left: 6%;
 }
-table#barbecue
+table.margin
 {
-    margin-left: 6%;
+    margin-left: 10%;
 }
-table#barbecue td, tr {
-	padding: 0px 15px 0px 5px;
+ td {
+	padding: 10px 0px 0px 0px;
 }
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
