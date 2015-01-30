@@ -114,6 +114,7 @@ function initializeBarbecue(name)
 				document.getElementById("drPig").value = 3800;
 				document.getElementById("drPig").disabled = false;
 				document.getElementById("kgPig").disabled = false;
+				
 			}
 			else 
 			{
@@ -273,3 +274,44 @@ function initializeBarbecue(name)
    }
 }
 
+// price function returns = kg*dr
+function price(name) 
+{
+	switch(name)
+	{
+		case pig: 
+			document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
+			break;
+		case lamb:
+			document.getElementById("lamb_price").value = "= " + document.getElementById("kgLamb").value * document.getElementById("drLamb").value;
+			break;
+		case goat:
+			document.getElementById("goat_price").value = "= " + document.getElementById("kgGoat").value * document.getElementById("drGoat").value;
+			break;
+		case chicken: 
+			document.getElementById("chicken_price").value = "= " + document.getElementById("kgChicken").value * document.getElementById("drChicken").value;
+			break;
+		case wing: 
+			document.getElementById("wing_price").value = "= " + document.getElementById("kgWing").value * document.getElementById("drWing").value;
+			break;
+		case haunch: 
+			document.getElementById("haunch_price").value = "= " + document.getElementById("kgHaunch").value * document.getElementById("drHaunch").value;
+			break;
+		case potatoes: 
+			document.getElementById("potatoes_price").value = "= " + document.getElementById("kgPotatoes").value * document.getElementById("drPotatoes").value;
+			break;
+		case anvil: 
+			document.getElementById("anvil_price").value = "= " + document.getElementById("kgAnvil").value * document.getElementById("drAnvil").value;
+			break;
+		case internal_organs: 
+			document.getElementById("internal_organs_price").value = "= " + document.getElementById("kgInternal_organs").value * document.getElementById("drInternal_organs").value;
+			break;
+		case etc:
+			document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
+			break;
+		
+	   default: 
+			window.alert("This is default value.");
+			break;
+	}
+}
