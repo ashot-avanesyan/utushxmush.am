@@ -83,63 +83,63 @@
           		<table id = "barbecue">
             			<tr>
         	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeBarbecue(pig)">Խոզ</p></td>
-        	  			<td><input class= "mass" type="number" min = "0" id = "kgPig">կգ</td>
-        	  			<td><p><input type = "text" size = "5" id = "drPig">դր</p></td>
+        	  			<td><input class= "mass" type="number" min = "0" id = "kgPig" disabled>կգ</td>
+        	  			<td><p><input type = "text" size = "5" id = "drPig" disabled>դր</p></td>
 				     	<td><p id = "pig price">= </p></td>
         			</tr> 
         			<tr>       
         				<td><p><input type="checkbox" value ="lamb" id = "lamb" onclick = "initializeBarbecue(lamb)">Գառ</p></td>
-					   	<td><input class= "mass" type = "number" min = "0" id = "kgLamb">կգ</td>
-        				<td><p><input type = "text" size = "5"  id = "drLamb">դր</p></td>
+					   	<td><input class= "mass" type = "number" min = "0" id = "kgLamb" disabled>կգ</td>
+        				<td><p><input type = "text" size = "5"  id = "drLamb" disabled>դր</p></td>
 				     	<td><p id = "pig price">= </p></td>
         			</tr>
        				<tr>
         				<td><p><input type="checkbox" value ="goat" id = "goat" onclick = "initializeBarbecue(goat)">Այծ</p></td>
-        				<td><input class= "mass" type="number" min = "0" id = "kgGoat">կգ</td>
-        				<td><p><input type = "text" size = "5"  id = "drGoat">դր</p</td>
+        				<td><input class= "mass" type="number" min = "0" id = "kgGoat" disabled>կգ</td>
+        				<td><p><input type = "text" size = "5"  id = "drGoat" disabled>դր</p</td>
 				     	<td><p id = "pig price">= </p></td>
  			     	</tr>
 			    	<tr>		
-        				<td><p><input type="checkbox" value ="chicken">Հավ</p></td>
-        				<td><input class= "mass" type="number" min = "0">կգ</td>
-        	  			<td><p><input type = "text" size = "5">դր</p></td>
+        				<td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeBarbecue(chicken)">Հավ</p></td>
+        				<td><input class= "mass" type="number" min = "0" id = "kgChicken" disabled>կգ</td>
+        	  			<td><p><input type = "text" size = "5" id = "drChicken" disabled>դր</p></td>
 					<td><p id = "pig price">= </p></td>
         			</tr> 
        				<tr>
-        				<td><p><input type="checkbox" value ="wing">Թև</p></td>
-        				<td><input class="mass" type = "number" min = "0">կգ</td>
-        	  			<td><p><input type = "text" size = "5">դր</p></td>
+        				<td><p><input type="checkbox" value ="wing" id = "wing" onclick = "initializeBarbecue(wing)">Թև</p></td>
+        				<td><input class="mass" type = "number" min = "0" id = "kgWing" disabled>կգ</td>
+        	  			<td><p><input type = "text" size = "5" id = "drWing" disabled>դր</p></td>
 					<td><p id = "pig price">= </p></td>
         			</tr>
        				<tr>  
 
-        				<td><p><input type="checkbox" value ="haunch">Բուդ</p></td>
-        				<td><input class="mass" type = "number" min = "0">կգ</td>
-        	  			<td><p><input type = "text" size = "5">դր</p></td>
+        				<td><p><input type="checkbox" value ="haunch" id = "haunch" onclick = "initializeBarbecue(haunch)">Բուդ</p></td>
+        				<td><input class="mass" type = "number" min = "0" id = "kgHaunch" disabled>կգ</td>
+        	  			<td><p><input type = "text" size = "5" id = "drHaunch" disabled>դր</p></td>
 					<td><p id = "pig price">= </p></td>
         			</tr>
      				<tr>
-       					<td><input type = "checkbox" value = "potatoes">Կարտոֆիլ</p></td>
-       					<td><input class= "mass" type = "number" mim = "0">կգ</td> 
-        	  			<td><p><input type = "text" size = "5">դր</p></td>
+       					<td><input type = "checkbox" value = "potatoes" id = "potatoes" onclick = "initializeBarbecue(potatoes)">Կարտոֆիլ</p></td>
+       					<td><input class= "mass" type = "number" mim = "0" id = "kgPotatoes" disabled>կգ</td> 
+        	  			<td><p><input type = "text" size = "5" id = "drPotatoes" disabled>դր</p></td>
 					<td><p id = "pig price">= </p></td>
      				</tr>
      				<tr>
-     					<td><p><input type="checkbox" value ="anvil">Սալ</p></td>
-    					<td><input class= "mass" type = "number" mim = "0">կգ</td>
-        	  			<td><p><input type = "text" size = "5">դր</p></td>
+     					<td><p><input type="checkbox" value ="anvil" id = "anvil" onclick = "initializeBarbecue(anvil)">Սալ</p></td>
+    					<td><input class= "mass" type = "number" mim = "0" id = "kgAnvil" disabled>կգ</td>
+        	  			<td><p><input type = "text" size = "5" id = "drAnvil" disabled>դր</p></td>
 					<td><p id = "pig price">= </p></td>
     				</tr>
      				<tr>
-     					<td><p><input type="checkbox" value ="internal organs">Խորոտիկ</p></td>
-     					<td><input class="mass" type = "number" min = "0">կգ</td>
-        	  			<td><p><input type = "text" size = "5">դր</p></td>
+     					<td><p><input type="checkbox" value ="internal organs" id = "internal_organs" onclick = "initializeBarbecue(internal_organs)">Խորոտիկ</p></td>
+     					<td><input class="mass" type = "number" min = "0" id = "kgInternal_organs" disabled>կգ</td>
+        	  			<td><p><input type = "text" size = "5" id = "drInternal_organs" disabled>դր</p></td>
 					<td><p id = "pig price">= </p></td>
      				</tr>
      				<tr>
-     					<td><p><input type="checkbox" value ="etc">Այլ <input type = "text" placeholder="Անվանումը" size = "5"></p></td>
-     					<td><input class="mass" type="number">կգ</td>
-        	  			<td><p><input type = "text" size = "5">դր</p></td>
+     					<td><p><input type="checkbox" value ="etc" id = "etc" onclick = "initializeBarbecue(etc)">Այլ <input type = "text" placeholder="Անվանումը" size = "5"></p></td>
+     					<td><input class="mass" type="number" id = "kgEtc" disabled>կգ</td>
+        	  			<td><p><input type = "text" size = "5" id = "drEtc" disabled>դր</p></td>
 					<td><p id = "pig price">= </p></td>
      				</tr>
 					</table>
