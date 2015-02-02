@@ -103,7 +103,7 @@ function participants4()
 }
 
 // functions for barbecue 
-function initializeBarbecue(name)
+function initializeDinner(name)
 {
 	switch(name)
 	{
@@ -349,18 +349,18 @@ function initializeBarbecue(name)
                                 document.getElementById("kgGreens").disabled = true;
                         }
             break;
-            case etc:
-                        if (document.getElementById("etc").checked == true)
+                case etcVegetable:
+                        if (document.getElementById("etcVegetable").checked == true)
                         {
-                                document.getElementById("drEtc").disabled = false;
-                                document.getElementById("kgEtc").disabled = false;
-                                document.getElementById("name").disabled = false;
+                                document.getElementById("drEtcVegetable").disabled = false;
+                                document.getElementById("kgEtcVegetable").disabled = false;
+                                document.getElementById("nameVegetable").disabled = false;
                         }
                         else
                         {
-                                document.getElementById("drEtc").disabled = true;
-                                document.getElementById("kgEtc").disabled = true;
-                                document.getElementById("name").disabled = true;
+                                document.getElementById("drEtcVegetable").disabled = true;
+                                document.getElementById("kgEtcVegetable").disabled = true;
+                                document.getElementById("nameVegetable").disabled = true;
                         }
             break;
 	    default: 
@@ -419,8 +419,8 @@ function price(name)
                 case greens:
                         document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
                         break;
-                case etc:
-                        document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
+                case etcVegetable:
+                        document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
                         break;
 		
 	   default: 
@@ -432,45 +432,65 @@ function price(name)
 
 // Nara, Syuzi
 // functions for vegetables 
-/*function initializeVegetables(name)
+function initializeDrink(name)
 {
         switch(name)
         {
-                case tomato:
-                        if (document.getElementById("tomato").checked == true)
+                case lengthOfButton:
+                        if (document.getElementById("spice").checked == true)
                         {
-                                document.getElementById("kgTomato").value = 1;
-                                document.getElementById("drTomato").value = 1000;
-                                document.getElementById("drTomato").disabled = false;
-                                document.getElementById("kgTomato").disabled = false;
+                                document.getElementById("amountSpice").value = 1;
+                                document.getElementById("drSpice").value = 1000;
+                                document.getElementById("drSpice").disabled = false;
+                                document.getElementById("amountSpice").disabled = false;
 
                         }
                         else
                         {
-                                document.getElementById("kgTomato").value = "";
-                                document.getElementById("drTomato").value = "";
-                                document.getElementById("drTomato").disabled = true;
-                                document.getElementById("kgTomato").disabled = true;
+                                document.getElementById("amountSpice").value = "";
+                                document.getElementById("drSpice").value = "";
+                                document.getElementById("drSpice").disabled = true;
+                                document.getElementById("amountSpice").disabled = true;
+								
+							    return;
 
                         }
-            break;
+                       
+						 var x = document.getElementById("lengthOfButton").value;
+						 switch(x)
+						{
+							case "Nemiroff": 
+                                document.getElementById("amountSpice").value = 2;
+                                document.getElementById("drSpice").value = 250;
+						    break;
+                            
+							case "Talka":
+                                document.getElementById("amountSpice").value = 3;
+                                document.getElementById("drSpice").value = 350;
+					        break;
 
-                  case cucumbers:
-                        if (document.getElementById("cucumbers").checked == true)
-                        {
-                                document.getElementById("kgCucumbers").value = 1;
-                                document.getElementById("drCucumbers").value = 1000;
-                                document.getElementById("drCucumbers").disabled = false;
-                                document.getElementById("kgCucumbers").disabled = false;
-                        }
-                        else
-                        {
-                                document.getElementById("kgCucumbers").value = "";
-                                document.getElementById("drCucumbers").value = "";
-                                document.getElementById("drCucumbers").disabled = true;
-                                document.getElementById("kgCucumbers").disabled = true;
-                        }
-            break;
+							case "5_ozer":
+                                document.getElementById("amountSpice").value = 4;
+                                document.getElementById("drSpice").value = 450;
+					        break;
+						
+							case "Artsakh":	
+                                document.getElementById("amountSpice").value = 5;
+                                document.getElementById("drSpice").value = 550;
+					        break;
+
+							case "Zima":
+                                document.getElementById("amountSpice").value = 6;
+                                document.getElementById("drSpice").value = 650;
+					        break;
+							default: 
+								window.alert("Nemiroff forever!");
+								break;
+                     
+						}
+				break;
+
+
                   case eggplant:
                         if (document.getElementById("eggplant").checked == true)
                         {
@@ -541,15 +561,15 @@ function price(name)
 
 
 // price function returns = kg*dr
-function price(name)
+function priceDrink(name)
 {
         switch(name)
         {
-                case tomato:
-                        document.getElementById("tomato_price").value = "= " + document.getElementById("kgTomato").value * document.getElementById("drTomato").value;
+                case nemiroff:
+                        document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
                         break;
-                case cucumbers:
-                        document.getElementById("cucumbers_price").value = "= " + document.getElementById("kgCucumbers").value * document.getElementById("drCucumbers").value;
+                case talka:
+                        document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
                         break;
                 case eggplant:
                         document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
@@ -568,5 +588,4 @@ function price(name)
                         window.alert("This is default value.");
                         break;
         }
- }*/ 
-
+ } 
