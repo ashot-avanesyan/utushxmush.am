@@ -4,6 +4,9 @@ body {	margin: 2%;
       	font-size: 100%;
 	background-color: #FFE4B5;	
 }
+table {
+	margin-left: 5%;
+}
  p.one {
     text-indent: 5px;
     border-style: solid;
