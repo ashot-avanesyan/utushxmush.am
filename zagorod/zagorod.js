@@ -268,6 +268,103 @@ function initializeBarbecue(name)
 				document.getElementById("name").disabled = true;
 			}
 			break;
+        case tomato:
+            if (document.getElementById("tomato").checked == true)
+            {
+               document.getElementById("kgTomato").value = 1;
+                                document.getElementById("drTomato").value = 1000;
+                                document.getElementById("drTomato").disabled = false;
+                                document.getElementById("kgTomato").disabled = false;
+
+                        }
+                        else
+                        {
+                                document.getElementById("kgTomato").value = "";
+                                document.getElementById("drTomato").value = "";
+                                document.getElementById("drTomato").disabled = true;
+                                document.getElementById("kgTomato").disabled = true;
+
+                        }
+            break;
+
+                  case cucumbers:
+                        if (document.getElementById("cucumbers").checked == true)
+                        {
+                                document.getElementById("kgCucumbers").value = 1;
+                                document.getElementById("drCucumbers").value = 1000;
+                                document.getElementById("drCucumbers").disabled = false;
+                                document.getElementById("kgCucumbers").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgCucumbers").value = "";
+                                document.getElementById("drCucumbers").value = "";
+                                document.getElementById("drCucumbers").disabled = true;
+                                document.getElementById("kgCucumbers").disabled = true;
+                        }
+            break;
+                  case eggplant:
+                        if (document.getElementById("eggplant").checked == true)
+                        {
+                                document.getElementById("kgEggplant").value = 1;
+                                document.getElementById("drEggplant").value = 1000;
+                                document.getElementById("drEggplant").disabled = false;
+                                document.getElementById("kgEggplant").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgEggplant").value = "";
+                                document.getElementById("drEggplant").value = "";
+                                document.getElementById("drEggplant").disabled = true;
+                                document.getElementById("kgEggplant").disabled = true;
+                        }
+            break;
+                  case onion:
+                        if (document.getElementById("onion").checked == true)
+                        {
+                                document.getElementById("kgOnion").value = 1;
+                                document.getElementById("drOnion").value = 1000;
+                                document.getElementById("drOnion").disabled = false;
+                                document.getElementById("kgOnion").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgOnion").value = "";
+                                document.getElementById("drOnion").value = "";
+                                document.getElementById("drOnion").disabled = true;
+                                document.getElementById("kgOnion").disabled = true;
+                        }
+            break;
+                  case greens:
+                        if (document.getElementById("greens").checked == true)
+                        {
+                                document.getElementById("kgGreens").value = 5;
+                                document.getElementById("drGreens").value = 1000;
+                                document.getElementById("drGreens").disabled = false;
+                                document.getElementById("kgGreens").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgGreens").value = "";
+                                document.getElementById("drGreens").value = "";
+                                document.getElementById("drGreens").disabled = true;
+                                document.getElementById("kgGreens").disabled = true;
+                        }
+            break;
+                case etc:
+                        if (document.getElementById("etc").checked == true)
+                        {
+                                document.getElementById("drEtc").disabled = false;
+                                document.getElementById("kgEtc").disabled = false;
+                                document.getElementById("name").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("drEtc").disabled = true;
+                                document.getElementById("kgEtc").disabled = true;
+                                document.getElementById("name").disabled = true;
+                        }
+                        break;
 	   default: 
 			window.alert("This is default value.");
 			break;
@@ -309,6 +406,24 @@ function price(name)
 		case etc:
 			document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
 			break;
+                case tomato:
+                        document.getElementById("tomato_price").value = "= " + document.getElementById("kgTomato").value * document.getElementById("drTomato").value;
+                        break;
+                case cucumbers:
+                        document.getElementById("cucumbers_price").value = "= " + document.getElementById("kgCucumbers").value * document.getElementById("drCucumbers").value;
+                        break;
+                case eggplant:
+                        document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
+                        break;
+                case onion:
+                        document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
+                        break;
+                case greens:
+                        document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
+                        break;
+                case etc:
+                        document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
+                        break;
 		
 	   default: 
 			window.alert("This is default value.");
@@ -319,7 +434,7 @@ function price(name)
 
 // Nara, Syuzi
 // functions for vegetables 
-function initializeVegetables(name)
+/*function initializeVegetables(name)
 {
         switch(name)
         {
@@ -455,4 +570,5 @@ function price(name)
                         window.alert("This is default value.");
                         break;
         }
-}
+ }*/ 
+
