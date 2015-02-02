@@ -50,6 +50,14 @@
 		document.getElementById("d4").style.display = "none";
                 document.getElementById("d").style.display = "block";
         }
+function hide1_6() {
+                document.getElementById("a").style.display = "none";
+                document.getElementById("BARBECUE").style.display = "none";
+}
+function hide20_1() {
+                document.getElementById("a").style.display = "block";
+                document.getElementById("BARBECUE").style.display = "none";
+}
 
 
 // Armine Calculator
