@@ -41,6 +41,9 @@ label#participants {
 	float: right;
 	size: 3%;
 }
+input.mount {
+width: 30%;
+}
 input.mass {
 width: 30%;
 }
@@ -54,6 +57,9 @@ table#barbecue
 }
 table#barbecue td, tr {
 	padding: 0px 15px 0px 5px;
+}
+table#vegetables {
+padding: 0% 0% 10px 20px; 
 }
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
