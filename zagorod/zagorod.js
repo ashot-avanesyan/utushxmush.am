@@ -125,8 +125,7 @@ function initializeBarbecue(name)
 					
 			} 
             break;
-		
-		case lamb:
+	    case lamb:
 			if (document.getElementById("lamb").checked == true)	
 			{
 				document.getElementById("kgLamb").value = 5;
@@ -141,8 +140,8 @@ function initializeBarbecue(name)
 				document.getElementById("drLamb").disabled = true;
 				document.getElementById("kgLamb").disabled = true;
 			}
-		break;
-		 case goat:
+       	   break;
+           case goat:
                         if (document.getElementById("goat").checked == true)
                         {
                                 document.getElementById("kgGoat").value = 5;
@@ -158,7 +157,7 @@ function initializeBarbecue(name)
                                 document.getElementById("kgGoat").disabled = true;
                         }
             break;
-        case chicken:
+            case chicken:
 			if (document.getElementById("chicken").checked == true)	
 			{
 				document.getElementById("kgChicken").value = 5;
@@ -222,7 +221,7 @@ function initializeBarbecue(name)
 				document.getElementById("kgPotatoes").disabled = true;
 			} 
             break;
-		case anvil: 
+	    case anvil: 
 			if (document.getElementById("anvil").checked == true)	
 			{
 				document.getElementById("kgAnvil").value = 5;
@@ -238,7 +237,7 @@ function initializeBarbecue(name)
 				document.getElementById("kgAnvil").disabled = true;
 			} 
             break;
-		case internal_organs:
+	    case internal_organs:
 			if (document.getElementById("internal_organs").checked == true)	
 			{
 				document.getElementById("kgInternal_organs").value = 5;
@@ -254,7 +253,7 @@ function initializeBarbecue(name)
 				document.getElementById("kgInternal_organs").disabled = true;
 			} 
             break;
-		case etc: 
+	    case etc: 
 			if (document.getElementById("etc").checked == true)	
 			{
 				document.getElementById("drEtc").disabled = false;
@@ -267,11 +266,11 @@ function initializeBarbecue(name)
 				document.getElementById("kgEtc").disabled = true;
 				document.getElementById("name").disabled = true;
 			}
-			break;
-        case tomato:
-            if (document.getElementById("tomato").checked == true)
-            {
-               document.getElementById("kgTomato").value = 1;
+	   break;
+           case tomato:
+            		if (document.getElementById("tomato").checked == true)
+            		{
+               			document.getElementById("kgTomato").value = 1;
                                 document.getElementById("drTomato").value = 1000;
                                 document.getElementById("drTomato").disabled = false;
                                 document.getElementById("kgTomato").disabled = false;
@@ -286,8 +285,7 @@ function initializeBarbecue(name)
 
                         }
             break;
-
-                  case cucumbers:
+            case cucumbers:
                         if (document.getElementById("cucumbers").checked == true)
                         {
                                 document.getElementById("kgCucumbers").value = 1;
@@ -303,7 +301,7 @@ function initializeBarbecue(name)
                                 document.getElementById("kgCucumbers").disabled = true;
                         }
             break;
-                  case eggplant:
+            case eggplant:
                         if (document.getElementById("eggplant").checked == true)
                         {
                                 document.getElementById("kgEggplant").value = 1;
@@ -319,7 +317,7 @@ function initializeBarbecue(name)
                                 document.getElementById("kgEggplant").disabled = true;
                         }
             break;
-                  case onion:
+            case onion:
                         if (document.getElementById("onion").checked == true)
                         {
                                 document.getElementById("kgOnion").value = 1;
@@ -335,7 +333,7 @@ function initializeBarbecue(name)
                                 document.getElementById("kgOnion").disabled = true;
                         }
             break;
-                  case greens:
+            case greens:
                         if (document.getElementById("greens").checked == true)
                         {
                                 document.getElementById("kgGreens").value = 5;
@@ -351,7 +349,7 @@ function initializeBarbecue(name)
                                 document.getElementById("kgGreens").disabled = true;
                         }
             break;
-                case etc:
+            case etc:
                         if (document.getElementById("etc").checked == true)
                         {
                                 document.getElementById("drEtc").disabled = false;
@@ -364,8 +362,8 @@ function initializeBarbecue(name)
                                 document.getElementById("kgEtc").disabled = true;
                                 document.getElementById("name").disabled = true;
                         }
-                        break;
-	   default: 
+            break;
+	    default: 
 			window.alert("This is default value.");
 			break;
    }
