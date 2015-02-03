@@ -1,17 +1,4 @@
 /* Ashot_Erik */
- function  initialize() 
-        {
-       var mapProp = {
-                     center:new google.maps.LatLng(39.8272818, 46.7625134),
-                          zoom:9,
-                       mapTypeId:google.maps.MapTypeId.ROADMAP
-                     };
-         var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-       
-         google.maps.event.addDomListener(window, 'load', initialize);
-        }
-         google.maps.event.addDomListener(window, 'load', initialize);
-
   //Arman
 	function hide1() {
 		document.getElementById("d2").style.display = "none";
@@ -456,20 +443,20 @@ function initializeDinner(name)
                                 document.getElementById("kgCoffee").disabled = true;
                         }
 	    break;
-            case Instant coffee:
-                        if (document.getElementById("Instant coffee").checked == true)
+            case Instant_coffee:
+                        if (document.getElementById("Instant_coffee").checked == true)
                         {
-                                document.getElementById("hatInstant coffee").value = 1;
-                                document.getElementById("drInstant coffee").value = 1000;
-                                document.getElementById("drInstant coffee").disabled = false;
-                                document.getElementById("hatInstant coffee").disabled = false;
+                                document.getElementById("hatInstant_coffee").value = 1;
+                                document.getElementById("drInstant_coffee").value = 1000;
+                                document.getElementById("drInstant_coffee").disabled = false;
+                                document.getElementById("hatInstant_coffee").disabled = false;
                         }
                         else
                         {
-                                document.getElementById("hatInstant coffee").value = "";
-                                document.getElementById("drInstant coffee").value = "";
-                                document.getElementById("drInstant coffee").disabled = true;
-                                document.getElementById("hatInstant coffee").disabled = true;
+                                document.getElementById("hatInstant_coffee").value = "";
+                                document.getElementById("drInstant_coffee").value = "";
+                                document.getElementById("drInstant_coffee").disabled = true;
+                                document.getElementById("hatInstant_coffee").disabled = true;
                         }
 
             break;
@@ -547,8 +534,8 @@ function price(name)
                  case coffee:
                         document.getElementById("coffee_price").value = "= " + document.getElementById("kgCoffee").value * document.getElementById("drCoffee").value;
                         break;
-                 case Instant coffee:
-                        document.getElementById("Instant coffee_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
+                 case Instant_coffee:
+                        document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
                         break;
 
 	   default: 
@@ -845,6 +832,66 @@ function initializeDrink(name)
                      
 						}
         	    break;
+                  case sixthSpice:
+                        if (document.getElementById("water").checked == true)
+                        {
+                                document.getElementById("amountWater").value = 1;
+                                document.getElementById("drWater").value = 1000;
+                                document.getElementById("drWater").disabled = false;
+                                document.getElementById("amountWater").disabled = false;
+
+                        }
+                        else
+                        {
+                                document.getElementById("amountWater").value = "";
+                                document.getElementById("drWater").value = "";
+                                document.getElementById("drWater").disabled = true;
+                                document.getElementById("amountWater").disabled = true;
+								
+							    return;
+
+                        }
+                       
+						 x = document.getElementById("sixthSpice").value;
+						 switch(x)
+						{
+							case "Jermuk": 
+                                document.getElementById("amountWater").value = 2;
+                                document.getElementById("drWater").value = 250;
+						    break;
+                            
+							case "Bjni":
+                                document.getElementById("amountWater").value = 3;
+                                document.getElementById("drWater").value = 350;
+					        break;
+
+							case "Byuregh":
+                                document.getElementById("amountWater").value = 4;
+                                document.getElementById("drWater").value = 450;
+					        break;
+						
+							case "Noy":	
+                                document.getElementById("amountWater").value = 5;
+                                document.getElementById("drWater").value = 550;
+					        break;
+
+							case "Arzni":
+                                document.getElementById("amountWater").value = 6;
+                                document.getElementById("drWater").value = 650;
+					        break;
+							
+                            case "etcWater":
+								window.alert("this is etc for water!!!");
+								break; 
+							default: 
+								window.alert("Nemiroff forever!");
+								break;
+                     
+						}
+        	    break;
+		default: 
+				window.alert("..");
+				break;
 		
    }
 }
@@ -855,15 +902,39 @@ function priceDrink(name)
 {
         switch(name)
         {
-                case nemiroff:
-                        document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
+				case firstSpice: 
+					var x = document.getElementById("firstSpice").value;
+					switch(x)
+					{
+                		 case nemiroff:
+                        	 document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
+                         break;
+               			
+						 case talka:
+                        	document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
+                       	 break;
+ 
+						
+               
+						 case eggplant:
+                        	document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
                         break;
-                case talka:
-                        document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
+                case onion:
+                        document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
+                        break;
+                case greens:
+                        document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
+                        break;
+                case etc:
+                        document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
                         break;
 
-           default:
+           		default:
                         window.alert("This is default value.");
                         break;
-        }
+        			}
+				default: 
+						window.alert("...");
+						break;
+		}
  } 
