@@ -356,8 +356,8 @@ function initializeDinner(name)
                         }
                         else
                         {
-				document.getElementById("kgEtcVegetable").value = "";
-				document.getElementById("drEtcVegetable").value = "";
+								document.getElementById("kgEtcVegetable").value = "";
+								document.getElementById("drEtcVegetable").value = "";
                                 document.getElementById("drEtcVegetable").disabled = true;
                                 document.getElementById("kgEtcVegetable").disabled = true;
                                 document.getElementById("nameVegetable").disabled = true;
@@ -396,7 +396,7 @@ function initializeDinner(name)
                         }
 	    break;
             case lobe:
-                        if (document.getElementById("Lobe").checked == true)
+                        if (document.getElementById("lobe").checked == true)
                         {
                                 document.getElementById("kgLobe").value = 1;
                                 document.getElementById("drLobe").value = 1000;
@@ -501,42 +501,42 @@ function price(name)
 		case etc:
 			document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
 			break;
-                case tomato:
-                        document.getElementById("tomato_price").value = "= " + document.getElementById("kgTomato").value * document.getElementById("drTomato").value;
-                        break;
-                case cucumbers:
-                        document.getElementById("cucumbers_price").value = "= " + document.getElementById("kgCucumbers").value * document.getElementById("drCucumbers").value;
-                        break;
-                case eggplant:
-                        document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
-                        break;
-                case onion:
-                        document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
-                        break;
-                case greens:
-                        document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
-                        break;
-                case etcVegetable:
-                        document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
-                        break;
-		 case sweetmeat:
-                        document.getElementById("sweetmeat_price").value = "= " + document.getElementById("kgSweetmeat").value * document.getElementById("drSweetmeat").value;
-                         break;
-                 case chocolates:
-                        document.getElementById("chocolates_price").value = "= " + document.getElementById("kgChocolates").value * document.getElementById("drChocolates").value;
-                        break;
-                 case lobe:
-                        document.getElementById("lobe_price").value = "= " + document.getElementById("kgLobe").value * document.getElementById("drLobe").value;
-                        break;
-                 case tea:
-                        document.getElementById("tea_price").value = "= " + document.getElementById("kgTea").value * document.getElementById("drTea").value;
-                        break;
-                 case coffee:
-                        document.getElementById("coffee_price").value = "= " + document.getElementById("kgCoffee").value * document.getElementById("drCoffee").value;
-                        break;
-                 case Instant_coffee:
-                        document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
-                        break;
+        case tomato:
+            document.getElementById("tomato_price").value = "= " + document.getElementById("kgTomato").value * document.getElementById("drTomato").value;
+            break;
+       case cucumbers:
+            document.getElementById("cucumbers_price").value = "= " + document.getElementById("kgCucumbers").value * document.getElementById("drCucumbers").value;
+            break;
+      case eggplant:
+            document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
+            break;
+      case onion:
+           document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
+           break;
+      case greens:
+           document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
+           break;
+      case etcVegetable:
+           document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
+           break;
+	  case sweetmeat:
+           document.getElementById("sweetmeat_price").value = "= " + document.getElementById("kgSweetmeat").value * document.getElementById("drSweetmeat").value;
+           break;
+      case chocolates:
+          document.getElementById("chocolates_price").value = "= " + document.getElementById("kgChocolates").value * document.getElementById("drChocolates").value;
+          break;
+      case lobe:
+          document.getElementById("lobe_price").value = "= " + document.getElementById("kgLobe").value * document.getElementById("drLobe").value;
+          break;
+      case tea:
+         document.getElementById("tea_price").value = "= " + document.getElementById("kgTea").value * document.getElementById("drTea").value;
+         break;
+      case coffee:
+         document.getElementById("coffee_price").value = "= " + document.getElementById("kgCoffee").value * document.getElementById("drCoffee").value;
+         break;
+      case Instant_coffee:
+         document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("hatInstant_coffee").value * document.getElementById("drInstant_coffee").value;
+         break;
 
 	   default: 
 			window.alert("This is default value.");
