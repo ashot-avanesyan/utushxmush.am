@@ -374,6 +374,103 @@ function initializeDinner(name)
                                 document.getElementById("kgEtcVegetable").disabled = true;
                                 document.getElementById("nameVegetable").disabled = true;
                         }
+	     break;
+             case sweetmeat:
+                        if (document.getElementById("sweetmeat").checked == true)
+                        {
+                                document.getElementById("kgSweetmeat").value = 1;
+                                document.getElementById("drSweetmeat").value = 1000;
+                                document.getElementById("drSweetmeat").disabled = false;
+                                document.getElementById("kgSweetmeat").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgSweetmeat").value = "";
+                                document.getElementById("drSweetmeat").value = "";
+                                document.getElementById("drSweetmeat").disabled = true;
+                                document.getElementById("kgSweetmeat").disabled = true;
+                        }
+            break;
+            case chocolates:
+                        if (document.getElementById("chocolates").checked == true)
+                        {
+                                document.getElementById("kgChocolates").value = 1;
+                                document.getElementById("drChocolates").value = 1000;
+                                document.getElementById("drChocolates").disabled = false;
+                                document.getElementById("kgChocolates").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgChocolates").value = "";
+                                document.getElementById("drChocolates").value = "";
+                                document.getElementById("drChocolates").disabled = true;
+                                document.getElementById("kgChocolates").disabled = true;
+                        }
+	    break;
+            case lobe:
+                        if (document.getElementById("Lobe").checked == true)
+                        {
+                                document.getElementById("kgLobe").value = 1;
+                                document.getElementById("drLobe").value = 1000;
+                                document.getElementById("drLobe").disabled = false;
+                                document.getElementById("kgLobe").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgLobe").value = "";
+                                document.getElementById("drLobe").value = "";
+                                document.getElementById("drLobe").disabled = true;
+                                document.getElementById("kgLobe").disabled = true;
+                        }
+            break;
+            case tea:
+                        if (document.getElementById("tea").checked == true)
+                        {
+                                document.getElementById("kgTea").value = 1;
+                                document.getElementById("drTea").value = 1000;
+                                document.getElementById("drTea").disabled = false;
+                                document.getElementById("kgTea").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgTea").value = "";
+                                document.getElementById("drTea").value = "";
+                                document.getElementById("drTea").disabled = true;
+                                document.getElementById("kgTea").disabled = true;
+                        }
+            break;
+            case coffee:
+                        if (document.getElementById("coffee").checked == true)
+                        {
+                                document.getElementById("kgCoffee").value = 1;
+                                document.getElementById("drCoffee").value = 1000;
+                                document.getElementById("drCoffee").disabled = false;
+                                document.getElementById("kgCoffee").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgCoffee").value = "";
+                                document.getElementById("drCoffee").value = "";
+                                document.getElementById("drCoffee").disabled = true;
+                                document.getElementById("kgCoffee").disabled = true;
+                        }
+	    break;
+            case Instant coffee:
+                        if (document.getElementById("Instant coffee").checked == true)
+                        {
+                                document.getElementById("hatInstant coffee").value = 1;
+                                document.getElementById("drInstant coffee").value = 1000;
+                                document.getElementById("drInstant coffee").disabled = false;
+                                document.getElementById("hatInstant coffee").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("hatInstant coffee").value = "";
+                                document.getElementById("drInstant coffee").value = "";
+                                document.getElementById("drInstant coffee").disabled = true;
+                                document.getElementById("hatInstant coffee").disabled = true;
+                        }
+
             break;
 	    default: 
 			window.alert("This is default value.");
@@ -434,7 +531,25 @@ function price(name)
                 case etcVegetable:
                         document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
                         break;
-		
+		 case sweetmeat:
+                        document.getElementById("sweetmeat_price").value = "= " + document.getElementById("kgSweetmeat").value * document.getElementById("drSweetmeat").value;
+                         break;
+                 case chocolates:
+                        document.getElementById("chocolates_price").value = "= " + document.getElementById("kgChocolates").value * document.getElementById("drChocolates").value;
+                        break;
+                 case lobe:
+                        document.getElementById("lobe_price").value = "= " + document.getElementById("kgLobe").value * document.getElementById("drLobe").value;
+                        break;
+                 case tea:
+                        document.getElementById("tea_price").value = "= " + document.getElementById("kgTea").value * document.getElementById("drTea").value;
+                        break;
+                 case coffee:
+                        document.getElementById("coffee_price").value = "= " + document.getElementById("kgCoffee").value * document.getElementById("drCoffee").value;
+                        break;
+                 case Instant coffee:
+                        document.getElementById("Instant coffee_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
+                        break;
+
 	   default: 
 			window.alert("This is default value.");
 			break;
@@ -744,18 +859,6 @@ function priceDrink(name)
                         break;
                 case talka:
                         document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
-                        break;
-                case eggplant:
-                        document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
-                        break;
-                case onion:
-                        document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
-                        break;
-                case greens:
-                        document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
-                        break;
-                case etc:
-                        document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
                         break;
 
            default:
