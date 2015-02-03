@@ -15,9 +15,9 @@
                                        mapTypeId:google.maps.MapTypeId.ROADMAP
                                       };
                        var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                   }
+                  }              
          google.maps.event.addDomListener(window, 'load', initialize);
-     </script>
+     </script> 
         </head>
 <body>
 <!--#include test.html -->
@@ -228,20 +228,20 @@
 							    <td><p><input type = "text" id = "fizzy_price" class = "noneBorder" readonly></p></td>
           				    </tr>
 				  			<tr>
-								<td><p><input id="other" type="checkbox" name="spice" value="Salt"></p></td>
+								<td><p><input id="water" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(sixthSpice)"></p></td>
 				   				<td>
-              						<select name="character" class = "lengthOfButton">
+              						<select name="character" class = "lengthOfButton" id = "sixthSpice" onchange = "initializeDrink(sixthSpice)">
                 						<option value="Jermuk">Ջերմուկ</option>
                 						<option value="Bjni">Բջնի</option>
                 						<option value="Byuregh">Բյուրեղ</option>
                							<option value="Noy">Նոյ</option>
                					 		<option value="Arzni">Արզնի</option>
-               				 			<option value="Zima">Այլ</option> 
+               				 			<option value="EtcWater">Այլ</option> 
 									</select>
             					</td>
-								<td><input class="mount" size="5" type="number" placeholder ="քանակ">հատ</td>
-								<td><input size="5" type="text">դր</td>
-								<td><p id = "pig price"> </p></td>
+								<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountWater" disabled>հատ</td>
+								<td><input size="5" type="text" id = "drWater" disabled>դր</td>
+							    <td><p><input type = "text" id = "water_price" class = "noneBorder" readonly></p></td>
            		      		</tr>
                         	<tr>
                             	<td><p><input id="other" type="checkbox" name="spice" value="Salt"></p></td>
