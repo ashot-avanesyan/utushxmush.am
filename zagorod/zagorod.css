@@ -1,11 +1,11 @@
 
 /*  Syuzi_Nara */
-body {	margin: 2%;
+body {	margin: 0%;
       	font-size: 100%;
 	background-color: #FFE4B5;	
 }
 table {
-	margin-left: 5%;
+	margin-left: 1%;
 }
 input.InputBatton {
 	background-color: #AFEEEE;
@@ -49,6 +49,9 @@ label#participants {
 	size: 3%;
 }
 input.mass {
+width: 30%;
+}
+input.mount {
 width: 30%;
 }
 .inputParticipants {
