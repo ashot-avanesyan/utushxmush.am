@@ -537,6 +537,7 @@ function price(name)
       case Instant_coffee:
          document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("hatInstant_coffee").value * document.getElementById("drInstant_coffee").value;
          break;
+	 
 
 	   default: 
 			window.alert("This is default value.");
@@ -889,6 +890,123 @@ function initializeDrink(name)
                      
 						}
         	    break;
+                  case fruitSelector:
+                        if (document.getElementById("fruit").checked == true)
+                        {
+                                document.getElementById("kgFruit").value = 1;
+                                document.getElementById("drFruit").value = 1000;
+                                document.getElementById("drFruit").disabled = false;
+                                document.getElementById("kgFruit").disabled = false;
+
+                        }
+                        else
+                        {
+                                document.getElementById("kgFruit").value = "";
+                                document.getElementById("drFruit").value = "";
+                                document.getElementById("drFruit").disabled = true;
+                                document.getElementById("kgFruit").disabled = true;
+								
+							    return;
+
+                        }
+                       
+						 x = document.getElementById("fruitSelector").value;
+						 switch(x)
+						{
+							case "Apple": 
+                                document.getElementById("kgFruit").value = 2;
+                                document.getElementById("drFruit").value = 250;
+						    break;
+                            
+							case "Pear":
+                                document.getElementById("kgFruit").value = 3;
+                                document.getElementById("drFruit").value = 350;
+					        break;
+
+							case "Banana":
+                                document.getElementById("kgFruit").value = 4;
+                                document.getElementById("drFruit").value = 450;
+					        break;
+						
+							case "Orange":	
+                                document.getElementById("kgFruit").value = 5;
+                                document.getElementById("drFruit").value = 550;
+					        break;
+
+							case "Mandarin":
+                                document.getElementById("kgFruit").value = 6;
+                                document.getElementById("drFruit").value = 650;
+					        break;
+
+							case "Cherry":
+                                document.getElementById("kgFruit").value = 7;
+                                document.getElementById("drFruit").value = 750;
+							break;	
+							
+                            case "etcFruit":
+								window.alert("this is etc for Fruit!!!");
+								break; 
+                  		}
+					
+					case dessertChips:
+                        if (document.getElementById("desserts").checked == true)
+                        {
+                                document.getElementById("kgDesserts").value = 1;
+                                document.getElementById("drDesserts").value = 1000;
+                                document.getElementById("drDesserts").disabled = false;
+                                document.getElementById("kgDesserts").disabled = false;
+
+                        }
+                        else
+                        {
+                                document.getElementById("kgDesserts").value = "";
+                                document.getElementById("drDesserts").value = "";
+                                document.getElementById("drDesserts").disabled = true;
+                                document.getElementById("kgDesserts").disabled = true;
+								
+							    return;
+
+                        }
+                       
+						 x = document.getElementById("dessertChips").value;
+						 switch(x)
+						{
+							case "Sunflower": 
+                                document.getElementById("kgDesserts").value = 2;
+                                document.getElementById("drDesserts").value = 250;
+						    break;
+                            
+							case "Peanut":
+                                document.getElementById("kgDesserts").value = 3;
+                                document.getElementById("drDesserts").value = 350;
+					        break;
+
+							case "Chips":
+                                document.getElementById("kgDesserts").value = 4;
+                                document.getElementById("drDesserts").value = 450;
+					        break;
+						
+							case "Salt_sticks":	
+                                document.getElementById("kgDesserts").value = 5;
+                                document.getElementById("drDesserts").value = 550;
+					        break;
+
+							case "Popcorn":
+                                document.getElementById("kgDesserts").value = 6;
+                                document.getElementById("drDesserts").value = 650;
+					        break;
+
+							case "Cherry":
+                                document.getElementById("kgFruit").value = 7;
+                                document.getElementById("drFruit").value = 750;
+							break;	
+						
+							default:	
+								window.alert("Nemiroff forever!");
+								break;
+                     
+						}
+        	    break;
 		default: 
 				window.alert("..");
 				break;
@@ -927,6 +1045,12 @@ function priceDrink(name)
 							break;
 				case sixthSpice:
                         	document.getElementById("water_price").value = "= " + document.getElementById("amountWater").value * document.getElementById("drWater").value;
+							break;
+				case fruitSelector:
+                        	document.getElementById("fruit_price").value = "= " + document.getElementById("kgFruit").value * document.getElementById("drFruit").value;
+							break;
+				case dessertChips:
+                        	document.getElementById("desserts_price").value = "= " + document.getElementById("kgDesserts").value * document.getElementById("drDesserts").value;
 							break;
 				default: 
 							window.alert("Welcome to default ...");
