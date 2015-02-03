@@ -903,38 +903,35 @@ function priceDrink(name)
         switch(name)
         {
 				case firstSpice: 
-					var x = document.getElementById("firstSpice").value;
+			/*		var x = document.getElementById("firstSpice").value;
 					switch(x)
 					{
-                		 case nemiroff:
+                		 case "Nemiroff": case "Talka": case "5_ozer": case "Artsakh": case "Zima": case "EtcSpice":
                         	 document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
                          break;
                			
-						 case talka:
-                        	document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
-                       	 break;
- 
-						
-               
-						 case eggplant:
-                        	document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
-                        break;
-                case onion:
-                        document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
-                        break;
-                case greens:
-                        document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
-                        break;
-                case etc:
-                        document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
-                        break;
-
-           		default:
-                        window.alert("This is default value.");
-                        break;
-        			}
+        			}*/
+                    document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
+				    break;
+				case secondSpice: 
+                        	 document.getElementById("wine_price").value = "= " + document.getElementById("amountWine").value * document.getElementById("drWine").value;
+							break;
+				case thirdSpice: 
+                        	 document.getElementById("beer_price").value = "= " + document.getElementById("amountBeer").value * document.getElementById("drBeer").value;
+							break;
+				case fourthSpice: 
+                        	 document.getElementById("juice_price").value = "= " + document.getElementById("amountJuice").value * document.getElementById("drJuice").value;
+							break;
+				case fifthSpice:
+                        	document.getElementById("fizzy_price").value = "= " + document.getElementById("amountFizzy").value * document.getElementById("drFizzy").value;
+							break;
+				case sixthSpice:
+                        	document.getElementById("water_price").value = "= " + document.getElementById("amountWater").value * document.getElementById("drWater").value;
+							break;
 				default: 
-						window.alert("...");
-						break;
+							window.alert("Welcome to default ...");
+							break;
+							
+
 		}
  } 

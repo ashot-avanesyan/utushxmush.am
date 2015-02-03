@@ -148,9 +148,9 @@
 						<li><button onclick="hide20_2(), blur()">Խմիչք<br><input class="InputBatton"size="6%" placeholder=" Ընդամենը" ></button></li>
 				    	</ul>
 							<tr>
-        							<td><p ><input type="checkbox" id = "spice" name="spice" value="Salt" onclick = "initializeDrink(firstSpice)"> </p></td>    
+        							<td><p ><input type="checkbox" id = "spice" name="spice" value="Salt" onclick = "initializeDrink(firstSpice); priceDrink(firstSpice);"> </p></td>    
         							<td>
-										<select name="character" id = "firstSpice" class = "lengthOfButton" onchange = "initializeDrink(firstSpice)">
+										<select name="character" id = "firstSpice" class = "lengthOfButton" onchange = "initializeDrink(firstSpice); priceDrink(firstSpice);">
                 							<option value="Nemiroff">Nemiroff</option>
                 							<option value="Talka">Талка</option>
                 							<option value="5_ozer">5 озер</option>
@@ -159,14 +159,14 @@
                 							<option value="EtcSpice">Այլ</option>
                                          </select>
            				  			</td> 
-		  						    <td><input class="mount" type="number" placeholder ="քանակ" min="0" id = "amountSpice" disabled>հատ</td>
-				        			<td><input size="5" type="text" id = "drSpice"  disabled>դր</td>
+		  						    <td><input class="mount" type="number" placeholder ="քանակ" min="0" id = "amountSpice" disabled onblur = "priceDrink(firstSpice)">հատ</td>
+				        			<td><input size="5" type="text" id = "drSpice"  disabled onblur = "priceDrink(firstSpice)">դր</td>
 								    <td><p><input type = "text" id = "spice_price" class = "noneBorder" readonly></p></td>
 							</tr>
 							<tr>
-          							<td><p><input type="checkbox" id = "wine" name="spice" value="Salt" onclick = "initializeDrink(secondSpice)"></p></td>
+          							<td><p><input type="checkbox" id = "wine" name="spice" value="Salt" onclick = "initializeDrink(secondSpice); priceDrink(secondSpice);"></p></td>
           						  	<td>
-          					    			<select name="character" id = "secondSpice" class = "lengthOfButton" onchange = "initializeDrink(secondSpice)">
+          					    			<select name="character" id = "secondSpice" class = "lengthOfButton" onchange = "initializeDrink(secondSpice); priceDrink(secondSpice);">
           					      				<option value="Armenia">Armenia</option>
           					      				<option value="Areni">Արենի</option>
           					      				<option value="Kagor">Կագոր</option>
@@ -175,14 +175,14 @@
                									<option value="EtcWine">Այլ</option>
 											</select>
             						</td>
-            						<td><input class="mount" type="number" min="0" placeholder ="քանակ" id = "amountWine" disabled>հատ</td>
-            						<td><input size="5" type="text" id = "drWine" disabled>դր</td>
+            						<td><input class="mount" type="number" min="0" placeholder ="քանակ" id = "amountWine" disabled onblur = "priceDrink(secondSpice)">հատ</td>
+            						<td><input size="5" type="text" id = "drWine" disabled onblur = "priceDrink(secondSpice)">դր</td>
 								    <td><p><input type = "text" id = "wine_price" class = "noneBorder" readonly></p></td>
           					</tr>
         			    	<tr>
-						   			<td><p><input id ="beer" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(thirdSpice)"></p></td>
+						   			<td><p><input id ="beer" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(thirdSpice); priceDrink(thirdSpice);"></p></td>
         					     		<td>
-        					     			<select name="character"  class = "lengthOfButton" id = "thirdSpice" onchange = "initializeDrink(thirdSpice)">
+        					     			<select name="character"  class = "lengthOfButton" id = "thirdSpice" onchange = "initializeDrink(thirdSpice); priceDrink(thirdSpice);">
         					        			<option value="Gyumri">Գյումրի</option>
         					        			<option value="Miller">Miller</option>
                 								<option value="Kilikia">Kilikia</option>
@@ -191,14 +191,14 @@
                									<option value="EtcBeer">Այլ</option>
 											</select>
            					   	  		</td>
-           					 	 	<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountBeer" disabled>հատ</td>
-           					 	 	<td><input size="5" type="text" id = "drBeer" disabled>դր</td>
+           					 	 	<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountBeer" disabled onblur = "priceDrink(thirdSpice)">հատ</td>
+           					 	 	<td><input size="5" type="text" id = "drBeer" disabled onblur = "priceDrink(thirdSpice)">դր</td>
 								    <td><p><input type = "text" id = "beer_price" class = "noneBorder" readonly></p></td>
           					</tr>
        						<tr>
-								<td><p><input id="juice" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fourthSpice)"></p></td>
+								<td><p><input id="juice" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fourthSpice); priceDrink(fourthSpice);"></p></td>
         		    			<td>
-									<select name="character" class = "lengthOfButton" id = "fourthSpice" onchange = "initializeDrink(fourthSpice)">
+									<select name="character" class = "lengthOfButton" id = "fourthSpice" onchange = "initializeDrink(fourthSpice); priceDrink(fourthSpice);">
                 						<option value="Menq">Մենք</option>
                 						<option value="Noy">Նոյ</option>
                							<option value="Ararat">Արարատ</option>
@@ -207,14 +207,14 @@
                						 	<option value="EtcJuice">Այլ</option>
 									</select>
            						</td>
-           						<td><input class="mount"size="5" type="number" placeholder ="քանակ" min = "0" id = "amountJuice" disabled>հատ</td>
-								<td><input size="5" type="text" id = "drJuice" disabled>դր</td>
-							    <td><p><input type = "text" id = "juice_price" class = "noneBorder" readonly></p></td>
+           						<td><input class="mount"size="5" type="number" placeholder ="քանակ" min = "0" id = "amountJuice" disabled onblur = "priceDrink(fourthSpice)">հատ</td>
+								<td><input size="5" type="text" id = "drJuice" disabled onblur = "priceDrink(fourthSpice)">դր</td>
+							    <td><p><input type = "text" id = "juice_price" class = "noneBorder" readonly onblur = "priceDrink(fourthSpice)"></p></td>
           					</tr>
 				       		<tr>
-							    <td><p><input id="fizzy" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fifthSpice)"></p></td>
+							    <td><p><input id="fizzy" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fifthSpice); priceDrink(fifthSpice);"></p></td>
         				    	<td>
-        							<select name="character" class  = "lengthOfButton" id = "fifthSpice" onchange = "initializeDrink(fifthSpice)">
+        							<select name="character" class  = "lengthOfButton" id = "fifthSpice" onchange = "initializeDrink(fifthSpice); priceDrink(fifthSpice);">
                							<option value="Coca_Cola">Coca-Cola</option>
                 						<option value="Fanta">Fanta</option>
                 						<option value="Sprite">Sprite</option>
@@ -223,14 +223,14 @@
                 						<option value="EtcFizzy">Այլ</option> 
 									</select>
             					</td>
-								<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountFizzy" disabled>հատ</td>
-								<td><input size="5" type="text" id = "drFizzy" disabled>դր</td>
+								<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountFizzy" disabled onblur = "priceDrink(fifthSpice)">հատ</td>
+								<td><input size="5" type="text" id = "drFizzy" disabled onblur = "priceDrink(fifthSpice)">դր</td>
 							    <td><p><input type = "text" id = "fizzy_price" class = "noneBorder" readonly></p></td>
           				    </tr>
 				  			<tr>
-								<td><p><input id="water" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(sixthSpice)"></p></td>
+								<td><p><input id="water" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(sixthSpice); priceDrink(sixthSpice);"></p></td>
 				   				<td>
-              						<select name="character" class = "lengthOfButton" id = "sixthSpice" onchange = "initializeDrink(sixthSpice)">
+              						<select name="character" class = "lengthOfButton" id = "sixthSpice" onchange = "initializeDrink(sixthSpice); priceDrink(sixthSpice);">
                 						<option value="Jermuk">Ջերմուկ</option>
                 						<option value="Bjni">Բջնի</option>
                 						<option value="Byuregh">Բյուրեղ</option>
@@ -239,8 +239,8 @@
                				 			<option value="EtcWater">Այլ</option> 
 									</select>
             					</td>
-								<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountWater" disabled>հատ</td>
-								<td><input size="5" type="text" id = "drWater" disabled>դր</td>
+								<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountWater" disabled onblur = "priceDrink(sixthSpice)">հատ</td>
+								<td><input size="5" type="text" id = "drWater" disabled onblur = "priceDrink(sixthSpice)">դր</td>
 							    <td><p><input type = "text" id = "water_price" class = "noneBorder" readonly></p></td>
            		      		</tr>
                         	<tr>

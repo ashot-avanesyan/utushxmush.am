@@ -7,6 +7,10 @@ body {	margin: 2%;
 table {
 	margin-left: 5%;
 }
+input.InputBatton {
+	background-color: #AFEEEE;
+
+}
  p.one {
     text-indent: 5px;
     border-style: solid;
@@ -30,7 +34,7 @@ img {
      margin-left: 1300px;
            
     } 
-select#lengthOfButton
+select.lengthOfButton
 { 
    width:100px;
 }  
