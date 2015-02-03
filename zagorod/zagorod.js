@@ -947,6 +947,7 @@ function initializeDrink(name)
 								window.alert("this is etc for Fruit!!!");
 								break; 
                   		}
+					break;
 					
 					case dessertChips:
                         if (document.getElementById("desserts").checked == true)
@@ -1007,6 +1008,42 @@ function initializeDrink(name)
                      
 						}
         	    break;
+            case breadSelector:
+                        if (document.getElementById("bread").checked == true)
+                        {
+                                document.getElementById("hatBread").value = 1;
+                                document.getElementById("drBread").value = 1000;
+                                document.getElementById("drBread").disabled = false;
+                                document.getElementById("hatBread").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("hatBread").value = "";
+                                document.getElementById("drBread").value = "";
+                                document.getElementById("drBread").disabled = true;
+                                document.getElementById("hatBread").disabled = true;
+                        }
+						x = document.getElementById("breadSelector").value; 
+						switch(x) 
+						{
+							case "Lavash":
+                                document.getElementById("hatBread").value = 2;
+                                document.getElementById("drBread").value = 350;
+					        break;
+							
+							case "Matnaqash":
+                                document.getElementById("hatBread").value = 5;
+                                document.getElementById("drBread").value = 550;
+					        break;
+						
+							default: 
+								window.alert("mnacacner@ der haytni chen.");
+								break;
+						}
+					
+
+
+            break;
 		default: 
 				window.alert("..");
 				break;
@@ -1051,6 +1088,9 @@ function priceDrink(name)
 							break;
 				case dessertChips:
                         	document.getElementById("desserts_price").value = "= " + document.getElementById("kgDesserts").value * document.getElementById("drDesserts").value;
+							break;
+				case breadSelector:
+                        	document.getElementById("bread_price").value = "= " + document.getElementById("hatBread").value * document.getElementById("drBread").value;
 							break;
 				default: 
 							window.alert("Welcome to default ...");
