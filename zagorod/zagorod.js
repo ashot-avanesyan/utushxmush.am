@@ -259,8 +259,9 @@ function initializeDinner(name)
 				document.getElementById("drInternal_organs").value = "";
 				document.getElementById("drInternal_organs").disabled = true;
 				document.getElementById("kgInternal_organs").disabled = true;
-			}
-		case etc:
+			} 
+	   break;  
+	   case etc:
  
 			if (document.getElementById("etc").checked == true)	
 			{
@@ -368,8 +369,8 @@ function initializeDinner(name)
                         }
                         else
                         {
-								document.getElementById("kgEtcVegetable").value = "";
-								document.getElementById("drEtcVegetable").value = "";
+				document.getElementById("kgEtcVegetable").value = "";
+				document.getElementById("drEtcVegetable").value = "";
                                 document.getElementById("drEtcVegetable").disabled = true;
                                 document.getElementById("kgEtcVegetable").disabled = true;
                                 document.getElementById("nameVegetable").disabled = true;
