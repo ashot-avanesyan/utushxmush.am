@@ -442,8 +442,6 @@ function price(name)
 }
 
 
-// Nara, Syuzi
-// functions for vegetables 
 function initializeDrink(name)
 {
         switch(name)
