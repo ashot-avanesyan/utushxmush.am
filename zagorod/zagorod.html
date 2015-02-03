@@ -7,134 +7,132 @@
      <script src="zagorod.js"></script>
      <script  src="http://maps.googleapis.com/maps/api/js">   </script>
      <script>
-           function initialize() 
-                   {
-                       var mapProp = {
-			       center:new google.maps.LatLng(39.8272818, 46.7625134),
-                                       zoom:9,
-                                       mapTypeId:google.maps.MapTypeId.ROADMAP
-                                      };
-                       var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                  }              
-         google.maps.event.addDomListener(window, 'load', initialize);
-     </script> 
-        </head>
+     	function initialize() 
+        	{
+            	var mapProp = {
+			    				center:new google.maps.LatLng(39.8272818, 46.7625134),
+                            	zoom:9,
+                             	mapTypeId:google.maps.MapTypeId.ROADMAP
+                              	};
+             	var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      		}              
+         	google.maps.event.addDomListener(window, 'load', initialize);
+  	</script> 
+	</head>
 <body>
 <!--#include test.html -->
 <!--<link rel="import" href="test.html" />-->
 <!--Syuzi_Nara -->
     <p class="one">LOGO
-    <img src="images.jpg" width="180" height="80">
+    	<img src="images.jpg" width="180" height="80">
     </p>
      
     <div id = "sizeOfDiv">
-	<ul id = "glkhawor_meny" style="text-align:center">
-		<li>
-			<button onclick="hide5(), blur()">Մասնակիցներ</button>
-		</li>
-		<li>
-			<button onclick="hide1(), blur()">Տրանսպորտ</button>
-		</li>
-		<li>
-			<button onclick="hide2(), blur()">Ճաշացանկ</button>
-		</li>
-		<li>
-			<button onclick="hide3(), blur()">Գիշերակաց</button>
-		</li>
-		<li>
-			<button onclick="hide4(), blur()">Պարագաներ</button>
-		</li>
-	</ul>
+		<ul id = "glkhawor_meny" style="text-align:center">
+			<li>
+				<button onclick="hide5(), blur()">Մասնակիցներ</button>
+			</li>
+			<li>
+				<button onclick="hide1(), blur()">Տրանսպորտ</button>
+			</li>
+			<li>
+				<button onclick="hide2(), blur()">Ճաշացանկ</button>
+			</li>
+			<li>
+				<button onclick="hide3(), blur()">Գիշերակաց</button>
+			</li>
+			<li>
+				<button onclick="hide4(), blur()">Պարագաներ</button>
+			</li>
+		</ul>
 	<div id="d">
 	<form class = "amountParticipants">
-        	<label id = "Participants">Մասնակիցների քանակ</label>
-        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
-        	<label id = "Participants">Տղամարդիկ</label>
-        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="participants2()"><br><br>
-        	<label id = "Participants">Կանայք</label>
-        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="participants3()"><br><br>
-        	<label id = "Participants">Մինչև 7 տարեկան երեխաներ</label>
-        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput4" onblur="participants4()"><br><br>
+    	<label id = "Participants">Մասնակիցների քանակ</label>
+       	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
+       	<label id = "Participants">Տղամարդիկ</label>
+       	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="participants2()"><br><br>
+       	<label id = "Participants">Կանայք</label>
+       	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="participants3()"><br><br>
+       	<label id = "Participants">Մինչև 7 տարեկան երեխաներ</label>
+        <input type = "number" min = "0" class = "inputParticipants" id = "participantsInput4" onblur="participants4()"><br><br>
     	</form>
 	</div>
-        <div id = "d1">
-		     <form class= "amountParticipants">
-                	<label  id= "Participants">  Մեկնման վայր </label>
-                	<input  size="12" type="text" name="fname" class = "inputParticipants">   <br> <br>
-                	<label  id= "Participants"> Ժամանման վայր </label>
-                	<input  size="12"  type="text" name="fname" class = "inputParticipants">  <br><br>
-                	    <table>
-                       		<div id="googleMap" style="width:500px;height:380px;"></div>
-               		    </table>
-                		<br>
-                		<br>
-                		<br>
-                	<label id = "Participants"> Տրանսպորտի ծախսը  </label>
-                	<input size="12"  type="text" name= "fname" class = "inputParticipants">  <br> <br>
-       		     </form>
+  	<div id = "d1">
+		<form class= "amountParticipants">
+        	<label  id= "Participants">  Մեկնման վայր </label>
+           	<input  size="12" type="text" name="fname" class = "inputParticipants">   <br> <br>
+          	<label  id= "Participants"> Ժամանման վայր </label>
+           	<input  size="12"  type="text" name="fname" class = "inputParticipants">  <br><br>
+           	<table>
+          		<div id="googleMap" style="width:500px;height:380px;"></div>
+          	</table>
+            <br>
+          	<br>
+     		<br>
+         	<label id = "Participants"> Տրանսպորտի ծախսը  </label>
+            <input size="12"  type="text" name= "fname" class = "inputParticipants">  <br> <br>
+      	</form>
 	</div>
-
-       	<div id = "d2">
+ 	<div id = "d2">
 		<ul id = "chashacank" style="text-align:center" >
-        		<li><button onclick="hide10_2(), blur()">Խորոված<br><input class="InputBatton"size="6%" placeholder=" Ընդամենը" ></button></li>
-          	</ul>
-          		<table class= "margin">
-            		<tr>
-        	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig);">Խոզ</p></td>
-        	  			<td><input class= "mass" type="number" min = "0" id = "kgPig" disabled onblur = "price(pig)">կգ</td>
-        	  			<td><p><input type = "text" size = "5" id = "drPig" disabled onblur ="price(pig)">դր</p></td>
-				     	<td><p><input type = "text" class = "noneBorder" id = "pig_price" readonly> </p></td>
-        			</tr> 
-        			<tr>       
-        				<td><p><input type="checkbox" value ="lamb" id = "lamb" onclick = "initializeDinner(lamb); price(lamb);">Գառ</p></td>
-					<td><input class= "mass" type = "number" min = "0" id = "kgLamb" disabled onblur = "price(lamb)">կգ</td>
-        				<td><p><input type = "text" size = "5"  id = "drLamb" disabled onblur = "price(lamb)">դր</p></td>
-				     	<td><p><input type = "text" class = "noneBorder" id = "lamb_price" readonly> </p></td>
-						
-        			</tr>
-       				<tr>
-        				<td><p><input type="checkbox" value ="goat" id = "goat" onclick = "initializeDinner(goat); price(goat);">Այծ</p></td>
-        				<td><input class= "mass" type="number" min = "0" id = "kgGoat" disabled onblur = "price(goat)">կգ</td>
-        				<td><p><input type = "text" size = "5"  id = "drGoat" disabled onblur = "price(goat)">դր</p</td>
-				     	<td><p><input type = "text" id = "goat_price" class = "noneBorder" readonly> </p></td>
- 			     	</tr>
-			    	<tr>		
-        				<td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeDinner(chicken); price(chicken);">Հավ</p></td>
-        				<td><input class= "mass" type="number" min = "0" id = "kgChicken" disabled onblur = "price(chicken)">կգ</td>
-        	  			<td><p><input type = "text" size = "5" id = "drChicken" disabled onblur = "price(chicken)">դր</p></td>
-				     	<td><p><input type = "text" id = "chicken_price" class = "noneBorder" readonly> </p></td>
-        			</tr> 
-       				<tr>
-        				<td><p><input type="checkbox" value ="wing" id = "wing" onclick = "initializeDinner(wing); price(wing);">Թև</p></td>
-        				<td><input class="mass" type = "number" min = "0" id = "kgWing" disabled onblur = "price(wing)">կգ</td>
-        	  			<td><p><input type = "text" size = "5" id = "drWing" disabled onblur = "price(wing)">դր</p></td>
-				     	<td><p><input type = "text" id = "wing_price" class = "noneBorder" readonly> </p></td>
-        			</tr>
-       				<tr>  
-
-        				<td><p><input type="checkbox" value ="haunch" id = "haunch" onclick = "initializeDinner(haunch); price(haunch);">Բուդ</p></td>
-        				<td><input class="mass" type = "number" min = "0" id = "kgHaunch" disabled onblur = "price(haunch)">կգ</td>
-        	  			<td><p><input type = "text" size = "5" id = "drHaunch" disabled onblur = "price(haunch)">դր</p></td>
-				     	<td><p><input type = "text" id = "haunch_price"class = "noneBorder" readonly> </p></td>
-        			</tr>
-     				<tr>
-       					<td><input type = "checkbox" value = "potatoes" id = "potatoes" onclick = "initializeDinner(potatoes); price(potatoes);">Կարտոֆիլ</p></td>
-       					<td><input class= "mass" type = "number" mim = "0" id = "kgPotatoes" disabled onblur = "price(potatoes)">կգ</td> 
-        	  			<td><p><input type = "text" size = "5" id = "drPotatoes" disabled onblur = "price(potatoes)">դր</p></td>
-				     	<td><p><input type = "text" id = "potatoes_price" class = "noneBorder" readonly> </p></td>
-     				</tr>
-     				<tr>
-     					<td><p><input type="checkbox" value ="anvil" id = "anvil" onclick = "initializeDinner(anvil); price(anvil);">Սալ</p></td>
-    					<td><input class= "mass" type = "number" mim = "0" id = "kgAnvil" disabled onblur = "price(anvil)">կգ</td>
-        	  			<td><p><input type = "text" size = "5" id = "drAnvil" disabled onblur = "price(anvil)">դր</p></td>
-				     	<td><p><input type = "text" id = "anvil_price" class = "noneBorder" readonly> </p></td>
-    				</tr>
-     				<tr>
-     					<td><p><input type="checkbox" value ="internal organs" id = "internal_organs" onclick = "initializeDinner(internal_organs); price(internal_organs);">Խորոտիկ</p></td>
-     					<td><input class="mass" type = "number" min = "0" id = "kgInternal_organs" disabled onblur = "price(internal_organs)">կգ</td>
-        	  			<td><p><input type = "text" size = "5" id = "drInternal_organs" disabled onblur = "price(internal_organs)">դր</p></td>
-				     	<td><p><input type = "text" id = "internal_organs_price" class = "noneBorder" readonly> </p></td>
-     				</tr>
+        	<li><button onclick="hide10_2(), blur()">Խորոված<br><input class="InputBatton"size="6%" placeholder=" Ընդամենը" ></button></li>
+    	</ul>
+        <table class= "margin">
+        	<tr>
+	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig);">Խոզ</p></td>
+	  			<td><input class= "mass" type="number" min = "0" id = "kgPig" disabled onblur = "price(pig)">կգ</td>
+	  			<td><p><input type = "text" size = "5" id = "drPig" disabled onblur ="price(pig)">դր</p></td>
+		     	<td><p><input type = "text" class = "noneBorder" id = "pig_price" readonly> </p></td>
+			</tr> 
+			<tr>       
+				<td><p><input type="checkbox" value ="lamb" id = "lamb" onclick = "initializeDinner(lamb); price(lamb);">Գառ</p></td>
+			<td><input class= "mass" type = "number" min = "0" id = "kgLamb" disabled onblur = "price(lamb)">կգ</td>
+				<td><p><input type = "text" size = "5"  id = "drLamb" disabled onblur = "price(lamb)">դր</p></td>
+		     	<td><p><input type = "text" class = "noneBorder" id = "lamb_price" readonly> </p></td>
+				
+			</tr>
+			<tr>
+				<td><p><input type="checkbox" value ="goat" id = "goat" onclick = "initializeDinner(goat); price(goat);">Այծ</p></td>
+				<td><input class= "mass" type="number" min = "0" id = "kgGoat" disabled onblur = "price(goat)">կգ</td>
+				<td><p><input type = "text" size = "5"  id = "drGoat" disabled onblur = "price(goat)">դր</p</td>
+		     	<td><p><input type = "text" id = "goat_price" class = "noneBorder" readonly> </p></td>
+	     	</tr>
+	    	<tr>		
+				<td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeDinner(chicken); price(chicken);">Հավ</p></td>
+				<td><input class= "mass" type="number" min = "0" id = "kgChicken" disabled onblur = "price(chicken)">կգ</td>
+	  			<td><p><input type = "text" size = "5" id = "drChicken" disabled onblur = "price(chicken)">դր</p></td>
+		     	<td><p><input type = "text" id = "chicken_price" class = "noneBorder" readonly> </p></td>
+			</tr> 
+			<tr>
+				<td><p><input type="checkbox" value ="wing" id = "wing" onclick = "initializeDinner(wing); price(wing);">Թև</p></td>
+				<td><input class="mass" type = "number" min = "0" id = "kgWing" disabled onblur = "price(wing)">կգ</td>
+  				<td><p><input type = "text" size = "5" id = "drWing" disabled onblur = "price(wing)">դր</p></td>
+	     		<td><p><input type = "text" id = "wing_price" class = "noneBorder" readonly> </p></td>
+    		</tr>
+   			<tr>  
+    			<td><p><input type="checkbox" value ="haunch" id = "haunch" onclick = "initializeDinner(haunch); price(haunch);">Բուդ</p></td>
+    			<td><input class="mass" type = "number" min = "0" id = "kgHaunch" disabled onblur = "price(haunch)">կգ</td>
+    	  		<td><p><input type = "text" size = "5" id = "drHaunch" disabled onblur = "price(haunch)">դր</p></td>
+			 	<td><p><input type = "text" id = "haunch_price"class = "noneBorder" readonly> </p></td>
+    		</tr>
+ 			<tr>
+   				<td><input type = "checkbox" value = "potatoes" id = "potatoes" onclick = "initializeDinner(potatoes); price(potatoes);">Կարտոֆիլ</p></td>
+       			<td><input class= "mass" type = "number" mim = "0" id = "kgPotatoes" disabled onblur = "price(potatoes)">կգ</td> 
+        		<td><p><input type = "text" size = "5" id = "drPotatoes" disabled onblur = "price(potatoes)">դր</p></td>
+			 	<td><p><input type = "text" id = "potatoes_price" class = "noneBorder" readonly> </p></td>
+     		</tr>
+     		<tr>
+     			<td><p><input type="checkbox" value ="anvil" id = "anvil" onclick = "initializeDinner(anvil); price(anvil);">Սալ</p></td>
+    			<td><input class= "mass" type = "number" mim = "0" id = "kgAnvil" disabled onblur = "price(anvil)">կգ</td>
+        		<td><p><input type = "text" size = "5" id = "drAnvil" disabled onblur = "price(anvil)">դր</p></td>
+			 	<td><p><input type = "text" id = "anvil_price" class = "noneBorder" readonly> </p></td>
+    		</tr>
+     		<tr>
+     			<td><p><input type="checkbox" value ="internal organs" id = "internal_organs" onclick = "initializeDinner(internal_organs); price(internal_organs);">Խորոտիկ</p></td>
+     			<td><input class="mass" type = "number" min = "0" id = "kgInternal_organs" disabled onblur = "price(internal_organs)">կգ</td>
+        		<td><p><input type = "text" size = "5" id = "drInternal_organs" disabled onblur = "price(internal_organs)">դր</p></td>
+			 	<td><p><input type = "text" id = "internal_organs_price" class = "noneBorder" readonly> </p></td>
+     		</tr>
      				<tr>
      					<td><p><input type="checkbox" value ="etc" id = "etc" onclick = "initializeDinner(etc); price(etc);">Այլ 
 								<input type = "text" id = "name" placeholder="Անվանումը" size = "5" disabled></p></td>
@@ -349,8 +347,8 @@
 					<td><p><input type = "text" id = "fruit_price" class = "noneBorder" readonly></p></td>
                               	</tr>
                                 <tr>
-					<td><p><input type="checkbox" name="spice" value="Bread" id = "bread" onclick = "initializeBarbecue(bread); price(bread);">Աղանդեր
-                                    		<select name="character" id = "lengthOfButton"></p>
+						<td><p><input  type="checkbox" name="spice" value="fruit" id = "fruit" onclick = "initializeBarbecue(fruit); price(fruit);">Աղանդեր
+                                        	<select name="character" id = "lengthOfButton"></p>
                                                 	<option value="Jermuk">Արևածաղիկ</option>
                                                         <option value="Bjni">Գետնանուշ</option>
                                                        	<option value="Byuregh">Չիպս</option>
