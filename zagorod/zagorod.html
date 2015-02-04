@@ -281,7 +281,7 @@
         	      <td><input type = "text" size = "5" id = "drEggplant" disabled onblur = "price(eggplant)">դր</td>
 			      <td><p><input type = "text" id = "eggplant_price" size="5" class  = "noneBorder" readonly> </p></td>
         	</tr>
-               <tr>
+            <tr>
           	    <td><p><input type="checkbox" value ="onion" id = "onion" onclick = "initializeDinner(onion); price(onion);">Սոխ</p></td>
           	    <td><input class = "mass" type = "number" min = "0" id = "kgOnion" disabled onblur = "price(onion)">կգ</td>
           	    <td><input type = "text" size = "5" id = "drOnion" disabled onblur = "price(onion)">դր</td>
@@ -394,90 +394,88 @@
             </tr>
 		</table>
 		</div>
-	</div>
-	<div id = "d3">
-		<table class= "margin">
-    			<tr>
-      				<td><p><input type="checkbox" value = "overnight">Հյուրանոց</p></td>
-      				<td><input type = "text" placeholder = "համար" size = "5"></td>
-    	  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-				 	<td><p id = "pig price">= </p></td>
-     			</tr>
-     			<tr>
-    	  			<td><p><input type="checkbox" value = "tent">Վրան</p></td>
-    	  			<td><input type = "text" placeholder = "քանակ" size = "5"></td>
-    	  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-				 	<td><p id = "pig price">= </p></td>
-    			</tr>
-    			<tr>
-    	  			<td><p><input type="checkbox" value = "other">Այլ</p></td>
-    	  			<td><input type = "text" placeholder = "քանակ" size = "5"</td>
-    	  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-				 	<td><p id = "pig price">= </p></td>
- 			</tr>
-		</table>
-	</div>
-	<div id = "d4">
-    	<table class= "margin">
-    		<tr>
-    	  		<td><p><input type="checkbox" value ="tomato">Առաջին բուժօգնության պարագաներ</p></td>
-    	  		<td><input type = "text" placeholder ="կգ" size = "5"></td>
-    	  		<td><input type = "text" placeholder ="դր" size = "5"></td>
-			<td><p id = "pig price">= </p></td>
-    		</tr>
-    		<tr>                                                                                                             
-      			<td><p><input type="checkbox" value ="cucumbers">Սպասք</p></td> 
-                                   	<td><input type = "text" placeholder ="կգ" size = "5"></td>
-      			<td><input type = "text" placeholder ="դր" size = "5"></td>
-			<td><p id = "pig price">= </p></td>
-    	  	</tr>	
-                            <tr>
-                                    <td><p><input type="checkbox" value ="eggplant">Շամփուր</p></td>
-    	  		<td><input type = "text" placeholder ="կգ" size = "5"></td>
-    	  		<td><input type = "text" placeholder ="դր" size = "5"></td>
-			<td><p id = "pig price">= </p></td>
-        		</tr>
-        		<tr>
-    			<td><p><input type="checkbox" value ="onion">ժամանցի պարագաներ (գնդակ, )</p></td>
-    			<td><input type = "text" placeholder ="կգ" size = "5"></td>
-    			<td><input type = "text" placeholder ="դր" size = "5"></td>
-			<td><p id = "pig price">= </p></td>
-    		</tr>
-    		<tr>
-    	  		<td><p><input type="checkbox" value ="greens">Ինքնաեռ</p></td>
-    	  		<td><input type = "text" placeholder ="կգ" size = "5"></td>
-    	  		<td><input type = "text" placeholder ="դր" size = "5"></td>
-			<td><p id = "pig price">= </p></td>
-    		</tr>
-    		<tr>
-    	  		<td><p><input type="checkbox" value ="greens">Ծածկոցներ</p></td>
-    	  		<td><input type = "text" placeholder ="կգ" size = "5"></td>
-    	  		<td><input type = "text" placeholder ="դր" size = "5"></td>
-			<td><p id = "pig price">= </p></td>
-    		</tr>
-    		<tr>
-    	  		<td><p><input type="checkbox" value ="other">Այլ</p></td>
-    	  		<td><input type = "text" placeholder ="կգ" size = "5"></td>
-    	  		<td><input type = "text" placeholder ="դր" size = "5"></td>
-			<td><p id = "pig price">= </p></td>
-    		</tr>
-    	</table>
+		<div id = "d3">
+			<table class= "margin">
+        		 <tr>
+        			<td><p><input type="checkbox" value = "hotel" id = "hotel" onclick = "initializeDinner(hotel); price(hotel);">Հյուրանոց</p></td>
+					<td><input class= "mass" type="number" min = "0" id = "hamarHotel" disabled onblur = "price(hotel)">համար</td>
+					<td><p><input type = "text" size = "5" id = "drHotel" disabled onblur ="price(hotel)">դր</p></td>
+					<td><p><input type = "text" class = "noneBorder" id = "hotel_price" readonly> </p></td>
+        	 	</tr>
+        	 	<tr>
+                    <td><p><input type="checkbox" value = "tent" id = "tent" onclick = "initializeDinner(tent); price(tent);">Վրան</p></td>
+                    <td><input class= "mass" type="number" min = "0" id = "qanakTent" disabled onblur = "price(tent)">քանակ</td>
+                    <td><p><input type = "text" size = "5" id = "drTent" disabled onblur ="price(tent)">դր</p></td>
+                    <td><p><input type = "text" class = "noneBorder" id = "tent_price" readonly> </p></td>
+                </tr>
+				<tr>
+                	<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);">Այլ<input type ="text" placeholder="Անվանումը" id = "nameOvernight" size= "5" disabled></p></td>
+                	<td><input class = "mass" type = "number" min = "0" id = "qanakEtcOvernight" disabled onblur = "pric(etcOvernight)">քանակ</td>
+                	<td><input type = "text" size = "5"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight)">դր</td>
+                	<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" readonly> </p></td>
+            	</tr>
+				</table>
+			</div>
+			<div id = "d4">
+        		<table class= "margin">
+					<tr>
+                    	<td><p><input type="checkbox" value = "aid_supplies" id = "aid_supplies" onclick = "initializeDinner(aid_supplies); price(aid_supplies);">Առաջին բուժօգնության պարագաներ</p></td>
+               <!--     	<td><input class= "mass" type="number" min = "0" id = "qanakAid_supplies" disabled onblur = "price(aid_supplies)">քանակ</td>
+                    	<td><p><input type = "text" size = "5" id = "drAid_supplies" disabled onblur ="price(id_supplies)">դր</p></td>
+                        <td><p><input type = "text" class = "noneBorder" id = "aid_supplies_price" readonly> </p></td> -->
+                	</tr>
+					<tr>
+                        <td><p><input type="checkbox" value = "entertainment_accessories" id = "entertainment_accessories" onclick = "initializeDinner(entertainment_accessories); price(entertainment_accessories);">ժամանցի պարագաներ (գնդակ, )</p></td>
+                    <!--    <td><input class= "mass" type="number" min = "0" id = "qanakEntertainment_accessories" disabled onblur = "price(entertainment_accessories)">քանակ</td>
+                        <td><p><input type = "text" size = "5" id = "drEntertainment_accessories" disabled onblur ="price(entertainment_accessories)">դր</p></td>
+                        <td><p><input type = "text" class = "noneBorder" id = "entertainment_accessories_price" readonly> </p></td>-->
+                    </tr>
+					<tr>
+                        <td><p><input type="checkbox" value = "sleeves" id = "sleeves" onclick = "initializeDinner(sleeves); price(sleeves);">Ծածկոցներ</p></td>
+                   <!--     <td><input class= "mass" type="number" min = "0" id = "qanakSleeves" disabled onblur = "price(sleeves)">քանակ</td>
+                        <td><p><input type = "text" size = "5" id = "drSleeves" disabled onblur ="price(utensil)">դր</p></td>
+                        <td><p><input type = "text" class = "noneBorder" id = "sleeves_price" readonly> </p></td> -->
+                    </tr>
+					<tr>
+                        <td><p><input type="checkbox" value = "tea_urn" id = "tea_urn" onclick = "initializeDinner(tea_urn); price(tea_urn);">Ինքնաեռ</p></td>
+                 <!--       <td><input class= "mass" type="number" min = "0" id = "qanakTea_urn" disabled onblur = "price(tea_urn)">քանակ</td>
+                        <td><p><input type = "text" size = "5" id = "drTea_urn" disabled onblur ="price(tea_urn)">դր</p></td>
+                        <td><p><input type = "text" class = "noneBorder" id = "tea_urn_price" readonly> </p></td> -->
+                    </tr>
+					<tr>
+                    	<td><p><input type="checkbox" value = "utensil" id = "utensil" onclick = "initializeDinner(utensil); price(utensil);">Սպասք</p></td>
+                    	<td><input class= "mass" type="number" min = "0" id = "qanakUtensil" disabled onblur = "price(utensil)">քանակ</td>
+                    	<td><p><input type = "text" size = "5" id = "drUtensil" disabled onblur ="price(utensil)">դր</p></td>
+                    	<td><p><input type = "text" class = "noneBorder" id = "utensil_price" readonly> </p></td>
+                	</tr>
+					<tr>
+                    	<td><p><input type="checkbox" value = "skewer" id = "skewer" onclick = "initializeDinner(skewer); price(skewer);">Շամփուր</p></td>
+                    	<td><input class= "mass" type="number" min = "0" id = "qanakSkewer" disabled onblur = "price(skewer)">քանակ</td>
+                    	<td><p><input type = "text" size = "5" id = "drSkewer" disabled onblur ="price(skewer)">դր</p></td>
+                    	<td><p><input type = "text" class = "noneBorder" id = "skewer_price" readonly> </p></td>
+                	</tr>
+					<tr>
+                    	<td><p><input type="checkbox" value ="etcAccessories"id = "etcAccessories" onclick = "initializeDinner(etcAccessories);">Այլ<input type ="text" placeholder="Անվանումը" id = "nameAccessories" size= "5" disabled></p></td>
+                    	<td><input class = "mass" type = "number" min = "0" id = "qanakEtcAccessories" disabled onblur = "pric(etcAccessories)">քանակ</td>
+                    	<td><input type = "text" size = "5"  id = "drEtcAccessories" disabled onblur = "price(etcAccessories)">դր</td>
+                    	<td><p><input type = "text" id = "etcAccessories_price" class = "noneBorder" readonly> </p></td>
+                	</tr>
+           		</table>
+			</div>		
 		</div>
-	</div>		
-	</div>
-	<div id="expenditure">
-		<button id="general">
+		<div id="genral">
+		   <button>
 			<table>
-				<tr>
-					<td>Ընդհանուր ծախսը <b id="GlobalGenral">=</b> </td>
-				</tr>					
-				<br>
-				<tr>
-					<td>1 հոգու ծախսը  <b id="1menGenral">= </b></td>
-				</tr>
+			<tr>
+				<td>Ընդհանուր ծախսը <b id="GlobalGenral">=</b> </td>
+			</tr>					
+			<br>
+			<tr>
+				<td>1 հոգու ծախսը  <b id="1menGenral">= </b></td>
+			</tr>
 			</table>
 			<br>
 		</button>
-	</div>
+	      </div>
 </body>
 </html>

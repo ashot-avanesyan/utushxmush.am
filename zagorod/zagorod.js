@@ -139,19 +139,19 @@ function initializeDinner(name)
        	   break;
         case goat:
            		if (document.getElementById("goat").checked == true)
-                {
-                	document.getElementById("kgGoat").value = 5;
-                    document.getElementById("drGoat").value = 3500;
-                    document.getElementById("drGoat").disabled = false;
-                    document.getElementById("kgGoat").disabled = false;
-                }
-                else
-                {
-                    document.getElementById("kgGoat").value = "";
-                    document.getElementById("drGoat").value = "";
-                    document.getElementById("drGoat").disabled = true;
-                    document.getElementById("kgGoat").disabled = true;
-               }
+                	{
+                		document.getElementById("kgGoat").value = 5;
+                    		document.getElementById("drGoat").value = 3500;
+                    		document.getElementById("drGoat").disabled = false;
+                    		document.getElementById("kgGoat").disabled = false;
+                	}	
+                	else
+                	{
+                    		document.getElementById("kgGoat").value = "";
+                    		document.getElementById("drGoat").value = "";
+                    		document.getElementById("drGoat").disabled = true;
+                    	document.getElementById("kgGoat").disabled = true;
+              		 }
             break;
         case chicken:
 			if (document.getElementById("chicken").checked == true)	
@@ -248,7 +248,7 @@ function initializeDinner(name)
 				document.getElementById("drInternal_organs").disabled = true;
 				document.getElementById("kgInternal_organs").disabled = true;
 			} 
-	   		break;  
+	   break;  
 	   case etc:
  
 			if (document.getElementById("etc").checked == true)	
@@ -265,8 +265,8 @@ function initializeDinner(name)
 				document.getElementById("kgEtc").disabled = true;
 				document.getElementById("name").disabled = true;
 			}
-	   		break;
-       case tomato:
+	   break;
+       	case tomato:
             if (document.getElementById("tomato").checked == true)
             {
             	document.getElementById("kgTomato").value = 1;
@@ -393,7 +393,7 @@ function initializeDinner(name)
             	document.getElementById("drChocolates").disabled = true;
             	document.getElementById("kgChocolates").disabled = true;
             }
-	        break;
+	    break;
        case lobe:
             if (document.getElementById("lobe").checked == true)
             {
@@ -505,7 +505,119 @@ function initializeDinner(name)
                 document.getElementById("qanakEtcOvernight").disabled = true;
                 document.getElementById("nameOvernight").disabled = true;
             }
-			break;
+		break;
+      	 case aid_supplies:
+            if (document.getElementById("aid_supplies").checked == true)
+            {
+                document.getElementById("qanakAid_supplies").value = 1;
+                document.getElementById("drAid_supplies").value = 2100;
+                document.getElementById("drAid_supplies").disabled = false;
+                document.getElementById("qanakAid_supplies").disabled = false;
+            }
+            else
+            {
+                document.getElementById("qanakAid_supplies").value = "";
+                document.getElementById("drAid_supplies").value = "";
+                document.getElementById("drAid_supplies").disabled = true;
+                document.getElementById("qanakAid_supplies").disabled = true;
+            }
+                    break; 			
+	 case utensil:
+            if (document.getElementById("utensil").checked == true)
+            {
+                document.getElementById("qanakUtensil").value = 1;
+                document.getElementById("drUtensil").value = 2100;
+                document.getElementById("drUtensil").disabled = false;
+                document.getElementById("qanakUtensil").disabled = false;
+            }
+            else
+            {
+                document.getElementById("qanakUtensil").value = "";
+                document.getElementById("drUtensil").value = "";
+                document.getElementById("drUtensil").disabled = true;
+                document.getElementById("qanakUtensil").disabled = true;
+            }
+                    break;
+	 case skewer:
+            if (document.getElementById("skewer").checked == true)
+            {
+                document.getElementById("qanakSkewer").value = 1;
+                document.getElementById("drSkewer").value = 2100;
+                document.getElementById("drSkewer").disabled = false;
+                document.getElementById("qanakSkewer").disabled = false;
+            }
+            else
+            {
+                document.getElementById("qanakSkewer").value = "";
+                document.getElementById("drSkewer").value = "";
+                document.getElementById("drSkewer").disabled = true;
+                document.getElementById("qanakSkewer").disabled = true;
+            }
+                    break;
+      	 case entertainment_accessories:
+            if (document.getElementById("entertainment_accessories").checked == true)
+            {
+                document.getElementById("qanakEntertainment_accessories").value = 1;
+                document.getElementById("drEntertainment_accessories").value = 2100;
+                document.getElementById("drEntertainment_accessories").disabled = false;
+                document.getElementById("qanakEntertainment_accessories").disabled = false;
+            }
+            else
+            {
+                document.getElementById("qanakEntertainment_accessories").value = "";
+                document.getElementById("drEntertainment_accessories").value = "";
+                document.getElementById("drEntertainment_accessories").disabled = true;
+                document.getElementById("qanakEntertainment_accessories").disabled = true;
+            }
+                    break;
+	 case tea_urn:
+            if (document.getElementById("tea_urn").checked == true)
+            {
+                document.getElementById("qanakTea_urn").value = 1;
+                document.getElementById("drTea_urn").value = 2100;
+                document.getElementById("drTea_urn").disabled = false;
+                document.getElementById("qanakTea_urn").disabled = false;
+            }
+            else
+            {
+                document.getElementById("qanakTea_urn").value = "";
+                document.getElementById("drTea_urn").value = "";
+                document.getElementById("drTea_urn").disabled = true;
+                document.getElementById("qanakTea_urn").disabled = true;
+            }
+                    break;
+	 case sleeves:
+            if (document.getElementById("sleeves").checked == true)
+            {
+                document.getElementById("qanakSleeves").value = 1;
+                document.getElementById("drSleeves").value = 2100;
+                document.getElementById("drSleeves").disabled = false;
+                document.getElementById("qanakSleeves").disabled = false;
+            }
+            else
+            {
+                document.getElementById("qanakSleeves").value = "";
+                document.getElementById("drSleeves").value = "";
+                document.getElementById("drSleeves").disabled = true;
+                document.getElementById("qanakSleeves").disabled = true;
+            }
+                    break; 
+	 case etcAccessories:
+            if (document.getElementById("etcAccessories").checked == true)
+            {
+                document.getElementById("drEtcAccessories").disabled = false;
+                document.getElementById("qanakEtcAccessories").disabled = false;
+                document.getElementById("nameAccessories").disabled = false;
+            }
+            else
+            {
+                document.getElementById("qanakEtcAccessories").value = "";
+                document.getElementById("drEtcAccessories").value = "";
+                document.getElementById("drEtcAccessories").disabled = true;
+                document.getElementById("qanakEtcAccessories").disabled = true;
+                document.getElementById("nameAccessories").disabled = true;
+            }
+                break;
 	    default: 
 			window.alert("This is default value.");
 			break;
@@ -550,49 +662,69 @@ function price(name)
         case tomato:
             document.getElementById("tomato_price").value = "= " + document.getElementById("kgTomato").value * document.getElementById("drTomato").value;
             break;
-       case cucumbers:
+        case cucumbers:
             document.getElementById("cucumbers_price").value = "= " + document.getElementById("kgCucumbers").value * document.getElementById("drCucumbers").value;
             break;
-      case eggplant:
+        case eggplant:
             document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
             break;
-      case onion:
-           document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
-           break;
-      case greens:
-           document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
-           break;
-      case etcVegetable:
-           document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
-           break;
-	  case sweetmeat:
-           document.getElementById("sweetmeat_price").value = "= " + document.getElementById("kgSweetmeat").value * document.getElementById("drSweetmeat").value;
-           break;
-      case chocolates:
-          document.getElementById("chocolates_price").value = "= " + document.getElementById("kgChocolates").value * document.getElementById("drChocolates").value;
-          break;
-      case lobe:
-          document.getElementById("lobe_price").value = "= " + document.getElementById("kgLobe").value * document.getElementById("drLobe").value;
-          break;
-      case tea:
-         document.getElementById("tea_price").value = "= " + document.getElementById("kgTea").value * document.getElementById("drTea").value;
-         break;
-      case coffee:
-         document.getElementById("coffee_price").value = "= " + document.getElementById("kgCoffee").value * document.getElementById("drCoffee").value;
-         break;
-      case Instant_coffee:
-         document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("hatInstant_coffee").value * document.getElementById("drInstant_coffee").value;
-         break;
-	  case hotel:
-      	document.getElementById("hotel_price").value = "= " + document.getElementById("hamarHotel").value * document.getElementById("drHotel").value;
-        break; 
-	  case tent:
-      	document.getElementById("tent_price").value = "= " + document.getElementById("qanakTent").value * document.getElementById("drTent").value;
-        break; 
-	  case etcOvernight:
-      	document.getElementById("etcOvernight_price").value = "= " + document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
-        break;
-
+        case onion:
+            document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
+            break;
+        case greens:
+            document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
+            break;
+        case etcVegetable:
+            document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
+            break;
+	case sweetmeat:
+            document.getElementById("sweetmeat_price").value = "= " + document.getElementById("kgSweetmeat").value * document.getElementById("drSweetmeat").value;
+            break;
+        case chocolates:
+            document.getElementById("chocolates_price").value = "= " + document.getElementById("kgChocolates").value * document.getElementById("drChocolates").value;
+            break;
+        case lobe:
+            document.getElementById("lobe_price").value = "= " + document.getElementById("kgLobe").value * document.getElementById("drLobe").value;
+            break;
+        case tea:
+            document.getElementById("tea_price").value = "= " + document.getElementById("kgTea").value * document.getElementById("drTea").value;
+            break;
+        case coffee:
+            document.getElementById("coffee_price").value = "= " + document.getElementById("kgCoffee").value * document.getElementById("drCoffee").value;
+            break;
+        case Instant_coffee:
+            document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("hatInstant_coffee").value * document.getElementById("drInstant_coffee").value;
+            break;
+	case hotel:
+      	    document.getElementById("hotel_price").value = "= " + document.getElementById("hamarHotel").value * document.getElementById("drHotel").value;
+            break; 
+	case tent:
+      	    document.getElementById("tent_price").value = "= " + document.getElementById("qanakTent").value * document.getElementById("drTent").value;
+            break; 
+	case etcOvernight:
+      	    document.getElementById("etcOvernight_price").value = "= " + document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
+            break;
+      	 case aid_supplies:
+            document.getElementById("aid_supplies_price").value = "= " + document.getElementById("qanakAid_supplies").value * document.getElementById("drAid_supplies").value;
+            break;
+	 case utensil:
+            document.getElementById("utensil_price").value = "= " + document.getElementById("qanakUtensil").value * document.getElementById("drUtensil").value;
+            break;
+	 case skewer:
+            document.getElementById("skewer_price").value = "= " + document.getElementById("qanakSkewer").value * document.getElementById("drSkewer").value;
+            break;
+     	 case entertainment_accessories:
+            document.getElementById("entertainment_accessories_price").value = "= " + document.getElementById("qanakEntertainment_accessories").value * document.getElementById("drEntertainment_accessories").value;
+            break; 
+	 case tea_urn:
+            document.getElementById("tea_urn_price").value = "= " + document.getElementById("qanakTea_urn").value * document.getElementById("drTea_urn").value;
+            break;
+	 case sleeves:
+            document.getElementById("sleeves_price").value = "= " + document.getElementById("qanakSleeves").value * document.getElementById("drSleeves").value;
+            break;
+	 case etcAccessories:
+            document.getElementById("etcAccessories_price").value = "= " + document.getElementById("qanakEtcAccessories").value * document.getElementById("drEtcAccessories").value;
+            break;
 	   default: 
 			window.alert("This is default value.");
 			break;
