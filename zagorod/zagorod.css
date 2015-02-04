@@ -2,16 +2,25 @@
 /*  Syuzi_Nara */
 body {	margin: 0%;
       	font-size: 100%;
-	background-color: #FFE4B5;	
+	background-color: #ADD8E6;	
+}
+div#expenditure {
+	position: fixed;
+    top: 83%;
+    right: 22%;
+    color: red;
+}
+input#general {
+	padding: 28% 2% 0% 1%;
 }
 table {
 	margin-left: 1%;
 }
 input.InputBatton {
-	background-color: #AFEEEE;
+	background-color: #AEFFFF;
 
 }
- p.one {
+ p.one{
     text-indent: 5px;
     border-style: solid;
     border-width: 10px;
@@ -21,9 +30,9 @@ input.InputBatton {
     color:green;
 }
 div#sizeOfDiv {
-     border-style: solid;
+    /* border-style: solid;
      border-width: 10px;
-     border: 10px solid;
+     border: 10px solid;*/
      border-color: green;
      margin-left: 22%;
      margin-right: 22%;
@@ -67,14 +76,6 @@ table#barbecue td, tr {
 }
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
-h3 
-{
-    text-shadow: 2px 2px 3px slategray;
-    color: darkred;
-    text-align: center;
-}
-
-
 /* Ashot */
  ul#glkhawor_meny li {
 display: inline;
@@ -82,7 +83,7 @@ list-style: none;
 margin-bottom:"text-align:center";
 }
 ul#glkhawor_meny li button {
-background-color: #E0FFFF;
+background-color: #E6E6FA;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -97,7 +98,7 @@ display: inline;
 list-style: none;
 }
 ul#chashacank li button {
-background-color: #E0FFFF;
+background-color: #FAFAD2;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -109,7 +110,7 @@ display: inline;
 list-style: none;
 }
 li button {
-background-color: #E0FFFF;
+background-color: #98FB98;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -120,19 +121,19 @@ div#d1 {
 width: auto;
 height: 700px;
 margin: auto;
-background-color: #E0FFFF;
+background-color: #FAFAD2;
 }
 div#d2 {
 width: auto;
 height: 100%;
 margin: auto;
-background-color: #E0FFFF;
+background-color: #7FFFD4;
 display: none;
 }
 div#d3 {
 width: auto;
 height: 500px;
-background-color: #E0FFFF;
+background-color: #98FB98;
 display: none;
 margin: auto;
 }
@@ -142,7 +143,7 @@ margin-left: 22%;
 div#d4 {
 width: auto;
 height: 500px;
-background-color: #E0FFFF;
+background-color: #98FB98;
 display: none;
 margin: auto ;
 }
@@ -152,7 +153,7 @@ margin-left: 10%;
 div#d {
 width: auto;
 height: 500px;
-	background-color: #E0FFFF;
+	background-color: #98FB98;
 display: none;
 margin: auto ;
 }
@@ -160,5 +161,5 @@ margin: auto ;
 /* Armine */
 .noneBorder {
 	border: 0px;
-    background-color: #E0FFFF;
+    background-color: #98FB98;
 }
