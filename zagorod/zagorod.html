@@ -349,58 +349,58 @@
                     	<select name="character" class = "lengthOfButton" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);">
                         	<option value="Sunflower">Արևածաղիկ</option>
                            	<option value="Peanut">Գետնանուշ</option>
-                            <option value="Chips">Չիպս</option>
+                                <option value="Chips">Չիպս</option>
                            	<option value="Salt_sticks">Աղի ձողիկներ</option>
                            	<option value="Popcorn">Ադիբուդի</option>
-						</select>
+			</select>
                     </td>
-					<td><input class = "mass" type = "number" min = "0" id = "kgDesserts" disabled onblur = " priceDrink(dessertChips);">կգ</td>
+		    <td><input class = "mass" type = "number" min = "0" id = "kgDesserts" disabled onblur = " priceDrink(dessertChips);">կգ</td>
                     <td><input size="5" type="text" id = "drDesserts" disabled onblur = " priceDrink(dessertChips);">դր</td>
-					<td><p><input type = "text" id = "desserts_price" class = "noneBorder" readonly></p></td>
+		    <td><p><input type = "text" id = "desserts_price" class = "noneBorder" readonly></p></td>
               </tr>
               <tr>
-					<td><p><input type="checkbox" name="spice" value="Bread" id = "bread" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);">Հաց
-                    	<select name="character" class = "lengthOfButton" id = "breadSelector" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);"></p>
-                        	<option value="Lavash">Լավաշ</option>
-                            <option value="Matnaqash">Մատնաքաշ</option>
-                            <option value="Byuregh">Բյուրեղ</option>
-                            <option value="Noy">Նոյ</option>
-                            <option value="Arzni">Արզնի</option>
-                            <option value="Zima">Այլ</option>
-						</select>
+	      	    <td><p><input type="checkbox" name="spice" value="Bread" id = "bread" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);">Հաց
+                	<select name="character" class = "lengthOfButton" id = "breadSelector" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);"></p>
+                                <option value="Lavash">Լավաշ</option>
+                                <option value="Matnaqash">Մատնաքաշ</option>
+                                <option value="Byuregh">Բյուրեղ</option>
+                                <option value="Noy">Նոյ</option>
+                                <option value="Arzni">Արզնի</option>
+                                <option value="Zima">Այլ</option>
+			</select>
                     </td>	
-					<td><input class = "mass" type = "number" mim = "0" id = "hatBread" disabled onblur = "priceDrink(breadSelector)">հատ</td>
+		    <td><input class = "mass" type = "number" mim = "0" id = "hatBread" disabled onblur = "priceDrink(breadSelector)">հատ</td>
                     <td><input size="5" type="text" id = "drBread" disabled onblur = "priceDrink(breadSelector)">դր</td>
-					<td><p><input type = "text" id = "bread_price" class = "noneBorder" readonly></p></td>
-             </tr>
+		    <td><p><input type = "text" id = "bread_price" class = "noneBorder" readonly></p></td>
+              </tr>
+	      <tr>
+                    <td><p><input type="checkbox" value ="Other"  id = "other" onclick = "initializeBarbecue(other); price(other);">Այլ<input type="text" placeholder="Անվանումը" size= "5" disabled></p></td>
+                    <td><input class = "mass" type = "number" mim = "0" id = "kgOther" disabled>կգ</td>
+                    <td><input type = "text"size = "5" id = "drOther" disabled>դր</td>
+                    <td><p><input type = "text" id = "Other_price" class = "noneBorder" readonly></p></td>
+              </tr>
+	</table>
+		</div>
+		<div id = "d3">
+			<table class= "margin">
+        		 <tr>
+        			<td><p><input type="checkbox" value = "hotel" id = "hotel" onclick = "initializeDinner(hotel); price(hotel);">Հյուրանոց</p></td>
+					<td><input class= "mass" type="number" min = "0" id = "hamarHotel" disabled onblur = "price(hotel)">համար</td>
+					<td><p><input type = "text" size = "5" id = "drHotel" disabled onblur ="price(hotel)">դր</p></td>
+					<td><p><input type = "text" class = "noneBorder" id = "hotel_price" readonly> </p></td>
+        	 	</tr>
+        	 	<tr>
+                    <td><p><input type="checkbox" value = "tent" id = "tent" onclick = "initializeDinner(tent); price(tent);">Վրան</p></td>
+                    <td><input class= "mass" type="number" min = "0" id = "qanakTent" disabled onblur = "price(vran)">քանակ</td>
+                    <td><p><input type = "text" size = "5" id = "drTent" disabled onblur ="price(vran)">դր</p></td>
+                    <td><p><input type = "text" class = "noneBorder" id = "tent_price" readonly> </p></td>
+                </tr>
 				<tr>
-                                        <td><p><input type="checkbox" value ="Other"  id = "other" onclick = "initializeBarbecue(other); price(other);">Այլ<input type="text" placeholder="Անվանումը" size= "5" disabled></p></td>
-                                        <td><input class = "mass" type = "number" mim = "0" id = "kgOther" disabled>կգ</td>
-                                        <td><input type = "text"size = "5" id = "drOther" disabled>դր</td>
-                                        <td><p><input type = "text" id = "Other_price" class = "noneBorder" readonly></p></td>
-                                </tr>
-			</table>
-			</div>
-			<div id = "d3">
-				<table class= "margin">
-        				<tr>
-        	  				<td><p><input type="checkbox" value = "overnight">Հյուրանոց</p></td>
-        	  				<td><input type = "text" placeholder = "համար" size = "5"></td>
-        		  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
-        	 			</tr>
-        	 			<tr>
-        		  			<td><p><input type="checkbox" value = "tent">Վրան</p></td>
-        		  			<td><input type = "text" placeholder = "քանակ" size = "5"></td>
-        		  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
-        				</tr>
-        				<tr>
-        		  			<td><p><input type="checkbox" value = "other">Այլ</p></td>
-        		  			<td><input type = "text" placeholder = "քանակ" size = "5"</td>
-        		  			<td><input type = "text" placeholder = "դր" size = "5"></td>
-						 	<td><p id = "pig price">= </p></td>
- 					</tr>
+                	<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);">Այլ<input type ="text" placeholder="Անվանումը" id = "nameOvernight" size= "5" disabled></p></td>
+                	<td><input class = "mass" type = "number" min = "0" id = "qanakEtcOvernight" disabled onblur = "pric(etcOvernight)">քանակ</td>
+                	<td><input type = "text" size = "5"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight)">դր</td>
+                	<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" readonly> </p></td>
+            	</tr>
 				</table>
 			</div>
 			<div id = "d4">
@@ -450,7 +450,6 @@
            			</table>
 			</div>		
 		</div>
-   </body>
 		<button id=""> 
    	</body>
 </html>
