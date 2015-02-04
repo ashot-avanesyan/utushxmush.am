@@ -146,10 +146,11 @@
 		</table>
 		</div>
 		<div id="d_2_2">
-	 	<table class= "margin">
 			<ul id = "alkaholayin" style="text-align:center" >
 	 			<li><button onclick="hide20_2(), blur()">Խմիչք<br><input class="InputBatton"size="6%" placeholder=" Ընդամենը" ></button></li>
 	 	    </ul>
+			<div id="d_2_2_tabs">
+	 		<table class= "margin">
 	 		<tr>
      			<td><p ><input type="checkbox" id = "spice" name="spice" value="Salt" onclick = "initializeDrink(firstSpice); priceDrink(firstSpice);"> </p></td>    
         		<td>
@@ -255,11 +256,13 @@
             </tr>
 		</table>
 		</div>
+		</div>
 		<div id="d_2_3">
-		<table class= "margin">
 			<ul id = "desert" style="text-align:center" >
-            	<li><button onclick="hide1_6(), blur()">Բանջարեղեն<br><input class="InputBatton" size="6%" placeholder=" Ընդամենը" ></button></li>
+            	<li><button onclick="hide20_3(), blur()">Բանջարեղեն<br><input class="InputBatton" size="6%" placeholder=" Ընդամենը" ></button></li>
 			</ul>
+			<div id="d_2_3_tabs">
+			<table class= "margin">
 			<tr>
         		<td><p><input type="checkbox" value ="tomato" id = "tomato" onclick = "initializeDinner(tomato); price(tomato);">Լոլիկ</p></td>
         		<td><input class =  "mass" type = "number" min = "0" id = "kgTomato" disabled onblur = "price(tomato)">կգ</td>
@@ -297,6 +300,7 @@
 			    <td><p><input type = "text" id = "etcVegetable_price" size="5" class  = "noneBorder" readonly> </p></td>
        		</tr>
 		</table>
+		</div>
 		</div>
 		<div id="d_2_4">
 		<table >
@@ -389,6 +393,7 @@
                     <td><p><input type = "text" id = "Other_price" size="5" class  = "noneBorder" readonly></p></td>
             </tr>
 		</table>
+		</div>
 	</div>
 	<div id = "d3">
 		<table class= "margin">

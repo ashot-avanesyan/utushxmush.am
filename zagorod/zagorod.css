@@ -119,6 +119,7 @@ width: auto;
 height: 750px;
 margin: auto;
 background-color: #FAFAD2;
+padding: 0% 0% 0% 6%;
 }
 div#d2 {
 width: auto;
@@ -136,6 +137,12 @@ padding: 0% 0% 0% 13%;
 div#d_2_2 {
 padding: 0% 0% 0% 12%;
 }
+div#d_2_2_tabs {
+display: none;
+}
+div#d_2_3_tabs {
+display: none;
+}
 div#d_2_1 {
 padding: 0% 0% 0% 13%;
 }
@@ -150,11 +157,10 @@ div#d3_1 {
 margin-left: 22%;
 }
 div#d4 {
-width: auto;
 height: 750px;
 background-color: #98FB98;
 display: none;
-margin: auto ;
+padding: 10% 0% 0% 10%;
 }
 div#d4_1 {
 margin-left: 10%; 

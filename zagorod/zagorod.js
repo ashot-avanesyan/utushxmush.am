@@ -36,9 +36,11 @@
 		document.getElementById("d4").style.display = "none";
         document.getElementById("d").style.display = "block";
     }
-function hide1_6() {
-                document.getElementById("a").style.display = "none";
-                document.getElementById("BARBECUE").style.display = "none";
+function hide20_2() {
+                document.getElementById("d_2_2_tabs").style.display = "block";
+}
+function hide20_3() {
+                document.getElementById("d_2_3_tabs").style.display = "block";
 }
 function hide20_1() {
                 document.getElementById("a").style.display = "block";
