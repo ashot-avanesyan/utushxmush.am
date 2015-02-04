@@ -13,9 +13,6 @@ div#expenditure {
 input#general {
 	padding: 28% 2% 0% 1%;
 }
-table {
-	margin-left: 1%;
-}
 input.InputBatton {
 	background-color: #AEFFFF;
 
@@ -119,7 +116,7 @@ margin-bottom: -25px;
 }
 div#d1 {
 width: auto;
-height: 700px;
+height: 750px;
 margin: auto;
 background-color: #FAFAD2;
 }
@@ -130,9 +127,21 @@ margin: auto;
 background-color: #7FFFD4;
 display: none;
 }
+div#d_2_4 {
+padding: 0% 0% 0% 9%;
+}
+div#d_2_3 {
+padding: 0% 0% 0% 13%;
+}
+div#d_2_2 {
+padding: 0% 0% 0% 12%;
+}
+div#d_2_1 {
+padding: 0% 0% 0% 13%;
+}
 div#d3 {
 width: auto;
-height: 500px;
+height: 750px;
 background-color: #98FB98;
 display: none;
 margin: auto;
@@ -142,7 +151,7 @@ margin-left: 22%;
 }
 div#d4 {
 width: auto;
-height: 500px;
+height: 750px;
 background-color: #98FB98;
 display: none;
 margin: auto ;
@@ -152,10 +161,11 @@ margin-left: 10%;
 }
 div#d {
 width: auto;
-height: 500px;
-	background-color: #98FB98;
+height: 440px;
+background-color: #98FB98;
 display: none;
 margin: auto ;
+padding: 28% 0% 0% 9%;
 }
 
 /* Armine */
