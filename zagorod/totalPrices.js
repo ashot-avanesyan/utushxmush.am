@@ -2,8 +2,9 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgChicken = 0, olderDrChicken = 0, olderKgWing = 0, olderDrWing = 0, olderKgHaunch = 0, olderDrHaunch = 0,
 	olderKgPotatoes = 0, olderDrPotatoes = 0, olderKgAnvil = 0, olderDrAnvil = 0, olderKgInternal_organs = 0, olderDrInternal_organs = 0,
 	olderKgEtc = 0, olderDrEtc = 0, olderAmountSpice = 0, olderDrSpice = 0, olderAmountWine = 0, olderDrWine = 0, olderAmountBeer = 0, olderDrBeer = 0,
-	olderAmountJuice = 0, olderDrJuice = 0, olderAmountWater = 0, olderDrWater = 0, olderKgCucumbers = 0, olderDrCucumbers = 0, 
-	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderKgGreen = 0, olderDrGreen = 0; 
+	olderAmountJuice = 0, olderDrJuice = 0, olderAmountWater = 0, olderDrWater = 0, olderKgCucumbers = 0, olderDrCucumbers = 0, olderKgTomato = 0, olderDrTomato = 0, 
+	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderKgGreen = 0, olderDrGreen = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
+	olderKgSweet = 0, olderDrSweet = 0; 
 
 function subTotal(name)
 {
@@ -13,7 +14,7 @@ function subTotal(name)
 		case pig: 
 			if (document.getElementById("pig").checked == false)
 			{
-				window.alert("checked == false");
+			    //	window.alert("checked == false");
                 document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
 													Number(document.getElementById("kgPig").value) * Number(document.getElementById("drPig").value);
 				document.getElementById("drPig").disabled = true;
@@ -29,7 +30,7 @@ function subTotal(name)
 			else 
 			{
 
-				window.alert("subTotal checked == true");
+			    //	window.alert("subTotal checked == true");
 				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPig * olderDrPig; 
 				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) +  
 												Number(document.getElementById("kgPig").value) * Number(document.getElementById("drPig").value);
@@ -326,7 +327,7 @@ function subTotal(name)
 			else 
 			{
 
-				window.alert("subTotal checked == true");
+			//	window.alert("subTotal checked == true");
 				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgEtc * olderDrEtc; 
 				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) +  
 												Number(document.getElementById("kgEtc").value) * Number(document.getElementById("drEtc").value);
@@ -346,9 +347,12 @@ function subTotal(name)
 		if ( document.getElementById("spice").checked == false)
 		{
 
-			 
+				window.alert("checked == false");
+				window.alert(document.getElementById("totalDrink").value); 
                 document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) -  
 													Number(document.getElementById("amountSpice").value) * Number(document.getElementById("drSpice").value);
+				  window.alert(document.getElementById("totalDrink").value);
+
 				document.getElementById("drSpice").disabled = true;
 				document.getElementById("amountSpice").disabled = true;
 				document.getElementById("amountSpice").value = "";
@@ -380,8 +384,10 @@ function subTotal(name)
 	case secondSpice: 
 			if (document.getElementById("wine").checked == false)
 			{
-                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) -  
-													Number(document.getElementById("amountWine").value) * Number(document.getElementById("drWine").value);
+			//	window.alert("checked == false");
+			//	window.alert(document.getElementById("totalDrink").value);
+                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountWine * olderDrWine; 
+			//	window.alert(document.getElementById("totalDrink").value);
 				document.getElementById("drWine").disabled = true;
 				document.getElementById("amountWine").disabled = true;
 				document.getElementById("amountWine").value = "";
@@ -411,8 +417,7 @@ function subTotal(name)
 	case thirdSpice: 
 			if (document.getElementById("beer").checked == false)
 			{
-                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) -  
-													Number(document.getElementById("amountBeer").value) * Number(document.getElementById("drBeer").value);
+                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountBeer * olderDrBeer; 
 				document.getElementById("drBeer").disabled = true;
 				document.getElementById("amountBeer").disabled = true;
 				document.getElementById("amountBeer").value = "";
@@ -442,8 +447,7 @@ function subTotal(name)
 	case fourthSpice: 
 			if (document.getElementById("juice").checked == false)
 			{
-                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) -  
-													Number(document.getElementById("amountJuice").value) * Number(document.getElementById("drJuice").value);
+                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountJuice * olderDrJuice; 
 				document.getElementById("drJuice").disabled = true;
 				document.getElementById("amountJuice").disabled = true;
 				document.getElementById("amountJuice").value = "";
@@ -473,8 +477,7 @@ function subTotal(name)
 	case fifthSpice: 
 			if (document.getElementById("fizzy").checked == false)
 			{
-                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) -  
-													Number(document.getElementById("amountFizzy").value) * Number(document.getElementById("drFizzy").value);
+                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy; 
 				document.getElementById("drFizzy").disabled = true;
 				document.getElementById("amountFizzy").disabled = true;
 				document.getElementById("amountFizzy").value = "";
@@ -487,8 +490,7 @@ function subTotal(name)
 			}
 			else 
 			{
-
-				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy; 
+				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy;
 				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) +  
 												Number(document.getElementById("amountFizzy").value) * Number(document.getElementById("drFizzy").value);
 
@@ -504,8 +506,7 @@ function subTotal(name)
 	case sixthSpice: 
 			if (document.getElementById("water").checked == false)
 			{
-                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) -  
-													Number(document.getElementById("amountWater").value) * Number(document.getElementById("drWater").value);
+                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountWater * olderDrWater;  
 				document.getElementById("drWater").disabled = true;
 				document.getElementById("amountWater").disabled = true;
 				document.getElementById("amountWater").value = "";
@@ -540,8 +541,7 @@ function subTotal(name)
 	case tomato: 
 			if (document.getElementById("tomato").checked == false)
 			{
-                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) -  
-													Number(document.getElementById("kgTomato").value) * Number(document.getElementById("drTomato").value);
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) -  olderKgTomato * olderDrTomato;
 				document.getElementById("drTomato").disabled = true;
 				document.getElementById("kgTomato").disabled = true;
 				document.getElementById("kgTomato").value = "";
@@ -571,8 +571,7 @@ function subTotal(name)
 	case cucumbers: 
 			if (document.getElementById("cucumbers").checked == false)
 			{
-                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) -  
-													Number(document.getElementById("kgCucumbers").value) * Number(document.getElementById("drCucumbers").value);
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgCucumbers * olderDrCucumbers;
 				document.getElementById("drCucumbers").disabled = true;
 				document.getElementById("kgCucumbers").disabled = true;
 				document.getElementById("kgCucumbers").value = "";
@@ -602,8 +601,7 @@ function subTotal(name)
 	case eggplant: 
 			if (document.getElementById("eggplant").checked == false)
 			{
-                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) -  
-													Number(document.getElementById("kgEggplant").value) * Number(document.getElementById("drEggplant").value);
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgEggplant * olderDrEggplant;
 				document.getElementById("drEggplant").disabled = true;
 				document.getElementById("kgEggplant").disabled = true;
 				document.getElementById("kgEggplant").value = "";
@@ -633,8 +631,7 @@ function subTotal(name)
 	case onion: 
 			if (document.getElementById("onion").checked == false)
 			{
-                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) -  
-													Number(document.getElementById("kgOnion").value) * Number(document.getElementById("drOnion").value);
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgOnion * olderDrOnion; 
 				document.getElementById("drOnion").disabled = true;
 				document.getElementById("kgOnion").disabled = true;
 				document.getElementById("kgOnion").value = "";
@@ -664,36 +661,63 @@ function subTotal(name)
 	case greens: 
 			if (document.getElementById("greens").checked == false)
 			{
-                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) -  
-													Number(document.getElementById("kgGreens").value) * Number(document.getElementById("drGreens").value);
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgGreen * olderDrGreen;
 				document.getElementById("drGreens").disabled = true;
 				document.getElementById("kgGreens").disabled = true;
 				document.getElementById("kgGreens").value = "";
 				document.getElementById("drGreens").value = "";
 
-				olderKgGreens = 0; 
-				olderDrGreens = 0;
+				olderKgGreen = 0; 
+				olderDrGreen = 0;
                
                 price(greens);
 			}
 			else 
 			{
 
-				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgGreens * olderDrGreens; 
+				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgGreen * olderDrGreen; 
 				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) +  
-												Number(document.getElementById("kgGreen").value) * Number(document.getElementById("drGreen").value);
+												Number(document.getElementById("kgGreens").value) * Number(document.getElementById("drGreens").value);
 
-		 	 	olderKgGreen = Number(document.getElementById("kgGreen").value);
-                olderDrGreen = Number(document.getElementById("drGreen").value);
+		 	 	olderKgGreen = Number(document.getElementById("kgGreens").value);
+                olderDrGreen = Number(document.getElementById("drGreens").value);
 
 
-				document.getElementById("drGreen").disabled = false;
-				document.getElementById("kgGreen").disabled = false;
+				document.getElementById("drGreens").disabled = false;
+				document.getElementById("kgGreens").disabled = false;
 
 			}	
 		break;
+   case sweetmeat: 
+			if (document.getElementById("sweetmeat").checked == false)
+			{
+                document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgSweet * olderDrSweet;
+				document.getElementById("drSweetmeat").disabled = true;
+				document.getElementById("kgSweetmeat").disabled = true;
+				document.getElementById("kgSweetmeat").value = "";
+				document.getElementById("drSweetmeat").value = "";
 
-		// etc for vegetable 
+				olderKgSweet = 0; 
+				olderDrSweet = 0;
+               
+                price(sweetmeat);
+			}
+			else 
+			{
+
+				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgSweet * olderDrSweet; 
+				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) +  
+												Number(document.getElementById("kgSweetmeat").value) * Number(document.getElementById("drSweetmeat").value);
+
+		 	 	olderKgSweet = Number(document.getElementById("kgSweetmeat").value);
+                olderDrSweet = Number(document.getElementById("drSweetmeat").value);
+
+
+				document.getElementById("drSweetmeat").disabled = false;
+				document.getElementById("kgSweetmeat").disabled = false;
+
+			}	
+		break;
 			
 	}
 }

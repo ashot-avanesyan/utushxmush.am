@@ -631,9 +631,9 @@ function price(name)
 {
 	switch(name)
 	{
-		case pig: 
-			document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
-			break;
+		case pig:
+				document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
+		break;
 		case lamb:
 			document.getElementById("lamb_price").value = "= " + document.getElementById("kgLamb").value * document.getElementById("drLamb").value;
 			break;
@@ -741,8 +741,8 @@ function initializeDrink(name)
                 case firstSpice:
                         if (document.getElementById("spice").checked == true)
                         {
-                                document.getElementById("amountSpice").value = 1;
-                                document.getElementById("drSpice").value = 1000;
+                            //    document.getElementById("amountSpice").value = 1;
+                             //   document.getElementById("drSpice").value = 1000;
                                 document.getElementById("drSpice").disabled = false;
                                 document.getElementById("amountSpice").disabled = false;
 
@@ -796,8 +796,8 @@ function initializeDrink(name)
                   case secondSpice:
                         if (document.getElementById("wine").checked == true)
                         {
-                                document.getElementById("amountWine").value = 1;
-                                document.getElementById("drWine").value = 1000;
+                              //  document.getElementById("amountWine").value = 1;
+                               // document.getElementById("drWine").value = 1000;
                                 document.getElementById("drWine").disabled = false;
                                 document.getElementById("amountWine").disabled = false;
 
@@ -853,8 +853,8 @@ function initializeDrink(name)
                   case thirdSpice:
                         if (document.getElementById("beer").checked == true)
                         {
-                                document.getElementById("amountBeer").value = 1;
-                                document.getElementById("drBeer").value = 1000;
+                               // document.getElementById("amountBeer").value = 1;
+                               // document.getElementById("drBeer").value = 1000;
                                 document.getElementById("drBeer").disabled = false;
                                 document.getElementById("amountBeer").disabled = false;
 
@@ -910,8 +910,8 @@ function initializeDrink(name)
                   case fourthSpice:
                         if (document.getElementById("juice").checked == true)
                         {
-                                document.getElementById("amountJuice").value = 1;
-                                document.getElementById("drJuice").value = 1000;
+                           //     document.getElementById("amountJuice").value = 1;
+                            //    document.getElementById("drJuice").value = 1000;
                                 document.getElementById("drJuice").disabled = false;
                                 document.getElementById("amountJuice").disabled = false;
 
@@ -967,8 +967,8 @@ function initializeDrink(name)
                   case fifthSpice:
                         if (document.getElementById("fizzy").checked == true)
                         {
-                                document.getElementById("amountFizzy").value = 1;
-                                document.getElementById("drFizzy").value = 1000;
+                              //  document.getElementById("amountFizzy").value = 1;
+                              //  document.getElementById("drFizzy").value = 1000;
                                 document.getElementById("drFizzy").disabled = false;
                                 document.getElementById("amountFizzy").disabled = false;
 
@@ -1024,8 +1024,8 @@ function initializeDrink(name)
                   case sixthSpice:
                         if (document.getElementById("water").checked == true)
                         {
-                                document.getElementById("amountWater").value = 1;
-                                document.getElementById("drWater").value = 1000;
+                              //  document.getElementById("amountWater").value = 1;
+                              //  document.getElementById("drWater").value = 1000;
                                 document.getElementById("drWater").disabled = false;
                                 document.getElementById("amountWater").disabled = false;
 
