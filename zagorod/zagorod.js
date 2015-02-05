@@ -601,16 +601,6 @@ function initializeDrink(name)
                                 document.getElementById("amountSpice").disabled = false;
 
                         }
-                        else
-                        {
-                                document.getElementById("amountSpice").value = "";
-                                document.getElementById("drSpice").value = "";
-                                document.getElementById("drSpice").disabled = true;
-                                document.getElementById("amountSpice").disabled = true;
-								
-							    return;
-
-                        }
                        
 						 var x = document.getElementById("firstSpice").value;
 						 switch(x)
@@ -654,16 +644,6 @@ function initializeDrink(name)
                                 document.getElementById("drWine").value = 1000;
                                 document.getElementById("drWine").disabled = false;
                                 document.getElementById("amountWine").disabled = false;
-
-                        }
-                        else
-                        {
-                                document.getElementById("amountWine").value = "";
-                                document.getElementById("drWine").value = "";
-                                document.getElementById("drWine").disabled = true;
-                                document.getElementById("amountWine").disabled = true;
-								
-							    return;
 
                         }
                        
@@ -713,16 +693,6 @@ function initializeDrink(name)
                                 document.getElementById("amountBeer").disabled = false;
 
                         }
-                        else
-                        {
-                                document.getElementById("amountBeer").value = "";
-                                document.getElementById("drBeer").value = "";
-                                document.getElementById("drBeer").disabled = true;
-                                document.getElementById("amountBeer").disabled = true;
-								
-							    return;
-
-                        }
                        
 						 x = document.getElementById("thirdSpice").value;
 						 switch(x)
@@ -768,16 +738,6 @@ function initializeDrink(name)
                                 document.getElementById("drJuice").value = 1000;
                                 document.getElementById("drJuice").disabled = false;
                                 document.getElementById("amountJuice").disabled = false;
-
-                        }
-                        else
-                        {
-                                document.getElementById("amountJuice").value = "";
-                                document.getElementById("drJuice").value = "";
-                                document.getElementById("drJuice").disabled = true;
-                                document.getElementById("amountJuice").disabled = true;
-								
-							    return;
 
                         }
                        
@@ -827,16 +787,6 @@ function initializeDrink(name)
                                 document.getElementById("amountFizzy").disabled = false;
 
                         }
-                        else
-                        {
-                                document.getElementById("amountFizzy").value = "";
-                                document.getElementById("drFizzy").value = "";
-                                document.getElementById("drFizzy").disabled = true;
-                                document.getElementById("amountFizzy").disabled = true;
-								
-							    return;
-
-                        }
                        
 						 x = document.getElementById("fifthSpice").value;
 						 switch(x)
@@ -884,17 +834,6 @@ function initializeDrink(name)
                                 document.getElementById("amountWater").disabled = false;
 
                         }
-                        else
-                        {
-                                document.getElementById("amountWater").value = "";
-                                document.getElementById("drWater").value = "";
-                                document.getElementById("drWater").disabled = true;
-                                document.getElementById("amountWater").disabled = true;
-								
-							    return;
-
-                        }
-                       
 						 x = document.getElementById("sixthSpice").value;
 						 switch(x)
 						{
@@ -994,8 +933,6 @@ function initializeDrink(name)
 					case dessertChips:
                         if (document.getElementById("desserts").checked == true)
                         {
-                              //  document.getElementById("kgDesserts").value = 1;
-                              //  document.getElementById("drDesserts").value = 1000;
                                 document.getElementById("drDesserts").disabled = false;
                                 document.getElementById("kgDesserts").disabled = false;
 
@@ -1053,13 +990,10 @@ function initializeDrink(name)
             case breadSelector:
                         if (document.getElementById("bread").checked == true)
                         {
-                              //  document.getElementById("hatBread").value = 1;
-                            //    document.getElementById("drBread").value = 1000;
                                 document.getElementById("drBread").disabled = false;
                                 document.getElementById("hatBread").disabled = false;
                         }
                         else
-					//	if (!document.getElementById("bread").checked )
                         {
                                 document.getElementById("hatBread").value = "";
                                 document.getElementById("drBread").value = "";
