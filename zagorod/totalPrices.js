@@ -13,6 +13,7 @@ function subTotal(name)
 		case pig: 
 			if (document.getElementById("pig").checked == false)
 			{
+				window.alert("checked == false");
                 document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
 													Number(document.getElementById("kgPig").value) * Number(document.getElementById("drPig").value);
 				document.getElementById("drPig").disabled = true;
@@ -28,7 +29,7 @@ function subTotal(name)
 			else 
 			{
 
-			//	window.alert("subTotal checked == true");
+				window.alert("subTotal checked == true");
 				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPig * olderDrPig; 
 				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) +  
 												Number(document.getElementById("kgPig").value) * Number(document.getElementById("drPig").value);
