@@ -147,24 +147,18 @@ div#d_2_1 {
 padding: 0% 0% 0% 13%;
 }
 div#d3 {
-width: auto;
-height: 750px;
+height: 600px;
 background-color: #98FB98;
 display: none;
-margin: auto;
-}
-div#d3_1 {
-margin-left: 22%;
+padding: 15% 0% 0% 24%;
 }
 div#d4 {
-height: 750px;
+height: 650px;
 background-color: #98FB98;
 display: none;
-padding: 10% 0% 0% 10%;
+padding: 8% 0% 0% 7%;
 }
-div#d4_1 {
-margin-left: 10%; 
-}
+
 div#d {
 width: auto;
 height: 440px;
