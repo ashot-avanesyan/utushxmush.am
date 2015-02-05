@@ -95,7 +95,7 @@ display: inline;
 list-style: none;
 }
 ul#chashacank li button {
-background-color: #FAFAD2;
+background-color: ##48D1CC;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -128,14 +128,17 @@ margin: auto;
 background-color: #7FFFD4;
 display: none;
 }
-div#d_2_4 {
-padding: 0% 0% 0% 9%;
+table.margin_barbequ {
+margin: 0% 13% !important;;
 }
-div#d_2_3 {
-padding: 0% 0% 0% 13%;
+table.margin_drink {
+margin: 0% 12% !important;;
 }
-div#d_2_2 {
-padding: 0% 0% 0% 12%;
+table.margin_vegetable {
+margin: 0% 13% !important;
+}
+table#margin_desert {
+margin: 0% 9% !important;;
 }
 div#d_2_2_tabs {
 display: none;
@@ -143,8 +146,20 @@ display: none;
 div#d_2_3_tabs {
 display: none;
 }
+div#d_2_4_tabs {
+display: none;
+}
 div#d_2_1 {
-padding: 0% 0% 0% 13%;
+margin: center;
+}
+div#d_2_2 {
+margin: center
+}
+div#d_2_3 {
+margin: center;
+}
+div#d_2_4 {
+margin: center;
 }
 div#d3 {
 height: 600px;
@@ -154,7 +169,7 @@ padding: 15% 0% 0% 24%;
 }
 div#d4 {
 height: 650px;
-background-color: #98FB98;
+background-color: #AEFFFF;
 display: none;
 padding: 8% 0% 0% 7%;
 }

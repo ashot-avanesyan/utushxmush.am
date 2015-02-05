@@ -42,10 +42,12 @@ function hide20_2() {
 function hide20_3() {
                 document.getElementById("d_2_3_tabs").style.display = "block";
 }
-function hide20_1() {
-                document.getElementById("a").style.display = "block";
-                document.getElementById("BARBECUE").style.display = "none";
+function hide20_4() {
+                document.getElementById("d_2_4_tabs").style.display = "block";
 }
+
+                
+             
 
 
 // Armine Calculator
@@ -110,9 +112,17 @@ function initializeDinner(name)
 				document.getElementById("drPig").value = 3800;
 				document.getElementById("drPig").disabled = false;
 				document.getElementById("kgPig").disabled = false;
-
+				
+			}
+			else 
+			{
+				document.getElementById("kgPig").value = "";
+				document.getElementById("drPig").value = "";
+				document.getElementById("drPig").disabled = true;
+				document.getElementById("kgPig").disabled = true;
+					
 			} 
-	    break;
+            break;
 	    case lamb:
 			if (document.getElementById("lamb").checked == true)	
 			{
@@ -120,18 +130,30 @@ function initializeDinner(name)
 				document.getElementById("drLamb").value = 3000;
 				document.getElementById("drLamb").disabled = false;
 				document.getElementById("kgLamb").disabled = false;
-
-				
 			}
-	    break;
+			else 
+			{
+				document.getElementById("kgLamb").value = "";
+				document.getElementById("drLamb").value = "";
+				document.getElementById("drLamb").disabled = true;
+				document.getElementById("kgLamb").disabled = true;
+			}
+       	   break;
         case goat:
            		if (document.getElementById("goat").checked == true)
-                {
-                	document.getElementById("kgGoat").value = 5;
-                    document.getElementById("drGoat").value = 3500;
-                    document.getElementById("drGoat").disabled = false;
-                    document.getElementById("kgGoat").disabled = false;
-                }
+                	{
+                		document.getElementById("kgGoat").value = 5;
+                    		document.getElementById("drGoat").value = 3500;
+                    		document.getElementById("drGoat").disabled = false;
+                    		document.getElementById("kgGoat").disabled = false;
+                	}	
+                	else
+                	{
+                    		document.getElementById("kgGoat").value = "";
+                    		document.getElementById("drGoat").value = "";
+                    		document.getElementById("drGoat").disabled = true;
+                    	document.getElementById("kgGoat").disabled = true;
+              		 }
             break;
         case chicken:
 			if (document.getElementById("chicken").checked == true)	
@@ -141,6 +163,13 @@ function initializeDinner(name)
 				document.getElementById("drChicken").disabled = false;
 				document.getElementById("kgChicken").disabled = false;
 			}
+			else 
+			{
+				document.getElementById("kgChicken").value = "";
+				document.getElementById("drChicken").value = "";
+				document.getElementById("drChicken").disabled = true;
+				document.getElementById("kgChicken").disabled = true;
+			} 
             break;
 	    case wing:
 			if (document.getElementById("wing").checked == true)	
@@ -150,6 +179,13 @@ function initializeDinner(name)
 				document.getElementById("drWing").disabled = false;
 				document.getElementById("kgWing").disabled = false;
 			}
+			else 
+			{
+				document.getElementById("kgWing").value = "";
+				document.getElementById("drWing").value = "";
+				document.getElementById("drWing").disabled = true;
+				document.getElementById("kgWing").disabled = true;
+			} 
             break;
 	    case haunch:
 			if (document.getElementById("haunch").checked == true)	
@@ -159,6 +195,13 @@ function initializeDinner(name)
 				document.getElementById("drHaunch").disabled = false;
 				document.getElementById("kgHaunch").disabled = false;
 			}
+			else 
+			{
+				document.getElementById("kgHaunch").value = "";
+				document.getElementById("drHaunch").value = "";
+				document.getElementById("drHaunch").disabled = true;
+				document.getElementById("kgHaunch").disabled = true;
+			} 
             break;
 	    case potatoes:
 			if (document.getElementById("potatoes").checked == true)	
@@ -168,6 +211,13 @@ function initializeDinner(name)
 				document.getElementById("drPotatoes").disabled = false;
 				document.getElementById("kgPotatoes").disabled = false;
 			}
+			else 
+			{
+				document.getElementById("kgPotatoes").value = "";
+				document.getElementById("drPotatoes").value = "";
+				document.getElementById("drPotatoes").disabled = true;
+				document.getElementById("kgPotatoes").disabled = true;
+			} 
             break;
 	    case anvil: 
 			if (document.getElementById("anvil").checked == true)	
@@ -177,6 +227,13 @@ function initializeDinner(name)
 				document.getElementById("drAnvil").disabled = false;
 				document.getElementById("kgAnvil").disabled = false;
 			}
+			else 
+			{
+				document.getElementById("kgAnvil").value = "";
+				document.getElementById("drAnvil").value = "";
+				document.getElementById("drAnvil").disabled = true;
+				document.getElementById("kgAnvil").disabled = true;
+			} 
             break;
 	    case internal_organs:
 			if (document.getElementById("internal_organs").checked == true)	
@@ -186,6 +243,13 @@ function initializeDinner(name)
 				document.getElementById("drInternal_organs").disabled = false;
 				document.getElementById("kgInternal_organs").disabled = false;
 			}
+			else 
+			{
+				document.getElementById("kgInternal_organs").value = "";
+				document.getElementById("drInternal_organs").value = "";
+				document.getElementById("drInternal_organs").disabled = true;
+				document.getElementById("kgInternal_organs").disabled = true;
+			} 
 	   break;  
 	   case etc:
  
@@ -194,6 +258,14 @@ function initializeDinner(name)
 				document.getElementById("drEtc").disabled = false;
 				document.getElementById("kgEtc").disabled = false;
 				document.getElementById("name").disabled = false;
+			}
+			else 
+			{
+			    document.getElementById("kgEtc").value = "";
+				document.getElementById("drEtc").value = "";	
+				document.getElementById("drEtc").disabled = true;
+				document.getElementById("kgEtc").disabled = true;
+				document.getElementById("name").disabled = true;
 			}
 	   break;
        	case tomato:
@@ -204,6 +276,13 @@ function initializeDinner(name)
                 document.getElementById("drTomato").disabled = false;
                 document.getElementById("kgTomato").disabled = false;
             }
+            else
+            {
+            	document.getElementById("kgTomato").value = "";
+                document.getElementById("drTomato").value = "";
+                document.getElementById("drTomato").disabled = true;
+                document.getElementById("kgTomato").disabled = true;
+            }
             break;
        case cucumbers:
             if (document.getElementById("cucumbers").checked == true)
@@ -212,6 +291,13 @@ function initializeDinner(name)
             	document.getElementById("drCucumbers").value = 1000;
             	document.getElementById("drCucumbers").disabled = false;
             	document.getElementById("kgCucumbers").disabled = false;
+            }
+            else
+            {
+            	document.getElementById("kgCucumbers").value = "";
+            	document.getElementById("drCucumbers").value = "";
+            	document.getElementById("drCucumbers").disabled = true;
+            	document.getElementById("kgCucumbers").disabled = true;
             }
             break;
        case eggplant:
@@ -222,6 +308,13 @@ function initializeDinner(name)
             	document.getElementById("drEggplant").disabled = false;
             	document.getElementById("kgEggplant").disabled = false;
             }
+            else
+            {
+            	document.getElementById("kgEggplant").value = "";
+            	document.getElementById("drEggplant").value = "";
+            	document.getElementById("drEggplant").disabled = true;
+            	document.getElementById("kgEggplant").disabled = true;
+            }
             break;
        case onion:
             if (document.getElementById("onion").checked == true)
@@ -230,6 +323,13 @@ function initializeDinner(name)
             	document.getElementById("drOnion").value = 1000;
             	document.getElementById("drOnion").disabled = false;
             	document.getElementById("kgOnion").disabled = false;
+            }
+            else
+            {
+            	document.getElementById("kgOnion").value = "";
+            	document.getElementById("drOnion").value = "";
+            	document.getElementById("drOnion").disabled = true;
+            	document.getElementById("kgOnion").disabled = true;
             }
             break;
        case greens:
@@ -240,6 +340,13 @@ function initializeDinner(name)
             	document.getElementById("drGreens").disabled = false;
             	document.getElementById("kgGreens").disabled = false;
             }
+            else
+            {
+            	document.getElementById("kgGreens").value = "";
+            	document.getElementById("drGreens").value = "";
+            	document.getElementById("drGreens").disabled = true;
+            	document.getElementById("kgGreens").disabled = true;
+            }
             break;
        case etcVegetable:
             if (document.getElementById("etcVegetable").checked == true)
@@ -247,6 +354,14 @@ function initializeDinner(name)
             	document.getElementById("drEtcVegetable").disabled = false;
             	document.getElementById("kgEtcVegetable").disabled = false;
             	document.getElementById("nameVegetable").disabled = false;
+            }
+            else
+            {
+            	document.getElementById("kgEtcVegetable").value = "";
+				document.getElementById("drEtcVegetable").value = "";
+            	document.getElementById("drEtcVegetable").disabled = true;
+            	document.getElementById("kgEtcVegetable").disabled = true;
+            	document.getElementById("nameVegetable").disabled = true;
             }
 	        break;
        case sweetmeat:
@@ -257,6 +372,13 @@ function initializeDinner(name)
             	document.getElementById("drSweetmeat").disabled = false;
             	document.getElementById("kgSweetmeat").disabled = false;
             }
+            else
+            {
+            	document.getElementById("kgSweetmeat").value = "";
+            	document.getElementById("drSweetmeat").value = "";
+            	document.getElementById("drSweetmeat").disabled = true;
+            	document.getElementById("kgSweetmeat").disabled = true;
+            }
             break;
        case chocolates:
             if (document.getElementById("chocolates").checked == true)
@@ -265,6 +387,13 @@ function initializeDinner(name)
             	document.getElementById("drChocolates").value = 1000;
             	document.getElementById("drChocolates").disabled = false;
             	document.getElementById("kgChocolates").disabled = false;
+            }
+            else
+            {
+            	document.getElementById("kgChocolates").value = "";
+            	document.getElementById("drChocolates").value = "";
+            	document.getElementById("drChocolates").disabled = true;
+            	document.getElementById("kgChocolates").disabled = true;
             }
 	    break;
        case lobe:
@@ -275,6 +404,13 @@ function initializeDinner(name)
             	document.getElementById("drLobe").disabled = false;
             	document.getElementById("kgLobe").disabled = false;
             }
+            else
+            {
+            	document.getElementById("kgLobe").value = "";
+            	document.getElementById("drLobe").value = "";
+            	document.getElementById("drLobe").disabled = true;
+            	document.getElementById("kgLobe").disabled = true;
+            }
             break;
        case tea:
             if (document.getElementById("tea").checked == true)
@@ -283,6 +419,13 @@ function initializeDinner(name)
             	document.getElementById("drTea").value = 1000;
             	document.getElementById("drTea").disabled = false;
             	document.getElementById("kgTea").disabled = false;
+            }
+            else
+            {
+            	document.getElementById("kgTea").value = "";
+            	document.getElementById("drTea").value = "";
+            	document.getElementById("drTea").disabled = true;
+            	document.getElementById("kgTea").disabled = true;
             }
             break;
        case coffee:
@@ -293,6 +436,13 @@ function initializeDinner(name)
             	document.getElementById("drCoffee").disabled = false;
             	document.getElementById("kgCoffee").disabled = false;
             }
+            else
+            {
+            	document.getElementById("kgCoffee").value = "";
+            	document.getElementById("drCoffee").value = "";
+            	document.getElementById("drCoffee").disabled = true;
+            	document.getElementById("kgCoffee").disabled = true;
+            }
 	        break;
        case Instant_coffee:
             if (document.getElementById("Instant_coffee").checked == true)
@@ -301,6 +451,13 @@ function initializeDinner(name)
             	document.getElementById("drInstant_coffee").value = 1000;
             	document.getElementById("drInstant_coffee").disabled = false;
             	document.getElementById("hatInstant_coffee").disabled = false;
+            }
+            else
+            {
+            	document.getElementById("hatInstant_coffee").value = "";
+            	document.getElementById("drInstant_coffee").value = "";
+            	document.getElementById("drInstant_coffee").disabled = true;
+            	document.getElementById("hatInstant_coffee").disabled = true;
             }
             break;
         case hotel:
@@ -474,20 +631,9 @@ function price(name)
 {
 	switch(name)
 	{
-		case pig:
-	/*		if (document.getElementById("pig").checked == false ) 
-		  	{
-				(document.getElementById("totalBarbecue").value) = Number(document.getElementById("totalBarbecue").value) -  Number(document.getElementById("kgPig").value) * Number(document.getElementById("drPig").value);
-				
-				window.alert(Number(document.getElementById("kgPig").value));
-			}	
-		else
-            {
-				//document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
-				(document.getElementById("totalBarbecue").value) = Number(document.getElementById("totalBarbecue").value) +  Number(document.getElementById("kgPig").value) * Number(document.getElementById("drPig").value);
-			}*/
-				document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
-		break;
+		case pig: 
+			document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
+			break;
 		case lamb:
 			document.getElementById("lamb_price").value = "= " + document.getElementById("kgLamb").value * document.getElementById("drLamb").value;
 			break;
@@ -601,6 +747,16 @@ function initializeDrink(name)
                                 document.getElementById("amountSpice").disabled = false;
 
                         }
+                        else
+                        {
+                                document.getElementById("amountSpice").value = "";
+                                document.getElementById("drSpice").value = "";
+                                document.getElementById("drSpice").disabled = true;
+                                document.getElementById("amountSpice").disabled = true;
+								
+							    return;
+
+                        }
                        
 						 var x = document.getElementById("firstSpice").value;
 						 switch(x)
@@ -644,6 +800,16 @@ function initializeDrink(name)
                                 document.getElementById("drWine").value = 1000;
                                 document.getElementById("drWine").disabled = false;
                                 document.getElementById("amountWine").disabled = false;
+
+                        }
+                        else
+                        {
+                                document.getElementById("amountWine").value = "";
+                                document.getElementById("drWine").value = "";
+                                document.getElementById("drWine").disabled = true;
+                                document.getElementById("amountWine").disabled = true;
+								
+							    return;
 
                         }
                        
@@ -693,6 +859,16 @@ function initializeDrink(name)
                                 document.getElementById("amountBeer").disabled = false;
 
                         }
+                        else
+                        {
+                                document.getElementById("amountBeer").value = "";
+                                document.getElementById("drBeer").value = "";
+                                document.getElementById("drBeer").disabled = true;
+                                document.getElementById("amountBeer").disabled = true;
+								
+							    return;
+
+                        }
                        
 						 x = document.getElementById("thirdSpice").value;
 						 switch(x)
@@ -738,6 +914,16 @@ function initializeDrink(name)
                                 document.getElementById("drJuice").value = 1000;
                                 document.getElementById("drJuice").disabled = false;
                                 document.getElementById("amountJuice").disabled = false;
+
+                        }
+                        else
+                        {
+                                document.getElementById("amountJuice").value = "";
+                                document.getElementById("drJuice").value = "";
+                                document.getElementById("drJuice").disabled = true;
+                                document.getElementById("amountJuice").disabled = true;
+								
+							    return;
 
                         }
                        
@@ -787,6 +973,16 @@ function initializeDrink(name)
                                 document.getElementById("amountFizzy").disabled = false;
 
                         }
+                        else
+                        {
+                                document.getElementById("amountFizzy").value = "";
+                                document.getElementById("drFizzy").value = "";
+                                document.getElementById("drFizzy").disabled = true;
+                                document.getElementById("amountFizzy").disabled = true;
+								
+							    return;
+
+                        }
                        
 						 x = document.getElementById("fifthSpice").value;
 						 switch(x)
@@ -834,6 +1030,17 @@ function initializeDrink(name)
                                 document.getElementById("amountWater").disabled = false;
 
                         }
+                        else
+                        {
+                                document.getElementById("amountWater").value = "";
+                                document.getElementById("drWater").value = "";
+                                document.getElementById("drWater").disabled = true;
+                                document.getElementById("amountWater").disabled = true;
+								
+							    return;
+
+                        }
+                       
 						 x = document.getElementById("sixthSpice").value;
 						 switch(x)
 						{
@@ -933,6 +1140,8 @@ function initializeDrink(name)
 					case dessertChips:
                         if (document.getElementById("desserts").checked == true)
                         {
+                                document.getElementById("kgDesserts").value = 1;
+                                document.getElementById("drDesserts").value = 1000;
                                 document.getElementById("drDesserts").disabled = false;
                                 document.getElementById("kgDesserts").disabled = false;
 
@@ -990,6 +1199,8 @@ function initializeDrink(name)
             case breadSelector:
                         if (document.getElementById("bread").checked == true)
                         {
+                                document.getElementById("hatBread").value = 1;
+                                document.getElementById("drBread").value = 1000;
                                 document.getElementById("drBread").disabled = false;
                                 document.getElementById("hatBread").disabled = false;
                         }
@@ -999,8 +1210,6 @@ function initializeDrink(name)
                                 document.getElementById("drBread").value = "";
                                 document.getElementById("drBread").disabled = true;
                                 document.getElementById("hatBread").disabled = true;
-
-								return;
                         }
 						x = document.getElementById("breadSelector").value; 
 						switch(x) 
@@ -1037,6 +1246,14 @@ function priceDrink(name)
         switch(name)
         {
 				case firstSpice: 
+			/*		var x = document.getElementById("firstSpice").value;
+					switch(x)
+					{
+                		 case "Nemiroff": case "Talka": case "5_ozer": case "Artsakh": case "Zima": case "EtcSpice":
+                        	 document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
+                         break;
+               			
+        			}*/
                     document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
 				    break;
 				case secondSpice: 
