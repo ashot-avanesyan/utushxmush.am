@@ -1199,18 +1199,20 @@ function initializeDrink(name)
             case breadSelector:
                         if (document.getElementById("bread").checked == true)
                         {
-                                document.getElementById("hatBread").value = 1;
-                                document.getElementById("drBread").value = 1000;
+                           //     document.getElementById("hatBread").value = 1;
+                           //     document.getElementById("drBread").value = 1000;
                                 document.getElementById("drBread").disabled = false;
                                 document.getElementById("hatBread").disabled = false;
                         }
-                        else
+                      /*  else
                         {
                                 document.getElementById("hatBread").value = "";
                                 document.getElementById("drBread").value = "";
                                 document.getElementById("drBread").disabled = true;
                                 document.getElementById("hatBread").disabled = true;
-                        }
+
+								return;
+                        }*/
 						x = document.getElementById("breadSelector").value; 
 						switch(x) 
 						{
