@@ -148,7 +148,7 @@
 		</div>
 		<div id="d_2_2">
 			<ul id = "alkaholayin" style="text-align:center" >
-	 			<li><button onclick="hide20_2(), blur()">Խմիչք<br><input class="InputBatton"size="6%" placeholder=" Ընդամենը" readonly id = "totalDrink"></button></li>
+	 			<li><button onclick="hide20_2(), blur()">Խմիչք<br><input type = "number" class="InputBatton"size="6%" placeholder=" Ընդամենը" readonly id = "totalDrink"></button></li>
 	 	    </ul>
 			<div id="d_2_2_tabs">
 	 		<table class= "margin_drink">
@@ -165,7 +165,7 @@
                      </select>
            		</td> 
 		  		<td><input class="mount" type="number" placeholder ="քանակ" min="0" id = "amountSpice" disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);">հատ</td>
-				<td><input size="5" type="text" id = "drSpice"  disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);">դր</td>
+				<td><input size="5" type="number" id = "drSpice"  disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);">դր</td>
 				<td><p><input type = "text" id = "spice_price" size="5" class  = "noneBorder" readonly></p></td>
 			</tr>
 			<tr>
@@ -181,7 +181,7 @@
 					</select>
             	</td>
             	<td><input class="mount" type="number" min="0" placeholder ="քանակ" id = "amountWine" disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);">հատ</td>
-            	<td><input size="5" type="text" id = "drWine" disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);">դր</td>
+            	<td><input size="5" type="number" id = "drWine" disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);">դր</td>
 				<td><p><input type = "text" id = "wine_price" size="5" class  = "noneBorder" readonly></p></td>
           	</tr>
         	<tr>
@@ -197,7 +197,7 @@
 					</select>
            	   	</td>
            	 	<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountBeer" disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);">հատ</td>
-           	 	<td><input size="5" type="text" id = "drBeer" disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);">դր</td>
+           	 	<td><input size="5" type="number" id = "drBeer" disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);">դր</td>
 				<td><p><input type = "text" id = "beer_price" size="5" class  = "noneBorder" readonly></p></td>
           	</tr>
        		<tr>
@@ -228,8 +228,8 @@
             			<option value="EtcFizzy">Այլ</option> 
 					</select>
             	</td>
-				<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountFizzy" disabled onblur = "priceDrink(fifthSpice);subTotal(fifthSpice);">հատ</td>
-				<td><input size="5" type="text" id = "drFizzy" disabled onblur = "priceDrink(fifthSpice); subTotal(fifthSpice);">դր</td>
+				<td><input class="mount" size="5" type="number" placeholder ="քանակ" min = "0" id = "amountFizzy" disabled onblur = "priceDrink(fifthSpice)" onchange ="subTotal(fifthSpice);">հատ</td>
+				<td><input size="5" type="text" id = "drFizzy" disabled onblur = "priceDrink(fifthSpice)" onchange = "subTotal(fifthSpice);">դր</td>
 			    <td><p><input type = "text" id = "fizzy_price" size="5" class  = "noneBorder" readonly></p></td>
           	</tr>
 			<tr>
@@ -300,9 +300,9 @@
         	    <td><input type = "text" size = "5"  id = "drEtcVegetable" disabled onblur = "price(etcVegetable)">դր</td>
 			    <td><p><input type = "text" id = "etcVegetable_price" size="5" class  = "noneBorder" readonly> </p></td>
        		</tr>
-		</div>
-		</div>
 		</table>
+		</div>
+		</div>
 		<div id="d_2_4">
 			<ul id = "desert" style="text-align:center" >
             	<li><button onclick="hide20_4(), blur()">Դեսերտ<br><input class="InputButton"size="6%" placeholder=" Ընդամենը"  readonly></button></li>
