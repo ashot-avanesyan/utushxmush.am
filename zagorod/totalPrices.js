@@ -343,7 +343,7 @@ function subTotal(name)
 		break;
 
 	case firstSpice: 
-		if ( document.getElementById("spice").checked == false))
+		if ( document.getElementById("spice").checked == false)
 		{
 
 			 
