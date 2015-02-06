@@ -745,8 +745,16 @@ function initializeDrink(name)
 
 							case "Zima":
                                 document.getElementById("amountSpice").value = 6;
-                                document.getElementById("drSpice").value = 650;
+								document.getElementById("drSpice").value = 650;
+							break;
+							case "EtcSpice":
+                                document.getElementById("drSpice").disabled = false;
+                                document.getElementById("amountSpice").disabled = false;
+                                document.getElementById("amountSpice").value = "";
+								document.getElementById("drSpice").value = "";
 					        break;
+					        
+								
 							default: 
 								window.alert("Nemiroff forever!");
 								break;
@@ -803,8 +811,11 @@ function initializeDrink(name)
                                 document.getElementById("drWine").value = 650;
 					        break;
 							
-                            case "etcWine":
-								window.alert("this is etc for wine!!!");
+                            case "EtcWine":
+                                document.getElementById("drWine").disabled = false;
+                                document.getElementById("amountWine").disabled = false;
+                                document.getElementById("amountWine").value = "";
+								document.getElementById("drWine").value = "";
 								break; 
 							default: 
 								window.alert("Nemiroff forever!");
@@ -860,8 +871,11 @@ function initializeDrink(name)
                                 document.getElementById("drBeer").value = 650;
 					        break;
 							
-                            case "etcBeer":
-								window.alert("this is etc for Beer!!!");
+                            case "EtcBeer":
+                                document.getElementById("drBeer").disabled = false;
+                                document.getElementById("amountBeer").disabled = false;
+                                document.getElementById("amountBeer").value = "";
+								document.getElementById("drBeer").value = "";
 								break; 
 							default: 
 								window.alert("Nemiroff forever!");
@@ -917,8 +931,11 @@ function initializeDrink(name)
                                 document.getElementById("drJuice").value = 650;
 					        break;
 							
-                            case "etcJuice":
-								window.alert("this is etc for Juice!!!");
+                            case "EtcJuice":
+                                document.getElementById("drJuice").disabled = false;
+                                document.getElementById("amountJuice").disabled = false;
+                                document.getElementById("amountJuice").value = "";
+								document.getElementById("drJuice").value = "";
 								break; 
 							default: 
 								window.alert("Nemiroff forever!");
@@ -974,8 +991,11 @@ function initializeDrink(name)
                                 document.getElementById("drFizzy").value = 650;
 					        break;
 							
-                            case "etcFizzy":
-								window.alert("this is etc for Fizzy Juice!!!");
+                            case "EtcFizzy":
+                                document.getElementById("drFizzy").disabled = false;
+                                document.getElementById("amountFizzy").disabled = false;
+                                document.getElementById("amountFizzy").value = "";
+								document.getElementById("drFizzy").value = "";
 								break; 
 							default: 
 								window.alert("Nemiroff forever!");
@@ -1031,8 +1051,11 @@ function initializeDrink(name)
                                 document.getElementById("drWater").value = 650;
 					        break;
 							
-                            case "etcWater":
-								window.alert("this is etc for water!!!");
+                            case "EtcWater":
+                                document.getElementById("drWater").disabled = false;
+                                document.getElementById("amountWater").disabled = false;
+                                document.getElementById("amountWater").value = "";
+								document.getElementById("drWater").value = "";
 								break; 
 							default: 
 								window.alert("Nemiroff forever!");
@@ -1206,7 +1229,10 @@ function initializeDrink(name)
                                                      
 
                          case "etcBread":
-                             	window.alert("this is etc for Bread!!!");
+                                document.getElementById("drBread").disabled = false;
+                                document.getElementById("hatBread").disabled = false;
+                                document.getElementById("hatBread").value = "";
+								document.getElementById("drBread").value = "";
                          break;
                                 }
 					
@@ -1227,14 +1253,6 @@ function priceDrink(name)
         switch(name)
         {
 				case firstSpice: 
-			/*		var x = document.getElementById("firstSpice").value;
-					switch(x)
-					{
-                		 case "Nemiroff": case "Talka": case "5_ozer": case "Artsakh": case "Zima": case "EtcSpice":
-                        	 document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
-                         break;
-               			
-        			}*/
                     document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
 				    break;
 				case secondSpice: 

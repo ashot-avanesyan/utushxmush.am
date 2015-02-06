@@ -248,9 +248,9 @@
 			        <td><p><input type = "text" id = "water_price" size="5" class  = "noneBorder" readonly></p></td>
            		</tr>
 			<tr>
-                                <td><p><input type="checkbox" value ="etcDrink" id = "etcDrink" onclick = "initializeDinner(etcDrink); price(etcDrink); subTotal(etcDrink);">Այլ<input type = "text" id = "nameEtcDrink" placeholder="Անուն" size = "5" disabled></p></td>
-                                <td><input class="mass" type="number" id = "hatEtcDrink" disabled onblur = "price(etcDrink); subTotal(etcDrink);">կգ</td>
-                                <td><p><input type = "text" size = "5" id = "drEtcDrink" disabled onblur = "price(etcDrink); subTotal(etcDrink);">դր</p></td>
+                                <td><p><input type="checkbox" id = "etcDrink" onclick = "initializeDinner(etcDrink);price(etcDrink);subTotal(etcDrink);">Այլ<input type = "text" id = "nameEtcDrink" placeholder="Անուն" size = "5" disabled></p></td>
+                                <td><input class="mass" type="number" id = "hatEtcDrink" disabled onblur = "price(etcDrink);subTotal(etcDrink);">կգ</td>
+                                <td><p><input type = "text" size = "5" id = "drEtcDrink" disabled onblur = "price(etcDrink);subTotal(etcDrink);">դր</p></td>
                                 <td><p><input type = "text" id = "etcDrink_price" size="5" class  = "noneBorder" readonly> </p></td>
                         </tr>			
 			</table>
@@ -293,9 +293,9 @@
 				<td><p><input type = "text" id = "greens_price" size="5" class  = "noneBorder" readonly> </p></td>
        			</tr>
        			<tr>
-       				<td><p><input type="checkbox" value ="etcVegetable"id = "etcVegetable" onclick = "initializeDinner(etcVegetable); /*price(etcVegetable);*/">Այլ<input type ="text" placeholder="Անուն" id = "nameVegetable" size= "5" disabled></p></td>
-                		<td><input class = "mass" type = "number" min = "0" id = "kgEtcVegetable" disabled onblur = "price(etcVegetable)">կգ</td>
-        	    		<td><input type = "text" size = "5"  id = "drEtcVegetable" disabled onblur = "price(etcVegetable)">դր</td>
+       				<td><p><input type="checkbox" value ="etcVegetable" id = "etcVegetable" onclick = "initializeDinner(etcVegetable);price(etcVegetable);subTotal(etcVegetable);">Այլ<input type ="text" placeholder="Անուն" id = "nameVegetable" size= "5" disabled></p></td>
+                		<td><input class = "mass" type = "number" min = "0" id = "kgEtcVegetable" disabled onblur = "price(etcVegetable);subTotal(etcVegetable);">կգ</td>
+        	    		<td><input type = "text" size = "5"  id = "drEtcVegetable" disabled onblur = "price(etcVegetable); subTotal(etcVegetable);">դր</td>
 			    	<td><p><input type = "text" id = "etcVegetable_price" size="5" class  = "noneBorder" readonly> </p></td>
        			</tr>
 		</table>

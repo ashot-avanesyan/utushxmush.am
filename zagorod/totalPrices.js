@@ -6,7 +6,8 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderKgGreen = 0, olderDrGreen = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
 	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderKgTea = 0, olderDrTea = 0,
 	olderKgCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
-	olderKgBread = 0, olderDrBread = 0; 
+	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
+	olderKgEtcDesert = 0, olderDrEtcDesert = 0; 
 
 function subTotal(name)
 {
@@ -339,10 +340,10 @@ function subTotal(name)
 		if ( document.getElementById("spice").checked == false)
 		{
 
-				window.alert("checked == false");
-				window.alert(document.getElementById("totalDrink").value); 
+			//	window.alert("checked == false");
+			//	window.alert(document.getElementById("totalDrink").value); 
                 document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountSpice * olderDrSpice; 
-				  window.alert(document.getElementById("totalDrink").value);
+			//	  window.alert(document.getElementById("totalDrink").value);
 
 				document.getElementById("drSpice").disabled = true;
 				document.getElementById("amountSpice").disabled = true;
@@ -357,12 +358,12 @@ function subTotal(name)
 		}
 		else 
 		{
-				window.alert("checked == true");
+			//	window.alert("checked == true");
 				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountSpice * olderDrSpice; 
-				window.alert(document.getElementById("totalDrink").value);
+			//	window.alert(document.getElementById("totalDrink").value);
 				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) +  
 												Number(document.getElementById("amountSpice").value) * Number(document.getElementById("drSpice").value);
-				window.alert(document.getElementById("totalDrink").value);
+			//	window.alert(document.getElementById("totalDrink").value);
 
 		 	 	olderAmountSpice = Number(document.getElementById("amountSpice").value);
                 olderDrSpice = Number(document.getElementById("drSpice").value);
@@ -948,6 +949,102 @@ function subTotal(name)
 				document.getElementById("hatBread").disabled = false;
 
 			}	
+		break;
+	case etcDrink:
+			if (document.getElementById("etcDrink").checked == false)
+			{
+				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderKgEtcDrink * olderDrEtcDrink; 
+				
+				document.getElementById("drEtcDrink").disabled = true;
+				document.getElementById("hatEtcDrink").disabled = true;
+				document.getElementById("hatEtcDrink").value = "";
+				document.getElementById("drEtcDrink").value = "";
+
+				olderKgEtcDrink = 0; 
+				olderDrEtcDrink = 0;
+               
+                price(etcDrink);
+			}
+			else 
+			{
+
+				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderKgEtcDrink * olderDrEtcDrink; 
+				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) +  
+												Number(document.getElementById("hatEtcDrink").value) * Number(document.getElementById("drEtcDrink").value);
+
+		 	 	olderKgEtcDrink = Number(document.getElementById("hatEtcDrink").value);
+                olderDrEtcDrink = Number(document.getElementById("drEtcDrink").value);
+
+
+				document.getElementById("drEtcDrink").disabled = false;
+				document.getElementById("hatEtcDrink").disabled = false;
+
+			}	
+		
+		break;
+	case etcVegetable: 
+			if (document.getElementById("etcVegetable").checked == false)
+			{
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgEtcVegetable * olderDrEtcVegetable; 
+				document.getElementById("drEtcVegetable").disabled = true;
+				document.getElementById("kgEtcVegetable").disabled = true;
+				document.getElementById("kgEtcVegetable").value = "";
+				document.getElementById("drEtcVegetable").value = "";
+
+				olderKgEtcVegetable = 0; 
+				olderDrEtcVegetable = 0;
+               
+                price(etcVegetable);
+			}
+			else 
+			{
+
+				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgEtcVegetable * olderDrEtcVegetable; 
+				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) +  
+												Number(document.getElementById("kgEtcVegetable").value) * Number(document.getElementById("drEtcVegetable").value);
+
+
+		 	 	olderKgEtcVegetable = Number(document.getElementById("kgEtcVegetable").value);
+                olderDrEtcVegetable = Number(document.getElementById("drEtcVegetable").value);
+
+
+				document.getElementById("drEtcVegetable").disabled = false;
+				document.getElementById("kgEtcVegetable").disabled = false;
+
+			}	
+		
+		break;
+	case etcDesert:
+			if (document.getElementById("etcDesert").checked == false)
+			{
+				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgEtcDesert * olderDrEtcDesert; 
+				
+				document.getElementById("drEtcDesert").disabled = true;
+				document.getElementById("kgEtcDesert").disabled = true;
+				document.getElementById("kgEtcDesert").value = "";
+				document.getElementById("drEtcDesert").value = "";
+
+				olderKgEtcDesert = 0; 
+				olderDrEtcDesert = 0;
+               
+                price(etcDesert);
+			}
+			else 
+			{
+
+				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgEtcDesert * olderDrEtcDesert; 
+				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) +  
+												Number(document.getElementById("kgEtcDesert").value) * Number(document.getElementById("drEtcDesert").value);
+
+		 	 	olderKgEtcDesert = Number(document.getElementById("kgEtcDesert").value);
+                olderDrEtcDesert = Number(document.getElementById("drEtcDesert").value);
+
+
+				document.getElementById("drEtcDesert").disabled = false;
+				document.getElementById("kgEtcDesert").disabled = false;
+
+			}	
+		
 		break;
 			
 	}
