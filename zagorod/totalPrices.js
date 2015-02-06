@@ -7,7 +7,8 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderKgTea = 0, olderDrTea = 0,
 	olderKgCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
-	olderKgEtcDesert = 0, olderDrEtcDesert = 0; 
+	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
+    olderQanakTent = 0, olderDrTent = 0; 
 
 function subTotal(name)
 {
@@ -1014,8 +1015,40 @@ function subTotal(name)
 			}	
 		
 		break;
-	case etcDesert:
-			if (document.getElementById("etcDesert").checked == false)
+	case etcOvernight:
+			if (document.getElementById("etcOvernight").checked == false)
+			{
+				document.getElementById("totaOvernight").value = Number(document.getElementById("totalOvernight").value) - olderEtcOvernight * olderDrEtcOvernight; 
+				
+				document.getElementById("drEtcOvernight").disabled = true;
+				document.getElementById("qanakEtcOvernight").disabled = true;
+				document.getElementById("qanakEtcOvernight").value = "";
+				document.getElementById("drEtcOvernight").value = "";
+
+				olderEtcOvernight = 0; 
+				olderDrEtcOvernight = 0;
+               
+                price(etcOvernight);
+			}
+			else 
+			{
+
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderEtcOvernight * olderDrEtcOvernight; 
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +  
+												Number(document.getElementById("qanakEtcOvernight").value) * Number(document.getElementById("drEtcOvernight").value);
+
+		 	 	olderEtcOvernight = Number(document.getElementById("qanakEtcOvernight").value);
+                olderDrEtcOvernight = Number(document.getElementById("drEtcOvernight").value);
+
+
+				document.getElementById("drEtcOvernight").disabled = false;
+				document.getElementById("qanakEtcOvernight").disabled = false;
+
+			}	
+		
+		break;
+	case etcDesert: 
+			if (document.getElementById("etcDessert").checked == false)
 			{
 				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgEtcDesert * olderDrEtcDesert; 
 				
@@ -1046,8 +1079,71 @@ function subTotal(name)
 			}	
 		
 		break;
+	case hotel:
+			if (document.getElementById("hotel").checked == false)
+			{
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderHamarHotel * olderDrHotel; 
+				
+				document.getElementById("drHotel").disabled = true;
+				document.getElementById("hamarHotel").disabled = true;
+				document.getElementById("drHotel").value = "";
+				document.getElementById("hamarHotel").value = "";
+
+				olderHamarHotel = 0; 
+				olderDrHotel = 0;
+               
+                price(hotel);
+			}
+			else 
+			{
+
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderHamarHotel * olderDrHotel; 
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +  
+												Number(document.getElementById("hamarHotel").value) * Number(document.getElementById("drHotel").value);
+
+		 	 	olderHamarHotel = Number(document.getElementById("hamarHotel").value);
+                olderDrHotel = Number(document.getElementById("drHotel").value);
+
+
+				document.getElementById("drHotel").disabled = false;
+				document.getElementById("hamarHotel").disabled = false;
+
+			}	
+		
+		break;
+	case tent:
+			if (document.getElementById("tent").checked == false)
+			{
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakTent * olderDrTent; 
+				
+				document.getElementById("drTent").disabled = true;
+				document.getElementById("qanakTent").disabled = true;
+				document.getElementById("drTent").value = "";
+				document.getElementById("qanakTent").value = "";
+
+				olderQanakTent = 0; 
+				olderDrTent = 0;
+               
+                price(tent);
+			}
+			else 
+			{
+
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakTent * olderDrTent; 
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +  
+												Number(document.getElementById("qanakTent").value) * Number(document.getElementById("drTent").value);
+
+		 	 	olderQanakTent = Number(document.getElementById("qanakTent").value);
+                olderDrTent = Number(document.getElementById("drTent").value);
+
+
+				document.getElementById("drTent").disabled = false;
+				document.getElementById("qanakTent").disabled = false;
+
+			}	
+		
+		break;
 			
 	}
 }
- 
-			
+ 		
