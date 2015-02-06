@@ -1048,7 +1048,7 @@ function subTotal(name)
 		
 		break;
 	case etcDesert: 
-			if (document.getElementById("etcDessert").checked == false)
+			if (document.getElementById("etcDesert").checked == false)
 			{
 				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgEtcDesert * olderDrEtcDesert; 
 				
@@ -1242,4 +1242,13 @@ function subTotal(name)
 			
 	}
 }
- 		
+ 	
+
+// total!!!
+function total()
+{
+	document.getElementById("total").value =  Number(document.getElementById("totalAccessories").value)	+ Number(document.getElementById("totalOvernight").value) + Number(document.getElementById("totalDesert").value) + Number(document.getElementById("totalVegetable").value) +  Number(document.getElementById("totalDrink").value) + Number(document.getElementById("totalBarbecue").value);
+
+	 document.getElementById("totalForOne").value =  Number(document.getElementById("total").value) / Number(document.getElementById("participantsInput1").value);
+}
+
