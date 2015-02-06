@@ -8,7 +8,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
 	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
-    olderQanakTent = 0, olderDrTent = 0; 
+    olderQanakTent = 0, olderDrTent = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderDrEtcA = 0; 
 
 function subTotal(name)
 {
@@ -1139,6 +1139,102 @@ function subTotal(name)
 
 				document.getElementById("drTent").disabled = false;
 				document.getElementById("qanakTent").disabled = false;
+
+			}	
+		
+		break;
+	case utensil:
+			if (document.getElementById("utensil").checked == false)
+			{
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderQanakUtensil * olderDrUtensil; 
+				
+				document.getElementById("drUtensil").disabled = true;
+				document.getElementById("qanakUtensil").disabled = true;
+				document.getElementById("drUtensil").value = "";
+				document.getElementById("qanakUtensil").value = "";
+
+				olderQanakUtensil = 0; 
+				olderDrUtensil = 0;
+               
+                price(utensil);
+			}
+			else 
+			{
+
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderQanakUtensil * olderDrUtensil; 
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) +  
+												Number(document.getElementById("qanakUtensil").value) * Number(document.getElementById("drUtensil").value);
+
+		 	 	olderQanakUtensil = Number(document.getElementById("qanakUtensil").value);
+                olderDrUtensil = Number(document.getElementById("drUtensil").value);
+
+
+				document.getElementById("drUtensil").disabled = false;
+				document.getElementById("qanakUtensil").disabled = false;
+
+			}	
+		
+		break;
+	case skewer:
+			if (document.getElementById("skewer").checked == false)
+			{
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderQanakSkewer * olderDrSkewer; 
+				
+				document.getElementById("drSkewer").disabled = true;
+				document.getElementById("qanakSkewer").disabled = true;
+				document.getElementById("drSkewer").value = "";
+				document.getElementById("qanakSkewer").value = "";
+
+				olderQanakSkewer = 0; 
+				olderDrSkewer = 0;
+               
+                price(skewer);
+			}
+			else 
+			{
+
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderQanakSkewer * olderDrSkewer; 
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) +  
+												Number(document.getElementById("qanakSkewer").value) * Number(document.getElementById("drSkewer").value);
+
+		 	 	olderQanakSkewer = Number(document.getElementById("qanakSkewer").value);
+                olderDrSkewer = Number(document.getElementById("drSkewer").value);
+
+
+				document.getElementById("drSkewer").disabled = false;
+				document.getElementById("qanakSkewer").disabled = false;
+
+			}	
+		
+		break;
+	case etcAccessories:
+			if (document.getElementById("etcAccessories").checked == false)
+			{
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderQanakEtcA * olderDrEtcA; 
+				
+				document.getElementById("drEtcAccessories").disabled = true;
+				document.getElementById("qanakEtcAccessories").disabled = true;
+				document.getElementById("drEtcAccessories").value = "";
+				document.getElementById("qanakEtcAccessories").value = "";
+
+				olderQanakEtcA = 0; 
+				olderDrEtcA = 0;
+               
+                price(etcAccessories);
+			}
+			else 
+			{
+
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderQanakEtcA * olderDrEtcA; 
+				document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) +  
+												Number(document.getElementById("qanakEtcAccessories").value) * Number(document.getElementById("drEtcAccessories").value);
+
+		 	 	olderQanakEtcA = Number(document.getElementById("qanakEtcAccessories").value);
+                olderDrEtcA = Number(document.getElementById("drEtcAccessories").value);
+
+
+				document.getElementById("drEtcAccessories").disabled = false;
+				document.getElementById("qanakEtcAccessories").disabled = false;
 
 			}	
 		
