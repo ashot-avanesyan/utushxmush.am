@@ -17,8 +17,7 @@ function subTotal(name)
 			if (document.getElementById("pig").checked == false)
 			{
 			    //	window.alert("checked == false");
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgPig").value) * Number(document.getElementById("drPig").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPig * olderDrPig; 
 				document.getElementById("drPig").disabled = true;
 				document.getElementById("kgPig").disabled = true;
 				document.getElementById("kgPig").value = "";
@@ -51,8 +50,7 @@ function subTotal(name)
 		if (document.getElementById("lamb").checked == false)
 		{
               // window.alert("subTotal checked == false");
-              document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgLamb").value) * Number(document.getElementById("drLamb").value);
+              document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgLamb * olderDrLamb;  
 			document.getElementById("drLamb").disabled = true;
 			document.getElementById("kgLamb").disabled = true;
 			document.getElementById("kgLamb").value = "";
@@ -87,8 +85,7 @@ function subTotal(name)
 	case goat: 
 			if (document.getElementById("goat").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgGoat").value) * Number(document.getElementById("drGoat").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgGoat * olderDrGoat;  
 				document.getElementById("drGoat").disabled = true;
 				document.getElementById("kgGoat").disabled = true;
 				document.getElementById("kgGoat").value = "";
@@ -120,8 +117,7 @@ function subTotal(name)
 	case chicken: 
 			if (document.getElementById("chicken").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgChicken").value) * Number(document.getElementById("drChicken").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgChicken * olderDrChicken;  
 				document.getElementById("drChicken").disabled = true;
 				document.getElementById("kgChicken").disabled = true;
 				document.getElementById("kgChicken").value = "";
@@ -152,8 +148,7 @@ function subTotal(name)
 	case wing: 
 			if (document.getElementById("wing").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgWing").value) * Number(document.getElementById("drWing").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgWing * olderDrWing; 
 				document.getElementById("drWing").disabled = true;
 				document.getElementById("kgWing").disabled = true;
 				document.getElementById("kgWing").value = "";
@@ -185,8 +180,7 @@ function subTotal(name)
 	case haunch: 
 			if (document.getElementById("haunch").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgHaunch").value) * Number(document.getElementById("drHaunch").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgHaunch * olderDrHaunch; 
 				document.getElementById("drHaunch").disabled = true;
 				document.getElementById("kgHaunch").disabled = true;
 				document.getElementById("kgHaunch").value = "";
@@ -218,8 +212,7 @@ function subTotal(name)
 	case potatoes: 
 			if (document.getElementById("potatoes").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgPotatoes").value) * Number(document.getElementById("drPotatoes").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPotatoes * olderDrPotatoes;
 				document.getElementById("drPotatoes").disabled = true;
 				document.getElementById("kgPotatoes").disabled = true;
 				document.getElementById("kgPotatoes").value = "";
@@ -250,8 +243,7 @@ function subTotal(name)
 	case anvil: 
 			if (document.getElementById("anvil").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgAnvil").value) * Number(document.getElementById("drAnvil").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgAnvil * olderDrAnvil; 
 				document.getElementById("drAnvil").disabled = true;
 				document.getElementById("kgAnvil").disabled = true;
 				document.getElementById("kgAnvil").value = "";
@@ -282,8 +274,7 @@ function subTotal(name)
 	case internal_organs: 
 			if (document.getElementById("internal_organs").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgInternal_organs").value) * Number(document.getElementById("drInternal_organs").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgInternal_organs * olderDrInternal_organs;                                                                                               
 				document.getElementById("drInternal_organs").disabled = true;
 				document.getElementById("kgInternal_organs").disabled = true;
 				document.getElementById("kgInternal_organs").value = "";
@@ -314,8 +305,7 @@ function subTotal(name)
 	case etc: 
 			if (document.getElementById("etc").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) -  
-													Number(document.getElementById("kgEtc").value) * Number(document.getElementById("drEtc").value);
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgEtc * olderDrEtc; 
 				document.getElementById("drEtc").disabled = true;
 				document.getElementById("kgEtc").disabled = true;
 				document.getElementById("kgEtc").value = "";
@@ -351,8 +341,7 @@ function subTotal(name)
 
 				window.alert("checked == false");
 				window.alert(document.getElementById("totalDrink").value); 
-                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) -  
-													Number(document.getElementById("amountSpice").value) * Number(document.getElementById("drSpice").value);
+                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountSpice * olderDrSpice; 
 				  window.alert(document.getElementById("totalDrink").value);
 
 				document.getElementById("drSpice").disabled = true;
