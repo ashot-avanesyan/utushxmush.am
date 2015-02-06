@@ -95,7 +95,7 @@ display: inline;
 list-style: none;
 }
 ul#chashacank li button {
-background-color: ##48D1CC;
+background-color: #B0E0E6;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -107,7 +107,7 @@ display: inline;
 list-style: none;
 }
 li button {
-background-color: #98FB98;
+background-color: #B0E0E6;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -118,14 +118,14 @@ div#d1 {
 width: auto;
 height: 750px;
 margin: auto;
-background-color: #FAFAD2;
+background-color: #B0E0E6;
 padding: 0% 0% 0% 6%;
 }
 div#d2 {
 width: auto;
 height: 100%;
 margin: auto;
-background-color: #7FFFD4;
+background-color: #B0E0E6;
 display: none;
 }
 table.margin_barbequ {
@@ -165,24 +165,24 @@ div#d3 {
 height: 660px;
 background-color: #B0E0E6;
 display: none;
-padding: 0% 15% 0% 7%;
+padding: 0% 15% 30% 12%;
 }
 table.margin_overnight {
 margin: 0% 5% !important;;
 }
 div#d4 {
 height: 660px;
-background-color: #AEFFFF;
+background-color: #B0E0E6;
 display: none;
-padding: 0% 0% 0% 7%;
+padding: 0% 10% 20% 35%;
 }
 table.margin_accessories {
-margin: 0% 20% !important;;
+margin: 0% 5% !important;;
 }
 div#d {
 width: auto;
 height: 440px;
-background-color: #98FB98;
+background-color: #B0E0E6;
 display: none;
 margin: auto ;
 padding: 28% 0% 0% 9%;
@@ -191,5 +191,5 @@ padding: 28% 0% 0% 9%;
 /* Armine */
 .noneBorder {
 	border: 0px;
-    background-color: #98FB98;
+    background-color: #B0E0E6;
 }
