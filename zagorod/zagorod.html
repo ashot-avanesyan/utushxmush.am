@@ -408,26 +408,26 @@
         		<tr>
         			<td><p><input type="checkbox" value = "hotel" id = "hotel" onclick = "initializeDinner(hotel); price(hotel);subTotal(hotel);total();">Հյուրանոց</p></td>
 				<td><input class= "mass" type="number" min = "0" id = "hamarHotel" disabled onblur = "price(hotel); subTotal(hotel);total();">համար</td>
-				<td><p><input type = "text" size = "5" id = "drHotel" disabled onblur ="price(hotel);subTotal(hotel);total();">դր</p></td>
+				<td><p><input type = "text" size = "1%" id = "drHotel" disabled onblur ="price(hotel);subTotal(hotel);total();">դր</p></td>
 				<td><p><input type = "text" class = "noneBorder" id = "hotel_price" readonly> </p></td>
         	 	</tr>
-        	 	<tr>
-                    <td><p><input type="checkbox" value = "tent" id = "tent" onclick = "initializeDinner(tent); price(tent);subTotal(tent);total();">Վրան</p></td>
-                    <td><input class= "mass" type="number" min = "0" id = "qanakTent" disabled onblur = "price(tent);subTotal(tent);total();">քանակ</td>
-                    <td><p><input type = "text" size = "1%" id = "drTent" disabled onblur ="price(tent); subTotal(tent);total();">դր</p></td>
-                    <td><p><input type = "text" class = "noneBorder" id = "tent_price" readonly> </p></td>
-                </tr>
-				<tr>
-                	<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);subTotal(etcOvernight);price(etcOvernight);total();">Այլ<input type ="text" placeholder="Անվանումը" id = "nameOvernight" size= "5" disabled></p></td>
-                	<td><input class = "mass" type = "number" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();">քանակ</td>
-                	<td><input type = "text" size = "5"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();">դր</td>
-                	<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" readonly> </p></td>
-            	</tr>       
-				</table>
-			</div>
+        	 	<tr>     
+		                <td><p><input type="checkbox" value = "tent" id = "tent" onclick = "initializeDinner(tent); price(tent);subTotal(tent);total();">Վրան</p></td>
+                    		<td><input class= "mass" type="number" min = "0" id = "qanakTent" disabled onblur = "price(tent);subTotal(tent);total();">քանակ</td>
+                    		<td><p><input type = "text" size = "1%" id = "drTent" disabled onblur ="price(tent); subTotal(tent);total();">դր</p></td>
+                    		<td><p><input type = "text" class = "noneBorder" id = "tent_price" readonly> </p></td>
+                	</tr>
+			<tr>
+                		<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);subTotal(etcOvernight);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameOvernight" size= "5" disabled></p></td>
+                		<td><input class = "mass" type = "number" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();">քանակ</td>
+                		<td><input type = "text" size = "1%"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();">դր</td>
+                		<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" readonly> </p></td>
+            		</tr> 
+			</table>
+		</div>
 		<div id = "d4">
-              <ul id ="accessories" style = "text-alagn:center">
-                <li><button onclick="hide4 (), blur ()">Պարագաներ<br><input type="number" class="InputBatton" size="6"placeholder= "Ընդամենը" readonly id ="totalAccessories" onchange = "total();total();"></button></li>
+        	      <ul id ="accessories" style = "text-alagn:center">
+                	<li><button onclick="hide4 (), blur ()">Պարագաներ<br><input type="number" class="InputBatton" size="6"placeholder= "Ընդամենը" readonly id ="totalAccessories" onchange = "total();total();"></button></li>
         		<table id= "margin_accessories">
 			<tr>
                     		<td><p><input type="checkbox" value = "aid_supplies">Առաջին բուժօգնության պարագաներ</p></td>
