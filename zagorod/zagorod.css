@@ -129,16 +129,20 @@ background-color: #B0E0E6;
 display: none;
 }
 table.margin_barbequ {
-margin: 0% 13% 0% 13% !important;;
+margin-left: auto;
+margin-right: auto;
 }
 table.margin_drink {
-margin: 0% 12% 0% 12% !important;;
+margin-left: auto;
+margin-right: auto;
 }
 table.margin_vegetable {
-margin: 0% 13% !important;
+margin-left: auto;
+margin-right: auto;
 }
 table#margin_desert {
-margin: 0% 9% !important;;
+margin-left: auto;
+margin-right: auto;
 }
 div#d_2_2_tabs {
 display: none;
