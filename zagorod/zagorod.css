@@ -7,7 +7,7 @@ body {	margin: 0%;
 div#expenditure {
 	position: fixed;
     top: 83%;
-    right: 22%;
+    right: 6%;
 }
 input#general {
 	padding: 28% 2% 0% 1%;
@@ -43,6 +43,9 @@ select.lengthOfButton
 { 
    width:100px;
 }  
+table#margin, td {
+padding: 0% 0% 0% 5%;
+}
 form.amountParticipants {
 	margin: auto 30% 2% 15%;
 	padding: 20px;
@@ -168,7 +171,7 @@ div#d3 {
 height: 660px;
 background-color: #B0E0E6;
 display: none;
-padding: 0% 0% 0% 15%;
+padding: 0% 15% 30% 12%;
 }
 table.margin_overnight {
 margin: 0% 5% !important;;
