@@ -8,7 +8,6 @@ div#expenditure {
 	position: fixed;
     top: 83%;
     right: 22%;
-    color: red;
 }
 input#general {
 	padding: 28% 2% 0% 1%;
@@ -196,4 +195,10 @@ padding: 28% 0% 0% 9%;
 .noneBorder {
 	border: 0px;
     background-color: #B0E0E6;
+}
+
+input.totalNoneBorder {
+	border: 0px; 
+/*	background-color:#E0E0E0;*/
+background-color:#E8E8E8;
 }
