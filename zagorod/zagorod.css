@@ -202,3 +202,6 @@ input.totalNoneBorder {
 /*	background-color:#E0E0E0;*/
 background-color:#E8E8E8;
 }
+table#TransportCosts,tr,td {
+	margin: 0% 0% 4% 17%;
+}

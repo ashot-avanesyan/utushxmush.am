@@ -40,11 +40,7 @@
 				<button onclick="hide2(), blur()">Ճաշացանկ</button>
 			</li>
 			<li>
-				<button onclick="hide3(), blur()">Գիշերակաց</button>
-			</li>
-			<li>
-				<button onclick="hide4(), blur()">Պարագաներ</button>
-			</li>
+				<button onclick="hide3(), blur()">Գիշերակաց</button> </li> <li> <button onclick="hide4(), blur()">Պարագաներ</button> </li>
 		</ul>
 	<div id="d">
 	<form class = "amountParticipants">
@@ -72,10 +68,19 @@
           	</table>
             	<br>
           	<br>
-     		<br>
-         	<label id = "Participants"> Տրանսպորտի ծախսը  </label>
-            <input size="12"  type="text" name= "fname" class = "inputParticipants">  <br> <br>
-      	</form>
+      		</form>
+			<table id="TransportCosts">
+				<tr>
+					<td><input type="checkbox">Տրանսպորտի ծախսը   </td>
+					<td id=TransportCostsTd><input size="4" type="text">կմ</td>
+					<td><input size="4" type="text">դր</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox">Беседка  </td>
+					<td></td>
+					<td><input size="4" type="text">դր</td>
+				</tr>
+			</table>
 	</div>
  	<div id = "d2">
 		<ul id = "chashacank" style="text-align:center" >
