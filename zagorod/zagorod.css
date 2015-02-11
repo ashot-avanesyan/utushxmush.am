@@ -124,7 +124,7 @@ div#d2 {
 width: auto;
 height: 100%;
 margin: auto;
-background-color: #B0E0E6;
+background-color: #FFFF66;
 display: none;
 }
 table.margin_barbequ {
@@ -166,7 +166,7 @@ margin: center;
 }
 div#d3 {
 height: 660px;
-background-color: #B0E0E6;
+background-color: #CCFF66;
 display: none;
 padding: 0% 0% 0% 15%;
 }
@@ -175,7 +175,7 @@ margin: 0% 5% !important;;
 }
 div#d4 {
 height: 660px;
-background-color: #B0E0E6;
+background-color: #CCFF99;
 display: none;
 padding: 0% 0% 0% 15%;
 }
@@ -185,7 +185,7 @@ margin: 0% 5% !important;;
 div#d {
 width: auto;
 height: 440px;
-background-color: #B0E0E6;
+background-color: #CCFFCC;
 display: none;
 margin: auto ;
 padding: 28% 0% 0% 9%;
