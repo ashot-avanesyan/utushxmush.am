@@ -19,16 +19,59 @@
       		}              
          	google.maps.event.addDomListener(window, 'load', initialize);
   	</script>
-	</head>
-<body>
 <!--#include test.html -->
 <!--<link rel="import" href="test.html" />-->
 <!--Syuzi_Nara -->
-    
-    	<img src="n2.jpg">
-   
-     
+<style>
+p.pos_fixed {
+    position: fixed;
+    top: 22px;
+    left: 90px;
+    color: red;
+}
+</style>
+<!--slide js-->
+      <script>
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage,4000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "Chrysanthemum.jpg";
+          images[1] = "Hydrangeas.jpg";
+          images[2] = "Tulips.jpg";
+      </script>
+</head>
+<body onload = "startTimer()">
+   <img id="img" src="Chrysanthemum.jpg"></br>
+ 
+<p class="pos_fixed">
+<img src="ux.jpeg"
+style="float:left;width:250px;height:250px">
+</p>  
     <div id = "sizeOfDiv">
+          	<style>
+p.pos_fon {
+    position: fixed;
+    top: 22px;
+    left: 90px;
+    color: red;
+}
+</style>
+<p class="pos_fon">
+<img src="n2.jpg"
+</p>   
+     
 		<ul id = "glkhawor_meny" style="text-align:center">
 			<li>
 				<button onclick="hide5(), blur()">Մասնակիցներ</button>
