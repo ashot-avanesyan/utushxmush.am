@@ -2,7 +2,7 @@
 /*  Syuzi_Nara */
 body {	margin: 0%;
       	font-size: 100%;
-	background-color: #FFFFCC;
+        background-image: url(natura3.jpg );
 }
 div#expenditure {
 	position: fixed;
