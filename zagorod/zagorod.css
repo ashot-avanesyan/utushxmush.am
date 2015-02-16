@@ -2,7 +2,12 @@
 /*  Syuzi_Nara */
 body {	margin: 0%;
       	font-size: 100%;
-        background-image: url(natura3.jpg );
+        background-image: url(z4.jpg );
+	background-repeat: no-repeat;
+   	background-size: auto 100%;
+}
+#img{
+box-shadow: 10px 10px 5px #222222;
 }
 div#expenditure {
 	position: fixed;
@@ -12,8 +17,8 @@ div#expenditure {
 input#general {
 	padding: 28% 2% 0% 1%;
 }
-input.InputBatton {
-	background-color: #B0E0E6;
+input.InputButton {
+	background-color: #f0ddb5;
 
 }
  p.one{
@@ -28,8 +33,8 @@ input.InputBatton {
 div#sizeOfDiv {
     /* border-style: solid;
      border-width: 10px;
-     border: 10px solid;*/
-     border-color: green;
+     border: 10px solid;
+     border-color: green;*/
      margin-left: 22%;
      margin-right: 22%;
 }
@@ -82,7 +87,7 @@ list-style: none;
 margin-bottom:"text-align:center";
 }
 ul#glkhawor_meny li button {
-background-color: #E6E6FA;
+background-color: #f0ddb5;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -97,7 +102,7 @@ display: inline;
 list-style: none;
 }
 ul#chashacank li button {
-background-color: #B0E0E6;
+background-color: #f0ddb5;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -109,7 +114,7 @@ display: inline;
 list-style: none;
 }
 li button {
-background-color: #B0E0E6;
+background-color: #f0ddb5;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -120,14 +125,16 @@ div#d1 {
 width: auto;
 height: 750px;
 margin: auto;
-background-color: #FFFF99;
+/*background-color: #FFFF99;*/
+background-image: url(nastol1.jpg ) ;
 padding: 0% 0% 0% 6%;
 }
 div#d2 {
 width: auto;
 height: 100%;
 margin: auto;
-background-color: #FFFF66;
+/*background-color: #FFFF66;*/
+background-image: url(nastol1.jpg ) ;
 display: none;
 }
 table.margin_barbequ {
@@ -169,26 +176,29 @@ margin: center;
 }
 div#d3 {
 height: 660px;
-background-color: #CCFF66;
+/*background-color: #CCFF66;*/
+background-image: url(nastol1.jpg );
 display: none;
 padding: 0% 0% 0% 15%;
 }
 table.margin_overnight {
-margin: 0% 5% !important;;
+margin: 0% 5% !important;
 }
 div#d4 {
 height: 660px;
-background-color: #CCFF99;
+/*background-color: #CCFF99;*/
+background-image: url(nastol1.jpg );
 display: none;
 padding: 0% 0% 0% 15%;
 }
 table.margin_accessories {
-margin: 0% 5% !important;;
+margin: 0% 5% !important;
 }
 div#d {
 width: auto;
 height: 440px;
-background-color: #CCFFCC;
+/*background-color: #CCFFCC;*/
+background-image: url(nastol1.jpg );
 display: none;
 margin: auto ;
 padding: 28% 0% 0% 9%;
@@ -197,13 +207,13 @@ padding: 28% 0% 0% 9%;
 /* Armine */
 .noneBorder {
 	border: 0px;
-    background-color: #B0E0E6;
+    background-color: #f0ddb5;
 }
 
 input.totalNoneBorder {
 	border: 0px; 
 /*	background-color:#E0E0E0;*/
-background-color:#E8E8E8;
+background-color:#f0ddb5;
 }
 table#TransportCosts,tr,td {
 	margin: 0% 0% 4% 17%;

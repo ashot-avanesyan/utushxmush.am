@@ -116,7 +116,7 @@ style="float:left;width:250px;height:250px">
 	</div>
  	<div id = "d2">
 		<ul id = "chashacank" style="text-align:center" >
-        	<li><button onclick="hide10_2(), blur()">Խորոված<br><input type = "text" class="InputBatton"size="6%" placeholder=" Ընդամենը" readonly id ="totalBarbecue"></button></li>
+        	<li><button onclick="hide10_2(), blur()">Խորոված<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը" readonly id ="totalBarbecue"></button></li>
     	</ul>
 		<div id="d_2_1">
         		<table class= "margin_barbequ">
@@ -184,7 +184,7 @@ style="float:left;width:250px;height:250px">
 		</div>
 		<div id="d_2_2">
 			<ul id = "alkaholayin" style="text-align:center" >
-	 			<li><button onclick="hide20_2(), blur()">Խմիչք<br><input type = "text" class="InputBatton"size="6%" placeholder=" Ընդամենը" readonly id = "totalDrink"></button></li>
+	 			<li><button onclick="hide20_2(), blur()">Խմիչք<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը" readonly id = "totalDrink"></button></li>
 	 	    </ul>
 			<div id="d_2_2_tabs">
 	 		<table class= "margin_drink">
@@ -298,7 +298,7 @@ style="float:left;width:250px;height:250px">
 		</div>
 		<div id="d_2_3">
 			<ul id = "desert" style="text-align:center" >
-           		<li><button onclick="hide20_3(), blur()">Բանջարեղեն<br><input type = "text" class="InputBatton" size="6%" placeholder=" Ընդամենը" readonly id = "totalVegetable"></button></li>
+           		<li><button onclick="hide20_3(), blur()">Բանջարեղեն<br><input type = "text" class="InputButton" size="6%" placeholder=" Ընդամենը" readonly id = "totalVegetable"></button></li>
 			</ul>
 			<div id="d_2_3_tabs">
 			<table class="margin_vegetable">
@@ -343,7 +343,7 @@ style="float:left;width:250px;height:250px">
 		</div>
 		<div id="d_2_4">
 			<ul id = "desert" style="text-align:center" >
-            	<li><button onclick="hide20_4(), blur()">Դեսերտ<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը"  readonly id = "totalDesert"></button></li>
+            	<li><button onclick="hide20_4(), blur()">Դեսերտ<br><input type = "text" class="InputButton" size="6%" placeholder=" Ընդամենը"  readonly id = "totalDesert"></button></li>
            	</ul>
 			<div id="d_2_4_tabs">
 			<table id="margin_desert">
@@ -401,9 +401,9 @@ style="float:left;width:250px;height:250px">
           		<tr>
                 		<td><p><input type="checkbox" name="spice" value="desserts" id = "desserts" onclick = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();">Աղանդեր
                 			<select name="character" class = "lengthOfButton" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
+						<option value="Chips">Չիպս</option>
                     				<option value="Sunflower">Արևածաղիկ</option>
                        				<option value="Peanut">Գետնանուշ</option>
-                        			<option value="Chips">Չիպս</option>
 						<option value="Salt_sticks">Աղի ձողիկներ</option>
                        				<option value="Popcorn">Ադիբուդի</option>
 					</select>
@@ -439,7 +439,7 @@ style="float:left;width:250px;height:250px">
 			</div>
 		<div id = "d3">
            <ul id ="overnight" style = "text-align:center">
-              <li><button onclick="hide3 (), blur ()" style = "margin-left:33%;margin-right:50%">Գիշերակաց<br><input type = "text" class="InputBatton" size="6" placeholder= "Ընդամենը" readonly id = "totalOvernight" onchange = "total();total();"></button></li>
+              <li><button onclick="hide3 (), blur ()" style = "margin-left:33%;margin-right:50%">Գիշերակաց<br><input type = "text" class="InputButton" size="6" placeholder= "Ընդամենը" readonly id = "totalOvernight" onchange = "total();total();"></button></li>
                </ul>
 			<table id= "margin_overnight">
         		<tr>
@@ -464,7 +464,7 @@ style="float:left;width:250px;height:250px">
 		</div>
 		<div id = "d4">
         	      <ul id ="accessories" style = "text-align:center">
-                	<li><button onclick="hide4 (), blur ()" style = "margin-left:33%;margin-right:50%">Պարագաներ<br><input type="text" class="InputBatton" size="6"placeholder= "Ընդամենը" readonly id ="totalAccessories" onchange = "total();total();"></button></li>
+                	<li><button onclick="hide4 (), blur ()" style = "margin-left:33%;margin-right:50%">Պարագաներ<br><input type="text" class="InputButton" size="6"placeholder= "Ընդամենը" readonly id ="totalAccessories" onchange = "total();total();"></button></li>
 			</ul>
         		<table id= "margin_accessories">
 			<tr>
@@ -501,7 +501,7 @@ style="float:left;width:250px;height:250px">
 			</div>		
 		</div>
 		<div id="expenditure">
-		<button id="general" style = "background-color:#E8E8E8">
+		<button id="general" style = "background-color:#f0ddb5">
 			<table>
 				<tr>
 					<td>Ընդհանուր ծախսը <b id="GlobalGenral">= 
