@@ -37,12 +37,27 @@
         	document.getElementById("d").style.display = "block";
     	}
 function hide20_2() {
+                document.getElementById("d_2_4_tabs").style.display = "none";
+                document.getElementById("d_2_3_tabs").style.display = "none";
+                document.getElementById("d_2_2_tabs").style.display = "none";
+                document.getElementById("d_2_1_tabs").style.display = "block";
+function hide20_2() {
+                document.getElementById("d_2_1_tabs").style.display = "none";
+                document.getElementById("d_2_4_tabs").style.display = "none";
+                document.getElementById("d_2_3_tabs").style.display = "none";
                 document.getElementById("d_2_2_tabs").style.display = "block";
+				
 }
 function hide20_3() {
+                document.getElementById("d_2_1_tabs").style.display = "none";
+                document.getElementById("d_2_4_tabs").style.display = "none";
+                document.getElementById("d_2_2_tabs").style.display = "none";
                 document.getElementById("d_2_3_tabs").style.display = "block";
 }
 function hide20_4() {
+                document.getElementById("d_2_1_tabs").style.display = "none";
+                document.getElementById("d_2_2_tabs").style.display = "none";
+                document.getElementById("d_2_3_tabs").style.display = "none";
                 document.getElementById("d_2_4_tabs").style.display = "block";
 }
 

@@ -115,10 +115,11 @@ style="float:left;width:250px;height:250px">
 			</table>
 	</div>
  	<div id = "d2">
+	<div id="d_2_1">
 		<ul id = "chashacank" style="text-align:center" >
         	<li><button onclick="hide10_2(), blur()"style="margin-top: 30px;" >Խորոված<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը" readonly id ="totalBarbecue"></button></li>
     	</ul>
-		<div id="d_2_1">
+	   <div id="d_2_1_tabs">
         		<table class= "margin_barbequ">
         		<tr>
 	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig); subTotal(pig);total();">Խոզ</p></td>
@@ -181,6 +182,7 @@ style="float:left;width:250px;height:250px">
 	 		     	<td><p><input type = "text" id = "etc_price" size="1%" class  = "noneBorder" readonly> </p></td>
      			</tr>
 			</table>
+		</div>
 		</div>
 		<div id="d_2_2">
 			<ul id = "alkaholayin" style="text-align:center" >
@@ -439,7 +441,7 @@ style="float:left;width:250px;height:250px">
 			</div>
 		<div id = "d3">
            <ul id ="overnight" style = "text-align:center">
-              <li><button onclick="hide3 (), blur ()" style = "margin-left:33%;margin-right:50%">Գիշերակաց<br><input type = "text" class="InputButton" size="6" placeholder= "Ընդամենը" readonly id = "totalOvernight" onchange = "total();total();"></button></li>
+              <li><button onclick="hide3 (), blur ()" style = "margin-left:33%;margin-right:50%">Գիշերակաց<br></button></li>
                </ul>
 			<table id= "margin_overnight">
         		<tr>
@@ -464,7 +466,7 @@ style="float:left;width:250px;height:250px">
 		</div>
 		<div id = "d4">
         	      <ul id ="accessories" style = "text-align:center">
-                	<li><button onclick="hide4 (), blur ()" style = "margin-left:33%;margin-right:50%">Պարագաներ<br><input type="text" class="InputButton" size="6"placeholder= "Ընդամենը" readonly id ="totalAccessories" onchange = "total();total();"></button></li>
+                	<li><button onclick="hide4 (), blur ()" style = "margin-left:33%;margin-right:50%">Պարագաներ<br></button></li>
 			</ul>
         		<table id= "margin_accessories">
 			<tr>
