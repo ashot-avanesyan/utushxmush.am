@@ -115,11 +115,13 @@ style="float:left;width:250px;height:250px">
 			</table>
 	</div>
  	<div id = "d2">
-	<div id="d_2_1">
 		<ul id = "chashacank" style="text-align:center" >
-        	<li><button onclick="hide10_2(), blur()"style="margin-top: 30px;" >Խորոված<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը" readonly id ="totalBarbecue"></button></li>
+        	<li><button onclick="hide20_1(), blur()">Խորոված<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը" readonly id ="totalBarbecue"></button></li>
+	 			<li><button onclick="hide20_2(), blur()">Խմիչք<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը" readonly id = "totalDrink"></button></li>
+           		<li><button onclick="hide20_3(), blur()">Բանջարեղեն<br><input type = "text" class="InputButton" size="6%" placeholder=" Ընդամենը" readonly id = "totalVegetable"></button></li>
+            	<li><button onclick="hide20_4(), blur()">Դեսերտ<br><input type = "text" class="InputButton" size="6%" placeholder=" Ընդամենը"  readonly id = "totalDesert"></button></li>
     	</ul>
-	   <div id="d_2_1_tabs">
+		<div id="d_2_1_tabs">
         		<table class= "margin_barbequ">
         		<tr>
 	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig); subTotal(pig);total();">Խոզ</p></td>
@@ -183,11 +185,6 @@ style="float:left;width:250px;height:250px">
      			</tr>
 			</table>
 		</div>
-		</div>
-		<div id="d_2_2">
-			<ul id = "alkaholayin" style="text-align:center" >
-	 			<li><button onclick="hide20_2(), blur()"style="margin-top: 80px;" >Խմիչք<br><input type = "text" class="InputButton"size="6%" placeholder=" Ընդամենը" readonly id = "totalDrink"></button></li>
-	 	    </ul>
 			<div id="d_2_2_tabs">
 	 		<table class= "margin_drink">
 	 		<tr>
@@ -296,12 +293,7 @@ style="float:left;width:250px;height:250px">
                                 <td><p><input type = "text" id = "etcDrink_price" size="1%" class  = "noneBorder" readonly> </p></td>
                         </tr>			
 			</table>
-			</div>
 		</div>
-		<div id="d_2_3">
-			<ul id = "desert" style="text-align:center" >
-           		<li><button onclick="hide20_3(), blur()"style="margin-top: 260px;" >Բանջարեղեն<br><input type = "text" class="InputButton" size="6%" placeholder=" Ընդամենը" readonly id = "totalVegetable"></button></li>
-			</ul>
 			<div id="d_2_3_tabs">
 			<table class="margin_vegetable">
 			<tr>
@@ -342,11 +334,6 @@ style="float:left;width:250px;height:250px">
        			</tr>
 		</table>
 		</div>
-		</div>
-		<div id="d_2_4">
-			<ul id = "desert" style="text-align:center" >
-            	<li><button onclick="hide20_4(), blur()"style="margin-top: 300px;" >Դեսերտ<br><input type = "text" class="InputButton" size="6%" placeholder=" Ընդամենը"  readonly id = "totalDesert"></button></li>
-           	</ul>
 			<div id="d_2_4_tabs">
 			<table id="margin_desert">
 		 	<tr>
@@ -436,7 +423,6 @@ style="float:left;width:250px;height:250px">
                                 <td><p><input type = "text" id = "etcDesert_price" size="1%" class  = "noneBorder" readonly> </p></td>
                         </tr>
 			</table>
-			</div>
 			</div>
 			</div>
 		<div id = "d3">
