@@ -1,35 +1,36 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
+ <html>
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="zagorod.css">
+      <script src="zagorod.js"></script>
+      <script src="totalPrices.js"></script>
+      <script  src="http://maps.googleapis.com/maps/api/js">   </script>
+        <script>
+         function initialize() 
+             {
+                 var mapProp = {
+                                 center:new google.maps.LatLng(39.8272818, 46.7625134),
+                                 zoom:9,
+                                 mapTypeId:google.maps.MapTypeId.ROADMAP
+                                 };
+                 var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+             }              
+             google.maps.event.addDomListener(window, 'load', initialize);
+     </script>
+ <!--#include test.html -->
+ <!--<link rel="import" href="test.html" />-->
+ <!--Syuzi_Nara -->
+ <style>
+ p.pos_fixed {
+   position: fixed;
+     top: 22px;
+     left: 90px;
+     color: red;
+ }
+ </style>
+ <!--slide js-->
 
-<html>
-  <head>
-     <meta charset="UTF-8">
-     <link rel="stylesheet" type="text/css" href="zagorod.css">
-     <script src="zagorod.js"></script>
-     <script src="totalPrices.js"></script>
-     <script  src="http://maps.googleapis.com/maps/api/js">   </script>
-       <script>
-     	function initialize() 
-        	{
-            	var mapProp = {
-			    				center:new google.maps.LatLng(39.8272818, 46.7625134),
-                            	zoom:9,
-                             	mapTypeId:google.maps.MapTypeId.ROADMAP
-                              	};
-             	var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-      		}              
-         	google.maps.event.addDomListener(window, 'load', initialize);
-  	</script>
-<!--#include test.html -->
-<!--<link rel="import" href="test.html" />-->
-<!--Syuzi_Nara -->
-<style>
-p.pos_fixed {
-  position: fixed;
-    top: 22px;
-    left: 90px;
-    color: red;
-}
-</style>
 <!--slide js-->
       <script>
           function displayNextImage() {
@@ -293,7 +294,7 @@ style="float:left;width:250px;height:250px">
                                 <td><p><input type = "text" id = "etcDrink_price" size="1%" class  = "noneBorder" readonly> </p></td>
                         </tr>			
 			</table>
-		</div>
+			</div>
 			<div id="d_2_3_tabs">
 			<table class="margin_vegetable">
 			<tr>
@@ -425,9 +426,10 @@ style="float:left;width:250px;height:250px">
 			</table>
 			</div>
 			</div>
+			</div>
 		<div id = "d3">
            <ul id ="overnight" style = "text-align:center">
-		   <li><button onclick="hide3 (), blur ()" style = "margin-top:30px;">Գիշերակաց<br><input type = "text" class="InputButton" size="6%" placeholder="Ընդամենը" readonly id = "totalDesert"></button></li>
+              <li><button onclick="hide3 (), blur ()" style = "margin-left:33%;margin-right:50%">Գիշերակաց<br><input type = "text" class="InputButton" size="6" placeholder= "Ընդամենը" readonly id = "totalOvernight" onchange = "total();total();"></button></li>
                </ul>
 			<table id= "margin_overnight">
         		<tr>
@@ -452,7 +454,7 @@ style="float:left;width:250px;height:250px">
 		</div>
 		<div id = "d4">
         	      <ul id ="accessories" style = "text-align:center">
-                	<li><button onclick="hide4 (), blur ()" style = "margin-top:30px;">Պարագաներ<br><input type = "text" class="InputButton" size="6%" placeholder="Ընդամենը" readonly id = "totalDesert"></button></li>
+                	<li><button onclick="hide4 (), blur ()" style = "margin-left:33%;margin-right:50%">Պարագաներ<br><input type="text" class="InputButton" size="6"placeholder= "Ընդամենը" readonly id ="totalAccessories" onchange = "total();total();"></button></li>
 			</ul>
         		<table id= "margin_accessories">
 			<tr>
@@ -492,17 +494,18 @@ style="float:left;width:250px;height:250px">
 		<button id="general" style = "background-color:#f0ddb5">
 			<table>
 				<tr>
-					<td>Ընդհանուր ծախսը <b id="GlobalGenral"> 
+					<td>Ընդհանուր ծախսը <b id="GlobalGenral">= 
 						<input type = "text" size = "1%" id = "total" readonly class = "totalNoneBorder"> </b> </td>
 				</tr>					
 				<br>
 				<tr>
-					<td>1 հոգու ծախսը  <b id="1menGenral"> 
+					<td>1 հոգու ծախսը  <b id="1menGenral">= 
 						<input type = "text" size = "1%" id = "totalForOne" readonly class = "totalNoneBorder"></b></td>
 				</tr>
 			</table>
 			<br>
 		</button>
-	</div>
+    </div> 
+
 </body>
 </html>
