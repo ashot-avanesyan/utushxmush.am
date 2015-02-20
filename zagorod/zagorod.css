@@ -4,7 +4,7 @@ body {	margin: 0%;
       	font-size: 100%;
         background-image: url(z4.jpg );
 	background-repeat: no-repeat;
-   	background-size: auto 100%;
+/*   	background-size: auto 100%;*/
 }
 #img{
 box-shadow: 10px 10px 5px #222222;
