@@ -124,7 +124,7 @@ function initializeDinner(name)
 		case pig:
 			if (document.getElementById("pig").checked == true)	
 			{
-				document.getElementById("kgPig").value = 5;
+				document.getElementById("kgPig").value = 1;
 				document.getElementById("drPig").value = 3800;
 				document.getElementById("drPig").disabled = false;
 				document.getElementById("kgPig").disabled = false;
@@ -142,7 +142,7 @@ function initializeDinner(name)
 	    case lamb:
 			if (document.getElementById("lamb").checked == true)	
 			{
-				document.getElementById("kgLamb").value = 5;
+				document.getElementById("kgLamb").value = 1;
 				document.getElementById("drLamb").value = 3000;
 				document.getElementById("drLamb").disabled = false;
 				document.getElementById("kgLamb").disabled = false;
@@ -740,28 +740,28 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Nemiroff": 
-                                document.getElementById("amountSpice").value = 2;
-                                document.getElementById("drSpice").value = 250;
+                                document.getElementById("amountSpice").value = 1;
+                                document.getElementById("drSpice").value = 2700;
 						    break;
                             
 							case "Talka":
-                                document.getElementById("amountSpice").value = 3;
-                                document.getElementById("drSpice").value = 350;
+                                document.getElementById("amountSpice").value = 1;
+                                document.getElementById("drSpice").value = 1850;
 					        break;
 
 							case "5_ozer":
-                                document.getElementById("amountSpice").value = 4;
-                                document.getElementById("drSpice").value = 450;
+                                document.getElementById("amountSpice").value = 1;
+                                document.getElementById("drSpice").value = 800;
 					        break;
 						
 							case "Artsakh":	
-                                document.getElementById("amountSpice").value = 5;
-                                document.getElementById("drSpice").value = 550;
+                                document.getElementById("amountSpice").value = 1;
+                                document.getElementById("drSpice").value = 1400;
 					        break;
 
 							case "Zima":
-                                document.getElementById("amountSpice").value = 6;
-								document.getElementById("drSpice").value = 650;
+                                document.getElementById("amountSpice").value = 1;
+								document.getElementById("drSpice").value =1680 ;
 							break;
 							case "EtcSpice":
                                 document.getElementById("drSpice").disabled = false;
@@ -803,28 +803,28 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Armenia": 
-                                document.getElementById("amountWine").value = 2;
-                                document.getElementById("drWine").value = 250;
+                                document.getElementById("amountWine").value = 1;
+                                document.getElementById("drWine").value = 1720;
 						    break;
                             
 							case "Areni":
-                                document.getElementById("amountWine").value = 3;
-                                document.getElementById("drWine").value = 350;
+                                document.getElementById("amountWine").value = 1;
+                                document.getElementById("drWine").value = 1600;
 					        break;
 
 							case "Kagor":
-                                document.getElementById("amountWine").value = 4;
-                                document.getElementById("drWine").value = 450;
+                                document.getElementById("amountWine").value = 1;
+                                document.getElementById("drWine").value = 1700;
 					        break;
 						
 							case "Sapiravi":	
-                                document.getElementById("amountWine").value = 5;
-                                document.getElementById("drWine").value = 550;
+                                document.getElementById("amountWine").value = 1;
+                                document.getElementById("drWine").value = 1450;
 					        break;
 
 							case "Shushi":
-                                document.getElementById("amountWine").value = 6;
-                                document.getElementById("drWine").value = 650;
+                                document.getElementById("amountWine").value = 1;
+                                document.getElementById("drWine").value = 1750;
 					        break;
 							
                             case "EtcWine":
@@ -863,28 +863,28 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Gyumri": 
-                                document.getElementById("amountBeer").value = 2;
-                                document.getElementById("drBeer").value = 250;
+                                document.getElementById("amountBeer").value = 1;
+                                document.getElementById("drBeer").value = 430;
 						    break;
                             
 							case "Miller":
-                                document.getElementById("amountBeer").value = 3;
-                                document.getElementById("drBeer").value = 350;
+                                document.getElementById("amountBeer").value = 1;
+                                document.getElementById("drBeer").value = 440;
 					        break;
 
 							case "Kilikia":
-                                document.getElementById("amountBeer").value = 4;
-                                document.getElementById("drBeer").value = 450;
+                                document.getElementById("amountBeer").value =1 ;
+                                document.getElementById("drBeer").value = 370;
 					        break;
 						
 							case "Kotayk":	
-                                document.getElementById("amountBeer").value = 5;
-                                document.getElementById("drBeer").value = 550;
+                                document.getElementById("amountBeer").value = 1;
+                                document.getElementById("drBeer").value = 360;
 					        break;
 
 							case "Kellers_Gold":
-                                document.getElementById("amountBeer").value = 6;
-                                document.getElementById("drBeer").value = 650;
+                                document.getElementById("amountBeer").value = 1;
+                                document.getElementById("drBeer").value = 370;
 					        break;
 							
                             case "EtcBeer":
