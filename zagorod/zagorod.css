@@ -123,7 +123,7 @@ margin-bottom: -25px;
 }
 div#d1 {
 width: auto;
-height: 750px;
+height: 650px;
 margin: auto;
 /*background-color: #FFFF99;*/
 background-image: url(nastol1.jpg ) ;
@@ -175,7 +175,7 @@ div#d_2_4 {
 margin: center;
 }
 div#d3 {
-height: 660px;
+height: 565px;
 /*background-color: #CCFF66;*/
 background-image: url(nastol1.jpg );
 display: none;
@@ -185,7 +185,7 @@ table.margin_overnight {
 margin: 0% 5% !important;
 }
 div#d4 {
-height: 660px;
+height: 565px;
 /*background-color: #CCFF99;*/
 background-image: url(nastol1.jpg );
 display: none;
@@ -196,7 +196,7 @@ margin: 0% 5% !important;
 }
 div#d {
 width: auto;
-height: 440px;
+height: 315px;
 /*background-color: #CCFFCC;*/
 background-image: url(nastol1.jpg );
 display: none;
