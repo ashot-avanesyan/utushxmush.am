@@ -78,17 +78,17 @@ style="float:left;width:250px;height:250px">
 		</ul>
 	<div id="d">
 	<form class = "amountParticipants">
-    	<label id = "Participants">Մասնակիցների քանակ</label>
+    <!--	<label id = "Participants">Մասնակիցների քանակ</label>
        	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
-		<br>
+		<br> --> 
        	<label id = "Participants">Տղամարդիկ</label>
-       	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="participants2()"><br><br>
+       	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="total()"><br><br>
 		<br>
        	<label id = "Participants">Կանայք</label>
-       	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="participants3()"><br><br>
+       	<input type = "number" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="total()"><br><br>
 		<br>
        	<label id = "Participants">Մինչև 7 տարեկան երեխաներ</label>
-        <input type = "number" min = "0" class = "inputParticipants" id = "participantsInput4" onblur="participants4()"><br><br>
+        <input type = "number" min = "0" class = "inputParticipants" id = "participantsInput4"><br><br>
     </form>
 	</div>
   	<div id = "d1">
@@ -340,7 +340,7 @@ style="float:left;width:250px;height:250px">
 			<table id="margin_desert">
 		 	<tr>
         			<td><p><input type="checkbox" value ="sweetmeat" id = "sweetmeat" onclick = "initializeDinner(sweetmeat); price(sweetmeat);subTotal(sweetmeat);total();">Կոնֆետ</p></td>
-        			<td><input class="mass" type = "number" mim = "0" id = "kgSweetmeat" disabled onblur = "price(sweetmeat); subTotal(sweetmeat);total();">կգ</td>
+        			<td><input class="mass" type = "number" min = "0" id = "kgSweetmeat" disabled onblur = "price(sweetmeat); subTotal(sweetmeat);total();">կգ</td>
         			<td><input type = "text" size = "5" id = "drSweetmeat" disabled onblur = "price(sweetmeat);subTotal(sweetmeat);total();">դր</td>
 				<td><p><input type = "text" id = "sweetmeat_price" size="1%" class  = "noneBorder" readonly></p></td>
        			</tr>
