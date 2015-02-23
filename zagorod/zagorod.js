@@ -923,28 +923,28 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Menq": 
-                                document.getElementById("amountJuice").value = 2;
-                                document.getElementById("drJuice").value = 250;
+                                document.getElementById("amountJuice").value = 1;
+                                document.getElementById("drJuice").value = 450;
 						    break;
                             
 							case "Noy":
-                                document.getElementById("amountJuice").value = 3;
-                                document.getElementById("drJuice").value = 350;
+                                document.getElementById("amountJuice").value = 1;
+                                document.getElementById("drJuice").value = 720;
 					        break;
 
 							case "Ararat":
-                                document.getElementById("amountJuice").value = 4;
-                                document.getElementById("drJuice").value = 450;
+                                document.getElementById("amountJuice").value = 1;
+                                document.getElementById("drJuice").value = 620;
 					        break;
 						
 							case "Sis":	
-                                document.getElementById("amountJuice").value = 5;
-                                document.getElementById("drJuice").value = 550;
+                                document.getElementById("amountJuice").value = 1;
+                                document.getElementById("drJuice").value = 460;
 					        break;
 
 							case "J7":
-                                document.getElementById("amountJuice").value = 6;
-                                document.getElementById("drJuice").value = 650;
+                                document.getElementById("amountJuice").value = 1;
+                                document.getElementById("drJuice").value = 850;
 					        break;
 							
                             case "EtcJuice":
@@ -983,28 +983,28 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Coca_Cola": 
-                                document.getElementById("amountFizzy").value = 2;
-                                document.getElementById("drFizzy").value = 250;
+                                document.getElementById("amountFizzy").value = 1;
+                                document.getElementById("drFizzy").value = 390;
 						    break;
                             
 							case "Fanta":
-                                document.getElementById("amountFizzy").value = 3;
-                                document.getElementById("drFizzy").value = 350;
+                                document.getElementById("amountFizzy").value = 1;
+                                document.getElementById("drFizzy").value = 390;
 					        break;
 
 							case "Sprite":
-                                document.getElementById("amountFizzy").value = 4;
-                                document.getElementById("drFizzy").value = 450;
+                                document.getElementById("amountFizzy").value = 1;
+                                document.getElementById("drFizzy").value = 390;
 					        break;
 						
 							case "Papa_Karlo":	
-                                document.getElementById("amountFizzy").value = 5;
-                                document.getElementById("drFizzy").value = 550;
+                                document.getElementById("amountFizzy").value = 1;
+                                document.getElementById("drFizzy").value = 230;
 					        break;
 
 							case "Tnjri":
-                                document.getElementById("amountFizzy").value = 6;
-                                document.getElementById("drFizzy").value = 650;
+                                document.getElementById("amountFizzy").value = 1;
+                                document.getElementById("drFizzy").value = 190;
 					        break;
 							
                             case "EtcFizzy":
@@ -1043,28 +1043,28 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Jermuk": 
-                                document.getElementById("amountWater").value = 2;
+                                document.getElementById("amountWater").value = 1;
                                 document.getElementById("drWater").value = 250;
 						    break;
                             
 							case "Bjni":
-                                document.getElementById("amountWater").value = 3;
-                                document.getElementById("drWater").value = 350;
+                                document.getElementById("amountWater").value = 1;
+                                document.getElementById("drWater").value = 170;
 					        break;
 
 							case "Byuregh":
-                                document.getElementById("amountWater").value = 4;
-                                document.getElementById("drWater").value = 450;
+                                document.getElementById("amountWater").value = 1;
+                                document.getElementById("drWater").value = 150;
 					        break;
 						
 							case "Noy":	
-                                document.getElementById("amountWater").value = 5;
-                                document.getElementById("drWater").value = 550;
+                                document.getElementById("amountWater").value = 1;
+                                document.getElementById("drWater").value = 230;
 					        break;
 
 							case "Arzni":
-                                document.getElementById("amountWater").value = 6;
-                                document.getElementById("drWater").value = 650;
+                                document.getElementById("amountWater").value = 1;
+                                document.getElementById("drWater").value = 170;
 					        break;
 							
                             case "EtcWater":
