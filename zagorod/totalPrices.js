@@ -1249,6 +1249,6 @@ function total()
 {
 	document.getElementById("total").value =  Number(document.getElementById("totalAccessories").value)	+ Number(document.getElementById("totalOvernight").value) + Number(document.getElementById("totalDesert").value) + Number(document.getElementById("totalVegetable").value) +  Number(document.getElementById("totalDrink").value) + Number(document.getElementById("totalBarbecue").value);
 
-	 document.getElementById("totalForOne").value =  Number(document.getElementById("total").value) / Number(document.getElementById("participantsInput1").value);
+	 document.getElementById("totalForOne").value = Math.ceil((Number(document.getElementById("total").value) / (Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))) / 10)*10 ;
 }
 

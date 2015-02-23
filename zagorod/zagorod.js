@@ -66,7 +66,8 @@ function hide20_4() {
 
 
 // Armine Calculator
-function participants2()
+
+/*function participants2()
 {       
 		
 	 var participantsInput1 = document.getElementById('participantsInput1').value;
@@ -76,7 +77,7 @@ function participants2()
    		{
 			 window.alert("Error: Դուք մտցրել եք սխալ տվյալ։ Մասնակիցների ընդհանուր քանակը " + Number(participantsInput1)+  " է։");
 			 document.getElementById("participantsInput2").value = "";
-    		}	
+    	}	
 
 }
 
@@ -84,16 +85,16 @@ function participants3()
 {
 	
 	 var participantsInput1 = document.getElementById('participantsInput1').value;
-       	 var participantsInput2 = document.getElementById('participantsInput2').value;
+     var participantsInput2 = document.getElementById('participantsInput2').value;
 	 var participantsInput3 = document.getElementById('participantsInput3').value;
 
 	 var tempSum = Number(participantsInput2) + Number(participantsInput3);
 
 		if (Number(participantsInput1) < (tempSum))
-    		{  
-        		window.alert("Error: Դուք մտցրել եք սխալ տվյալ։ Մասնակիցների ընդհանուր քանակը " + Number(participantsInput1)+  " է։");
+    	{  
+        	window.alert("Error: Դուք մտցրել եք սխալ տվյալ։ Մասնակիցների ընդհանուր քանակը " + Number(participantsInput1)+  " է։");
 			document.getElementById("participantsInput3").value = "";
-    		}
+    	}
 				
 }
 
@@ -113,7 +114,7 @@ function participants4()
 			 document.getElementById("participantsInput4").value = "";
     		}		
 
-}
+}*/ 
 
 // functions for barbecue 
 function initializeDinner(name)
