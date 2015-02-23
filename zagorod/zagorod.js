@@ -1224,23 +1224,23 @@ function initializeDrink(name)
 			switch(x) 
 			{
 			case "Lavash":
-                                document.getElementById("hatBread").value = 2;
-                                document.getElementById("drBread").value = 700;
+                                document.getElementById("hatBread").value = 1;
+                                document.getElementById("drBread").value = 370;
                          break;
 
                          case "Matnaqash":
-                                document.getElementById("hatBread").value = 2;
-                                document.getElementById("drBread").value = 240;
+                                document.getElementById("hatBread").value = 1;
+                                document.getElementById("drBread").value = 130;
                          break;
 
                          case "Romashka":
-                                document.getElementById("hatBread").value = 4;
-                                document.getElementById("drBread").value = 450;
+                                document.getElementById("hatBread").value = 1;
+                                document.getElementById("drBread").value = 250;
                          break;
 
                          case "Baton":
-                                document.getElementById("hatBread").value = 5;
-                                document.getElementById("drBread").value = 550;
+                                document.getElementById("hatBread").value = 1;
+                                document.getElementById("drBread").value = 40;
                          break;
                                                      
 
