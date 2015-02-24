@@ -193,7 +193,7 @@ function initializeDinner(name)
 			if (document.getElementById("wing").checked == true)	
 			{
 				document.getElementById("kgWing").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-				document.getElementById("drWing").value = 1250;
+				document.getElementById("drWing").value = 3800;
 				document.getElementById("drWing").disabled = false;
 				document.getElementById("kgWing").disabled = false;
 			}
@@ -209,7 +209,7 @@ function initializeDinner(name)
 			if (document.getElementById("haunch").checked == true)	
 			{
 				document.getElementById("kgHaunch").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-				document.getElementById("drHaunch").value = 1000;
+				document.getElementById("drHaunch").value = 3800;
 				document.getElementById("drHaunch").disabled = false;
 				document.getElementById("kgHaunch").disabled = false;
 			}
@@ -225,7 +225,7 @@ function initializeDinner(name)
 			if (document.getElementById("potatoes").checked == true)	
 			{
 				document.getElementById("kgPotatoes").value = 0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-				document.getElementById("drPotatoes").value = 200;
+				document.getElementById("drPotatoes").value = 3800;
 				document.getElementById("drPotatoes").disabled = false;
 				document.getElementById("kgPotatoes").disabled = false;
 			}
@@ -290,7 +290,7 @@ function initializeDinner(name)
                         if (document.getElementById("tomato").checked == true)
             		{
             	        	document.getElementById("kgTomato").value = 1;
-                		document.getElementById("drTomato").value = 1000;
+                		document.getElementById("drTomato").value = 300;
                 		document.getElementById("drTomato").disabled = false;
                 		document.getElementById("kgTomato").disabled = false;
             		}	
@@ -306,7 +306,7 @@ function initializeDinner(name)
            	 	if (document.getElementById("cucumbers").checked == true)
             		{
             		document.getElementById("kgCucumbers").value = 1;
-            		document.getElementById("drCucumbers").value = 1000;
+            		document.getElementById("drCucumbers").value = 400;
             		document.getElementById("drCucumbers").disabled = false;
             		document.getElementById("kgCucumbers").disabled = false;
             		}
@@ -322,7 +322,7 @@ function initializeDinner(name)
            		if (document.getElementById("eggplant").checked == true)
             		{
             		document.getElementById("kgEggplant").value = 1;
-            		document.getElementById("drEggplant").value = 1000;
+            		document.getElementById("drEggplant").value = 500;
             		document.getElementById("drEggplant").disabled = false;
             		document.getElementById("kgEggplant").disabled = false;
             		}
@@ -338,7 +338,7 @@ function initializeDinner(name)
            	 	if (document.getElementById("onion").checked == true)
             		{
             		document.getElementById("kgOnion").value = 1;
-            		document.getElementById("drOnion").value = 1000;
+            		document.getElementById("drOnion").value = 350;
             		document.getElementById("drOnion").disabled = false;
             		document.getElementById("kgOnion").disabled = false;
             		}
@@ -482,7 +482,7 @@ function initializeDinner(name)
             		if (document.getElementById("hotel").checked == true)
             		{
             		document.getElementById("hamarHotel").value = 1;
-            		document.getElementById("drHotel").value = 2100;
+            		document.getElementById("drHotel").value = ;
             		document.getElementById("drHotel").disabled = false;
             		document.getElementById("hamarHotel").disabled = false;
             		}
@@ -498,7 +498,7 @@ function initializeDinner(name)
             		if (document.getElementById("tent").checked == true)
             		{
             		document.getElementById("qanakTent").value = 1;
-            	        document.getElementById("drTent").value = 2100;
+            	        document.getElementById("drTent").value = ;
                 	document.getElementById("drTent").disabled = false;
                 	document.getElementById("qanakTent").disabled = false;
             		}
@@ -530,7 +530,7 @@ function initializeDinner(name)
             		if (document.getElementById("utensil").checked == true)
             		{
                 	document.getElementById("qanakUtensil").value = 1;
-                	document.getElementById("drUtensil").value = 2100;
+                	document.getElementById("drUtensil").value = 5000;
                 	document.getElementById("drUtensil").disabled = false;
                 	document.getElementById("qanakUtensil").disabled = false;
             		}
@@ -546,7 +546,7 @@ function initializeDinner(name)
             		if (document.getElementById("skewer").checked == true)
             		{
                 	document.getElementById("qanakSkewer").value = 1;
-                	document.getElementById("drSkewer").value = 5000;
+                	document.getElementById("drSkewer").value = ;
                 	document.getElementById("drSkewer").disabled = false;
                 	document.getElementById("qanakSkewer").disabled = false;
             		}
@@ -1111,7 +1111,7 @@ function initializeDrink(name)
                             
 							case "Pear":
                                 document.getElementById("kgFruit").value = 1;
-                                document.getElementById("drFruit").value = 350;
+                                document.getElementById("drFruit").value = 450;
 					        break;
 
 							case "Banana":
@@ -1131,7 +1131,7 @@ function initializeDrink(name)
 
 							case "Cherry":
                                 document.getElementById("kgFruit").value = 1;
-                                document.getElementById("drFruit").value = 0;
+                                document.getElementById("drFruit").value = ;
 							break;	
 							
                             case "etcFruit":
@@ -1144,7 +1144,7 @@ function initializeDrink(name)
                         if (document.getElementById("desserts").checked == true)
                         {
                                 document.getElementById("kgDesserts").value = 1;
-                                document.getElementById("drDesserts").value = 1000;
+                                document.getElementById("drDesserts").value = 350;
                                 document.getElementById("drDesserts").disabled = false;
                                 document.getElementById("kgDesserts").disabled = false;
 
@@ -1165,17 +1165,17 @@ function initializeDrink(name)
 						{
 							case "Sunflower": 
                                 document.getElementById("kgDesserts").value = 1;
-                                document.getElementById("drDesserts").value = 320;
+                                document.getElementById("drDesserts").value = 250;
 						    break;
                             
 							case "Peanut":
                                 document.getElementById("kgDesserts").value = 1;
-                                document.getElementById("drDesserts").value = 400;
+                                document.getElementById("drDesserts").value = 350;
 					        break;
 
 							case "Chips":
-                                document.getElementById("kgDesserts").value = 1;
-                                document.getElementById("drDesserts").value = 230;
+                                document.getElementById("kgDesserts").value = 4;
+                                document.getElementById("drDesserts").value = 450;
 					        break;
 						
 							case "Salt_sticks":	
@@ -1184,8 +1184,8 @@ function initializeDrink(name)
 					        break;
 
 							case "Popcorn":
-                                document.getElementById("kgDesserts").value = ;
-                                document.getElementById("drDesserts").value = 0;
+                                document.getElementById("kgDesserts").value = 6;
+                                document.getElementById("drDesserts").value = 650;
 					        break;
 
 							case "Cherry":
