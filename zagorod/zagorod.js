@@ -193,7 +193,7 @@ function initializeDinner(name)
 			if (document.getElementById("wing").checked == true)	
 			{
 				document.getElementById("kgWing").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-				document.getElementById("drWing").value = 3800;
+				document.getElementById("drWing").value = 1250;
 				document.getElementById("drWing").disabled = false;
 				document.getElementById("kgWing").disabled = false;
 			}
@@ -209,7 +209,7 @@ function initializeDinner(name)
 			if (document.getElementById("haunch").checked == true)	
 			{
 				document.getElementById("kgHaunch").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-				document.getElementById("drHaunch").value = 3800;
+				document.getElementById("drHaunch").value = 1000;
 				document.getElementById("drHaunch").disabled = false;
 				document.getElementById("kgHaunch").disabled = false;
 			}
@@ -225,7 +225,7 @@ function initializeDinner(name)
 			if (document.getElementById("potatoes").checked == true)	
 			{
 				document.getElementById("kgPotatoes").value = 0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-				document.getElementById("drPotatoes").value = 3800;
+				document.getElementById("drPotatoes").value = 200;
 				document.getElementById("drPotatoes").disabled = false;
 				document.getElementById("kgPotatoes").disabled = false;
 			}
@@ -257,7 +257,7 @@ function initializeDinner(name)
 			if (document.getElementById("internal_organs").checked == true)	
 			{
 				document.getElementById("kgInternal_organs").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-				document.getElementById("drInternal_organs").value = 3800;
+				document.getElementById("drInternal_organs").value = 1000;
 				document.getElementById("drInternal_organs").disabled = false;
 				document.getElementById("kgInternal_organs").disabled = false;
 			}
@@ -353,8 +353,8 @@ function initializeDinner(name)
        	    case greens:
             		if (document.getElementById("greens").checked == true)
             		{
-            		document.getElementById("kgGreens").value = 5;
-            		document.getElementById("drGreens").value = 1000;
+            		document.getElementById("kgGreens").value = 1;
+            		document.getElementById("drGreens").value = 200;
             		document.getElementById("drGreens").disabled = false;
             		document.getElementById("kgGreens").disabled = false;
             		}
@@ -386,7 +386,7 @@ function initializeDinner(name)
             		if (document.getElementById("sweetmeat").checked == true)
             		{
             		document.getElementById("kgSweetmeat").value = 1;
-            		document.getElementById("drSweetmeat").value = 1000;
+            		document.getElementById("drSweetmeat").value = 2300;
             		document.getElementById("drSweetmeat").disabled = false;
             		document.getElementById("kgSweetmeat").disabled = false;
             		}
@@ -402,7 +402,7 @@ function initializeDinner(name)
             		if (document.getElementById("chocolates").checked == true)
             		{
             		document.getElementById("kgChocolates").value = 1;
-            		document.getElementById("drChocolates").value = 1000;
+            		document.getElementById("drChocolates").value = 3000;
             		document.getElementById("drChocolates").disabled = false;
             		document.getElementById("kgChocolates").disabled = false;
             		}
@@ -418,7 +418,7 @@ function initializeDinner(name)
             		if (document.getElementById("lobe").checked == true)
             		{
             		document.getElementById("kgLobe").value = 1;
-            		document.getElementById("drLobe").value = 1000;
+            		document.getElementById("drLobe").value = 450;
             		document.getElementById("drLobe").disabled = false;
             		document.getElementById("kgLobe").disabled = false;
             		}
@@ -434,7 +434,7 @@ function initializeDinner(name)
             		if (document.getElementById("tea").checked == true)
             		{
             		document.getElementById("kgTea").value = 1;
-            		document.getElementById("drTea").value = 1000;
+            		document.getElementById("drTea").value = 450;
             		document.getElementById("drTea").disabled = false;
             		document.getElementById("kgTea").disabled = false;
             		}
@@ -450,7 +450,7 @@ function initializeDinner(name)
          		if (document.getElementById("coffee").checked == true)
             		{
             		document.getElementById("kgCoffee").value = 1;
-            		document.getElementById("drCoffee").value = 1000;
+            		document.getElementById("drCoffee").value = 350;
             		document.getElementById("drCoffee").disabled = false;
             		document.getElementById("kgCoffee").disabled = false;
             		}	
@@ -466,7 +466,7 @@ function initializeDinner(name)
             		if (document.getElementById("Instant_coffee").checked == true)
             		{
             		document.getElementById("hatInstant_coffee").value = 1;
-            		document.getElementById("drInstant_coffee").value = 1000;
+            		document.getElementById("drInstant_coffee").value = 70;
             		document.getElementById("drInstant_coffee").disabled = false;
             		document.getElementById("hatInstant_coffee").disabled = false;
             		}
@@ -546,7 +546,7 @@ function initializeDinner(name)
             		if (document.getElementById("skewer").checked == true)
             		{
                 	document.getElementById("qanakSkewer").value = 1;
-                	document.getElementById("drSkewer").value = 2100;
+                	document.getElementById("drSkewer").value = 5000;
                 	document.getElementById("drSkewer").disabled = false;
                 	document.getElementById("qanakSkewer").disabled = false;
             		}
@@ -1105,33 +1105,33 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Apple": 
-                                document.getElementById("kgFruit").value = 2;
-                                document.getElementById("drFruit").value = 250;
+                                document.getElementById("kgFruit").value = 1;
+                                document.getElementById("drFruit").value = 450;
 						    break;
                             
 							case "Pear":
-                                document.getElementById("kgFruit").value = 3;
+                                document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 350;
 					        break;
 
 							case "Banana":
-                                document.getElementById("kgFruit").value = 4;
-                                document.getElementById("drFruit").value = 450;
+                                document.getElementById("kgFruit").value = 1;
+                                document.getElementById("drFruit").value = 900;
 					        break;
 						
 							case "Orange":	
-                                document.getElementById("kgFruit").value = 5;
-                                document.getElementById("drFruit").value = 550;
+                                document.getElementById("kgFruit").value = 1;
+                                document.getElementById("drFruit").value = 800;
 					        break;
 
 							case "Mandarin":
-                                document.getElementById("kgFruit").value = 6;
-                                document.getElementById("drFruit").value = 650;
+                                document.getElementById("kgFruit").value = 1;
+                                document.getElementById("drFruit").value = 600;
 					        break;
 
 							case "Cherry":
-                                document.getElementById("kgFruit").value = 7;
-                                document.getElementById("drFruit").value = 750;
+                                document.getElementById("kgFruit").value = 1;
+                                document.getElementById("drFruit").value = 0;
 							break;	
 							
                             case "etcFruit":
@@ -1164,18 +1164,18 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Sunflower": 
-                                document.getElementById("kgDesserts").value = 2;
-                                document.getElementById("drDesserts").value = 250;
+                                document.getElementById("kgDesserts").value = 1;
+                                document.getElementById("drDesserts").value = 320;
 						    break;
                             
 							case "Peanut":
-                                document.getElementById("kgDesserts").value = 3;
-                                document.getElementById("drDesserts").value = 350;
+                                document.getElementById("kgDesserts").value = 1;
+                                document.getElementById("drDesserts").value = 400;
 					        break;
 
 							case "Chips":
-                                document.getElementById("kgDesserts").value = 4;
-                                document.getElementById("drDesserts").value = 450;
+                                document.getElementById("kgDesserts").value = 1;
+                                document.getElementById("drDesserts").value = 230;
 					        break;
 						
 							case "Salt_sticks":	
@@ -1184,8 +1184,8 @@ function initializeDrink(name)
 					        break;
 
 							case "Popcorn":
-                                document.getElementById("kgDesserts").value = 6;
-                                document.getElementById("drDesserts").value = 650;
+                                document.getElementById("kgDesserts").value = ;
+                                document.getElementById("drDesserts").value = 0;
 					        break;
 
 							case "Cherry":
