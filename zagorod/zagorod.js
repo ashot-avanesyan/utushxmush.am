@@ -126,7 +126,7 @@ function initializeDinner(name)
 		case pig:
 			if (document.getElementById("pig").checked == true)	
 			{
-				document.getElementById("kgPig").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value)); 		
+				document.getElementById("kgPig").value = Math.round(0.25*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2; 		
 				document.getElementById("drPig").value = 3800;
 				document.getElementById("drPig").disabled = false;
 				document.getElementById("kgPig").disabled = false;
@@ -144,7 +144,7 @@ function initializeDinner(name)
 	    case lamb:
 			if (document.getElementById("lamb").checked == true)	
 			{
-				document.getElementById("kgLamb").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+				document.getElementById("kgLamb").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 				document.getElementById("drLamb").value = 3000;
 				document.getElementById("drLamb").disabled = false;
 				document.getElementById("kgLamb").disabled = false;
@@ -160,7 +160,7 @@ function initializeDinner(name)
            case goat:
            		if (document.getElementById("goat").checked == true)
                 	{
-                		document.getElementById("kgGoat").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+                		document.getElementById("kgGoat").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
                     		document.getElementById("drGoat").value = 3500;
                     		document.getElementById("drGoat").disabled = false;
                     		document.getElementById("kgGoat").disabled = false;
@@ -176,7 +176,7 @@ function initializeDinner(name)
             case chicken:
 			if (document.getElementById("chicken").checked == true)	
 			{
-				document.getElementById("kgChicken").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+				document.getElementById("kgChicken").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 				document.getElementById("drChicken").value = 1600;
 				document.getElementById("drChicken").disabled = false;
 				document.getElementById("kgChicken").disabled = false;
@@ -192,7 +192,7 @@ function initializeDinner(name)
 	    case wing:
 			if (document.getElementById("wing").checked == true)	
 			{
-				document.getElementById("kgWing").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+				document.getElementById("kgWing").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 				document.getElementById("drWing").value = 3800;
 				document.getElementById("drWing").disabled = false;
 				document.getElementById("kgWing").disabled = false;
@@ -208,7 +208,7 @@ function initializeDinner(name)
 	    case haunch:
 			if (document.getElementById("haunch").checked == true)	
 			{
-				document.getElementById("kgHaunch").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+				document.getElementById("kgHaunch").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 				document.getElementById("drHaunch").value = 3800;
 				document.getElementById("drHaunch").disabled = false;
 				document.getElementById("kgHaunch").disabled = false;
@@ -224,7 +224,7 @@ function initializeDinner(name)
 	    case potatoes:
 			if (document.getElementById("potatoes").checked == true)	
 			{
-				document.getElementById("kgPotatoes").value = 0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+				document.getElementById("kgPotatoes").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 				document.getElementById("drPotatoes").value = 3800;
 				document.getElementById("drPotatoes").disabled = false;
 				document.getElementById("kgPotatoes").disabled = false;
@@ -240,7 +240,7 @@ function initializeDinner(name)
 	    case anvil: 
 			if (document.getElementById("anvil").checked == true)	
 			{
-				document.getElementById("kgAnvil").value = 0.02 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+				document.getElementById("kgAnvil").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 				document.getElementById("drAnvil").value = 3800;
 				document.getElementById("drAnvil").disabled = false;
 				document.getElementById("kgAnvil").disabled = false;
@@ -256,7 +256,7 @@ function initializeDinner(name)
 	    case internal_organs:
 			if (document.getElementById("internal_organs").checked == true)	
 			{
-				document.getElementById("kgInternal_organs").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+				document.getElementById("kgInternal_organs").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 				document.getElementById("drInternal_organs").value = 3800;
 				document.getElementById("drInternal_organs").disabled = false;
 				document.getElementById("kgInternal_organs").disabled = false;
@@ -306,7 +306,7 @@ function initializeDinner(name)
        	    case cucumbers:
            	 	if (document.getElementById("cucumbers").checked == true)
             		{
-            		document.getElementById("kgCucumbers").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+            		document.getElementById("kgCucumbers").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
             		document.getElementById("drCucumbers").value = 400;
             		document.getElementById("drCucumbers").disabled = false;
             		document.getElementById("kgCucumbers").disabled = false;
@@ -322,7 +322,7 @@ function initializeDinner(name)
        	    case eggplant:
            		if (document.getElementById("eggplant").checked == true)
             		{
-            		document.getElementById("kgEggplant").value = 0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+            		document.getElementById("kgEggplant").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
             		document.getElementById("drEggplant").value = 500;
             		document.getElementById("drEggplant").disabled = false;
             		document.getElementById("kgEggplant").disabled = false;
@@ -354,7 +354,7 @@ function initializeDinner(name)
        	    case greens:
             		if (document.getElementById("greens").checked == true)
             		{
-            		document.getElementById("punjGreens").value = 0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+            		document.getElementById("punjGreens").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
             		document.getElementById("drGreens").value = 250;
             		document.getElementById("drGreens").disabled = false;
             		document.getElementById("punjGreens").disabled = false;
@@ -1099,7 +1099,7 @@ function initializeDrink(name)
 
                         }
                       
-						 document.getElementById("kgFruit").value = 0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value)); 
+						 document.getElementById("kgFruit").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2; 
 						 x = document.getElementById("fruitSelector").value;
 						 switch(x)
 						{
