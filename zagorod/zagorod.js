@@ -354,17 +354,17 @@ function initializeDinner(name)
        	    case greens:
             		if (document.getElementById("greens").checked == true)
             		{
-            		document.getElementById("kgGreens").value = 0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+            		document.getElementById("punjGreens").value = 0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
             		document.getElementById("drGreens").value = 250;
             		document.getElementById("drGreens").disabled = false;
-            		document.getElementById("kgGreens").disabled = false;
+            		document.getElementById("punjGreens").disabled = false;
             		}
             		else
             		{
-            		document.getElementById("kgGreens").value = "";
+            		document.getElementById("punjGreens").value = "";
             		document.getElementById("drGreens").value = "";
             		document.getElementById("drGreens").disabled = true;
-            		document.getElementById("kgGreens").disabled = true;
+            		document.getElementById("punjGreens").disabled = true;
             		}
             break;
        	    case etcVegetable:
@@ -435,33 +435,33 @@ function initializeDinner(name)
             case tea:
             		if (document.getElementById("tea").checked == true)
             		{
-            		document.getElementById("kgTea").value = 1;
+            		document.getElementById("tupTea").value = 1;
             		document.getElementById("drTea").value = 450;
             		document.getElementById("drTea").disabled = false;
-            		document.getElementById("kgTea").disabled = false;
+            		document.getElementById("tupTea").disabled = false;
             		}
             		else
             		{
-            		document.getElementById("kgTea").value = "";
+            		document.getElementById("tupTea").value = "";
            	 	document.getElementById("drTea").value = "";
            	 	document.getElementById("drTea").disabled = true;
-           	 	document.getElementById("kgTea").disabled = true;
+           	 	document.getElementById("tupTea").disabled = true;
            		 }
             break;
        	    case coffee:
          		if (document.getElementById("coffee").checked == true)
             		{
-            		document.getElementById("kgCoffee").value = 1;
+            		document.getElementById("tupCoffee").value = 1;
             		document.getElementById("drCoffee").value = 350;
             		document.getElementById("drCoffee").disabled = false;
-            		document.getElementById("kgCoffee").disabled = false;
+            		document.getElementById("tupCoffee").disabled = false;
             		}	
             		else
             		{
-            		document.getElementById("kgCoffee").value = "";
+            		document.getElementById("tupCoffee").value = "";
             		document.getElementById("drCoffee").value = "";
             		document.getElementById("drCoffee").disabled = true;
-            		document.getElementById("kgCoffee").disabled = true;
+            		document.getElementById("tupCoffee").disabled = true;
             		}
 	    break;
        	    case Instant_coffee:
@@ -664,7 +664,7 @@ function price(name)
             		document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
             		break;
         	case greens:
-            		document.getElementById("greens_price").value = "= " + document.getElementById("kgGreens").value * document.getElementById("drGreens").value;
+            		document.getElementById("greens_price").value = "= " + document.getElementById("punjGreens").value * document.getElementById("drGreens").value;
             		break;
         	case etcVegetable:
             		document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
@@ -679,10 +679,10 @@ function price(name)
             		document.getElementById("lobe_price").value = "= " + document.getElementById("kgLobe").value * document.getElementById("drLobe").value;
             		break;
         	case tea:
-            		document.getElementById("tea_price").value = "= " + document.getElementById("kgTea").value * document.getElementById("drTea").value;
+            		document.getElementById("tea_price").value = "= " + document.getElementById("tupTea").value * document.getElementById("drTea").value;
             		break;
         	case coffee:
-            		document.getElementById("coffee_price").value = "= " + document.getElementById("kgCoffee").value * document.getElementById("drCoffee").value;
+            		document.getElementById("coffee_price").value = "= " + document.getElementById("tupCoffee").value * document.getElementById("drCoffee").value;
             		break;
         	case Instant_coffee:
             		document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("hatInstant_coffee").value * document.getElementById("drInstant_coffee").value;
@@ -1104,27 +1104,27 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Apple": 
-                              //  document.getElementById("kgFruit").value = 2;
+                              //  document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 250;
 						    break;
                             
 							case "Pear":
-                              //  document.getElementById("kgFruit").value = 3;
+                              //  document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 350;
 					        break;
 
 							case "Banana":
-                              //  document.getElementById("kgFruit").value = 4;
+                              //  document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 450;
 					        break;
 						
 							case "Orange":	
-                              //  document.getElementById("kgFruit").value = 5;
+                              //  document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 550;
 					        break;
 
 							case "Mandarin":
-                              //  document.getElementById("kgFruit").value = 6;
+                              //  document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 650;
 					        break;
 
@@ -1187,7 +1187,6 @@ function initializeDrink(name)
                               //  document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 200;
 					        break;
-
 					/*	case "Cherry":
                                 document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 0;
