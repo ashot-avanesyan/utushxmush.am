@@ -290,7 +290,7 @@ function initializeDinner(name)
                         if (document.getElementById("tomato").checked == true)
             		{
             	        	document.getElementById("kgTomato").value = 1;
-                		document.getElementById("drTomato").value = 1000;
+                		document.getElementById("drTomato").value = 300;
                 		document.getElementById("drTomato").disabled = false;
                 		document.getElementById("kgTomato").disabled = false;
             		}	
@@ -306,7 +306,7 @@ function initializeDinner(name)
            	 	if (document.getElementById("cucumbers").checked == true)
             		{
             		document.getElementById("kgCucumbers").value = 1;
-            		document.getElementById("drCucumbers").value = 1000;
+            		document.getElementById("drCucumbers").value = 400;
             		document.getElementById("drCucumbers").disabled = false;
             		document.getElementById("kgCucumbers").disabled = false;
             		}
@@ -322,7 +322,7 @@ function initializeDinner(name)
            		if (document.getElementById("eggplant").checked == true)
             		{
             		document.getElementById("kgEggplant").value = 1;
-            		document.getElementById("drEggplant").value = 1000;
+            		document.getElementById("drEggplant").value = 500;
             		document.getElementById("drEggplant").disabled = false;
             		document.getElementById("kgEggplant").disabled = false;
             		}
@@ -338,7 +338,7 @@ function initializeDinner(name)
            	 	if (document.getElementById("onion").checked == true)
             		{
             		document.getElementById("kgOnion").value = 1;
-            		document.getElementById("drOnion").value = 1000;
+            		document.getElementById("drOnion").value = 500;
             		document.getElementById("drOnion").disabled = false;
             		document.getElementById("kgOnion").disabled = false;
             		}
@@ -386,7 +386,7 @@ function initializeDinner(name)
             		if (document.getElementById("sweetmeat").checked == true)
             		{
             		document.getElementById("kgSweetmeat").value = 1;
-            		document.getElementById("drSweetmeat").value = 1000;
+            		document.getElementById("drSweetmeat").value = 2300;
             		document.getElementById("drSweetmeat").disabled = false;
             		document.getElementById("kgSweetmeat").disabled = false;
             		}
@@ -402,7 +402,7 @@ function initializeDinner(name)
             		if (document.getElementById("chocolates").checked == true)
             		{
             		document.getElementById("kgChocolates").value = 1;
-            		document.getElementById("drChocolates").value = 1000;
+            		document.getElementById("drChocolates").value = 3000;
             		document.getElementById("drChocolates").disabled = false;
             		document.getElementById("kgChocolates").disabled = false;
             		}
@@ -418,7 +418,7 @@ function initializeDinner(name)
             		if (document.getElementById("lobe").checked == true)
             		{
             		document.getElementById("kgLobe").value = 1;
-            		document.getElementById("drLobe").value = 1000;
+            		document.getElementById("drLobe").value = 450;
             		document.getElementById("drLobe").disabled = false;
             		document.getElementById("kgLobe").disabled = false;
             		}
@@ -434,7 +434,7 @@ function initializeDinner(name)
             		if (document.getElementById("tea").checked == true)
             		{
             		document.getElementById("kgTea").value = 1;
-            		document.getElementById("drTea").value = 1000;
+            		document.getElementById("drTea").value = 450;
             		document.getElementById("drTea").disabled = false;
             		document.getElementById("kgTea").disabled = false;
             		}
@@ -450,7 +450,7 @@ function initializeDinner(name)
          		if (document.getElementById("coffee").checked == true)
             		{
             		document.getElementById("kgCoffee").value = 1;
-            		document.getElementById("drCoffee").value = 1000;
+            		document.getElementById("drCoffee").value = 350;
             		document.getElementById("drCoffee").disabled = false;
             		document.getElementById("kgCoffee").disabled = false;
             		}	
@@ -466,7 +466,7 @@ function initializeDinner(name)
             		if (document.getElementById("Instant_coffee").checked == true)
             		{
             		document.getElementById("hatInstant_coffee").value = 1;
-            		document.getElementById("drInstant_coffee").value = 1000;
+            		document.getElementById("drInstant_coffee").value = 70;
             		document.getElementById("drInstant_coffee").disabled = false;
             		document.getElementById("hatInstant_coffee").disabled = false;
             		}
@@ -482,7 +482,7 @@ function initializeDinner(name)
             		if (document.getElementById("hotel").checked == true)
             		{
             		document.getElementById("hamarHotel").value = 1;
-            		document.getElementById("drHotel").value = 2100;
+            		document.getElementById("drHotel").value = 0;
             		document.getElementById("drHotel").disabled = false;
             		document.getElementById("hamarHotel").disabled = false;
             		}
@@ -498,7 +498,7 @@ function initializeDinner(name)
             		if (document.getElementById("tent").checked == true)
             		{
             		document.getElementById("qanakTent").value = 1;
-            	        document.getElementById("drTent").value = 2100;
+            	        document.getElementById("drTent").value = 0 ;
                 	document.getElementById("drTent").disabled = false;
                 	document.getElementById("qanakTent").disabled = false;
             		}
@@ -530,7 +530,7 @@ function initializeDinner(name)
             		if (document.getElementById("utensil").checked == true)
             		{
                 	document.getElementById("qanakUtensil").value = 1;
-                	document.getElementById("drUtensil").value = 2100;
+                	document.getElementById("drUtensil").value = 5000;
                 	document.getElementById("drUtensil").disabled = false;
                 	document.getElementById("qanakUtensil").disabled = false;
             		}
@@ -546,7 +546,7 @@ function initializeDinner(name)
             		if (document.getElementById("skewer").checked == true)
             		{
                 	document.getElementById("qanakSkewer").value = 1;
-                	document.getElementById("drSkewer").value = 2100;
+                	document.getElementById("drSkewer").value = 0;
                 	document.getElementById("drSkewer").disabled = false;
                 	document.getElementById("qanakSkewer").disabled = false;
             		}
@@ -1164,33 +1164,33 @@ function initializeDrink(name)
 						 switch(x)
 						{
 							case "Sunflower": 
-                                document.getElementById("kgDesserts").value = 2;
+                                document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 250;
 						    break;
                             
 							case "Peanut":
-                                document.getElementById("kgDesserts").value = 3;
+                                document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 350;
 					        break;
 
 							case "Chips":
-                                document.getElementById("kgDesserts").value = 4;
+                                document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 450;
 					        break;
 						
 							case "Salt_sticks":	
-                                document.getElementById("kgDesserts").value = 5;
+                                document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 550;
 					        break;
 
 							case "Popcorn":
-                                document.getElementById("kgDesserts").value = 6;
-                                document.getElementById("drDesserts").value = 650;
+                                document.getElementById("kgDesserts").value = 1;
+                                document.getElementById("drDesserts").value = 200;
 					        break;
 
 							case "Cherry":
-                                document.getElementById("kgFruit").value = 7;
-                                document.getElementById("drFruit").value = 750;
+                                document.getElementById("kgFruit").value = 1;
+                                document.getElementById("drFruit").value = 0;
 							break;	
 						
 							default:	
@@ -1304,3 +1304,4 @@ function priceDrink(name)
 
 		}
  } 
+
