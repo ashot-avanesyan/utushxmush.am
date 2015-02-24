@@ -353,8 +353,8 @@ function initializeDinner(name)
        	    case greens:
             		if (document.getElementById("greens").checked == true)
             		{
-            		document.getElementById("kgGreens").value = 5;
-            		document.getElementById("drGreens").value = 1000;
+            		document.getElementById("kgGreens").value = 1;
+            		document.getElementById("drGreens").value = 250;
             		document.getElementById("drGreens").disabled = false;
             		document.getElementById("kgGreens").disabled = false;
             		}
