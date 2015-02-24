@@ -281,15 +281,16 @@ function initializeDinner(name)
 			{
 			    document.getElementById("kgEtc").value = "";
 				document.getElementById("drEtc").value = "";	
+				document.getElementById("name").value = "";
 				document.getElementById("drEtc").disabled = true;
 				document.getElementById("kgEtc").disabled = true;
 				document.getElementById("name").disabled = true;
 			}
 	   break;
        	   case tomato:
-                        if (document.getElementById("tomato").checked == true)
+             		if (document.getElementById("tomato").checked == true)
             		{
-            	        	document.getElementById("kgTomato").value = 1;
+            	        document.getElementById("kgTomato").value = 1;
                 		document.getElementById("drTomato").value = 300;
                 		document.getElementById("drTomato").disabled = false;
                 		document.getElementById("kgTomato").disabled = false;
