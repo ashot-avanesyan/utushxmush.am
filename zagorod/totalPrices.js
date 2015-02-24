@@ -1,11 +1,11 @@
 var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoat = 0, olderDrGoat = 0,
 	olderKgChicken = 0, olderDrChicken = 0, olderKgWing = 0, olderDrWing = 0, olderKgHaunch = 0, olderDrHaunch = 0,
-	olderKgPotatoes = 0, olderDrPotatoes = 0, olderKgAnvil = 0, olderDrAnvil = 0, olderKgInternal_organs = 0, olderDrInternal_organs = 0,
+	olderKgSausage = 0, olderDrSausage = 0, olderKgFrankfurter = 0, olderDrFrankfurter = 0,  olderKgAnvil = 0, olderDrAnvil = 0, olderKgInternal_organs = 0, olderDrInternal_organs = 0,
 	olderKgEtc = 0, olderDrEtc = 0, olderAmountSpice = 0, olderDrSpice = 0, olderAmountWine = 0, olderDrWine = 0, olderAmountBeer = 0, olderDrBeer = 0,
 	olderAmountJuice = 0, olderDrJuice = 0, olderAmountWater = 0, olderDrWater = 0, olderKgCucumbers = 0, olderDrCucumbers = 0, olderKgTomato = 0, olderDrTomato = 0, 
 	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderKgGreen = 0, olderDrGreen = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
-	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderKgTea = 0, olderDrTea = 0,
-	olderKgCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
+	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderTupTea = 0, olderDrTea = 0,
+	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
 	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderQanakEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
     olderQanakTent = 0, olderDrTent = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderDrEtcA = 0; 
@@ -209,36 +209,68 @@ function subTotal(name)
 			}	
 		
 		break; 
-	case potatoes: 
-			if (document.getElementById("potatoes").checked == false)
+	case sausage: 
+			if (document.getElementById("sausage").checked == false)
 			{
-                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPotatoes * olderDrPotatoes;
-				document.getElementById("drPotatoes").disabled = true;
-				document.getElementById("kgPotatoes").disabled = true;
-				document.getElementById("kgPotatoes").value = "";
-				document.getElementById("drPotatoes").value = "";
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgSausage * olderDrSausage;
+				document.getElementById("drSausage").disabled = true;
+				document.getElementById("kgSausage").disabled = true;
+				document.getElementById("kgSausage").value = "";
+				document.getElementById("drSausage").value = "";
 
-				olderKgPotatoes = 0; 
-				olderDrPotatoes = 0;
+				olderKgSausage = 0; 
+				olderDrSausage = 0;
                
-                price(potatoes);
+                price(sausage);
 			}
 			else 
 			{
 
 			//	window.alert("subTotal checked == true");
-				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPotatoes * olderDrPotatoes; 
+				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgSausage * olderDrSausage; 
 				document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) +  
-												Number(document.getElementById("kgPotatoes").value) * Number(document.getElementById("drPotatoes").value);
+												Number(document.getElementById("kgSausage").value) * Number(document.getElementById("drSausage").value);
 
-		 	 	olderKgPotatoes = Number(document.getElementById("kgPotatoes").value);
-                olderDrPotatoes = Number(document.getElementById("drPotatoes").value);
+		 	 	olderKgSausage = Number(document.getElementById("kgSausage").value);
+                olderDrSausage = Number(document.getElementById("drSausage").value);
 
 
-				document.getElementById("drPotatoes").disabled = false;
-				document.getElementById("kgPotatoes").disabled = false;
+				document.getElementById("drSausage").disabled = false;
+				document.getElementById("kgSausage").disabled = false;
 
 			}	
+		 break;
+        case frankfurter: 
+                        if (document.getElementById("frankfurter").checked == false)
+                        {
+                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgFrankfurter * olderDrFrankfurter;
+                                document.getElementById("drFrankfurter").disabled = true;
+                                document.getElementById("kgFrankfurter").disabled = true;
+                                document.getElementById("kgFrankfurter").value = "";
+                                document.getElementById("drFrankfurter").value = "";
+
+                                olderKgFrankfurter = 0; 
+                                olderDrFrankfurter = 0;
+
+                price(frankfurter);
+                        }
+                        else
+                        {
+
+                        //      window.alert("subTotal checked == true");
+                                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgFrankfurter * olderDrFrankfurter;  
+                                document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) +
+                                                                                                Number(document.getElementById("kgFrankfurter").value) * Number(document.getElementById("drFrankfurter").value);
+
+                                olderKgFrankfurter = Number(document.getElementById("kgFrankfurter").value);
+                olderDrFrankfurter = Number(document.getElementById("drFrankfurter").value);
+
+
+                                document.getElementById("drFrankfurter").disabled = false;
+                                document.getElementById("kgFrankfurter").disabled = false;
+
+                        }
+
 		break;
 	case anvil: 
 			if (document.getElementById("anvil").checked == false)
@@ -652,13 +684,13 @@ function subTotal(name)
 	case greens: 
 			if (document.getElementById("greens").checked == false)
 			{
-                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgGreen * olderDrGreen;
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderPunjGreen * olderDrGreen;
 				document.getElementById("drGreens").disabled = true;
-				document.getElementById("kgGreens").disabled = true;
-				document.getElementById("kgGreens").value = "";
+				document.getElementById("punjGreens").disabled = true;
+				document.getElementById("punjGreens").value = "";
 				document.getElementById("drGreens").value = "";
 
-				olderKgGreen = 0; 
+				olderpunjGreen = 0; 
 				olderDrGreen = 0;
                
                 price(greens);
@@ -666,16 +698,16 @@ function subTotal(name)
 			else 
 			{
 
-				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgGreen * olderDrGreen; 
+				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderPunjGreen * olderDrGreen; 
 				document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) +  
-												Number(document.getElementById("kgGreens").value) * Number(document.getElementById("drGreens").value);
+												Number(document.getElementById("punjGreens").value) * Number(document.getElementById("drGreens").value);
 
-		 	 	olderKgGreen = Number(document.getElementById("kgGreens").value);
+		 	 	olderPunjGreen = Number(document.getElementById("punjGreens").value);
                 olderDrGreen = Number(document.getElementById("drGreens").value);
 
 
 				document.getElementById("drGreens").disabled = false;
-				document.getElementById("kgGreens").disabled = false;
+				document.getElementById("punjGreens").disabled = false;
 
 			}	
 		break;
@@ -772,13 +804,13 @@ function subTotal(name)
    case tea: 
 			if (document.getElementById("tea").checked == false)
 			{
-                document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgTea * olderDrTea;
+                document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderTupTea * olderDrTea;
 				document.getElementById("drTea").disabled = true;
-				document.getElementById("kgTea").disabled = true;
-				document.getElementById("kgTea").value = "";
+				document.getElementById("tupTea").disabled = true;
+				document.getElementById("tupTea").value = "";
 				document.getElementById("drTea").value = "";
 
-				olderKgTea = 0; 
+				olderTupTea = 0; 
 				olderDrTea = 0;
                
                 price(tea);
@@ -786,29 +818,29 @@ function subTotal(name)
 			else 
 			{
 
-				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgTea * olderDrTea; 
+				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderTupTea * olderDrTea; 
 				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) +  
-												Number(document.getElementById("kgTea").value) * Number(document.getElementById("drTea").value);
+												Number(document.getElementById("tupTea").value) * Number(document.getElementById("drTea").value);
 
-		 	 	olderKgTea = Number(document.getElementById("kgTea").value);
+		 	 	olderTupTea = Number(document.getElementById("tupTea").value);
                 olderDrTea = Number(document.getElementById("drTea").value);
 
 
 				document.getElementById("drTea").disabled = false;
-				document.getElementById("kgTea").disabled = false;
+				document.getElementById("tupTea").disabled = false;
 
 			}	
 		break;
    case coffee: 
 			if (document.getElementById("coffee").checked == false)
 			{
-                document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgCoffee * olderDrCoffee;
+                document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderTupCoffee * olderDrCoffee;
 				document.getElementById("drCoffee").disabled = true;
-				document.getElementById("kgCoffee").disabled = true;
-				document.getElementById("kgCoffee").value = "";
+				document.getElementById("tupCoffee").disabled = true;
+				document.getElementById("tupCoffee").value = "";
 				document.getElementById("drCoffee").value = "";
 
-				olderKgCoffee = 0; 
+				olderTupCoffee = 0; 
 				olderDrCoffee = 0;
                
                 price(coffee);
@@ -816,16 +848,16 @@ function subTotal(name)
 			else 
 			{
 
-				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderKgCoffee * olderDrCoffee; 
+				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) - olderTupCoffee * olderDrCoffee; 
 				document.getElementById("totalDesert").value = Number(document.getElementById("totalDesert").value) +  
-												Number(document.getElementById("kgCoffee").value) * Number(document.getElementById("drCoffee").value);
+												Number(document.getElementById("TupCoffee").value) * Number(document.getElementById("drCoffee").value);
 
-		 	 	olderKgCoffee = Number(document.getElementById("kgCoffee").value);
+		 	 	olderTupCoffee = Number(document.getElementById("TupCoffee").value);
                 olderDrCoffee = Number(document.getElementById("drCoffee").value);
 
 
 				document.getElementById("drCoffee").disabled = false;
-				document.getElementById("kgCoffee").disabled = false;
+				document.getElementById("tupCoffee").disabled = false;
 
 			}	
 		break;

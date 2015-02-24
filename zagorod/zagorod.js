@@ -221,21 +221,38 @@ function initializeDinner(name)
 				document.getElementById("kgHaunch").disabled = true;
 			} 
             break;
-	    case potatoes:
-			if (document.getElementById("potatoes").checked == true)	
+	    case sausage:
+			if (document.getElementById("sausage").checked == true)	
 			{
-				document.getElementById("kgPotatoes").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-				document.getElementById("drPotatoes").value = 3800;
-				document.getElementById("drPotatoes").disabled = false;
-				document.getElementById("kgPotatoes").disabled = false;
+				document.getElementById("kgSausage").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+				document.getElementById("drSausage").value = 1200;
+				document.getElementById("drSausage").disabled = false;
+				document.getElementById("kgSausage").disabled = false;
 			}
 			else 
 			{
-				document.getElementById("kgPotatoes").value = "";
-				document.getElementById("drPotatoes").value = "";
-				document.getElementById("drPotatoes").disabled = true;
-				document.getElementById("kgPotatoes").disabled = true;
+				document.getElementById("kgSausage").value = "";
+				document.getElementById("drSausage").value = "";
+				document.getElementById("drSausage").disabled = true;
+				document.getElementById("kgSausage").disabled = true;
 			} 
+	     break;
+            case frankfurter:
+                        if (document.getElementById("frankfurter").checked == true) 
+                        {
+                                document.getElementById("kgFrankfurter").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+                                document.getElementById("drFrankfurter").value = 1000;
+                                document.getElementById("drFrankfurter").disabled = false;
+                                document.getElementById("kgFrankfurter").disabled = false;
+                        }
+                        else
+                        {
+                                document.getElementById("kgFrankfurter").value = "";
+                                document.getElementById("drFrankfurter").value = "";
+                                document.getElementById("drFrankfurter").disabled = true;
+                                document.getElementById("kgFrankfurter").disabled = true;
+                        }
+
             break;
 	    case anvil: 
 			if (document.getElementById("anvil").checked == true)	
@@ -639,8 +656,10 @@ function price(name)
 		case haunch: 
 			document.getElementById("haunch_price").value = "= " + document.getElementById("kgHaunch").value * document.getElementById("drHaunch").value;
 			break;
-		case potatoes: 
-			document.getElementById("potatoes_price").value = "= " + document.getElementById("kgPotatoes").value * document.getElementById("drPotatoes").value;
+		case sausage: 
+			document.getElementById("sausage_price").value = "= " + document.getElementById("kgSausage").value * document.getElementById("drSausage").value;
+		 case frankfurter: 
+                        document.getElementById("frankfurter_price").value = "= " + document.getElementById("kgFrankfurter").value * document.getElementById("drFrankfurter").value;
 			break;
 		case anvil: 
 			document.getElementById("anvil_price").value = "= " + document.getElementById("kgAnvil").value * document.getElementById("drAnvil").value;
