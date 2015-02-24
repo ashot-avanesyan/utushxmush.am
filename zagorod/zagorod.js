@@ -290,7 +290,7 @@ function initializeDinner(name)
        	   case tomato:
              		if (document.getElementById("tomato").checked == true)
             		{
-            	        document.getElementById("kgTomato").value = 1;
+            	        document.getElementById("kgTomato").value = 0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
                 		document.getElementById("drTomato").value = 300;
                 		document.getElementById("drTomato").disabled = false;
                 		document.getElementById("kgTomato").disabled = false;
@@ -306,7 +306,7 @@ function initializeDinner(name)
        	    case cucumbers:
            	 	if (document.getElementById("cucumbers").checked == true)
             		{
-            		document.getElementById("kgCucumbers").value = 1;
+            		document.getElementById("kgCucumbers").value = 0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
             		document.getElementById("drCucumbers").value = 400;
             		document.getElementById("drCucumbers").disabled = false;
             		document.getElementById("kgCucumbers").disabled = false;
@@ -322,7 +322,7 @@ function initializeDinner(name)
        	    case eggplant:
            		if (document.getElementById("eggplant").checked == true)
             		{
-            		document.getElementById("kgEggplant").value = 1;
+            		document.getElementById("kgEggplant").value = 0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
             		document.getElementById("drEggplant").value = 500;
             		document.getElementById("drEggplant").disabled = false;
             		document.getElementById("kgEggplant").disabled = false;
@@ -338,7 +338,7 @@ function initializeDinner(name)
        	    case onion:
            	 	if (document.getElementById("onion").checked == true)
             		{
-            		document.getElementById("kgOnion").value = 1;
+            		document.getElementById("kgOnion").value = 1; 
             		document.getElementById("drOnion").value = 500;
             		document.getElementById("drOnion").disabled = false;
             		document.getElementById("kgOnion").disabled = false;
@@ -354,7 +354,7 @@ function initializeDinner(name)
        	    case greens:
             		if (document.getElementById("greens").checked == true)
             		{
-            		document.getElementById("kgGreens").value = 1;
+            		document.getElementById("kgGreens").value = 0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
             		document.getElementById("drGreens").value = 250;
             		document.getElementById("drGreens").disabled = false;
             		document.getElementById("kgGreens").disabled = false;
@@ -377,7 +377,8 @@ function initializeDinner(name)
             		else
             		{
             		document.getElementById("kgEtcVegetable").value = "";
-			document.getElementById("drEtcVegetable").value = "";
+					document.getElementById("drEtcVegetable").value = "";
+					document.getElementById("nameVegetable").value = "";
         	    	document.getElementById("drEtcVegetable").disabled = true;
             		document.getElementById("kgEtcVegetable").disabled = true;
             		document.getElementById("nameVegetable").disabled = true;
@@ -466,7 +467,7 @@ function initializeDinner(name)
        	    case Instant_coffee:
             		if (document.getElementById("Instant_coffee").checked == true)
             		{
-            		document.getElementById("hatInstant_coffee").value = 1;
+            		document.getElementById("hatInstant_coffee").value =(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
             		document.getElementById("drInstant_coffee").value = 70;
             		document.getElementById("drInstant_coffee").disabled = false;
             		document.getElementById("hatInstant_coffee").disabled = false;
@@ -586,6 +587,7 @@ function initializeDinner(name)
                         {
                         document.getElementById("hatEtcDrink").value = "";
                         document.getElementById("drEtcDrink").value = "";
+						document.getElementById("nameEtcDrink").value = '';
                         document.getElementById("drEtcDrink").disabled = true;
                         document.getElementById("hatEtcDrink").disabled = true;
                         document.getElementById("nameEtcDrink").disabled = true;
@@ -602,6 +604,7 @@ function initializeDinner(name)
                         {
                         document.getElementById("kgEtcDesert").value = "";
                         document.getElementById("drEtcDesert").value = "";
+						document.getElementById("nameEtcDesert").value = '';
                         document.getElementById("drEtcDesert").disabled = true;
                         document.getElementById("kgEtcDesert").disabled = true;
                         document.getElementById("nameEtcDesert").disabled = true;
@@ -722,8 +725,6 @@ function initializeDrink(name)
                 case firstSpice:
                         if (document.getElementById("spice").checked == true)
                         {
-                            //    document.getElementById("amountSpice").value = 1;
-                             //   document.getElementById("drSpice").value = 1000;
                                 document.getElementById("drSpice").disabled = false;
                                 document.getElementById("amountSpice").disabled = false;
 
@@ -738,32 +739,33 @@ function initializeDrink(name)
 							    return;
 
                         }
-                       
+                      	
+						 document.getElementById("amountSpice").value = Math.round(0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value)));		 
 						 var x = document.getElementById("firstSpice").value;
 						 switch(x)
 						{
 							case "Nemiroff": 
-                                document.getElementById("amountSpice").value = 1;
+                               // document.getElementById("amountSpice").value = 1;
                                 document.getElementById("drSpice").value = 2700;
 						    break;
                             
 							case "Talka":
-                                document.getElementById("amountSpice").value = 1;
+                               // document.getElementById("amountSpice").value = 1;
                                 document.getElementById("drSpice").value = 1850;
 					        break;
 
 							case "5_ozer":
-                                document.getElementById("amountSpice").value = 1;
+                              //  document.getElementById("amountSpice").value = 1;
                                 document.getElementById("drSpice").value = 800;
 					        break;
 						
 							case "Artsakh":	
-                                document.getElementById("amountSpice").value = 1;
+                               // document.getElementById("amountSpice").value = 1;
                                 document.getElementById("drSpice").value = 1400;
 					        break;
 
 							case "Zima":
-                                document.getElementById("amountSpice").value = 1;
+                               // document.getElementById("amountSpice").value = 1;
 								document.getElementById("drSpice").value =1680 ;
 							break;
 							case "EtcSpice":
@@ -785,8 +787,6 @@ function initializeDrink(name)
                   case secondSpice:
                         if (document.getElementById("wine").checked == true)
                         {
-                              //  document.getElementById("amountWine").value = 1;
-                               // document.getElementById("drWine").value = 1000;
                                 document.getElementById("drWine").disabled = false;
                                 document.getElementById("amountWine").disabled = false;
 
@@ -802,31 +802,32 @@ function initializeDrink(name)
 
                         }
                        
+						 document.getElementById("amountWine").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value)));
 						 x = document.getElementById("secondSpice").value;
 						 switch(x)
 						{
 							case "Armenia": 
-                                document.getElementById("amountWine").value = 1;
+                             //   document.getElementById("amountWine").value = 1;
                                 document.getElementById("drWine").value = 1720;
 						    break;
                             
 							case "Areni":
-                                document.getElementById("amountWine").value = 1;
+                              //  document.getElementById("amountWine").value = 1;
                                 document.getElementById("drWine").value = 1600;
 					        break;
 
 							case "Kagor":
-                                document.getElementById("amountWine").value = 1;
+                               // document.getElementById("amountWine").value = 1;
                                 document.getElementById("drWine").value = 1700;
 					        break;
 						
 							case "Sapiravi":	
-                                document.getElementById("amountWine").value = 1;
+                               // document.getElementById("amountWine").value = 1;
                                 document.getElementById("drWine").value = 1450;
 					        break;
 
 							case "Shushi":
-                                document.getElementById("amountWine").value = 1;
+                              //  document.getElementById("amountWine").value = 1;
                                 document.getElementById("drWine").value = 1750;
 					        break;
 							
@@ -845,8 +846,6 @@ function initializeDrink(name)
                   case thirdSpice:
                         if (document.getElementById("beer").checked == true)
                         {
-                               // document.getElementById("amountBeer").value = 1;
-                               // document.getElementById("drBeer").value = 1000;
                                 document.getElementById("drBeer").disabled = false;
                                 document.getElementById("amountBeer").disabled = false;
 
@@ -861,32 +860,32 @@ function initializeDrink(name)
 							    return;
 
                         }
-                       
+                     	 document.getElementById("amountBeer").value =(Number(document.getElementById("participantsInput2").value)*3 + Number(document.getElementById("participantsInput3").value));  
 						 x = document.getElementById("thirdSpice").value;
 						 switch(x)
 						{
 							case "Gyumri": 
-                                document.getElementById("amountBeer").value = 1;
+                               // document.getElementById("amountBeer").value = 1;
                                 document.getElementById("drBeer").value = 430;
 						    break;
                             
 							case "Miller":
-                                document.getElementById("amountBeer").value = 1;
+                               // document.getElementById("amountBeer").value = 1;
                                 document.getElementById("drBeer").value = 440;
 					        break;
 
 							case "Kilikia":
-                                document.getElementById("amountBeer").value =1 ;
+                               // document.getElementById("amountBeer").value =1 ;
                                 document.getElementById("drBeer").value = 370;
 					        break;
 						
 							case "Kotayk":	
-                                document.getElementById("amountBeer").value = 1;
+                               // document.getElementById("amountBeer").value = 1;
                                 document.getElementById("drBeer").value = 360;
 					        break;
 
 							case "Kellers_Gold":
-                                document.getElementById("amountBeer").value = 1;
+                              //  document.getElementById("amountBeer").value = 1;
                                 document.getElementById("drBeer").value = 370;
 					        break;
 							
@@ -905,8 +904,6 @@ function initializeDrink(name)
                   case fourthSpice:
                         if (document.getElementById("juice").checked == true)
                         {
-                           //     document.getElementById("amountJuice").value = 1;
-                            //    document.getElementById("drJuice").value = 1000;
                                 document.getElementById("drJuice").disabled = false;
                                 document.getElementById("amountJuice").disabled = false;
 
@@ -921,32 +918,33 @@ function initializeDrink(name)
 							    return;
 
                         }
-                       
+                      
+						 document.getElementById("amountJuice").value = Math.round(0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))); 
 						 x = document.getElementById("fourthSpice").value;
 						 switch(x)
 						{
 							case "Menq": 
-                                document.getElementById("amountJuice").value = 1;
+                               // document.getElementById("amountJuice").value = 1;
                                 document.getElementById("drJuice").value = 450;
 						    break;
                             
 							case "Noy":
-                                document.getElementById("amountJuice").value = 1;
+                               // document.getElementById("amountJuice").value = 1;
                                 document.getElementById("drJuice").value = 720;
 					        break;
 
 							case "Ararat":
-                                document.getElementById("amountJuice").value = 1;
+                               // document.getElementById("amountJuice").value = 1;
                                 document.getElementById("drJuice").value = 620;
 					        break;
 						
 							case "Sis":	
-                                document.getElementById("amountJuice").value = 1;
+                               // document.getElementById("amountJuice").value = 1;
                                 document.getElementById("drJuice").value = 460;
 					        break;
 
 							case "J7":
-                                document.getElementById("amountJuice").value = 1;
+                             //   document.getElementById("amountJuice").value = 1;
                                 document.getElementById("drJuice").value = 850;
 					        break;
 							
@@ -965,8 +963,6 @@ function initializeDrink(name)
                   case fifthSpice:
                         if (document.getElementById("fizzy").checked == true)
                         {
-                              //  document.getElementById("amountFizzy").value = 1;
-                              //  document.getElementById("drFizzy").value = 1000;
                                 document.getElementById("drFizzy").disabled = false;
                                 document.getElementById("amountFizzy").disabled = false;
 
@@ -981,32 +977,34 @@ function initializeDrink(name)
 							    return;
 
                         }
-                       
+                      
+						 document.getElementById("amountFizzy").value = Math.round(0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value)));
+ 
 						 x = document.getElementById("fifthSpice").value;
 						 switch(x)
 						{
 							case "Coca_Cola": 
-                                document.getElementById("amountFizzy").value = 1;
+                           //     document.getElementById("amountFizzy").value = 1;
                                 document.getElementById("drFizzy").value = 390;
 						    break;
                             
 							case "Fanta":
-                                document.getElementById("amountFizzy").value = 1;
+                             //   document.getElementById("amountFizzy").value = 1;
                                 document.getElementById("drFizzy").value = 390;
 					        break;
 
 							case "Sprite":
-                                document.getElementById("amountFizzy").value = 1;
+                               // document.getElementById("amountFizzy").value = 1;
                                 document.getElementById("drFizzy").value = 390;
 					        break;
 						
 							case "Papa_Karlo":	
-                                document.getElementById("amountFizzy").value = 1;
+                              //  document.getElementById("amountFizzy").value = 1;
                                 document.getElementById("drFizzy").value = 230;
 					        break;
 
 							case "Tnjri":
-                                document.getElementById("amountFizzy").value = 1;
+                              //  document.getElementById("amountFizzy").value = 1;
                                 document.getElementById("drFizzy").value = 190;
 					        break;
 							
@@ -1025,8 +1023,6 @@ function initializeDrink(name)
                   case sixthSpice:
                         if (document.getElementById("water").checked == true)
                         {
-                              //  document.getElementById("amountWater").value = 1;
-                              //  document.getElementById("drWater").value = 1000;
                                 document.getElementById("drWater").disabled = false;
                                 document.getElementById("amountWater").disabled = false;
 
@@ -1041,32 +1037,33 @@ function initializeDrink(name)
 							    return;
 
                         }
-                       
+                      
+						 document.getElementById("amountWater").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))); 
 						 x = document.getElementById("sixthSpice").value;
 						 switch(x)
 						{
 							case "Jermuk": 
-                                document.getElementById("amountWater").value = 1;
+                           //     document.getElementById("amountWater").value = 1;
                                 document.getElementById("drWater").value = 250;
 						    break;
                             
 							case "Bjni":
-                                document.getElementById("amountWater").value = 1;
+                             //   document.getElementById("amountWater").value = 1;
                                 document.getElementById("drWater").value = 170;
 					        break;
 
 							case "Byuregh":
-                                document.getElementById("amountWater").value = 1;
+                             //   document.getElementById("amountWater").value = 1;
                                 document.getElementById("drWater").value = 150;
 					        break;
 						
 							case "Noy":	
-                                document.getElementById("amountWater").value = 1;
+                             //   document.getElementById("amountWater").value = 1;
                                 document.getElementById("drWater").value = 230;
 					        break;
 
 							case "Arzni":
-                                document.getElementById("amountWater").value = 1;
+                        //        document.getElementById("amountWater").value = 1;
                                 document.getElementById("drWater").value = 170;
 					        break;
 							
@@ -1101,37 +1098,38 @@ function initializeDrink(name)
 							    return;
 
                         }
-                       
+                      
+						 document.getElementById("kgFruit").value = 0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value)); 
 						 x = document.getElementById("fruitSelector").value;
 						 switch(x)
 						{
 							case "Apple": 
-                                document.getElementById("kgFruit").value = 2;
+                              //  document.getElementById("kgFruit").value = 2;
                                 document.getElementById("drFruit").value = 250;
 						    break;
                             
 							case "Pear":
-                                document.getElementById("kgFruit").value = 3;
+                              //  document.getElementById("kgFruit").value = 3;
                                 document.getElementById("drFruit").value = 350;
 					        break;
 
 							case "Banana":
-                                document.getElementById("kgFruit").value = 4;
+                              //  document.getElementById("kgFruit").value = 4;
                                 document.getElementById("drFruit").value = 450;
 					        break;
 						
 							case "Orange":	
-                                document.getElementById("kgFruit").value = 5;
+                              //  document.getElementById("kgFruit").value = 5;
                                 document.getElementById("drFruit").value = 550;
 					        break;
 
 							case "Mandarin":
-                                document.getElementById("kgFruit").value = 6;
+                              //  document.getElementById("kgFruit").value = 6;
                                 document.getElementById("drFruit").value = 650;
 					        break;
 
 							case "Cherry":
-                                document.getElementById("kgFruit").value = 7;
+                              //  document.getElementById("kgFruit").value = 7;
                                 document.getElementById("drFruit").value = 750;
 							break;	
 							
@@ -1161,52 +1159,51 @@ function initializeDrink(name)
 
                         }
                        
+						 document.getElementById("kgDesserts").value = 1;
 						 x = document.getElementById("dessertChips").value;
 						 switch(x)
 						{
 							case "Sunflower": 
-                                document.getElementById("kgDesserts").value = 1;
+                              //  document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 250;
 						    break;
                             
 							case "Peanut":
-                                document.getElementById("kgDesserts").value = 1;
+                              //  document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 350;
 					        break;
 
 							case "Chips":
-                                document.getElementById("kgDesserts").value = 1;
+                              //  document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 450;
 					        break;
 						
 							case "Salt_sticks":	
-                                document.getElementById("kgDesserts").value = 1;
+                              //  document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 550;
 					        break;
 
 							case "Popcorn":
-                                document.getElementById("kgDesserts").value = 1;
+                              //  document.getElementById("kgDesserts").value = 1;
                                 document.getElementById("drDesserts").value = 200;
 					        break;
 
-							case "Cherry":
+					/*	case "Cherry":
                                 document.getElementById("kgFruit").value = 1;
                                 document.getElementById("drFruit").value = 0;
-							break;	
+							break;	*/
 						
 							default:	
 								window.alert("Nemiroff forever!");
 								break;
                      
 						}
-        	    break;
+        //	    break;
 
 		  break;
                   case breadSelector:
                         if (document.getElementById("bread").checked == true)
                         {
-                           //     document.getElementById("hatBread").value = 1;
-                           //     document.getElementById("drBread").value = 1000;
                                 document.getElementById("drBread").disabled = false;
                                 document.getElementById("hatBread").disabled = false;
 
@@ -1218,31 +1215,32 @@ function initializeDrink(name)
                                 document.getElementById("drBread").disabled = true;
                                 document.getElementById("hatBread").disabled = true;
 
-                                                            return;
+                                return;
                                    
                         }                          
 
 			  x = document.getElementById("breadSelector").value;
+			  document.getElementById("hatBread").value = Math.round(0.5*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value)));
 
 			switch(x) 
 			{
 			case "Lavash":
-                                document.getElementById("hatBread").value = 1;
+                            //    document.getElementById("hatBread").value = 1;
                                 document.getElementById("drBread").value = 370;
                          break;
 
                          case "Matnaqash":
-                                document.getElementById("hatBread").value = 1;
+                              //  document.getElementById("hatBread").value = 1;
                                 document.getElementById("drBread").value = 130;
                          break;
 
                          case "Romashka":
-                                document.getElementById("hatBread").value = 1;
+                              //  document.getElementById("hatBread").value = 1;
                                 document.getElementById("drBread").value = 250;
                          break;
 
                          case "Baton":
-                                document.getElementById("hatBread").value = 1;
+                             //   document.getElementById("hatBread").value = 1;
                                 document.getElementById("drBread").value = 40;
                          break;
                                                      
@@ -1298,10 +1296,6 @@ function priceDrink(name)
 				case breadSelector:
                         	document.getElementById("bread_price").value = "= " + document.getElementById("hatBread").value * document.getElementById("drBread").value;
 							break;
-				default: 
-							window.alert("Welcome to default ...");
-							break;
-							
 
 		}
  } 
