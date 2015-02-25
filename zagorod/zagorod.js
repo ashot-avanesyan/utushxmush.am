@@ -237,7 +237,7 @@ function initializeDinner(name)
 				document.getElementById("kgSausage").disabled = true;
 			} 
 	     break;
-            case frankfurter:
+             case frankfurter:
                         if (document.getElementById("frankfurter").checked == true) 
                         {
                                 document.getElementById("kgFrankfurter").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
@@ -296,7 +296,7 @@ function initializeDinner(name)
 			}
 			else 
 			{
-			    document.getElementById("kgEtc").value = "";
+			        document.getElementById("kgEtc").value = "";
 				document.getElementById("drEtc").value = "";	
 				document.getElementById("name").value = "";
 				document.getElementById("drEtc").disabled = true;
@@ -307,7 +307,7 @@ function initializeDinner(name)
        	   case tomato:
              		if (document.getElementById("tomato").checked == true)
             		{
-            	        document.getElementById("kgTomato").value = 0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+            	        	document.getElementById("kgTomato").value = 0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
                 		document.getElementById("drTomato").value = 300;
                 		document.getElementById("drTomato").disabled = false;
                 		document.getElementById("kgTomato").disabled = false;
@@ -323,23 +323,23 @@ function initializeDinner(name)
        	    case cucumbers:
            	 	if (document.getElementById("cucumbers").checked == true)
             		{
-            		document.getElementById("kgCucumbers").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-            		document.getElementById("drCucumbers").value = 400;
-            		document.getElementById("drCucumbers").disabled = false;
-            		document.getElementById("kgCucumbers").disabled = false;
+            			document.getElementById("kgCucumbers").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+            			document.getElementById("drCucumbers").value = 400;
+            			document.getElementById("drCucumbers").disabled = false;
+            			document.getElementById("kgCucumbers").disabled = false;
             		}
             		else
             		{
-            		document.getElementById("kgCucumbers").value = "";
-            		document.getElementById("drCucumbers").value = "";
-            		document.getElementById("drCucumbers").disabled = true;
-            		document.getElementById("kgCucumbers").disabled = true;
+            			document.getElementById("kgCucumbers").value = "";
+            			document.getElementById("drCucumbers").value = "";
+            			document.getElementById("drCucumbers").disabled = true;
+            			document.getElementById("kgCucumbers").disabled = true;
             		}	
             break;
        	    case eggplant:
            		if (document.getElementById("eggplant").checked == true)
             		{
-            		document.getElementById("kgEggplant").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+            			document.getElementById("kgEggplant").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
             		document.getElementById("drEggplant").value = 500;
             		document.getElementById("drEggplant").disabled = false;
             		document.getElementById("kgEggplant").disabled = false;
@@ -383,6 +383,40 @@ function initializeDinner(name)
             		document.getElementById("drGreens").disabled = true;
             		document.getElementById("punjGreens").disabled = true;
             		}
+	     break;
+             case potatoes:
+                        if (document.getElementById("potatoes").checked == true)
+                        {
+                        document.getElementById("kgPotatoes").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+                        document.getElementById("drPotatoes").value = 200;
+                        document.getElementById("drPotatoes").disabled = false;
+                        document.getElementById("kgPotatoes").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("kgPotatoes").value = "";
+                        document.getElementById("drPotatoes").value = "";
+                        document.getElementById("drPotatoes").disabled = true;
+                        document.getElementById("kgPotatoes").disabled = true;
+                        }
+	    break;
+            case pepper:
+                        if (document.getElementById("pepper").checked == true)
+                        {
+                        document.getElementById("kgPepper").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+                        document.getElementById("drPepper").value = 450;
+                        document.getElementById("drPepper").disabled = false;
+                        document.getElementById("kgPepper").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("kgPepper").value = "";
+                        document.getElementById("drPepper").value = "";
+                        document.getElementById("drPepper").disabled = true;
+                        document.getElementById("kgPepper").disabled = true;
+                        }
+
+
             break;
        	    case etcVegetable:
             		if (document.getElementById("etcVegetable").checked == true)
@@ -701,6 +735,12 @@ function price(name)
             		break;
         	case greens:
             		document.getElementById("greens_price").value = "= " + document.getElementById("punjGreens").value * document.getElementById("drGreens").value;
+			 break;
+                case potatoes:
+                        document.getElementById("potatoes_price").value = "= " + document.getElementById("kgPotatoes").value * document.getElementById("drPotatoes").value;
+			 break;
+                case pepper:
+                        document.getElementById("pepper_price").value = "= " + document.getElementById("kgPepper").value * document.getElementById("drPepper").value;
             		break;
         	case etcVegetable:
             		document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;

@@ -333,6 +333,18 @@ style="float:left;width:250px;height:250px">
        				<td><input type = "text" size = "5" id = "drGreens" disabled onblur = "price(greens); subTotal(greens);total();">դր</td>
 				<td><p><input type = "text" id = "greens_price" size="1%" class  = "noneBorder" readonly> </p></td>
        			</tr>
+			<tr>
+                                <td><p><input type="checkbox" value ="potatoes" id = "potatoes" onclick = "initializeDinner(potatoes); price(potatoes);subTotal(potatoes);total();">Կարտոֆիլ</p></td>
+                                <td><input class = "mass" type = "text" min = "0" id = "kgPotatoes" disabled onblur = "price(potatoes); subTotal(potatoes);total();">կգ</td>
+                                <td><input type = "text" size = "5" id = "drPotatoes" disabled onblur = "price(potatoes); subTotal(potatoes);total();">դր</td>
+                                <td><p><input type = "text" id = "potatoes_price" size="1%" class  = "noneBorder" readonly> </p></td>
+                        </tr>
+			<tr>
+                                <td><p><input type="checkbox" value ="pepper" id = "pepper" onclick = "initializeDinner(pepper); price(pepper);subTotal(pepper);total();">Բիբար</p></td>
+                                <td><input class = "mass" type = "text" min = "0" id = "kgPepper" disabled onblur = "price(pepper); subTotal(pepper);total();">կգ</td>
+                                <td><input type = "text" size = "5" id = "drPepper" disabled onblur = "price(pepper); subTotal(pepper);total();">դր</td>
+                                <td><p><input type = "text" id = "pepper_price" size="1%" class  = "noneBorder" readonly> </p></td>
+                        </tr>
        			<tr>
        				<td><p><input type="checkbox" value ="etcVegetable" id = "etcVegetable" onclick = "initializeDinner(etcVegetable);price(etcVegetable);subTotal(etcVegetable);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameVegetable" size= "5" disabled></p></td>
                 		<td><input class = "mass" type = "text" min = "0" id = "kgEtcVegetable" disabled onblur = "price(etcVegetable);subTotal(etcVegetable);total();">կգ</td>

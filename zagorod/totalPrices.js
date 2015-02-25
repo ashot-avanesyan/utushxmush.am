@@ -3,7 +3,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgSausage = 0, olderDrSausage = 0, olderKgFrankfurter = 0, olderDrFrankfurter = 0,  olderKgAnvil = 0, olderDrAnvil = 0, olderKgInternal_organs = 0, olderDrInternal_organs = 0,
 	olderKgEtc = 0, olderDrEtc = 0, olderAmountSpice = 0, olderDrSpice = 0, olderAmountWine = 0, olderDrWine = 0, olderAmountBeer = 0, olderDrBeer = 0,
 	olderAmountJuice = 0, olderDrJuice = 0, olderAmountWater = 0, olderDrWater = 0, olderKgCucumbers = 0, olderDrCucumbers = 0, olderKgTomato = 0, olderDrTomato = 0, 
-	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderKgGreen = 0, olderDrGreen = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
+	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderPunjGreen = 0, olderDrGreen = 0, olderKgPotatoes = 0, olderDrPotatoes = 0, olderKgPepper = 0, olderDrPepper = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
 	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderTupTea = 0, olderDrTea = 0,
 	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
@@ -690,7 +690,7 @@ function subTotal(name)
 				document.getElementById("punjGreens").value = "";
 				document.getElementById("drGreens").value = "";
 
-				olderpunjGreen = 0; 
+				olderPunjGreen = 0; 
 				olderDrGreen = 0;
                
                 price(greens);
@@ -709,7 +709,68 @@ function subTotal(name)
 				document.getElementById("drGreens").disabled = false;
 				document.getElementById("punjGreens").disabled = false;
 
-			}	
+			}
+		 break;
+        case potatoes:
+                        if (document.getElementById("potatoes").checked == false)
+                        {
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgPotatoes * olderDrPotatoes;
+                                document.getElementById("drPotatoes").disabled = true;
+                                document.getElementById("kgPotatoes").disabled = true;
+                                document.getElementById("kgPotatoes").value = "";
+                                document.getElementById("drPotatoes").value = "";
+
+                                olderkgPotatoes = 0;
+                                olderDrPotatoes = 0;
+
+                price(potatoes);
+                        }
+                        else
+                        {
+
+                                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgPotatoes * olderDrPotatoes;
+                                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) +
+                                                                                                Number(document.getElementById("kgPotatoes").value) * Number(document.getElementById("drPotatoes").value);
+
+                                olderKgPotatoes = Number(document.getElementById("kgPotatoes").value);
+                olderDrPotatoes = Number(document.getElementById("drPotatoes").value);
+
+
+                                document.getElementById("drPotatoes").disabled = false;
+                                document.getElementById("kgPotatoes").disabled = false;
+
+                        }       
+		 break;
+        	 case pepper:
+                        if (document.getElementById("pepper").checked == false)
+                        {
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgPepper * olderDrPepper;
+                                document.getElementById("drPepper").disabled = true;
+                                document.getElementById("kgPepper").disabled = true;
+                                document.getElementById("kgPepper").value = "";
+                                document.getElementById("drPepper").value = "";
+
+                                olderkgPepper = 0;
+                                olderDrPepper = 0;
+
+                price(pepper);
+                        }
+                        else
+                        {
+
+                                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgPepper * olderDrPepper;
+                                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) +
+                                                                                                Number(document.getElementById("kgPepper").value) * Number(document.getElementById("drPepper").value);
+
+                                olderKgPepper = Number(document.getElementById("kgPepper").value);
+                		olderDrPepper = Number(document.getElementById("drPepper").value);
+
+
+                                document.getElementById("drPepper").disabled = false;
+                                document.getElementById("kgPepper").disabled = false;
+
+                        }
+	
 		break;
    case sweetmeat: 
 			if (document.getElementById("sweetmeat").checked == false)
