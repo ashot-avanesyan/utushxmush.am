@@ -487,6 +487,13 @@ style="float:left;width:250px;height:250px">
                     		<td><p><input type = "text" class = "noneBorder" id = "skewer_price" size = "1%"readonly> </p></td>
                 	</tr>
 			<tr>
+                                <td><p><input type="checkbox" value = "pouch" id = "pouch" onclick = "initializeDinner(pouch); price(pouch);subTotal(pouch);total();">Տոպրակ</p></td>
+                                <td><input class= "mass" type="text" min = "0" id = "hatPouch" disabled onblur = "price(pouch);subTotal(pouch);total();">քանակ</td>
+                                <td><p><input type = "text" size = "1%" id = "drPouch" disabled onblur ="price(pouch);subTotal(pouch);total();">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "pouch_price" size = "1%"readonly> </p></td>
+                        </tr>
+
+			<tr>
                     		<td><p><input type="checkbox" value ="etcAccessories"id = "etcAccessories" onclick = "initializeDinner(etcAccessories);subTotal(etcAccessories);total();">Այլ<input type ="text" placeholder="Անվանումը" id = "nameAccessories" size= "5" disabled></p></td>
                     		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcAccessories" disabled onblur = "price(etcAccessories);subTotal(etcAccessories);total();">քանակ</td>
                     		<td><input type = "text" size = "1%"  id = "drEtcAccessories" disabled onblur = "price(etcAccessories);subTotal(etcAccessories);total();">դր</td>

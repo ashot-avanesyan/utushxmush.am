@@ -575,7 +575,24 @@ function initializeDinner(name)
                 	document.getElementById("drSkewer").value = "";
                 	document.getElementById("drSkewer").disabled = true;
                 	document.getElementById("qanakSkewer").disabled = true;
-            		}	
+            		}
+	     break;
+            case pouch:
+                        if (document.getElementById("pouch").checked == true)
+                        {
+                        document.getElementById("hatPouch").value = 1;
+                        document.getElementById("drPouch").value = 0;
+                        document.getElementById("drPouch").disabled = false;
+                        document.getElementById("hatPouch").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("hatPouch").value = "";
+                        document.getElementById("drPouch").value = "";
+                        document.getElementById("drPouch").disabled = true;
+                        document.getElementById("hatPouch").disabled = true;
+                        }
+	
             break; 
 	    case etcAccessories:
             		if (document.getElementById("etcAccessories").checked == true)
@@ -720,6 +737,9 @@ function price(name)
             		break;
 	 	case skewer:
             		document.getElementById("skewer_price").value = "= " + document.getElementById("qanakSkewer").value * document.getElementById("drSkewer").value;
+		 case pouch:
+                        document.getElementById("pouch_price").value = "= " + document.getElementById("hatPouch").value * document.getElementById("drPouch").value;
+
             		break;
 	 	case etcAccessories:
             		document.getElementById("etcAccessories_price").value = "= " + document.getElementById("qanakEtcAccessories").value * document.getElementById("drEtcAccessories").value;
