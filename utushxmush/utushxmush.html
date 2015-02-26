@@ -552,6 +552,13 @@ style="float:left;width:250px;height:250px">
                         	<td><p><input type="checkbox" value = "tea_urn">Ինքնաեռ</p></td>
                     	</tr>
 			<tr>
+                                <td><p><input type="checkbox" value = "salt" id = "salt" onclick = "initializeDinner(salt); price(salt);subTotal(salt);total();">Աղ</p></td>
+                                <td><input class= "mass" type="text" min = "0" id = "tupSalt" disabled onblur = "price(salt);subTotal(salt);total();">տուփ</td>
+                                <td><p><input type = "text" size = "1%" id = "drSalt" disabled onblur ="price(salt);subTotal(salt);total();">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "salt_price" size = "1%"readonly> </p></td>
+                        </tr>
+
+			<tr>
                     		<td><p><input type="checkbox" value = "utensil" id = "utensil" onclick = "initializeDinner(utensil); price(utensil); subTotal(utensil);total();">Սպասք</p></td>
                     		<td><input class= "mass"placeholder="քանակ" type="text" min = "0" id = "qanakUtensil" disabled onblur = "price(utensil);subTotal(utensil);total();">հատ</td>
                     		<td><p><input type = "text" size = "1%" id = "drUtensil" disabled onblur ="price(utensil);subTotal(utensil);total();">դր</p></td>

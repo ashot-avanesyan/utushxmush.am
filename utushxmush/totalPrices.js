@@ -8,7 +8,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
 	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderQanakEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
-    olderQanakTent = 0, olderDrTent = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
+    olderQanakTent = 0, olderDrTent = 0,  olderTupSalt = 0, olderDrSalt = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
 
 function subTotal(name)
 {
@@ -1232,7 +1232,38 @@ function subTotal(name)
 				document.getElementById("qanakTent").disabled = false;
 
 			}	
-		
+		break;
+         case salt:
+                         if (document.getElementById("salt").checked == false)
+                         {
+                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderTupSalt * olderDrSalt;
+
+                                 document.getElementById("drSalt").disabled = true;
+                                 document.getElementById("tupSalt").disabled = true;
+                                 document.getElementById("drSalt").value = "";
+                                 document.getElementById("tupSalt").value = "";
+
+                                 olderTupSalt = 0;
+                                 olderDrSalt = 0;
+
+                 price(salt);
+                         }
+                         else
+                         {
+
+                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderTupSalt * olderDrSalt;
+                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) +
+                                                                                                 Number(document.getElementById("tupSalt").value) * Number(document.getElementById("drSalt").value);
+
+                                 olderTupSalt = Number(document.getElementById("tupSalt").value);
+                                 olderDrSalt = Number(document.getElementById("drSalt").value);
+
+
+                                 document.getElementById("drSalt").disabled = false;
+                                 document.getElementById("tupSalt").disabled = false;
+
+                         }
+
 		break;
 	case utensil:
 			if (document.getElementById("utensil").checked == false)
@@ -1296,13 +1327,12 @@ function subTotal(name)
 				document.getElementById("qanakSkewer").disabled = false;
 
 			}	
-	
-		 break;
+		break;
         case pouch:
                         if (document.getElementById("pouch").checked == false)
                         {
                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderHatPouch * olderDrPouch;
-                            
+                               
                                 document.getElementById("drPouch").disabled = true;
                                 document.getElementById("hatPouch").disabled = true;
                                 document.getElementById("drPouch").value = "";
@@ -1318,10 +1348,10 @@ function subTotal(name)
 
                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderHatPouch * olderDrPouch;
                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) +
-                                                                                                Number(document.getElementById("HatPouch").value) * Number(document.getElementById("drPouch").value);
+                                                                                                Number(document.getElementById("hatPouch").value) * Number(document.getElementById("drPouch").value);
 
                                 olderHatPouch = Number(document.getElementById("hatPouch").value);
-                olderDrPouch = Number(document.getElementById("drPouch").value);
+                                olderDrPouch = Number(document.getElementById("drPouch").value);
 
 
                                 document.getElementById("drPouch").disabled = false;

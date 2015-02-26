@@ -578,6 +578,22 @@ function initializeDinner(name)
                 	document.getElementById("qanakEtcOvernight").disabled = true;
                 	document.getElementById("nameOvernight").disabled = true;
             		}
+	    break;
+            case salt:
+                        if (document.getElementById("salt").checked == true)
+                        {
+                        document.getElementById("tupSalt").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+                        document.getElementById("drSalt").value = 200;
+                        document.getElementById("drSalt").disabled = false;
+                        document.getElementById("tupSalt").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("tupSalt").value = "";
+                        document.getElementById("drSalt").value = "";
+                        document.getElementById("drSalt").disabled = true;
+                        document.getElementById("tupSalt").disabled = true;
+                        }
             break; 			
 	    case utensil:
             		if (document.getElementById("utensil").checked == true)
@@ -772,6 +788,9 @@ function price(name)
             		break; 
 		case etcOvernight:
       	    		document.getElementById("etcOvernight_price").value = "= " + document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
+			 break;
+                case salt:
+                        document.getElementById("salt_price").value = "= " + document.getElementById("tupSalt").value * document.getElementById("drSalt").value;
             		break;
 	 	case utensil:
             		document.getElementById("utensil_price").value = "= " + document.getElementById("qanakUtensil").value * document.getElementById("drUtensil").value;
