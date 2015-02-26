@@ -594,6 +594,23 @@ function initializeDinner(name)
                         document.getElementById("drSalt").disabled = true;
                         document.getElementById("tupSalt").disabled = true;
                         }
+	    break;
+            case ground_pepper:
+                        if (document.getElementById("ground_pepper").checked == true)
+                        {
+                        document.getElementById("tupGround_pepper").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+                        document.getElementById("drGround_pepper").value = 150;
+                        document.getElementById("drGround_pepper").disabled = false;
+                        document.getElementById("tupGround_pepper").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("tupGround_pepper").value = "";
+                        document.getElementById("drGround_pepper").value = "";
+                        document.getElementById("drGround_pepper").disabled = true;
+                        document.getElementById("tupGround_pepper").disabled = true;
+                        }
+
             break; 			
 	    case utensil:
             		if (document.getElementById("utensil").checked == true)
@@ -790,9 +807,12 @@ function price(name)
       	    		document.getElementById("etcOvernight_price").value = "= " + document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
 			 break;
                 case salt:
-                        document.getElementById("salt_price").value = "= " + document.getElementById("tupSalt").value * document.getElementById("drSalt").value;
-            		break;
-	 	case utensil:
+                        document.getElementById("salt_price").value = "= " + document.getElementById("tupSalt").value * document.getElementById("drSalt").value;	                 break;
+                case ground_pepper:
+                        document.getElementById("ground_pepper_price").value = "= " + document.getElementById("tupGround_pepper").value * document.getElementById("drGround_pepper").value;
+            	
+			break;
+		case utensil:
             		document.getElementById("utensil_price").value = "= " + document.getElementById("qanakUtensil").value * document.getElementById("drUtensil").value;
             		break;
 	 	case skewer:

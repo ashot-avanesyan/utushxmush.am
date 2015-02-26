@@ -557,6 +557,12 @@ style="float:left;width:250px;height:250px">
                                 <td><p><input type = "text" size = "1%" id = "drSalt" disabled onblur ="price(salt);subTotal(salt);total();">դր</p></td>
                                 <td><p><input type = "text" class = "noneBorder" id = "salt_price" size = "1%"readonly> </p></td>
                         </tr>
+			<tr>
+                                <td><p><input type="checkbox" value = "ground_pepper" id = "ground_pepper" onclick = "initializeDinner(ground_pepper); price(ground_pepper);subTotal(ground_pepper);total();">Պղպեղ</p></td>
+                                <td><input class= "mass" type="text" min = "0" id = "tupGround_pepper" disabled onblur = "price(ground_pepper);subTotal(ground_pepper);total();">տուփ</td>
+                                <td><p><input type = "text" size = "1%" id = "drGround_pepper" disabled onblur ="price(ground_pepper);subTotal(ground_pepper);total();">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "ground_pepper_price" size = "1%"readonly> </p></td>
+                        </tr>
 
 			<tr>
                     		<td><p><input type="checkbox" value = "utensil" id = "utensil" onclick = "initializeDinner(utensil); price(utensil); subTotal(utensil);total();">Սպասք</p></td>

@@ -8,7 +8,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
 	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderQanakEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
-    olderQanakTent = 0, olderDrTent = 0,  olderTupSalt = 0, olderDrSalt = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
+    olderQanakTent = 0, olderDrTent = 0,  olderTupSalt = 0, olderDrSalt = 0,  olderTupGround_pepper = 0, olderDrGround_pepper = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
 
 function subTotal(name)
 {
@@ -1261,6 +1261,37 @@ function subTotal(name)
 
                                  document.getElementById("drSalt").disabled = false;
                                  document.getElementById("tupSalt").disabled = false;
+
+                         }
+		break;
+         case ground_pepper:
+                         if (document.getElementById("ground_pepper").checked == false)
+                         {
+                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderTupGround_pepper * olderDrGround_pepper;
+
+                                 document.getElementById("drGround_pepper").disabled = true;
+                                 document.getElementById("tupGround_pepper").disabled = true;
+                                 document.getElementById("drGround_pepper").value = "";
+                                 document.getElementById("tupGround_pepper").value = "";
+
+                                 olderTupGround_pepper = 0;
+                                 olderDrGround_pepper = 0;
+
+                 price(ground_pepper);
+                         }
+                         else
+                         {
+
+                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) - olderTupGround_pepper * olderDrGround_pepper;
+                                 document.getElementById("totalAccessories").value = Number(document.getElementById("totalAccessories").value) +
+                                                                                                 Number(document.getElementById("tupGround_pepper").value) * Number(document.getElementById("drGround_pepper").value);
+
+                                 olderTupGround_pepper = Number(document.getElementById("tupGround_pepper").value);
+                                 olderDrGround_pepper = Number(document.getElementById("drGround_pepper").value);
+
+
+                                 document.getElementById("drGround_pepper").disabled = false;
+                                 document.getElementById("tupGround_pepper").disabled = false;
 
                          }
 
