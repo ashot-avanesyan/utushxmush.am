@@ -582,8 +582,8 @@ function initializeDinner(name)
 	    case utensil:
             		if (document.getElementById("utensil").checked == true)
             		{
-                	document.getElementById("qanakUtensil").value = 1;
-                	document.getElementById("drUtensil").value = 5000;
+                	document.getElementById("qanakUtensil").value=3*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+                	document.getElementById("drUtensil").value = 15;
                 	document.getElementById("drUtensil").disabled = false;
                 	document.getElementById("qanakUtensil").disabled = false;
             		}
@@ -598,8 +598,8 @@ function initializeDinner(name)
 	    case skewer:
             		if (document.getElementById("skewer").checked == true)
             		{
-                	document.getElementById("qanakSkewer").value = 1;
-                	document.getElementById("drSkewer").value = 0;
+                	document.getElementById("qanakSkewer").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+                	document.getElementById("drSkewer").value = 200;
                 	document.getElementById("drSkewer").disabled = false;
                 	document.getElementById("qanakSkewer").disabled = false;
             		}
@@ -615,7 +615,7 @@ function initializeDinner(name)
                         if (document.getElementById("pouch").checked == true)
                         {
                         document.getElementById("hatPouch").value = 1;
-                        document.getElementById("drPouch").value = 0;
+                        document.getElementById("drPouch").value =50;
                         document.getElementById("drPouch").disabled = false;
                         document.getElementById("hatPouch").disabled = false;
                         }
@@ -639,6 +639,7 @@ function initializeDinner(name)
             		{
                 	document.getElementById("qanakEtcAccessories").value = "";
                 	document.getElementById("drEtcAccessories").value = "";
+					document.getElementById("nameAccessories").value = '';
                 	document.getElementById("drEtcAccessories").disabled = true;
                 	document.getElementById("qanakEtcAccessories").disabled = true;
                 	document.getElementById("nameAccessories").disabled = true;
