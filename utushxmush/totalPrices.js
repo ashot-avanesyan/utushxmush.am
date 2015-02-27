@@ -360,6 +360,9 @@ function subTotal(name)
                 olderDrEtc = Number(document.getElementById("drEtc").value);
 
 
+
+
+
 				document.getElementById("drEtc").disabled = false;
 				document.getElementById("kgEtc").disabled = false;
 
