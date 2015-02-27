@@ -127,17 +127,25 @@ style="float:left;width:250px;height:250px">
 </p>  
     <div id = "sizeOfDiv">
 		<ul id = "glkhawor_meny" style="text-align:center">
-			<li>
-				<button onclick="hide5(), blur()">Մասնակիցներ</button>
+			<li><button onclick="hide5(), blur()">Մասնակիցներ</button></li>
+			<li><button onclick="hide1(), blur();checkAmount(); ">Տրանսպորտ</button>
+				
+  
+ 				 <!--Armine ToolTip --> 
+    			 <div id = "toolTip">
+					<table cellspacing = "0" align = "right">
+						<tr><td id = "toolTipComment" onClick="document.getElementById('toolTip').style.display='none'; return false;"
+								onMouseOver="this.style.cursor='pointer'";onMouseOut="this.style.cursor='default'">X
+			    			</td>
+						</tr>
+					</table>
+					Հաշվիչն աշխատացնելու համար սկզբում անհրաժեշտ է լրացնել մասնակիցների աղյուսակը։		
+				  </div> 
+					
 			</li>
-			<li>
-				<button onclick="hide1(), blur()">Տրանսպորտ</button>
-			</li>
-			<li>
-				<button onclick="hide2(), blur()">Ճաշացանկ</button>
-			</li>
-			<li>
-				<button onclick="hide3(), blur()">Գիշերակաց</button> </li> <li> <button onclick="hide4(), blur()">Պարագաներ</button> </li>
+			<li><button onclick="hide2(), blur();checkAmount();">Ճաշացանկ</button></li>
+			<li><button onclick="hide3(), blur();checkAmount();">Գիշերակաց</button> </li>
+			<li> <button onclick="hide4(), blur(); checkAmount();">Պարագաներ</button></li>
 		</ul>
 	<div id="d">
 	<form class = "amountParticipants">
@@ -614,7 +622,18 @@ style="float:left;width:250px;height:250px">
 			</table>
 			<br>
 		</button>
-    </div> 
+    </div>
+  
+  <!--Armine ToolTip  
+    <div id = "toolTip">
+		<table cellspacing = "0" align = "right">
+			<tr><td id = "toolTipComment" onClick="document.getElementById('toolTip').style.display='none'; return false;"
+				onMouseOver="this.style.cursor='pointer'";onMouseOut="this.style.cursor='default'">X
+			    </td>
+			</tr>
+		</table>
+		Հաշվիչն աշխատացնելու համար սկզբում անհրաժեշտ է լրացնել մասնակիցների աղյուսակը։		
+	</div> --> 
 
 </body>
 </html>

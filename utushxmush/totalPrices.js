@@ -1404,7 +1404,7 @@ function subTotal(name)
                                 olderHatPouch = 0;
                                 olderDrPouch = 0;
 
-                price(pouch);
+               					 price(pouch);
                         }
                         else
                         {

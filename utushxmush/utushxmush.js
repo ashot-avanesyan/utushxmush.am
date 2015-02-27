@@ -652,8 +652,7 @@ function initializeDinner(name)
             		if (document.getElementById("skewer").checked == true)
             		{
                 	document.getElementById("qanakSkewer").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-			document.getElementById("qanakSkewer").value = 1;
-                	document.getElementById("drSkewer").value = 200;
+                	document.getElementById("drSkewer").value =0;
                 	document.getElementById("drSkewer").disabled = false;
                 	document.getElementById("qanakSkewer").disabled = false;
             		}
@@ -1461,3 +1460,9 @@ function priceDrink(name)
 		}
  } 
 
+//check amount of participants and display toottip 
+function checkAmount()
+{
+	if (!(document.getElementById("participantsInput2").value + document.getElementById("participantsInput3").value))
+		document.getElementById('toolTip').style.display='block';
+}
