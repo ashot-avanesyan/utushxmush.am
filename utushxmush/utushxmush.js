@@ -5,7 +5,11 @@
 		document.getElementById("d3").style.display = "none";
 		document.getElementById("d4").style.display = "none";
 		document.getElementById("d").style.display = "none";
-		document.getElementById("d1").style.display = "block";
+
+		if (checkAmount())
+			document.getElementById("d1").style.display = "block";
+		else 
+			document.getElementById("d").style.display = "block";
 	}
 
 	function hide2() {
@@ -13,27 +17,42 @@
 		document.getElementById("d3").style.display = "none";
  	 	document.getElementById("d4").style.display = "none";
 		document.getElementById("d").style.display = "none";
-		document.getElementById("d2").style.display = "block";
+		
+		if (checkAmount())
+			document.getElementById("d2").style.display = "block";
+		else 
+			document.getElementById("d").style.display = "block";
+	//	document.getElementById("d2").style.display = "block";
 	}
 	function hide3() {
 		document.getElementById("d1").style.display = "none";
 		document.getElementById("d2").style.display = "none";
-        	document.getElementById("d4").style.display = "none";
+        document.getElementById("d4").style.display = "none";
 		document.getElementById("d").style.display = "none";
-		document.getElementById("d3").style.display = "block";
+		
+		if (checkAmount())
+			document.getElementById("d3").style.display = "block";
+		else 
+			document.getElementById("d").style.display = "block";
+		//document.getElementById("d3").style.display = "block";
 	}
         function hide4() {
     		document.getElementById("d1").style.display = "none";
         	document.getElementById("d2").style.display = "none";
         	document.getElementById("d3").style.display = "none";
-		document.getElementById("d").style.display = "none";
-        	document.getElementById("d4").style.display = "block";
+			document.getElementById("d").style.display = "none";
+		
+			if (checkAmount())
+				document.getElementById("d4").style.display = "block";
+			else 
+				document.getElementById("d").style.display = "block";
+        //	document.getElementById("d4").style.display = "block";
     	}
     	function hide5() {
     		document.getElementById("d1").style.display = "none";
         	document.getElementById("d2").style.display = "none";
         	document.getElementById("d3").style.display = "none";
-		document.getElementById("d4").style.display = "none";
+			document.getElementById("d4").style.display = "none";
         	document.getElementById("d").style.display = "block";
     	}
 function hide20_1() {
@@ -1463,6 +1482,10 @@ function priceDrink(name)
 //check amount of participants and display toottip 
 function checkAmount()
 {
-	if (!(document.getElementById("participantsInput2").value + document.getElementById("participantsInput3").value))
-		document.getElementById('toolTip').style.display='block';
+	if ((document.getElementById("participantsInput2").value + document.getElementById("participantsInput3").value))
+		return true;
+	
+	document.getElementById('toolTip').style.display='block';
+	
+	return false;
 }

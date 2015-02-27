@@ -212,12 +212,12 @@ table#TransportCosts,tr,td {
 /* Armine ToolTip */
 div#toolTip {
 	position: absolute; 
-	width: 450px;  /* ширина всплывающего окна */
-	border:solid #A0A050 3px; /* цвет и толщина рамки окна*/
+	width: 250px;  /* ширина всплывающего окна */
+	border: solid red 3px; /* цвет и толщина рамки окна*/
 	display: none; 
 	z-index: 10; 
 	overflow: hidden;
-	background-color:#ffffff; /* цвет фона внутри окна, стоит белый */
+	background-color:#f0ddb5; /* цвет фона внутри окна, стоит белый */
 	color:#000000; /* цвет текста внутри окна, стоит чёрный */
 	text-align:center; /* выравнивает весь текст в окне по центру */
 	padding: 5px;
@@ -227,7 +227,7 @@ div#toolTip {
 
 td#toolTipComment {
 	padding: 0 3 0 3;
-	background-color: #A0A050;
+	background-color: red;
 	
     /* цвет кнопки закрыть #A0A050 можете вставить свой */
 
