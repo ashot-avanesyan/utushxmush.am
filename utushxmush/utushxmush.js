@@ -687,7 +687,7 @@ function initializeDinner(name)
                         if (document.getElementById("pouch").checked == true)
                         {
 //                        document.getElementById("hatPouch").value = 1;
-                        document.getElementById("drPouch").value =50;
+                        document.getElementById("drPouch").value =100;
                         document.getElementById("drPouch").disabled = false;
                         document.getElementById("hatPouch").disabled = false;
                         }
