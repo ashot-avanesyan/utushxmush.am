@@ -6,7 +6,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderPunjGreen = 0, olderDrGreen = 0, olderKgPotatoes = 0, olderDrPotatoes = 0, olderKgPepper = 0, olderDrPepper = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
 	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderTupTea = 0, olderDrTea = 0,
 	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
-	olderKgBread = 0, olderDrBread = 0, olderKgEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
+	olderKgBread = 0, olderDrBread = 0,  olderHatButtermilk = 0, olderDrButtermilk = 0,  olderHatEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
 	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderQanakEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
     olderQanakTent = 0, olderDrTent = 0,  olderTupSalt = 0, olderDrSalt = 0,  olderTupGround_pepper = 0, olderDrGround_pepper = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
 
@@ -1041,18 +1041,50 @@ function subTotal(name)
 				document.getElementById("hatBread").disabled = false;
 
 			}	
+		 break;
+        case buttermilk:
+                        if (document.getElementById("buttermilk").checked == false)
+                        {
+                                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderHatButtermilk * olderDrButtermilk;
+
+                                document.getElementById("drButtermilk").disabled = true;
+                                document.getElementById("hatButtermilk").disabled = true;
+                                document.getElementById("hatButtermilk").value = "";
+                                document.getElementById("drButtermilk").value = "";
+
+                                olderHatButtermilk = 0;
+                                olderDrButtermilk = 0;
+
+                price(buttermilk);
+                        }
+                        else
+                        {
+
+                                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderHatButtermilk * olderDrButtermilk;
+                                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) +
+                                                                                                Number(document.getElementById("hatButtermilk").value) * Number(document.getElementById("drButtermilk").value);
+
+                                olderHatButtermilk = Number(document.getElementById("hatButtermilk").value);
+                                olderDrButtermilk = Number(document.getElementById("drButtermilk").value);
+
+
+                                document.getElementById("drButtermilk").disabled = false;
+                                document.getElementById("hatButtermilk").disabled = false;
+
+                        }
+
 		break;
 	case etcDrink:
 			if (document.getElementById("etcDrink").checked == false)
 			{
-				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderKgEtcDrink * olderDrEtcDrink; 
+				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderHatEtcDrink * olderDrEtcDrink; 
 				
 				document.getElementById("drEtcDrink").disabled = true;
 				document.getElementById("hatEtcDrink").disabled = true;
 				document.getElementById("hatEtcDrink").value = "";
 				document.getElementById("drEtcDrink").value = "";
 
-				olderKgEtcDrink = 0; 
+				olderHatEtcDrink = 0; 
 				olderDrEtcDrink = 0;
                
                 price(etcDrink);
@@ -1060,12 +1092,12 @@ function subTotal(name)
 			else 
 			{
 
-				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderKgEtcDrink * olderDrEtcDrink; 
+				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderHatEtcDrink * olderDrEtcDrink; 
 				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) +  
 												Number(document.getElementById("hatEtcDrink").value) * Number(document.getElementById("drEtcDrink").value);
 
-		 	 	olderKgEtcDrink = Number(document.getElementById("hatEtcDrink").value);
-                olderDrEtcDrink = Number(document.getElementById("drEtcDrink").value);
+		 	 	olderHatEtcDrink = Number(document.getElementById("hatEtcDrink").value);
+                		olderDrEtcDrink = Number(document.getElementById("drEtcDrink").value);
 
 
 				document.getElementById("drEtcDrink").disabled = false;

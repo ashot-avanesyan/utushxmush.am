@@ -356,6 +356,13 @@ style="float:left;width:250px;height:250px">
 			        <td><p><input type = "text" id = "water_price" size="1%" class  = "noneBorder" readonly></p></td>
            		</tr>
 			<tr>
+                                <td><p><input type="checkbox" value = "buttermilk" id = "buttermilk" onclick = "initializeDinner(buttermilk); price(buttermilk);subTotal(buttermilk);total();">Թան</p></td>
+                                <td><input class= "mass" type="text" min = "0" id = "hatButtermilk" disabled onblur = "price(buttermilk);subTotal(buttermilk);total();">հատ</td>
+                                <td><p><input type = "text" size = "1%" id = "drButtermilk" disabled onblur ="price(buttermilk);subTotal(buttermilk);total();">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "buttermilk_price" size = "1%"readonly> </p></td>
+                        </tr>
+
+			<tr>
                                 <td><p><input type="checkbox" value ="etcDrink" id = "etcDrink" onclick = "initializeDinner(etcDrink); price(etcDrink); subTotal(etcDrink);total();">
 					<td><p>Այլ<input type = "text" id = "nameEtcDrink" placeholder="Անուն" size = "5" disabled></p></td>
 				</td>
