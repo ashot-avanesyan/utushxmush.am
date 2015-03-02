@@ -210,7 +210,7 @@ table#TransportCosts,tr,td {
 }
 
 /* Armine ToolTip */
-div#toolTip {
+div.toolTip{
 	position: absolute; 
 	width: 250px;  /* ширина всплывающего окна */
 	border: solid red 3px; /* цвет и толщина рамки окна*/
@@ -224,6 +224,10 @@ div#toolTip {
 	left: 32%;
     top: 39%;
 }
+/*inheritance of class toolTip */
+div.extra toolTip{
+	left: inherit; 
+} 
 
 td#toolTipComment {
 	padding: 0 3 0 3;

@@ -128,24 +128,10 @@ style="float:left;width:250px;height:250px">
     <div id = "sizeOfDiv">
 		<ul id = "glkhawor_meny" style="text-align:center">
 			<li><button onclick="hide5(), blur()">Մասնակիցներ</button></li>
-			<li><button onclick="hide1(), blur();checkAmount(); ">Տրանսպորտ</button>
-				
-  
- 				 <!--Armine ToolTip --> 
-    			 <div id = "toolTip">
-					<table cellspacing = "0" align = "right">
-						<tr><td id = "toolTipComment" onClick="document.getElementById('toolTip').style.display='none'; return false;"
-								onMouseOver="this.style.cursor='pointer'";onMouseOut="this.style.cursor='default'">X
-			    			</td>
-						</tr>
-					</table>
-					Մուտքագրեք մասնակիցների քանակը։
-				  </div> 
-					
-			</li>
-			<li><button onclick="hide2(), blur();checkAmount();">Ճաշացանկ</button></li>
-			<li><button onclick="hide3(), blur();checkAmount();">Գիշերակաց</button> </li>
-			<li> <button onclick="hide4(), blur(); checkAmount();">Պարագաներ</button></li>
+			<li><button id = "butTransport" value = "butTransport" onclick="hide1(), blur();checkAmount(butTransport);">Տրանսպորտ</button></li>
+			<li><button id = "butDinner" value = "butDinner"  onclick="hide2(), blur();checkAmount(butDinner);">Ճաշացանկ</button></li>
+			<li><button id = "butOvernight" value = "butOvernight" onclick="hide3(), blur();checkAmount(butOvernight);">Գիշերակաց</button> </li>
+			<li> <button id = "butAccessories"  onclick="hide4(), blur(); checkAmount(butAccessories);">Պարագաներ</button></li>
 		</ul>
 	<div id="d">
 	<form class = "amountParticipants">
@@ -626,16 +612,15 @@ style="float:left;width:250px;height:250px">
 		</button>
     </div>
   
-  <!--Armine ToolTip  
-    <div id = "toolTip">
-		<table cellspacing = "0" align = "right">
-			<tr><td id = "toolTipComment" onClick="document.getElementById('toolTip').style.display='none'; return false;"
-				onMouseOver="this.style.cursor='pointer'";onMouseOut="this.style.cursor='default'">X
-			    </td>
-			</tr>
-		</table>
-		Հաշվիչն աշխատացնելու համար սկզբում անհրաժեշտ է լրացնել մասնակիցների աղյուսակը։		
-	</div> --> 
 
+    			 <div id = "toolTipID" class = "toolTip">
+					<table cellspacing = "0" align = "right">
+						<tr><td id = "toolTipComment" onClick="document.getElementById('toolTipID').style.display='none'; return false;"
+								onMouseOver="this.style.cursor='pointer'";onMouseOut="this.style.cursor='default'">X
+			    			</td>
+						</tr>
+					</table>
+					Մուտքագրեք մասնակիցների քանակը։
+				  </div> 
 </body>
 </html>

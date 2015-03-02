@@ -1480,12 +1480,37 @@ function priceDrink(name)
  } 
 
 //check amount of participants and display toottip 
-function checkAmount()
+function checkAmount(name)
 {
+
 	if ((document.getElementById("participantsInput2").value + document.getElementById("participantsInput3").value))
 		return true;
+
+	//window.alert("name");
+    switch(name)
+	{ 
+		 case butTransport: 
+			document.getElementById('toolTipID').style.left='33.5%';
+	//		window.alert("transport default");
+			break; 
+		case butDinner: 
+			document.getElementById('toolTipID').class='extra';
+			document.getElementById('toolTipID').style.left='40.5%';
+	//		window.alert("dinner");
+			break; 
+		case butOvernight:
+			document.getElementById('toolTipID').class='extra';
+			document.getElementById('toolTipID').style.left='48%';
+	//		window.alert("overnight");
+			break; 
+		case butAccessories: 
+			document.getElementById('toolTipID').class='extra';
+			document.getElementById('toolTipID').style.left='55.5%';
+	  //  	window.alert("accessories");
+			break;
+	} 
 	
-	document.getElementById('toolTip').style.display='block';
+	document.getElementById('toolTipID').style.display='block';
 	
 	return false;
 }
