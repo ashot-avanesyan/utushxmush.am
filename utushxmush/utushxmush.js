@@ -5,6 +5,8 @@
 		document.getElementById("d3").style.display = "none";
 		document.getElementById("d4").style.display = "none";
 		document.getElementById("d").style.display = "none";
+		
+	//	document.getElementById("d1").style.display = "block";
 
 		if (checkAmount())
 			document.getElementById("d1").style.display = "block";
@@ -22,7 +24,6 @@
 			document.getElementById("d2").style.display = "block";
 		else 
 			document.getElementById("d").style.display = "block";
-	//	document.getElementById("d2").style.display = "block";
 	}
 	function hide3() {
 		document.getElementById("d1").style.display = "none";
@@ -34,7 +35,6 @@
 			document.getElementById("d3").style.display = "block";
 		else 
 			document.getElementById("d").style.display = "block";
-		//document.getElementById("d3").style.display = "block";
 	}
         function hide4() {
     		document.getElementById("d1").style.display = "none";
@@ -46,7 +46,6 @@
 				document.getElementById("d4").style.display = "block";
 			else 
 				document.getElementById("d").style.display = "block";
-        //	document.getElementById("d4").style.display = "block";
     	}
     	function hide5() {
     		document.getElementById("d1").style.display = "none";
