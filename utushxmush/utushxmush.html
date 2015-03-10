@@ -17,7 +17,7 @@
  }
  </style>
 <!--slide js-->
-      <script>
+<!--      <script>
           function displayNextImage() {
               x = (x === images.length - 1) ? 0 : x + 1;
               document.getElementById("img").src = images[x];
@@ -37,7 +37,7 @@
           images[1] = "n2.jpg";
           images[2] = "n3.jpeg";
           images[3] = "n6.jpg";
-      </script>
+      </script>-->
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
  <script>
  // This example adds a search box to a map, using the Google Place Autocomplete
@@ -119,11 +119,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </head>
 <body onload = "startTimer()">
-   <img id="img" src="n1.jpeg"></br>
- 
-<p class="pos_fixed">
-<img src="ux.jpeg"
-style="float:left;width:250px;height:250px">
+   <!-- <p class="pos_fixed">-->
+<p>	<img src="ux.jpeg"
+	style="float:left;width:180px;height:180px">
 </p>  
     <div id = "sizeOfDiv">
 		<ul id = "glkhawor_meny" style="text-align:center">
@@ -184,8 +182,8 @@ style="float:left;width:250px;height:250px">
         		<table class= "margin_barbequ">
         		<tr>
 	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig); subTotal(pig);total();">Խոզ</p></td>
-	  			<td><input class= "mass" type="text" min = "0" id = "kgPig" placeholder="1" disabled onblur = "price(pig); subTotal(pig);total();">կգ</td>
-	  			<td><p><input type = "text" size = "5" id = "drPig" placeholder="3800"  disabled onblur ="price(pig);subTotal(pig);total();">դր</p></td>
+	  			<td><input class= "mass"  type="number" min = "0" id = "kgPig" placeholder="1" disabled onblur = "price(pig); subTotal(pig);total();">կգ</td>
+	  			<td><p><input  type = "text" size = "5" id = "drPig" placeholder="3800"  disabled onblur ="price(pig);subTotal(pig);total();">դր</p></td>
 		     		<td><p><input type = "text" size = "1%"  id = "pig_price" class = "noneBorder" readonly> </p></td>
 			</tr> 
 			<tr>       
@@ -543,7 +541,7 @@ style="float:left;width:250px;height:250px">
 			</ul>
         		<table id= "margin_accessories">
 			<tr>
-                    		<p><input type="checkbox" value = "aid_supplies" style = "margin-top:3%">Առաջին բուժօգնության պարագաներ</p>
+                    		<p><input  type="checkbox" value = "aid_supplies" style = "margin-top:3%">Առաջին բուժօգնության պարագաներ</p>
                 	</tr>
 			<tr>
                         	<p><input type="checkbox" value = "entertainment_accessories">ժամանցի պարագաներ (գնդակ, բադմինտոն և այլ )</p>
@@ -596,7 +594,7 @@ style="float:left;width:250px;height:250px">
 			</div>		
 		</div>
 		<div id="expenditure">
-		<button id="general" style = "background-color:#f0ddb5">
+		<div  id="general" style = "background-color:#f0ddb5">
 			<table>
 				<tr>
 					<td>Ընդհանուր ծախսը <b id="GlobalGenral">= 
@@ -609,7 +607,7 @@ style="float:left;width:250px;height:250px">
 				</tr>
 			</table>
 			<br>
-		</button>
+		</div>
     </div>
   
 
