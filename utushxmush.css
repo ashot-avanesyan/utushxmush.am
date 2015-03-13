@@ -2,9 +2,9 @@
 /*  Syuzi_Nara */
 body {	padding: 0%; 
         font-size: 100%;
-        background-image: url(kanach1.jpg );
+        background-image: url(kanach1.jpg ); 
 	background-repeat: no-repeat;
-	background-size: 1600px 800px;
+	background-size: 2000px 800px;
 	background-position:0px 200px;
 }	
 /*#img{
@@ -19,7 +19,7 @@ input#general {
 	padding: 28% 2% 0% 1%;
 }
 input.InputButton {
-	background-color: #c9a172;
+	background-color: #90e17a;
 
 }
  /*p.one{
@@ -85,13 +85,13 @@ list-style: none;
 margin-bottom:"text-align:center";
 }
 ul#glkhawor_meny li button {
-background-color: #c9a172;
+/*background-color: #90e17a;*/
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
 border-radius: 8px;
 border-style: solid;
-border-color: #c9a172;
+border-color: #90e17a;
 border-width: 3px;
 margin-bottom: -50px;
 margin-right: 5px;
@@ -103,13 +103,13 @@ display: inline;
 list-style: none;
 }
 ul#chashacank li button {
-background-color: #c9a172;
+background-color: #90e17a;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
 border-radius: 8px;
 border-style: solid;
-border-color: #c9a172;
+border-color: #90e17a;
 border-width: 3px;
 margin-bottom: -25px;
 }
@@ -118,13 +118,13 @@ display: inline;
 list-style: none;
 }
 li button {
-background-color: #c9a172;
+background-color: #90e17a;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
 border-radius: 8px;
 border-style: solid;
-border-color: #c9a172;
+border-color: #90e17a;
 border-width: 3px;
 margin-bottom: -25px;
 }
@@ -146,18 +146,22 @@ display: none;
 table.margin_barbequ {
 margin-left: auto;
 margin-right: auto;
+padding: 60px 0px 0px 0px;
 }
 table.margin_drink {
 margin-left: auto;
 margin-right: auto;
+padding: 60px 0px 0px 0px;
 }
 table.margin_vegetable {
 margin-left: auto;
 margin-right: auto;
+padding: 60px 0px 0px 0px;
 }
 table#margin_desert {
 margin-left: auto;
 margin-right: auto;
+padding: 60px 0px 0px 0px;
 }
 div#d_2_2_tabs {
 display: none;
@@ -186,8 +190,14 @@ height: 565px;
 display: none;
 padding: 0% 0% 0% 15%;
 }
-table.margin_overnight {
+/*table.margin_overnight {
 margin: 0% 5% !important;
+padding: 60px 0px 0px 0px;
+}*/
+table.margin_overnight {
+margin-left: auto;
+margin-right: auto;
+padding: 60px 0px 0px 0px;
 }
 div#d4 {
 height: 700px;
@@ -197,6 +207,7 @@ padding: 0% 0% 0% 15%;
 }
 table.margin_accessories {
 margin: 0% 5% !important;
+padding: 60px 0px 0px 0px;
 }
 div#d {
 width: auto;
@@ -210,12 +221,12 @@ padding: 28% 0% 0% 9%;
 /* Armine */
 .noneBorder {
 	border: 0px;
-    background-color: #70c35a;
+    background-color: #90e17a;
 }
 
 input.totalNoneBorder {
 border: 0px; 
-background-color:#f0ddb5;
+background-color:#90e17a;
 }
 table#TransportCosts,tr,td {
 	margin: 0% 0% 4% 17%;
@@ -229,7 +240,7 @@ div.toolTip{
 	display: none; 
 	z-index: 10; 
 	overflow: hidden;
-	background-color:#f0ddb5; /* цвет фона внутри окна, стоит белый */
+	background-color:#90e17a; /* цвет фона внутри окна, стоит белый */
 	color:#000000; /* цвет текста внутри окна, стоит чёрный */
 	text-align:center; /* выравнивает весь текст в окне по центру */
 	padding: 5px;
@@ -251,4 +262,57 @@ td#toolTipComment {
 	font-size: 10pt;
  	color: #ffffff;
 	font-weight: bold;
+}
+
+div#clouds { 
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	width: 100%; 
+	height: 136px; 
+	background: url("clouds1.png");
+	z-index: -1; 
+	opacity: 0.5;
+	background-position: left;
+	-webkit-animation: mymove 50s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 50s infinite;
+} 
+
+@-webkit-keyframes mymove {
+    100% { background-position: right;}
+/*	from { left: 0px; } 
+	to { left: 2000px; } */
+}
+
+@keyframes mymove {
+    100% {background-position: right;} 
+/*	from { left: 0px; } 
+	to { left: 2000px; } */
+}
+
+div#sky { 
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	width: 100%; 
+	height: 220px;
+	background: url("sky_bg.jpg");
+    z-index: -2;
+	opacity: 0.5;
+	background-position: right; 
+	-webkit-animation: mySkymove 50s infinite; /* Chrome, Safari, Opera */
+    animation: mySkymove 50s infinite;
+    
+} 
+
+@-webkit-keyframes mySkymove {
+    100% { background-position: left;}
+/*	from { left: 0px; } 
+	to { left: 2000px; } */
+}
+
+@keyframes mySkymove {
+    100% {background-position: left;} 
+/*	from { left: 0px; } 
+	to { left: 2000px; } */
 }
