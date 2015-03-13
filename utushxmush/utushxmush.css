@@ -2,9 +2,9 @@
 /*  Syuzi_Nara */
 body {	padding: 0%; 
         font-size: 100%;
-        background-image: url(kanach1.jpg ); 
+        background-image: url(kanach1.jpg );
 	background-repeat: no-repeat;
-	background-size: 2000px 800px;
+	background-size: 1615px 800px;
 	background-position:0px 200px;
 }	
 /*#img{
@@ -12,15 +12,17 @@ box-shadow: 10px 10px 5px #222222;
 }*/
 div#expenditure {
 	position: fixed;
-    top: 83%;
+    top: 73%;
     right: 6%;
 }
 input#general {
-	padding: 28% 2% 0% 1%;
+	padding: 0% 2% 0% 1%;
 }
 input.InputButton {
 	background-color: #90e17a;
-
+	border-style: ridge;
+	border-color: #000000;
+	text-align: right;
 }
  /*p.one{
     text-indent: 5px;
@@ -63,7 +65,8 @@ text-align: right;
 width: 30%;
 }
 input.mount {
-width: 30%;
+width: 35%;
+text-align: right;
 }
 .inputParticipants {
 	float: right;
@@ -85,7 +88,7 @@ list-style: none;
 margin-bottom:"text-align:center";
 }
 ul#glkhawor_meny li button {
-/*background-color: #90e17a;*/
+background-color: #90e17a;
 color: #000000;
 padding: 10px 20px;
 text-decoration: none;
@@ -133,7 +136,7 @@ width: auto;
 height: 650px;
 margin: auto;
 /*background-image: url(nastol1.jpg ) ;*/
-padding: 0% 0% 0% 6%;
+padding: 20% 0% 0% 6%;
 display: none;
 }
 div#d2 {
@@ -221,15 +224,16 @@ padding: 28% 0% 0% 9%;
 /* Armine */
 .noneBorder {
 	border: 0px;
-    background-color: #90e17a;
+   /* background-color: #70c35a;*/
 }
 
 input.totalNoneBorder {
 border: 0px; 
-background-color:#90e17a;
+background-color:#cda373;
 }
 table#TransportCosts,tr,td {
 	margin: 0% 0% 4% 17%;
+	/*padding:0px 0px 0px 0px;*/
 }
 
 /* Armine ToolTip */
@@ -245,7 +249,7 @@ div.toolTip{
 	text-align:center; /* выравнивает весь текст в окне по центру */
 	padding: 5px;
 	left: 32%;
-    top: 39%;
+        top: 39%;
 }
 /*inheritance of class toolTip */
 div.extra toolTip{
@@ -262,57 +266,4 @@ td#toolTipComment {
 	font-size: 10pt;
  	color: #ffffff;
 	font-weight: bold;
-}
-
-div#clouds { 
-	position: absolute; 
-	top: 0;
-	left: 0; 
-	width: 100%; 
-	height: 136px; 
-	background: url("clouds1.png");
-	z-index: -1; 
-	opacity: 0.5;
-	background-position: left;
-	-webkit-animation: mymove 50s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 50s infinite;
-} 
-
-@-webkit-keyframes mymove {
-    100% { background-position: right;}
-/*	from { left: 0px; } 
-	to { left: 2000px; } */
-}
-
-@keyframes mymove {
-    100% {background-position: right;} 
-/*	from { left: 0px; } 
-	to { left: 2000px; } */
-}
-
-div#sky { 
-	position: absolute; 
-	top: 0;
-	left: 0; 
-	width: 100%; 
-	height: 220px;
-	background: url("sky_bg.jpg");
-    z-index: -2;
-	opacity: 0.5;
-	background-position: right; 
-	-webkit-animation: mySkymove 50s infinite; /* Chrome, Safari, Opera */
-    animation: mySkymove 50s infinite;
-    
-} 
-
-@-webkit-keyframes mySkymove {
-    100% { background-position: left;}
-/*	from { left: 0px; } 
-	to { left: 2000px; } */
-}
-
-@keyframes mySkymove {
-    100% {background-position: left;} 
-/*	from { left: 0px; } 
-	to { left: 2000px; } */
 }
