@@ -284,9 +284,11 @@ div#clouds {
 
 @-webkit-keyframes mymove {
     100% { background-position: right;} 
+}
 
 @keyframes mymove {
     100% {background-position: right;} 
+}
 
 div#sky { 
 	position: absolute; 
@@ -305,8 +307,9 @@ div#sky {
 
 @-webkit-keyframes mySkymove {
     100% { background-position: left;} 
+}
 
 @keyframes mySkymove {
     100% {background-position: left;} 
-
+}
 
