@@ -12,6 +12,18 @@
 			document.getElementById("d1").style.display = "block";
 		else 
 			document.getElementById("d").style.display = "block";
+//button background color
+			document.getElementById("butAccessories").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butTransport").style.backgroundColor = "#90F17A";
+			document.getElementById("butDinner").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butparticipants").style.backgroundColor = "#E6F5FF";
+//button  boreer color
+			document.getElementById("butAccessories").style.borderColor = "#E6F5FF";
+			document.getElementById("butTransport").style.borderColor = "#90F17A";
+			document.getElementById("butDinner").style.borderColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.borderColor = "#E6F5FF";
+			document.getElementById("butparticipants").style.borderColor = "#E6F5FF";
 	}
 
 	function hide2() {
@@ -24,6 +36,18 @@
 			document.getElementById("d2").style.display = "block";
 		else 
 			document.getElementById("d").style.display = "block";
+//button background color
+			document.getElementById("butAccessories").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butTransport").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butDinner").style.backgroundColor = "#90F17A";
+			document.getElementById("butOvernight").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butparticipants").style.backgroundColor = "#E6F5FF";
+//button  boreer color
+			document.getElementById("butAccessories").style.borderColor = "#E6F5FF";
+			document.getElementById("butTransport").style.borderColor = "#E6F5FF";
+			document.getElementById("butDinner").style.borderColor = "#90F17A";
+			document.getElementById("butOvernight").style.borderColor = "#E6F5FF";
+			document.getElementById("butparticipants").style.borderColor = "#E6F5FF";
 	}
 	function hide3() {
 		document.getElementById("d1").style.display = "none";
@@ -35,6 +59,18 @@
 			document.getElementById("d3").style.display = "block";
 		else 
 			document.getElementById("d").style.display = "block";
+//button background color
+			document.getElementById("butAccessories").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butTransport").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butDinner").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.backgroundColor = "#90F17A";
+			document.getElementById("butparticipants").style.backgroundColor = "#E6F5FF";
+//button  boreer color
+			document.getElementById("butAccessories").style.borderColor = "#E6F5FF";
+			document.getElementById("butTransport").style.borderColor = "#E6F5FF";
+			document.getElementById("butDinner").style.borderColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.borderColor = "#90F17A";
+			document.getElementById("butparticipants").style.borderColor = "#E6F5FF";
 	}
         function hide4() {
     		document.getElementById("d1").style.display = "none";
@@ -46,6 +82,18 @@
 				document.getElementById("d4").style.display = "block";
 			else 
 				document.getElementById("d").style.display = "block";
+//button background color
+			document.getElementById("butAccessories").style.backgroundColor = "#90F17A";
+			document.getElementById("butTransport").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butDinner").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butparticipants").style.backgroundColor = "#E6F5FF";
+//button  boreer color
+			document.getElementById("butAccessories").style.borderColor = "#90F17A";
+			document.getElementById("butTransport").style.borderColor = "#E6F5FF";
+			document.getElementById("butDinner").style.borderColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.borderColor = "#E6F5FF";
+			document.getElementById("butparticipants").style.borderColor = "#E6F5FF";
     	}
     	function hide5() {
     		document.getElementById("d1").style.display = "none";
@@ -53,30 +101,83 @@
         	document.getElementById("d3").style.display = "none";
 			document.getElementById("d4").style.display = "none";
         	document.getElementById("d").style.display = "block";
-    	}
+//button background color
+			document.getElementById("butparticipants").style.backgroundColor = "#90F17A";
+			document.getElementById("butTransport").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butDinner").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.backgroundColor = "#E6F5FF";
+			document.getElementById("butAccessories").style.backgroundColor = "#E6F5FF";
+//button  boreer color
+			document.getElementById("butparticipants").style.borderColor = "#90F17A";
+			document.getElementById("butTransport").style.borderColor = "#E6F5FF";
+			document.getElementById("butDinner").style.borderColor = "#E6F5FF";
+			document.getElementById("butOvernight").style.borderColor = "#E6F5FF";
+			document.getElementById("butAccessories").style.borderColor = "#E6F5FF";
+    }
 function hide20_1() {
                 document.getElementById("d_2_2_tabs").style.display = "none";
                 document.getElementById("d_2_3_tabs").style.display = "none";
                 document.getElementById("d_2_4_tabs").style.display = "none";
                 document.getElementById("d_2_1_tabs").style.display = "block";
+//button background color
+				document.getElementById("colorBarbecue").style.backgroundColor = "#90E17A";
+				document.getElementById("colorDesert").style.backgroundColor = "#E6F5FF";
+				document.getElementById("colorDrink").style.backgroundColor = "#E6F5FF";
+				document.getElementById("colorVegetable").style.backgroundColor = "#E6F5FF";
+//button border color
+				document.getElementById("colorBarbecue").style.borderColor = "#90E17A";
+				document.getElementById("colorDesert").style.borderColor = "#E6F5FF";
+				document.getElementById("colorDrink").style.borderColor = "#E6F5FF";
+				document.getElementById("colorVegetable").style.borderColor = "#E6F5FF";
+//input background color
 }
 function hide20_2() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
                 document.getElementById("d_2_3_tabs").style.display = "none";
                 document.getElementById("d_2_4_tabs").style.display = "none";
                 document.getElementById("d_2_2_tabs").style.display = "block";
+//button background color
+				document.getElementById("colorDrink").style.backgroundColor = "#90E17A";
+				document.getElementById("colorDesert").style.backgroundColor = "#E6F5FF";
+				document.getElementById("colorBarbecue").style.backgroundColor ="#E6F5FF";
+				document.getElementById("colorVegetable").style.backgroundColor = "#E6F5FF";
+//button border color
+				document.getElementById("colorDrink").style.borderColor = "#90E17A";
+				document.getElementById("colorDesert").style.borderColor = "#E6F5FF";
+				document.getElementById("colorBarbecue").style.borderColor = "#E6F5FF";
+				document.getElementById("colorVegetable").style.borderColor = "#E6F5FF";
 }
 function hide20_3() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
                 document.getElementById("d_2_2_tabs").style.display = "none";
                 document.getElementById("d_2_4_tabs").style.display = "none";
                 document.getElementById("d_2_3_tabs").style.display = "block";
+//button background color
+				document.getElementById("colorVegetable").style.backgroundColor = "#90E17A";
+				document.getElementById("colorDesert").style.backgroundColor = "#E6F5FF";
+				document.getElementById("colorBarbecue").style.backgroundColor = "#E6F5FF";
+				document.getElementById("colorDrink").style.backgroundColor = "#E6F5FF";
+//button border color
+				document.getElementById("colorVegetable").style.borderColor = "#90E17A";
+				document.getElementById("colorDesert").style.borderColor = "#E6F5FF";
+				document.getElementById("colorBarbecue").style.borderColor = "#E6F5FF";
+				document.getElementById("colorDrink").style.borderColor = "#E6F5FF";
 }
 function hide20_4() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
                 document.getElementById("d_2_2_tabs").style.display = "none";
                 document.getElementById("d_2_3_tabs").style.display = "none";
                 document.getElementById("d_2_4_tabs").style.display = "block";
+//button background color
+				document.getElementById("colorDesert").style.backgroundColor = "#90E17A";
+				document.getElementById("colorBarbecue").style.backgroundColor = "#E6F5FF";
+				document.getElementById("colorDrink").style.backgroundColor = "#E6F5FF";
+				document.getElementById("colorVegetable").style.backgroundColor = "#E6F5FF";
+//button border color
+				document.getElementById("colorDesert").style.borderColor = "#90E17A";
+				document.getElementById("colorVegetable").style.borderColor = "#E6F5FF";
+				document.getElementById("colorBarbecue").style.borderColor = "#E6F5FF";
+				document.getElementById("colorDrink").style.borderColor = "#E6F5FF";
 }
 
                 
