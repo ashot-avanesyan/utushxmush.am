@@ -4,7 +4,7 @@ body {	padding: 0%;
         font-size: 100%;
         background-image: url(kanach1.jpg );
 	background-repeat: no-repeat;
-	background-size: 1615px 800px;
+	background-size: 2000px 800px;
 	background-position:0px 200px;
 }	
 /*#img{
@@ -267,3 +267,46 @@ td#toolTipComment {
  	color: #ffffff;
 	font-weight: bold;
 }
+
+div#clouds { 
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	width: 100%; 
+	height: 136px; 
+	background: url("clouds1.png");
+	z-index: -1; 
+	opacity: 0.5;
+	background-position: left;
+	-webkit-animation: mymove 50s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 50s infinite;
+}
+
+@-webkit-keyframes mymove {
+    100% { background-position: right;} 
+
+@keyframes mymove {
+    100% {background-position: right;} 
+
+div#sky { 
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	width: 100%; 
+	height: 220px;
+	background: url("sky_bg.jpg");
+    z-index: -2;
+	opacity: 0.5;
+	background-position: right; 
+	-webkit-animation: mySkymove 50s infinite; /* Chrome, Safari, Opera */
+    animation: mySkymove 50s infinite;
+    
+}
+
+@-webkit-keyframes mySkymove {
+    100% { background-position: left;} 
+
+@keyframes mySkymove {
+    100% {background-position: left;} 
+
+
