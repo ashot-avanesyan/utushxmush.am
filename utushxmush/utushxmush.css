@@ -235,7 +235,7 @@ div.toolTip{
 	text-align:center; /* выравнивает весь текст в окне по центру */
 	padding: 5px;
 	left: 32%;
-        top: 39%;
+        top: 6.4%;
 }
 /*inheritance of class toolTip */
 div.extra toolTip{
@@ -244,11 +244,12 @@ div.extra toolTip{
 
 td#toolTipComment {
 	padding: 0 3 0 3;
-	background-color: red;
-	
+/*	background-color: red;
+	border-radius: 50%;*/
+	color: black;
     /* цвет кнопки закрыть #A0A050 можете вставить свой */
 
-    font-family: Verdana;
+ /*   font-family: ;*/
 	font-size: 10pt;
  	color: #ffffff;
 	font-weight: bold;

@@ -130,13 +130,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
        	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
 		<br> --> 
        	<label id = "Participants">Տղամարդիկ</label>
-       	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="total()"><br><br>
+       	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput2" onblur="total();" onkeypress = "document.getElementById('toolTipID').style.display = 'none'";><br><br>
 		<br>
        	<label id = "Participants">Կանայք</label>
-       	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="total()"><br><br>
+       	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput3" onblur="total();" onkeypress = " document.getElementById('toolTipID').style.display = 'none'"><br><br>
 		<br>
        	<label id = "Participants">Մինչև 7 տ․երեխաներ</label>
-        <input type = "text" min = "0" class = "inputParticipants" id = "participantsInput4"><br><br>
+        <input type = "text" min = "0" class = "inputParticipants" id = "participantsInput4" onkeypress = "document.getElementById('toolTipID').style.display = 'none'"><br><br>
     </form>
 	</div>
   	<div id = "d1">
@@ -605,7 +605,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     			 <div id = "toolTipID" class = "toolTip">
 					<table cellspacing = "0" align = "right">
 						<tr><td id = "toolTipComment" onClick="document.getElementById('toolTipID').style.display='none'; return false;"
-								onMouseOver="this.style.cursor='pointer'";onMouseOut="this.style.cursor='default'">X
+								onMouseOver="this.style.cursor='pointer'";onMouseOut="this.style.cursor='default'">&times;
 			    			</td>
 						</tr>
 					</table>
