@@ -4,7 +4,7 @@ body {	padding: 0%;
         font-size: 100%;
         background-image: url(kanach1.jpg );
 	background-repeat: no-repeat;
-	background-size: 100% 120%;
+	background-size: 1600px 800px;
 	background-position:0px 200px;
 	z-index:3;
 }	
@@ -34,12 +34,12 @@ img {
 .image
 select.lengthOfButton
 { 
-   width:10%;
+   width:100px;
 }  
 form.amountParticipants {
 	margin: auto 30% 2% 15%;
-	padding: 5%;
-	width: 55%;
+	padding: 20px;
+	width: 460px;
 }
 label#participants {
 	position: absolute;
@@ -63,7 +63,7 @@ table#barbecue
     margin-left: 6%;
 }
 table#barbecue td, tr {
-	padding: 0% 3% 0% 1%;
+	padding: 0px 15px 0px 5px;
 }
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
@@ -76,14 +76,14 @@ margin-bottom:"text-align:center";
 ul#glkhawor_meny li button {
 background-color: #90e17a;
 color: #000000;
-padding: 1% 2%;
+padding: 10px 20px;
 text-decoration: none;
-border-radius: 2%;
+border-radius: 8px;
 border-style: solid;
 border-color: #90e17a;
-border-width: 1%;
-margin-bottom: 0%;
-margin-right: 1%;
+border-width: 3px;
+margin-bottom: -50px;
+margin-right: 5px;
 }
 
 
@@ -94,12 +94,12 @@ list-style: none;
 ul#chashacank li button {
 background-color: #90e17a;
 color: #000000;
-padding: 1% 2%;
+padding: 10px 20px;
 text-decoration: none;
-border-radius: 10%;
+border-radius: 8px;
 border-style: solid;
 border-color: #90e17a;
-border-width: 1%;
+border-width: 3px;
 margin-bottom: -25px;
 }
  li {
@@ -119,10 +119,10 @@ margin-bottom: -25px;
 }
 div#d1 {
 width: auto;
-height: 10%;
+height: 650px;
 margin: auto;
 /*background-image: url(nastol1.jpg ) ;*/
-padding: 10% 0% 0% 6%;
+padding: 20% 0% 0% 6%;
 display: none;
 }
 div#d2 {
