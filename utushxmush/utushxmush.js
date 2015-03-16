@@ -1489,22 +1489,22 @@ function checkAmount(name)
     switch(name)
 	{ 
 		 case butTransport: 
-			document.getElementById('toolTipID').style.left='33.5%';
+			document.getElementById('toolTipID').style.left='33.3%';
 	//		window.alert("transport default");
 			break; 
 		case butDinner: 
 			document.getElementById('toolTipID').class='extra';
-			document.getElementById('toolTipID').style.left='40.5%';
+			document.getElementById('toolTipID').style.left='40.7%';
 	//		window.alert("dinner");
 			break; 
 		case butOvernight:
 			document.getElementById('toolTipID').class='extra';
-			document.getElementById('toolTipID').style.left='48%';
+			document.getElementById('toolTipID').style.left='48.4%';
 	//		window.alert("overnight");
 			break; 
 		case butAccessories: 
 			document.getElementById('toolTipID').class='extra';
-			document.getElementById('toolTipID').style.left='55.5%';
+			document.getElementById('toolTipID').style.left='56.35%';
 	  //  	window.alert("accessories");
 			break;
 	} 
