@@ -491,7 +491,8 @@ function initializeDinner(name)
        	    case onion:
            	 	if (document.getElementById("onion").checked == true)
             		{
-//            		document.getElementById("kgOnion").value = 1; 
+            		document.getElementById("kgOnion").value = Math.round(0.1*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+ 
             		document.getElementById("drOnion").value = 350;
             		document.getElementById("drOnion").disabled = false;
             		document.getElementById("kgOnion").disabled = false;
@@ -577,7 +578,7 @@ function initializeDinner(name)
             case sweetmeat:
             		if (document.getElementById("sweetmeat").checked == true)
             		{
-//            		document.getElementById("kgSweetmeat").value = 1;
+            		document.getElementById("kgSweetmeat").value = 1;
             		document.getElementById("drSweetmeat").value = 2300;
             		document.getElementById("drSweetmeat").disabled = false;
             		document.getElementById("kgSweetmeat").disabled = false;
@@ -609,8 +610,8 @@ function initializeDinner(name)
        	    case lobe:
             		if (document.getElementById("lobe").checked == true)
             		{
-//            		document.getElementById("kgLobe").value = 1;
-            		document.getElementById("drLobe").value = 450;
+            		document.getElementById("kgLobe").value = 2;
+            		document.getElementById("drLobe").value = 1000;
             		document.getElementById("drLobe").disabled = false;
             		document.getElementById("kgLobe").disabled = false;
             		}
@@ -625,7 +626,7 @@ function initializeDinner(name)
             case tea:
             		if (document.getElementById("tea").checked == true)
             		{
-//            		document.getElementById("tupTea").value = 1;
+          		document.getElementById("tupTea").value = 1;
             		document.getElementById("drTea").value = 450;
             		document.getElementById("drTea").disabled = false;
             		document.getElementById("tupTea").disabled = false;
@@ -641,7 +642,7 @@ function initializeDinner(name)
        	    case coffee:
          		if (document.getElementById("coffee").checked == true)
             		{
-//            		document.getElementById("tupCoffee").value = 1;
+            		document.getElementById("tupCoffee").value = 1;
             		document.getElementById("drCoffee").value = 350;
             		document.getElementById("drCoffee").disabled = false;
             		document.getElementById("tupCoffee").disabled = false;
