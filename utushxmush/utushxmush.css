@@ -4,7 +4,7 @@ body {	padding: 0%;
         font-size: 100%;
         background-image: url(kanach1.jpg );
 	background-repeat: no-repeat;
-	background-size: 1600px 800px;
+	background-size: 1620px 800px;
 	background-position:0px 200px;
 	z-index:3;
 }	
@@ -39,8 +39,13 @@ select.lenghtOfButton1 {
 }
 form.amountParticipants {
 	margin: auto 30% 2% 15%;
-	padding: 20px;
-	width: 460px;
+	padding: 10%;
+	width: 50%;
+}
+form.amountParticipants1 {
+        margin: auto 30% 2% 15%;
+        padding: 2%;
+        width: 50%;
 }
 label#participants {
 	position: absolute;
@@ -64,7 +69,7 @@ table#barbecue
     	margin-left: 6%;
 }
 table#barbecue td, tr {
-	padding: 0px 15px 0px 5px;
+	padding: 0% 0% 0% 0%;
 }
 /*AUTHOR:Ashot_Erik */
 #googleMap {width: 500px; height:380px;}
@@ -77,14 +82,14 @@ table#barbecue td, tr {
 ul#glkhawor_meny li button {
 	background-color: #90e17a;
 	color: #000000;
-	padding: 10px 20px;
+	padding: 1.5% 2%;
 	text-decoration: none;
-	border-radius: 8px;
+	border-radius: 10%;
 	border-style: solid;
 	border-color: #90e17a;
-	border-width: 3px;
-	margin-bottom: -50px;
-	margin-right: 5px;
+	border-width: 5%;
+	margin-bottom: 0%;
+	margin-right: 0.5%;
 }
 ul#chashacank li {
 	display: inline;
@@ -93,13 +98,13 @@ ul#chashacank li {
 ul#chashacank li button {
 	background-color: #90e17a;
 	color: #000000;
-	padding: 10px 20px;
+	padding: 1% 2%;
 	text-decoration: none;
-	border-radius: 8px;
+	border-radius: 10%;
 	border-style: solid;
 	border-color: #90e17a;
-	border-width: 3px;
-	margin-bottom: -25px;
+	border-width: 3%;
+	margin-bottom: 0%;
 }
  li {
 	display: inline;
@@ -108,46 +113,46 @@ ul#chashacank li button {
 li button {
 	background-color: #90e17a;
 	color: #000000;
-	padding: 10px 20px;
+	padding: 1% 2%;
 	text-decoration: none;
-	border-radius: 8px;
+	border-radius: 10%;
 	border-style: solid;
 	border-color: #90e17a;
-	border-width: 3px;
-	margin-bottom: -25px;
+	border-width: 3%;
+	margin-bottom: 0%;
 }
 div#d1 {
 	width: auto;
-	height: 650px;
+	height: 90%;
 	margin: auto;
 	padding: 20% 0% 0% 6%;
 	display: none;
 }
 div#d2 {
 	width: auto;
-	height: 750px;
+	height: 90%;
 	margin: auto;
 	display: none;
 }
 table.margin_barbequ {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 60px 0px 0px 0px;
+	padding: 6% 0% 0% 0%;
 }
 table.margin_drink {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 60px 0px 0px 0px;
+	padding: 7% 0% 0% 0%;
 }
 table.margin_vegetable {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 60px 0px 0px 0px;
+	padding: 7% 0% 0% 0%;
 }
 table#margin_desert {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 60px 0px 0px 0px;
+	padding: 7% 0% 0% 0%;
 }
 div#d_2_2_tabs {
 	display: none;
@@ -171,39 +176,41 @@ div#d_2_4 {
 	margin: center;
 }
 div#d3 {
-	height: 565px;
+	height: 90%;
 	display: none;
 	padding: 0% 0% 0% 15%;
 }
 table.margin_overnight {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 60px 0px 0px 0px;
+	padding: 10% 0% 0% 0%;
 }
 div#d4 {
-	height: 700px;
+	height: 90%;
 	display: none;
 	padding: 0% 0% 0% 15%;
 }
 table.margin_accessories {
 	margin: 0% 5% !important;
-	padding: 60px 0px 0px 0px;
+	padding: 6% 0% 0% 0%;
 }
 div#d {
 	width: auto;
-	height: 315px;
+	height: 90%;
 	margin: auto ;
 	padding: 28% 0% 0% 9%;
 }
 
 /* Armine */
 .noneBorder {
-	border: 0px;
+	border: 0%;
 }
 
 input.totalNoneBorder {
-	border: 0px; 
+	border: 0%; 
 	background-color:#cda373;
+	border-style: solid;
+	border-color:#cda373;
 }
 table#TransportCosts,tr,td {
 	margin: 0% 0% 4% 17%;
