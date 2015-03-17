@@ -112,7 +112,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <body onload = "startTimer()">
 <div id = "clouds"></div>
 <div id = "sky"></div>
-   <!-- <p class="pos_fixed">-->
 <p>	<img src="ux.jpeg"
 	style="float:left;width:180px;height:180px">
 </p>  
@@ -450,7 +449,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
    			</tr>
           		<tr>
 				<td><p><input  type="checkbox" name="spice" value="fruit" id = "fruit" onclick = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();">Մրգեր
-                			<select name="character" class = "lengthOfButton" id = "fruitSelector" onchange = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();"></p>
+                			<select name="character" class = "lengthOfButton1" id = "fruitSelector" onchange = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();"></p>
                     				<option value="Apple">Խնձոր</option>
                        				<option value="Pear">Տանձ</option>
                         			<option value="Banana">Բանան</option>
@@ -465,7 +464,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
           		</tr>
           		<tr>
                 		<td><p><input type="checkbox" name="spice" value="desserts" id = "desserts" onclick = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();">Աղանդեր
-                			<select name="character" class = "lengthOfButton" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
+                			<select name="character" class = "lengthOfButton1" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
 						<option value="Chips">Չիպս</option>
                     				<option value="Sunflower">Արևածաղիկ</option>
                        				<option value="Peanut">Գետնանուշ</option>
@@ -480,14 +479,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
           	</tr>
 		<tr>
                                 <td><p><input  type="checkbox" name="spice" value="bread" id = "bread" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total();">Հաց
-                                        <select name="character" class = "lengthOfButton" id = "breadSelector" onchange = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total(); "></p>
+                                       <select name="character" class = "lengthOfButton1" id = "breadSelector" onchange = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total(); "></p>
                                                 <option value="Lavash">Լավաշ</option>
                                                 <option value="Matnaqash">Մատնաքաշ</option>
                                                 <option value="Romashka">Ռոմաշկա</option>
                                                 <option value="Baton">Բատոն</option>
                                                 <option value="etcBread">Այլ</option>
                                         </select>
-                                </td>
+				</td>
                                 <td><input class = "mass" type = "number" min = "0" max = "99" placeholder="1"  id = "hatBread" disabled onblur = "priceDrink(BreadSelector); subTotal(breadSelector);total(); ">հատ</td>
                                 <td><input class = "mass" type="text" id = "drBread" placeholder="370"  disabled onblur = "priceDrink(breadSelector); subTotal(breadSelector);total();">դր</td>
                                 <td><p><input type = "text" id = "bread_price" size="1%" class  = "noneBorder" readonly></p></td>
