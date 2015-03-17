@@ -130,6 +130,10 @@ function hide20_1() {
 				document.getElementById("colorDrink").style.borderColor = "#E6F5FF";
 				document.getElementById("colorVegetable").style.borderColor = "#E6F5FF";
 //input background color
+				document.getElementById("InputColorBarbecue").style.backgroundColor = "#90E17A";
+				document.getElementById("InputColorDrinkt").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorVegetable").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorDesert").style.backgroundColor = "#E6F5FF";
 }
 function hide20_2() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
