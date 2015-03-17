@@ -657,6 +657,10 @@ function subTotal(name)
 	case onion: 
 			if (document.getElementById("onion").checked == false)
 			{
+             document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgEggplant * olderDrOnion
+
+
+
                 document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgOnion * olderDrOnion; 
 				document.getElementById("drOnion").disabled = true;
 				document.getElementById("kgOnion").disabled = true;
