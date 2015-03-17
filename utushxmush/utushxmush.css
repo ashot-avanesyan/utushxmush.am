@@ -250,7 +250,7 @@ td#toolTipComment {
     /* цвет кнопки закрыть #A0A050 можете вставить свой */
 
  /*   font-family: ;*/
-	font-size: 10pt;
+	font-size: 15pt;
  	color: #ffffff;
 	font-weight: bold;
 }
@@ -299,4 +299,29 @@ div#sky {
 @keyframes mySkymove {
     100% {background-position: left;} 
 }
+
+div.close_sign { 
+
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  color: black;
+  filter: alpha(opacity=200);
+  text-decoration: none;
+
+}
+
+
+div.close_sign:hover{
+  
+  text-decoration: none;
+  opacity: 14;
+  filter: alpha(opacity=400);
+  cursor: pointer;
+  color: white; 
+  background-color: red;
+  border-radius:50%; 
+
+}
+
 
