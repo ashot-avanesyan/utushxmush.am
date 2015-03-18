@@ -147,7 +147,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
            	<table>
           		<div id="googleMap" style="width:500px;height:380px;"></div>
           	</table>
-      		</form>
+      	</form>
 			<table id="TransportCosts">
 				<tr>
 					<td><input type="checkbox">Տրանսպորտի ծախսը   </td>
@@ -174,7 +174,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig); subTotal(pig);total();">Խոզ</p></td>
 	  			<td><input class= "mass"  type="number" min = "1" max = "99" id = "kgPig" placeholder="1" disabled onblur = "price(pig); subTotal(pig);total();">կգ</td>
 	  			<td><p><input  type = "number" class = "mass" id = "drPig" placeholder="3800"  disabled onblur ="price(pig);subTotal(pig);total();">դր</p></td>
-		     		<td><p><input type = "text" size = "1%"  id = "pig_price" class = "noneBorder" readonly> </p></td>
+		     	<td><p><input type = "text" size = "1%"  id = "pig_price" class = "noneBorder" readonly> </p></td>
 			</tr> 
 			<tr>       
 				<td><p><input type="checkbox" value ="lamb" id = "lamb" onclick = "initializeDinner(lamb); price(lamb); subTotal(lamb);total();">Գառ</p></td>
@@ -189,7 +189,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		     		<td><p><input type = "text" id = "goat_price" size="1%" class  = "noneBorder" readonly> </p></td>
 	     		</tr>
 	    		<tr>		
-				<td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeDinner(chicken); price(chicken); subTotal(chicken);total();">Հավ</p></td>
 				<td><input class= "mass" type="number" min = "0" max = "99" id = "kgChicken" placeholder="1"  disabled onblur = "price(chicken); subTotal(chicken);total();">կգ</td>
 	  			<td><p><input type = "number" class = "mass"  id = "drChicken" placeholder="1600"  disabled onblur = "price(chicken); subTotal(chicken);total();">դր</p></td>
 		     		<td><p><input type = "text" id = "chicken_price" size="1%" class  = "noneBorder" readonly> </p></td>
@@ -449,7 +448,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
    			</tr>
           		<tr>
 				<td><p><input  type="checkbox" name="spice" value="fruit" id = "fruit" onclick = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();">Մրգեր
-                			<select name="character" class = "lengthOfButton1" id = "fruitSelector" onchange = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();"></p>
+                			<select name="character" style = "margin-left:16%;" class = "lengthOfButton1" id = "fruitSelector" onchange = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();"></p>
                     				<option value="Apple">Խնձոր</option>
                        				<option value="Pear">Տանձ</option>
                         			<option value="Banana">Բանան</option>
@@ -464,7 +463,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
           		</tr>
           		<tr>
                 		<td><p><input type="checkbox" name="spice" value="desserts" id = "desserts" onclick = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();">Աղանդեր
-                			<select name="character" class = "lengthOfButton1" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
+                			<select name="character" style = "margin-left:5%;"  class = "lengthOfButton1" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
 						<option value="Chips">Չիպս</option>
                     				<option value="Sunflower">Արևածաղիկ</option>
                        				<option value="Peanut">Գետնանուշ</option>
@@ -479,7 +478,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
           	</tr>
 		<tr>
                                 <td><p><input  type="checkbox" name="spice" value="bread" id = "bread" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total();">Հաց
-                                       <select name="character" class = "lengthOfButton1" id = "breadSelector" onchange = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total(); "></p>
+                                       <select name="character" style = "margin-left:22%;"  class = "lengthOfButton1" id = "breadSelector" onchange = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total(); "></p>
                                                 <option value="Lavash">Լավաշ</option>
                                                 <option value="Matnaqash">Մատնաքաշ</option>
                                                 <option value="Romashka">Ռոմաշկա</option>
@@ -492,7 +491,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                                 <td><p><input type = "text" id = "bread_price" size="1%" class  = "noneBorder" readonly></p></td>
                         </tr>
 			<tr>
-                                <td><p><input type="checkbox" value ="etcDesert" id = "etcDesert" onclick = "initializeDinner(etcDesert); price(etcDesert); subTotal(etcDesert);total();">Այլ<input type = "text" id = "nameEtcDesert" placeholder="Անուն" size = "5" disabled></p></td>
+                                <td><p><input type="checkbox" value ="etcDesert" id = "etcDesert" onclick = "initializeDinner(etcDesert); price(etcDesert); subTotal(etcDesert);total();">Այլ<input type = "text" style = "margin-left:30%"  id = "nameEtcDesert" placeholder="Անուն" size = "8" disabled></p></td>
                                 <td><input class="mass" type="text" id = "kgEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();">կգ</td>
                                 <td><p><input type = "text" class = "mass" id = "drEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();">դր</p></td>
                                 <td><p><input type = "text" id = "etcDesert_price" size="1%" class  = "noneBorder" readonly> </p></td>
