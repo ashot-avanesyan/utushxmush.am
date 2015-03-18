@@ -72,7 +72,9 @@ table#barbecue td, tr {
 	padding: 0% 0% 0% 0%;
 }
 /*AUTHOR:Ashot_Erik */
-#googleMap {width: 500px; height:380px;}
+#googleMap {
+	width: 90%; height:50%;
+}
 /* Ashot */
  ul#glkhawor_meny li {
 	display: inline;
@@ -219,7 +221,7 @@ table#TransportCosts,tr,td {
 /* Armine ToolTip */
 div.toolTip{
 	position: absolute; 
-	width: 250px;  /* ширина всплывающего окна */
+	width: 15%;  /* ширина всплывающего окна */
 	border: solid red 3px; /* цвет и толщина рамки окна*/
 	display: none; 
 	z-index: 10; 
@@ -227,9 +229,9 @@ div.toolTip{
 	background-color:#90e17a; /* цвет фона внутри окна, стоит белый */
 	color:#000000; /* цвет текста внутри окна, стоит чёрный */
 	text-align:center; /* выравнивает весь текст в окне по центру */
-	padding: 5px;
-	left: 32%;
-        top: 6.4%;
+	padding: 0.5%;
+	left: 15%;
+        top: 8%;
 }
 /*inheritance of class toolTip */
 div.extra toolTip{
@@ -237,22 +239,22 @@ div.extra toolTip{
 } 
 
 td#toolTipComment {
-	padding: 0 3 0 3;
+	padding: 0% 3% 0% 3%;
 	color: black;
     /* цвет кнопки закрыть #A0A050 можете вставить свой */
 
  /*   font-family: ;*/
-	font-size: 15pt;
+	font-size: 10%;
  	color: #ffffff;
 	font-weight: bold;
 }
 
 div#clouds { 
 	position: absolute; 
-	top: 0;
-	left: 0; 
+	top: 0%;
+	left: 0%; 
 	width: 100%; 
-	height: 136px; 
+	height: 13%; 
 	background: url("clouds1.png");
 	z-index: -2; 
 	opacity: 0.5;
@@ -274,7 +276,7 @@ div#sky {
 	top: 0;
 	left: 0; 
 	width: 100%; 
-	height: 220px;
+	height: 23%;
 	background: url("sky_bg.jpg");
     	z-index: -3;
 	opacity: 0.5;
