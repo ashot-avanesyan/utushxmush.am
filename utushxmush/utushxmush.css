@@ -4,7 +4,7 @@ body {	padding: 0%;
         font-size: 100%;
         background-image: url(kanach1.jpg );
 	background-repeat: no-repeat;
-	background-size: 1620px 800px;
+	background-size: 100% 135%;
 	background-position:0px 200px;
 	z-index:3;
 }	
