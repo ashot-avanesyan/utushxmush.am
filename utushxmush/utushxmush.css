@@ -2,15 +2,26 @@
 /*  Syuzi_Nara */
 body {	padding: 0%; 
         font-size: 100%;
-        background-image: url(kanach1.jpg );
-	background-repeat: no-repeat;
-	background-size: 1620px 800px;
-	background-position:0px 200px;
-	z-index:3;
+}
+div#kanach img{
+position: fixed;
+top: 21%;
+left: 0%;
+right: 0%;
+bottom: 0%;
+height: 79%;
+width: 100%;
+z-index: -4;
 }	
+div#logo img {
+width: 13%;
+height: 18%;
+margin-left: 2%;
+position: fixed;
+}
 div#expenditure {
 	position: fixed;
-    	top: 73%;
+    	top: 69.3%;
     	right: 6%;
 }
 input#general {
@@ -26,11 +37,11 @@ div#sizeOfDiv {
      	margin-left: 22%;
      	margin-right: 22%;
 }
-img {
+/*img {
      	background-color: no-repeat;
      	background-position: center top;
      	margin-left: 6%;           
-    }
+    }*/
 select.lengthOfButton { 
    	width:80%;
 } 
