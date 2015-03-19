@@ -20,7 +20,7 @@ input.InputButton {
 	background-color: #90e17a;
 	border-style: ridge;
 	border-color: #000000;
-	text-align: right;
+	text-align: center;
 }
 div#sizeOfDiv {
      	margin-left: 22%;
