@@ -518,7 +518,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 	</tr>
 			<tr>
                 		<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);subTotal(etcOvernight);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameOvernight" size= "5" disabled></p></td>
-                		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();">քանակ</td>
+                		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();"></td>
                 		<td><input type = "text"  class = "mass"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();">դր</td>
                 		<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" size="1%" readonly> </p></td>
             		</tr> 
@@ -526,7 +526,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		</div>
 		<div id = "d4">
         	      <ul id ="accessories" style = "text-align:center">
-                	<li><button onclick="hide4 (), blur ()" style = "margin: 25px 50% 60px 33%; padding-top: 10px;">Պարագաներ<br><input type="text" class="InputButton" size="6"placeholder= "Ընդամենը" readonly id ="totalAccessories" onchange = "total();subTotal();"></button></li>
+                	<li><button onclick="hide4 (), blur ()" style = "margin: 25px 50% 60px 33%; padding-top: 10px;">Պարագաներ<br><input type="text" class="InputButton" size="6"placeholder="Ընդամենը" readonly id ="totalAccessories" onchange = "total();subTotal();"></button></li>
 			</ul>
         		<table id= "margin_accessories">
 			<tr>
