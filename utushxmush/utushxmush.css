@@ -25,6 +25,9 @@ div#expenditure {
     	right: 6%;
 	font-family:Courier New;
 }
+input#general {
+	padding: 0% 5% 0% 5%;
+}
 input.InputButton {
 	background-color: #90e17a;
 	border-style: ridge;
@@ -136,13 +139,13 @@ div#d1 {
 	width: auto;
 	height: 90%;
 	margin: auto;
-	padding: 20% 0% 0% 6%;
+	padding: 20% 0% 36% 15%;
 	display: none;
 	font-family:Arial;
 }
 div#d2 {
 	width: auto;
-	height: 90%;
+	height: 30%;
 	margin: auto;
 	display: none;
 	font-family:Arial;
@@ -150,22 +153,22 @@ div#d2 {
 table.margin_barbecue {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 6% 0% 0% 0%;
+	padding: 0% 0% 45% 55%;
 }
 table.margin_drink {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 7% 0% 0% 0%;
+	padding: 50% 0% 36% 5%;
 }
 table.margin_vegetable {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 7% 0% 0% 0%;
+	padding: 50% 0% 0% 0%;
 }
 table#margin_desert {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 7% 0% 0% 0%;
+	padding: 25% 0% 70% 50%;
 }
 div#d_2_2_tabs {
 	display: none;
