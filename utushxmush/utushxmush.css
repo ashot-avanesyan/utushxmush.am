@@ -14,9 +14,9 @@ width: 100%;
 z-index: -4;
 }	
 div#logo img {
-width: 13%;
+width: 10%;
 height: 18%;
-margin-left: 2%;
+margin-left: 5%;
 position: fixed;
 }
 div#expenditure {
@@ -25,11 +25,14 @@ div#expenditure {
     	right: 6%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 input#general {
 	padding: 0% 5% 0% 5%;
 }
 =======
 >>>>>>> 628e1fce72d90d15b394c3cadb34dcd0f971d39c
+=======
+>>>>>>> 79a9a7fee06fcba3601c61745b13322dc9fbe3ef
 input.InputButton {
 	background-color: #90e17a;
 	border-style: ridge;
@@ -193,28 +196,40 @@ div#d3 {
 	height: 90%;
 	display: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	padding: 0% 0% 36% 15%;
 =======
 	padding: 0% 0% 0% 10%;
 >>>>>>> 628e1fce72d90d15b394c3cadb34dcd0f971d39c
+=======
+	padding: 0% 0% 0% 10%;
+>>>>>>> 79a9a7fee06fcba3601c61745b13322dc9fbe3ef
 }
 table.margin_overnight {
 	margin-left: auto;
 	margin-right: auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	padding: 0% 0% 36% 15%;
 =======
 	padding: 50% 5% 0% 0%;
 >>>>>>> 628e1fce72d90d15b394c3cadb34dcd0f971d39c
+=======
+	padding: 50% 5% 0% 0%;
+>>>>>>> 79a9a7fee06fcba3601c61745b13322dc9fbe3ef
 }
 div#d4 {
 	height: 90%;
 	display: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	padding: 0% 0% 36% 15%;
 =======
 	padding: 0% 0% 0% 10%;
 >>>>>>> 628e1fce72d90d15b394c3cadb34dcd0f971d39c
+=======
+	padding: 0% 0% 0% 10%;
+>>>>>>> 79a9a7fee06fcba3601c61745b13322dc9fbe3ef
 }
 table.margin_accessories {
 	margin: 0% 5% !important;
