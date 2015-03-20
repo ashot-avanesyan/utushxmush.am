@@ -9,11 +9,11 @@
       <script  src="http://maps.googleapis.com/maps/api/js"> 
       <script src=lang="ru"itemtype="http://schema.org/Place"itemscope="jstcache="0">  </script>
 	  <!-- Latest compiled and minified CSS --> 
-	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	 <!-- jQuery library -->
+<!--  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	  jQuery library 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-     <!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      Latest compiled JavaScript 
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script--> 
 <!--slide js-->
 <!--      <script>
           function displayNextImage() {
@@ -121,7 +121,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	<div id = "clouds"></div>
 	<div id = "sky"></div>
 	<div id = "logo">
-		<img src="ux.jpeg">
+		<img src="ux.png">
 	</div>  
     	<div id = "sizeOfDiv">
 		<ul id = "glkhawor_meny" style="text-align:center">
@@ -138,13 +138,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
        	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
 		<br> --> 
        	<label id = "Participants">Տղամարդիկ</label>
-       	<input type = "number"  min = "1" max = "99" class = "inputParticipants" id = "participantsInput2" onblur="total();" onkeypress = "document.getElementById('toolTipID').style.display = 'none'";><br><br>
+       	<input type = "number"  min = "1" max = "99" class = "inputParticipants" id = "participantsInput2" onblur="total();" onkeypress = "document.getElementById('toolTipID').style.display = 'none'"; pattern = "[1-200]" title = "Only numbers"><br><br>
+	<!--	<input type = "submit">Submit</input> --> 
 		<br>
        	<label id = "Participants">Կանայք</label>
-       	<input type = "number" min = "1" max = "99" class = "inputParticipants" id = "participantsInput3" onblur="total();" onkeypress = " document.getElementById('toolTipID').style.display = 'none'"><br><br>
+       	<input type = "number" min = "1" max = "99" class = "inputParticipants" id = "participantsInput3" onblur="total();" onkeypress = " document.getElementById('toolTipID').style.display = 'none'" pattern = "[1-200]" title = "Only numbers"><br><br>
 		<br>
        	<label id = "Participants">Մինչև 7 տ․երեխաներ</label>
-        <input type = "number" min = "0" max = "99" class = "inputParticipants" id = "participantsInput4" onkeypress = "document.getElementById('toolTipID').style.display = 'none'"><br><br>
+        <input type = "number" min = "0" max = "99" class = "inputParticipants" id = "participantsInput4" onkeypress = "document.getElementById('toolTipID').style.display = 'none'"><br><br pattern = "[1-200]" title = "Only numbers">
     </form>
 	</div>
   	<div id = "d1">
@@ -183,7 +184,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig); subTotal(pig);total();">Խոզ</p></td>
 	  			<td><input class= "mass"  type="number" min = "1" max = "99" id = "kgPig" placeholder="1" disabled onblur = "price(pig); subTotal(pig);total();">կգ</td>
 	  			<td><p><input  type = "number" class = "mass" id = "drPig" placeholder="3800"  disabled onblur ="price(pig);subTotal(pig);total();">դր</p></td>
-		     	<td><p><input type = "text" size = "1%"  id = "pig_price" class = "noneBorder" readonly> </p></td>
+		     		<td><p><input type = "text" size = "1%"  id = "pig_price" class = "noneBorder" readonly> </p></td>
 			</tr> 
 			<tr>       
 				<td><p><input type="checkbox" value ="lamb" id = "lamb" onclick = "initializeDinner(lamb); price(lamb); subTotal(lamb);total();">Գառ</p></td>
@@ -197,7 +198,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<td><p><input type = "text" class = "mass"  id = "drGoat" placeholder="3500"  disabled onblur = "price(goat); subTotal(goat);total();">դր</p</td>
 		     		<td><p><input type = "text" id = "goat_price" size="5" class  = "noneBorder" readonly> </p></td>
 	     		</tr>
-	    		<tr>		
+	    		<tr>	
+				<td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeDinner(chicken); price(chicken);subTotal(chicken);total();">Հավ</p></td>	
 				<td><input class= "mass" type="number" min = "0" max = "99" id = "kgChicken" placeholder="1"  disabled onblur = "price(chicken); subTotal(chicken);total();">կգ</td>
 	  			<td><p><input type = "number" class = "mass"  id = "drChicken" placeholder="1600"  disabled onblur = "price(chicken); subTotal(chicken);total();">դր</p></td>
 		     		<td><p><input type = "text" id = "chicken_price" size="5" class  = "noneBorder" readonly> </p></td>
