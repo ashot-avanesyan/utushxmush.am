@@ -2,46 +2,35 @@
 /*  Syuzi_Nara */
 body {	padding: 0%; 
         font-size: 100%;
-}
-div#kanach img{
-position: fixed;
-top: 21%;
-left: 0%;
-right: 0%;
-bottom: 0%;
-height: 79%;
-width: 100%;
-z-index: -4;
+        background-image: url(kanach1.jpg );
+	background-repeat: no-repeat;
+	background-size: 100% 135%;
+	background-position:0px 200px;
+	z-index:3;
 }	
-div#logo img {
-width: 13%;
-height: 18%;
-margin-left: 2%;
-position: fixed;
-}
 div#expenditure {
 	position: fixed;
-    	top: 69.3%;
+    	top: 73%;
     	right: 6%;
 }
 input#general {
-	padding: 0% 5% 0% 5%;
+	padding: 0% 2% 0% 1%;
 }
 input.InputButton {
 	background-color: #90e17a;
 	border-style: ridge;
 	border-color: #000000;
-	text-align: center;
+	text-align: right;
 }
 div#sizeOfDiv {
      	margin-left: 22%;
      	margin-right: 22%;
 }
-/*img {
+img {
      	background-color: no-repeat;
      	background-position: center top;
      	margin-left: 6%;           
-    }*/
+    }
 select.lengthOfButton { 
    	width:80%;
 } 
@@ -184,34 +173,34 @@ div#d1 {
 	width: auto;
 	height: 90%;
 	margin: auto;
-	padding: 20% 0% 36% 15%;
+	padding: 20% 0% 0% 6%;
 	display: none;
 }
 div#d2 {
 	width: auto;
-	height: 30%;
+	height: 90%;
 	margin: auto;
 	display: none;
 }
-table.margin_barbecue {
+table.margin_barbequ {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0% 0% 45% 55%;
+	padding: 6% 0% 0% 0%;
 }
 table.margin_drink {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 50% 0% 36% 5%;
+	padding: 7% 0% 0% 0%;
 }
 table.margin_vegetable {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 50% 0% 0% 0%;
+	padding: 7% 0% 0% 0%;
 }
 table#margin_desert {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 90% 0% 40% 30%;
+	padding: 7% 0% 0% 0%;
 }
 div#d_2_2_tabs {
 	display: none;
@@ -237,17 +226,17 @@ div#d_2_4 {
 div#d3 {
 	height: 90%;
 	display: none;
-	padding: 0% 0% 36% 15%;
+	padding: 0% 0% 0% 15%;
 }
 table.margin_overnight {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0% 0% 36% 15%;
+	padding: 10% 0% 0% 0%;
 }
 div#d4 {
 	height: 90%;
 	display: none;
-	padding: 0% 0% 36% 15%;
+	padding: 0% 0% 0% 15%;
 }
 table.margin_accessories {
 	margin: 0% 5% !important;
