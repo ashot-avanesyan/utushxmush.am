@@ -130,10 +130,10 @@ function hide20_1() {
 				document.getElementById("colorDrink").style.borderColor = "#E6F5FF";
 				document.getElementById("colorVegetable").style.borderColor = "#E6F5FF";
 //input background color
-				document.getElementById("totalBarbecue").style.backgroundColor = "#90E17A";
-				document.getElementById("totalDrink").style.backgroundColor = "#E6F5FF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#E6F5FF";
-				document.getElementById("totalDesert").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorBarbecue").style.backgroundColor = "#90E17A";
+				document.getElementById("InputColorDrink").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorVegetable").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorDesert").style.backgroundColor = "#E6F5FF";
 }
 function hide20_2() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
@@ -151,10 +151,10 @@ function hide20_2() {
 				document.getElementById("colorBarbecue").style.borderColor = "#E6F5FF";
 				document.getElementById("colorVegetable").style.borderColor = "#E6F5FF";
 //input background color
-				document.getElementById("totalDrink").style.backgroundColor = "#90E17A";
-				document.getElementById("totalDesert").style.backgroundColor = "#E6F5FF";
-				document.getElementById("totalBarbecue").style.backgroundColor ="#E6F5FF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorDrink").style.backgroundColor = "#90E17A";
+				document.getElementById("InputColorDesert").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorBarbecue").style.backgroundColor ="#E6F5FF";
+				document.getElementById("InputColorVegetable").style.backgroundColor = "#E6F5FF";
 	
 }
 function hide20_3() {
@@ -173,10 +173,10 @@ function hide20_3() {
 				document.getElementById("colorBarbecue").style.borderColor = "#E6F5FF";
 				document.getElementById("colorDrink").style.borderColor = "#E6F5FF";
 //input background color
-				document.getElementById("totalDrink").style.backgroundColor = "#E6F5FF";
-				document.getElementById("totalDesert").style.backgroundColor = "#E6F5FF";
-				document.getElementById("totalBarbecue").style.backgroundColor ="#E6F5FF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#90E17A";
+				document.getElementById("InputColorDrink").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorDesert").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorBarbecue").style.backgroundColor ="#E6F5FF";
+				document.getElementById("InputColorVegetable").style.backgroundColor = "#90E17A";
 
 }
 function hide20_4() {
@@ -195,10 +195,10 @@ function hide20_4() {
 				document.getElementById("colorBarbecue").style.borderColor = "#E6F5FF";
 				document.getElementById("colorDrink").style.borderColor = "#E6F5FF";
 //input background color
-				document.getElementById("totalDrink").style.backgroundColor = "#E6F5FF";
-				document.getElementById("totalDesert").style.backgroundColor = "#90E17A";
-				document.getElementById("totalBarbecue").style.backgroundColor ="#E6F5FF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorDrink").style.backgroundColor = "#E6F5FF";
+				document.getElementById("InputColorDesert").style.backgroundColor = "#90E17A";
+				document.getElementById("InputColorBarbecue").style.backgroundColor ="#E6F5FF";
+				document.getElementById("InputColorVegetable").style.backgroundColor = "#E6F5FF";
 }
 
                 
