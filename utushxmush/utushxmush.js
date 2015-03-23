@@ -1780,3 +1780,66 @@ function checkAmount(name)
 	
 	return false;
 }
+
+// Input field let only numbers (integer and float types)
+function numbersOnlyFloat( myField, e )
+{
+	var key, keyChar; 
+
+	if ( window.event )
+		key = window.event.keyCode; 
+	else 
+		if ( e )
+			key = e.which; 
+		else 
+			return true; 
+
+	keyChar = String.fromCharCode( key );
+	
+	// control keys 
+	if ( (key == null) || (key == 0) || (key == 8)
+		|| (key == 9) || (key == 13) || (key == 27))
+		return true; 
+
+	// numbers 
+	else if ( (("0123456789").indexOf(keyChar)) > -1 )
+			return true;
+	
+	// decimal point jump 
+	else if ( keyChar == "." )
+			return true; 
+
+	return false; 
+}
+
+// Input field let only numbers ( integer and float types)
+// Only  INTEGERS 
+function numbersOnly( myField, e )
+{
+	var key, keyChar; 
+
+	if ( window.event )
+		key = window.event.keyCode; 
+	else 
+		if ( e )
+			key = e.which; 
+		else 
+			return true; 
+
+	keyChar = String.fromCharCode( key );
+	
+	// control keys 
+	if ( (key == null) || (key == 0) || (key == 8)
+		|| (key == 9) || (key == 13) || (key == 27))
+		return true; 
+
+	// numbers 
+	else if ( (("0123456789").indexOf(keyChar)) > -1 )
+			return true;
+	
+	// decimal point jump 
+/*	else if ( keyChar == "." )
+			return true; */
+
+	return false; 
+}
