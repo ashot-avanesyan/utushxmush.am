@@ -4,20 +4,20 @@ body {	padding: 0%;
         font-size: 100%;
 }
 div#kanach img{
-position: fixed;
-top: 21%;
-left: 0%;
-right: 0%;
-bottom: 0%;
-height: 79%;
-width: 100%;
-z-index: -4;
+	position: fixed;
+	top: 21%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	height: 79%;
+	width: 100%;
+	z-index: -4;
 }	
 div#logo img {
-width: 10%;
-height: 18%;
-margin-left: 5%;
-position: fixed;
+	width: 10%;
+	height: 18%;
+	margin-left: 5%;
+	position: fixed;
 }
 div#expenditure {
 	position: fixed;
@@ -32,6 +32,11 @@ input.InputButton {
 	background-color: #90e17a;
 	border-style: ridge;
 	border-color: #000000;
+/*	width: auto;
+  	height: 90%;
+  	margin: auto;
+ 	padding: 20% 0% 0% 6%;
+	display: none; */
 	text-align: center;
 }
 div#sizeOfDiv {
@@ -139,7 +144,7 @@ div#d1 {
 	width: auto;
 	height: 90%;
 	margin: auto;
-	padding: 20% 0% 36% 15%;
+	padding: 15% 0% 0% 0%;
 	display: none;
 	font-family:Arial;
 }
@@ -153,22 +158,22 @@ div#d2 {
 table.margin_barbecue {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0% 0% 45% 55%;
+	padding: 6% 0% 0% 0%;
 }
 table.margin_drink {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 50% 0% 36% 5%;
+	padding: 7% 0% 0% 0%;
 }
 table.margin_vegetable {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 50% 0% 0% 0%;
+	padding: 7% 0% 0% 0%;
 }
 table#margin_desert {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 25% 0% 70% 50%;
+	padding: 7% 0% 0% 0%;
 }
 div#d_2_2_tabs {
 	display: none;
@@ -268,7 +273,7 @@ td#toolTipComment {
 }
 
 div#clouds { 
-	position: absolute; 
+	position: fixed; 
 	top: 0%;
 	left: 0%; 
 	width: 100%; 
@@ -290,7 +295,7 @@ div#clouds {
 }
 
 div#sky { 
-	position: absolute; 
+	position: fixed; 
 	top: 0;
 	left: 0; 
 	width: 100%; 

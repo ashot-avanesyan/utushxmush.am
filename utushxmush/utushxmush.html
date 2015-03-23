@@ -121,7 +121,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	<div id = "clouds"></div>
 	<div id = "sky"></div>
 	<div id = "logo">
-		<img src="ux.jpeg">
+		<img src="ux.png">
 	</div>  
     	<div id = "sizeOfDiv">
 		<ul id = "glkhawor_meny" style="text-align:center">
@@ -198,7 +198,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<td><p><input type = "text" class = "mass"  id = "drGoat" placeholder="3500"  disabled onblur = "price(goat); subTotal(goat);total();">դր</p</td>
 		     		<td><p><input type = "text" id = "goat_price" size="1%" class  = "noneBorder" readonly> </p></td>
 	     		</tr>
-	    		<tr>		
+	    		<tr>
+				 <td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeDinner(chicken); price(chicken);subTotal(chicken);total();">Հավ</p></td>		
 				<td><input class= "mass" type="number" min = "0" max = "99" id = "kgChicken" placeholder="1"  disabled onblur = "price(chicken); subTotal(chicken);total();">կգ</td>
 	  			<td><p><input type = "number" class = "mass"  id = "drChicken" placeholder="1600"  disabled onblur = "price(chicken); subTotal(chicken);total();">դր</p></td>
 		     		<td><p><input type = "text" id = "chicken_price" size="1%" class  = "noneBorder" readonly> </p></td>
