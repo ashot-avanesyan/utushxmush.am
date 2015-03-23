@@ -525,9 +525,9 @@ function initializeDinner(name)
        	    case greens:
             		if (document.getElementById("greens").checked == true)
             		{
-            		document.getElementById("punjGreens").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2; 
+//            		document.getElementById("punjGreens").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2; 
 		//			document.getElementById("punjGreens").value = 1;
-//			document.getElementById("punjGreens").value = 1;
+			document.getElementById("punjGreens").value = 1;
             		document.getElementById("drGreens").value = 250;
             		document.getElementById("drGreens").disabled = false;
             		document.getElementById("punjGreens").disabled = false;
@@ -543,7 +543,7 @@ function initializeDinner(name)
              case potatoes:
                         if (document.getElementById("potatoes").checked == true)
                         {
-                        document.getElementById("kgPotatoes").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+                        document.getElementById("kgPotatoes").value = Math.round(0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
 //			document.getElementById("kgPotatoes").value = 1;
                         document.getElementById("drPotatoes").value = 200;
                         document.getElementById("drPotatoes").disabled = false;
@@ -560,8 +560,8 @@ function initializeDinner(name)
             case pepper:
                         if (document.getElementById("pepper").checked == true)
                         {
-                        document.getElementById("kgPepper").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//			document.getElementById("kgPepper").value = 1;
+//                        document.getElementById("kgPepper").value = Math.round(0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+			document.getElementById("kgPepper").value = 1;
                         document.getElementById("drPepper").value = 450;
                         document.getElementById("drPepper").disabled = false;
                         document.getElementById("kgPepper").disabled = false;
@@ -745,8 +745,8 @@ function initializeDinner(name)
             case salt:
                         if (document.getElementById("salt").checked == true)
                         {
-                        document.getElementById("tupSalt").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-//			document.getElementById("tupSalt").value = 1;
+                 //       document.getElementById("tupSalt").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+			document.getElementById("tupSalt").value = 1;
                         document.getElementById("drSalt").value = 200;
                         document.getElementById("drSalt").disabled = false;
                         document.getElementById("tupSalt").disabled = false;
@@ -762,8 +762,8 @@ function initializeDinner(name)
             case ground_pepper:
                         if (document.getElementById("ground_pepper").checked == true)
                         {
-                        document.getElementById("tupGround_pepper").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-//			document.getElementById("tupGround_pepper").value = 1;
+//                        document.getElementById("tupGround_pepper").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+			document.getElementById("tupGround_pepper").value = 1;
                         document.getElementById("drGround_pepper").value = 150;
                         document.getElementById("drGround_pepper").disabled = false;
                         document.getElementById("tupGround_pepper").disabled = false;
@@ -797,7 +797,7 @@ function initializeDinner(name)
 	    case skewer:
             		if (document.getElementById("skewer").checked == true)
             		{
-                	document.getElementById("qanakSkewer").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+                	document.getElementById("qanakSkewer").value =1*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
                 	document.getElementById("drSkewer").value =0;
                 	document.getElementById("drSkewer").disabled = false;
                 	document.getElementById("qanakSkewer").disabled = false;
@@ -848,7 +848,7 @@ function initializeDinner(name)
             case buttermilk:
                         if (document.getElementById("buttermilk").checked == true)
                         {
-                        document.getElementById("hatButtermilk").value =2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
+                        document.getElementById("hatButtermilk").value =1*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
 //			document.getElementById("hatButtermilk").value = 1;
                         document.getElementById("drButtermilk").value = 180;
                         document.getElementById("drButtermilk").disabled = false;
@@ -1278,7 +1278,7 @@ function initializeDrink(name)
 							    return;
 
                         }
-                     	 document.getElementById("amountBeer").value =(Number(document.getElementById("participantsInput2").value)*3 + Number(document.getElementById("participantsInput3").value));  
+                     	 document.getElementById("amountBeer").value =(Number(document.getElementById("participantsInput2").value)*1 + Number(document.getElementById("participantsInput3").value));  
 						 x = document.getElementById("thirdSpice").value;
 						 switch(x)
 						{
