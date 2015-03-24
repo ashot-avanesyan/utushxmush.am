@@ -138,6 +138,7 @@ li button {
 	border-style: solid;
 	border-width: 3%;
 	margin-bottom: 0%;
+	background-color: #90e17a;
 }
 div#d1 {
 	width: auto;
@@ -177,21 +178,21 @@ table#margin_desert {
 div#d_2_2_tabs {
 	display: none;
 	padding: 18% 0% 0% 0%;
-	margin-left: 10%;
+	margin-left: 3%;
 }
 div#d_2_3_tabs {
 	display: none;
 	padding: 18% 0% 0% 0%;
-	margin-left: 10%;
+	margin-left: 3%;
 }
 div#d_2_4_tabs {
 	display: none;
 	padding: 18% 0% 0% 0%;
-	margin-left: 10%;
+	margin-left: 3%;
 }
 div#d_2_1_tabs {
 	padding: 18% 0% 0% 0%;
-	margin-left: 10%;
+	margin-left: 3%;
 }
 div#d_2_1 {
 	margin: center;
@@ -400,4 +401,7 @@ button.acthiv  {
 	
 	border-color: #90F17A;
 	background-color: #90F17A;
+}
+div#sizeOfDiv {
+	position: fixed;
 }
