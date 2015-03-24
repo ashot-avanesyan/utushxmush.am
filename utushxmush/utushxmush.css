@@ -27,6 +27,7 @@ div#expenditure {
 }
 input#general {
 	padding: 0% 5% 0% 5%;
+        size = "10"
 }
 input.InputButton {
 	background-color: #90e17a;
@@ -65,7 +66,6 @@ input#general {
 label#participants {
 	position: absolute;
 	float: right;
-	size: 3%;
 }
 input.mass {
 	text-align: right;
@@ -78,6 +78,7 @@ input.mount {
 .inputParticipants {
 	float: right;
 	margin-left: 6%;
+/*	size = "100";*/
 }
 table#barbecue
 {
