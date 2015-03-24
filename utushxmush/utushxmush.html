@@ -150,25 +150,35 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </form>
 	</div>
   	<div id = "d1">
-		<form class= "amountParticipants1">
-        	<label  id= "Participants">  Մեկնման վայր </label>
-           	<input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"> <br> <br>
-          	<label  id= "Participants"> Ժամանման վայր </label>
-           	<input  size="12"  type="text" name="fname" class = "inputParticipants"><br><br> 
-           	<table>
-          		<div id="googleMap" style="width:500px;height:380px;"></div>
+		<table class= "amountParticipants1">
+			<tr>
+                <td></td>
+                 <p>
+        		<td>  Մեկնման վայր </td>
+           		<td><p><input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"></p></td>
+			</tr>
+            <tr> 
+                <td></td>
+                <td>  Ժամանման վայր </td>
+                <td><p><input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"></p></td>
+            </tr> 
+            <tr>
+				<td></td>
+                 <td>  Հեռավորությունը </td> 
+                 <td><p><input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"></p></td>
+            </tr>
+                                 
+ 	         
+
+<!--          		<div id="googleMap" style="width:500px;height:380px;"></div>
           	</table>
-      	</form>
-			<table id="TransportCosts">
+      	</form>-->
 				<tr>
-					<td><input type="checkbox">Տրանսպորտի ծախսը   </td>
+					<td><p><input type="checkbox"></p></td>
+					<td>Տրանսպորտի ծախսը   </td>
 					<td id=TransportCostsTd><input size="4" type="text">կմ</td>
-					<td><input size="4" type="text">դր</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox">Беседка  </td>
-					<td></td>
-					<td><input size="4" type="text">դր</td>
+					<td><input size="4" type="text">կմ/դր</td>
+                    <td><input size="4" type="text"  placeholder= "ծախս" type="text">դր</td>
 				</tr>
 			</table>
 	</div>
@@ -548,6 +558,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     		<td><input class= "mass" type="number" min = "0" max = "99" id = "qanakTent" disabled onblur = "price(tent);subTotal(tent);total();">հատ</td>
                     		<td><p><input type = "text" class = "mass" id = "drTent" disabled onblur ="price(tent); subTotal(tent);total();">դր</p></td>
                     		<td><p><input type = "text" class = "noneBorder" id = "tent_price" size= "5" readonly> </p></td>
+                 <tr>
+                   <td><p><input class type="checkbox" value = "arbor" id = "arbor" onclick = "initializeDinner(arbor);price(arbor);subTotal(arbor);total()">Տաղավար</p></td>
+                <td><p><input class= "mass" type="number" min = "0" max = "99" id = "besedka" disabled onblur = "price(arbor); subTotal(arbor);total();>">հատ<p></td>
+                <td><p><input type = "text" class = "mass" id = "besedka" disabled onblur ="price(arbor);subTotal(arbor);total();">դր</p></td>
+                 <td><p><input type = "text" class = "noneBorder" id = "hotel_price" size="5" readonly> </p></td>
+
                 	</tr>
 			<tr>
                 		<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);subTotal(etcOvernight);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameOvernight" size= "5" disabled></p></td>
