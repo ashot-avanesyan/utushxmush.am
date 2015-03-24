@@ -138,20 +138,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
        	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
 		<br> --> 
        	<label id = "Participants">Տղամարդիկ</label>
-       	<input type = "number"  min = "1" max = "99" class = "inputParticipants" id = "participantsInput2" onblur="total();" onkeypress = "document.getElementById('toolTipID').style.display = 'none'"; pattern = "[1-200]" title = "Only numbers"><br><br>
+       	<input type = "text"  min = "1" max = "99" class = "inputParticipants" id = "participantsInput2" onblur="total();" onkeypress = "document.getElementById('toolTipID').style.display = 'none'; return numbersOnly(this, event);"><br><br>
+
 	<!--	<input type = "submit">Submit</input> --> 
 		<br>
        	<label id = "Participants">Կանայք</label>
-       	<input type = "number" min = "1" max = "99" class = "inputParticipants" id = "participantsInput3" onblur="total();" onkeypress = " document.getElementById('toolTipID').style.display = 'none'" pattern = "[1-200]" title = "Only numbers"><br><br>
+       	<input type = "text" min = "1" max = "99" class = "inputParticipants" id = "participantsInput3" onblur="total();" onkeypress = "document.getElementById('toolTipID').style.display = 'none';  return numbersOnly(this, event);"><br><br>
 		<br>
        	<label id = "Participants">Մինչև 7 տ․երեխաներ</label>
-        <input type = "number" min = "0" max = "99" class = "inputParticipants" id = "participantsInput4" onkeypress = "document.getElementById('toolTipID').style.display = 'none'"><br><br pattern = "[1-200]" title = "Only numbers">
+        <input type = "text" min = "0" max = "99" class = "inputParticipants" id = "participantsInput4" onkeypress = "document.getElementById('toolTipID').style.display = 'none';  return numbersOnly(this, event);"><br><br>
     </form>
 	</div>
   	<div id = "d1">
 		<form class= "amountParticipants1">
         	<label  id= "Participants">  Մեկնման վայր </label>
-           	<input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants">   <br> <br>
+           	<input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"> <br> <br>
           	<label  id= "Participants"> Ժամանման վայր </label>
            	<input  size="12"  type="text" name="fname" class = "inputParticipants"><br><br> 
            	<table>
@@ -182,6 +183,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         		<table class= "margin_barbecue">
         		<tr>
 	  			<td><p><input type="checkbox" value ="pig" id = "pig" onclick = "initializeDinner(pig); price(pig); subTotal(pig);total();">Խոզ</p></td>
+<<<<<<< HEAD
 	  			<td><input class= "mass"  type="number" min = "1" max = "99" id = "kgPig" placeholder="1" disabled onblur = "price(pig); subTotal(pig);total();">կգ</td>
 	  			<td><p><input  type = "number" class = "mass" id = "drPig" placeholder="3800"  disabled onblur ="price(pig);subTotal(pig);total();">դր</p></td>
 		     	<td><p><input type = "text" size="5"  id = "pig_price" class = "noneBorder" readonly> </p></td>
@@ -227,10 +229,58 @@ google.maps.event.addDomListener(window, 'load', initialize);
                                 <td><input class= "mass" type = "number" mim = "0" max = "99" id = "kgFrankfurter" placeholder="1"  disabled onblur = "price(frankfurter); subTotal(frankfurter);total();">կգ</td>
                                 <td><p><input type = "text" class = "mass" id = "drFrankfurter" placeholder="1200"  disabled onblur = "price(frankfurter); subTotal(frankfurter);total();">դր</p></td>
                                 <td><p><input type = "text" id = "frankfurter_price" size="5" class  = "noneBorder" readonly> </p></td>
+=======
+	  			<td><input class= "mass"  type="text" min = "1" max = "99" id = "kgPig" placeholder="1" disabled onblur = "price(pig); subTotal(pig);total();" onkeyPress = "return numbersOnlyFloat(this, event);">կգ</td>
+	  			<td><p><input  type = "text" class = "mass" id = "drPig" placeholder="3800"  disabled onblur ="price(pig);subTotal(pig);total()" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+		     	<td><p><input type = "text" size = "1%"  id = "pig_price" class = "noneBorder" readonly> </p></td>
+			</tr> 
+			<tr>       
+				<td><p><input type="checkbox" value ="lamb" id = "lamb" onclick = "initializeDinner(lamb); price(lamb); subTotal(lamb);total();">Գառ</p></td>
+				<td><input class= "mass" type = "number" min = "0" max = "99" id = "kgLamb" disabled placeholder="1" onblur = "price(lamb);subTotal(lamb);total();" onkeyPress ="return numbersOnlyFloat(this,event);">կգ</td>
+				<td><p><input type = "text" class = "mass"  id = "drLamb" placeholder="3000"  disabled onblur = "price(lamb); subTotal(lamb);total();" onkeyPress ="return numbersOnly(this,event);">դր</p></td>
+		     		<td><p><input type = "text" size="1%" class  = "noneBorder" id = "lamb_price" readonly> </p></td>	
+			</tr>
+			<tr>
+				<td><p><input type="checkbox" value ="goat" id = "goat" onclick = "initializeDinner(goat); price(goat);subTotal(goat);total();">Այծ</p></td>
+				<td><input class= "mass" type="number" min = "0" max = "99" id = "kgGoat" placeholder="1"  disabled onblur = "price(goat); subTotal(goat);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+				<td><p><input type = "text" class = "mass"  id = "drGoat" placeholder="3500"  disabled onblur = "price(goat); subTotal(goat);total();" onkeyPress ="return numbersOnly(this, event);">դր</p</td>
+		     		<td><p><input type = "text" id = "goat_price" size="1%" class  = "noneBorder" readonly> </p></td>
+	     		</tr>
+	    		<tr>
+				 <td><p><input type="checkbox" value ="chicken" id = "chicken" onclick = "initializeDinner(chicken); price(chicken);subTotal(chicken);total();">Հավ</p></td>		
+				<td><input class= "mass" type="text" min = "0" max = "99" id = "kgChicken" placeholder="1"  disabled onblur = "price(chicken); subTotal(chicken);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+	  			<td><p><input type = "text" class = "mass"  id = "drChicken" placeholder="1600"  disabled onblur = "price(chicken); subTotal(chicken);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+		     		<td><p><input type = "text" id = "chicken_price" size="1%" class  = "noneBorder" readonly> </p></td>
+			</tr> 
+			<tr>
+				<td><p><input type="checkbox" value ="wing" id = "wing" onclick = "initializeDinner(wing); price(wing); subTotal(wing);total();">Թև</p></td>
+				<td><input class="mass" type = "text" min = "0" max = "99" id = "kgWing" placeholder="1"  disabled onblur = "price(wing); subTotal(wing);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+  				<td><p><input type = "text" class = "mass" id = "drWing" placeholder="1600"  disabled onblur = "price(wing); subTotal(wing);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+	     			<td><p><input type = "text" id = "wing_price" size="1%" class  = "noneBorder" readonly> </p></td>
+    			</tr>
+   			<tr>  
+    				<td><p><input type="checkbox" value ="haunch" id = "haunch" onclick = "initializeDinner(haunch); price(haunch); subTotal(haunch);total();">Բուդ</p></td>
+    				<td><input class="mass" type = "text" min = "0" max = "99" id = "kgHaunch" placeholder="1"  disabled onblur = "price(haunch); subTotal(haunch);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+    	  			<td><p><input type = "text" class = "mass" id = "drHaunch" placeholder="1200"  disabled onblur = "price(haunch); subTotal(haunch);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+				<td><p><input type = "text" id = "haunch_price"size="1%" class  = "noneBorder" readonly> </p></td>
+    			</tr>	
+ 			<tr>
+   				<td><input type = "checkbox" value = "sausage" id = "sausage" onclick = "initializeDinner(sausage); price(sausage); subTotal(sausage);total();">Երշիկ</p></td>
+       				<td><input class= "mass" type = "text" min = "0" max = "99" id = "kgSausage" placeholder="1"  disabled onblur = "price(sausage); subTotal(sausage);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td> 
+        			<td><p><input type = "text" class = "mass" id = "drSausage" placeholder="1700"  disabled onblur = "price(sausage); subTotal(sausage);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+		 		<td><p><input type = "text" id = "sausage_price" size="1%" class  = "noneBorder" readonly> </p></td>
+     			</tr>
+			 <tr>
+                                <td><input type = "checkbox" value = "frankfurter" id = "frankfurter" onclick = "initializeDinner(frankfurter); price(frankfurter); subTotal(frankfurter);total();">Նրբերշիկ</p></td>
+                                <td><input class= "mass" type = "text" min = "0" max = "99" id = "kgFrankfurter" placeholder="1"  disabled onblur = "price(frankfurter); subTotal(frankfurter);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+                                <td><p><input type = "text" class = "mass" id = "drFrankfurter" placeholder="1200"  disabled onblur = "price(frankfurter); subTotal(frankfurter);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                                <td><p><input type = "text" id = "frankfurter_price" size="1%" class  = "noneBorder" readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
                         </tr>
 
      			<tr>
      				<td><p><input type="checkbox" value ="anvil" id = "anvil" onclick = "initializeDinner(anvil); price(anvil); subTotal(anvil);total();">Սալ</p></td>
+<<<<<<< HEAD
     				<td><input class= "mass" type = "number" mim = "0" max = "99" id = "kgAnvil" placeholder="1"  disabled onblur = "price(anvil); subTotal(anvil);total();">կգ</td>
         			<td><p><input type = "text" class = "mass" id = "drAnvil" placeholder="1000"  disabled onblur = "pric(anvil); subTotal(anvil);total();">դր</p></td>
 				<td><p><input type = "text" id = "anvil_price" size="5" class  = "noneBorder" readonly> </p></td>
@@ -246,6 +296,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
      				<td><input class="mass" type="text" id = "kgEtc" disabled onblur = "price(etc); subTotal(etc);total();">կգ</td>
        				<td><p><input type = "text" class = "mass" id = "drEtc" disabled onblur = "price(etc); subTotal(etc);total();">դր</p></td>
 	 		     	<td><p><input type = "text" id = "etc_price" size="5" class  = "noneBorder" readonly> </p></td>
+=======
+    				<td><input class= "mass" type = "text" min = "0" max = "99" id = "kgAnvil" placeholder="1"  disabled onblur = "price(anvil); subTotal(anvil);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+        			<td><p><input type = "text" class = "mass" id = "drAnvil" placeholder="1000"  disabled onblur = "price(anvil); subTotal(anvil);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+				<td><p><input type = "text" id = "anvil_price" size="1%" class  = "noneBorder" readonly> </p></td>
+    			</tr>
+     			<tr>
+     				<td><p><input type="checkbox" value ="internal organs" id = "internal_organs" onclick = "initializeDinner(internal_organs); price(internal_organs);subTotal(internal_organs);total();">Խորոտիկ</p></td>
+     				<td><input class="mass" type = "text" min = "0" max = "99" id = "kgInternal_organs" placeholder="1"  disabled onblur = "price(internal_organs); subTotal(internal_organs);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+        			<td><p><input type = "text" class = "mass" id = "drInternal_organs" placeholder="1000"  disabled onblur = "price(internal_organs); subTotal(internal_organs);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+		 		<td><p><input type = "text" id = "internal_organs_price" size="1%" class  = "noneBorder" readonly> </p></td>
+     			</tr>
+     			<tr>
+     				<td><p><input type="checkbox" value ="etc" id = "etc" onclick = "initializeDinner(etc); price(etc); subTotal(etc);total();">Այլ<input type = "text" id = "name" placeholder="Անուն" size = "5" disabled></p></td>
+     				<td><input class="mass" type="text" id = "kgEtc" disabled onblur = "price(etc); subTotal(etc);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+       				<td><p><input type = "text" class = "mass" id = "drEtc" disabled onblur = "price(etc); subTotal(etc);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+	 		     	<td><p><input type = "text" id = "etc_price" size="1%" class  = "noneBorder" readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
      			</tr>
 			</table>
 		</div>
@@ -263,9 +330,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 				<option value="EtcSpice">Այլ</option>
                      			</select>
            			</td>	
+<<<<<<< HEAD
 		  		<td><input class="mass" type="number" placeholder ="1" min="0" max = "99" id = "amountSpice" disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);total();">հատ</td>
 				<td><p><input class = "mass" type="text" id = "drSpice" placeholder="2700"  disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);total();">դր</p></td>
 				<td><p><input type = "text" id = "spice_price" size="5" class  = "noneBorder" readonly></p></td>
+=======
+		  		<td><input class="mass" type="number" placeholder ="1" min="0" max = "99" id = "amountSpice" disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+				<td><p><input class = "mass" type="text" id = "drSpice" placeholder="2700"  disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+				<td><p><input type = "text" id = "spice_price" size="1%" class  = "noneBorder" readonly></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
 			</tr>
 			<tr>
           			<td><p><input type="checkbox" id = "wine" name="spice" value="Salt" onclick = "initializeDrink(secondSpice); priceDrink(secondSpice);subTotal(secondSpice);total();"></p></td>
@@ -279,9 +352,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
             					<option value="EtcWine">Այլ</option>
 					</select>
             			</td>
+<<<<<<< HEAD
             			<td><input class="mass" type="number" min="0" max = "99" placeholder ="1" id = "amountWine" disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);total();">հատ</td>
             			<td><input class = "mass" type="text" id = "drWine" placeholder="1720"  disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);total();">դր</td>
 				<td><p><input type = "text" id = "wine_price" size="5" class  = "noneBorder" readonly></p></td>
+=======
+            			<td><input class="mass" type="text" min="0" max = "99" placeholder ="1" id = "amountWine" disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+            			<td><input class = "mass" type="text" id = "drWine" placeholder="1720"  disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "wine_price" size="1%" class  = "noneBorder" readonly></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
           		</tr>
         		<tr>
 				<td><p><input id ="beer" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(thirdSpice); priceDrink(thirdSpice); subTotal(thirdSpice);total();"></p></td>
@@ -295,9 +374,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
             					<option value="EtcBeer">Այլ</option>
 					</select>
            	   		</td>
+<<<<<<< HEAD
            	 		<td><input class="mass" size="5" type="number" placeholder ="1" min = "0" max = "99" id = "amountBeer" disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);total();">հատ</td>
            	 		<td><input class = "mass" type="text" id = "drBeer" placeholder="430"  disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);total();">դր</td>
 				<td><p><input type ="text" id = "beer_price" size="5" class  = "noneBorder" readonly></p></td>
+=======
+           	 		<td><input class="mass" size="5" type="number" placeholder ="1" min = "0" max = "99" id = "amountBeer" disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+           	 		<td><input class = "mass" type="text" id = "drBeer" placeholder="430"  disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type ="text" id = "beer_price" size="1%" class  = "noneBorder" readonly></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
           		</tr>
        			<tr>
 				<td><p><input id="juice" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fourthSpice); priceDrink(fourthSpice);subTotal(fourthSpice);total();"></p></td>
@@ -311,9 +396,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
             		 			<option value="EtcJuice">Այլ</option>
 					</select>
            			</td>
+<<<<<<< HEAD
            			<td><input class="mass" type="number" placeholder ="1" min = "0" max = "99" id = "amountJuice" disabled onblur = "priceDrink(fourthSpice);subTotal(fourthSpice);total();">հատ</td>
 				<td><input  class = "mass" type="text" id = "drJuice" placeholder="450"  disabled onblur = "priceDrink(fourthSpice); subTotal(fourthSpice);total();">դր</td>
 			        <td><p><input type = "text" id = "juice_price" size="5" class  = "noneBorder" readonly onblur = "priceDrink(fourthSpice); subTotal(fourthSpice);total();"></p></td>
+=======
+           			<td><input class="mass" type="text" placeholder ="1" min = "0" max = "99" id = "amountJuice" disabled onblur = "priceDrink(fourthSpice);subTotal(fourthSpice);total();"onkeyPress ="return numbersOnly(this, event);">հատ</td>
+				<td><input  class = "mass" type="text" id = "drJuice" placeholder="450"  disabled onblur = "priceDrink(fourthSpice); subTotal(fourthSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+			        <td><p><input type = "text" id = "juice_price" size="1%" class  = "noneBorder" readonly onblur = "priceDrink(fourthSpice); subTotal(fourthSpice);total();"></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
           		</tr>
 			<tr>
 				<td><p><input id="fizzy" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fifthSpice); priceDrink(fifthSpice); subTotal(fifthSpice);total();"</p></td>
@@ -327,7 +418,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
             					<option value="EtcFizzy">Այլ</option> 
 					</select>
             			</td>
-				<td><input class="mass" size="5" type="number" placeholder ="1" min = "0" max = "99" id = "amountFizzy" disabled onblur = "priceDrink(fifthSpice)" onchange ="subTotal(fifthSpice);total();">հատ</td>
+				<td><input class="mass" size="5" type="text" placeholder ="1" min = "0" max = "99" id = "amountFizzy" disabled onblur = "priceDrink(fifthSpice)" onchange ="subTotal(fifthSpice);total();">հատ</td>
 				<td><input class = "mass" type="text" id = "drFizzy" placeholder="390"  disabled onblur = "priceDrink(fifthSpice)" onchange = "subTotal(fifthSpice);total();">դր</td>
 			        <td><p><input type = "text" id = "fizzy_price" size="5" class  = "noneBorder" readonly></p></td>
           		</tr>
@@ -343,16 +434,28 @@ google.maps.event.addDomListener(window, 'load', initialize);
              					<option value="EtcWater">Այլ</option> 
 					</select>
             			</td>
+<<<<<<< HEAD
 				<td><input class="mass" size="5" type="number" placeholder ="1" min = "0" max = "99" id = "amountWater" disabled onblur ="priceDrink(sixthSpice);subTotal(sixthSpice);total();">հատ</td>
 				<td><input class = "mass" type="text" id = "drWater" placeholder="250"  disabled onblur = "priceDrink(sixthSpice); subTotal(sixthSpice);total();">դր</td>
 			        <td><p><input type = "text" id = "water_price" size="5" class  = "noneBorder" readonly></p></td>
+=======
+				<td><input class="mass" size="5" type="text" placeholder ="1" min = "0" max = "99" id = "amountWater" disabled onblur ="priceDrink(sixthSpice);subTotal(sixthSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+				<td><input class = "mass" type="text" id = "drWater" placeholder="250"  disabled onblur = "priceDrink(sixthSpice); subTotal(sixthSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+			        <td><p><input type = "text" id = "water_price" size="1%" class  = "noneBorder" readonly></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
            		</tr>
 			<tr>
                                 <td><p><input type="checkbox" value = "buttermilk" id = "buttermilk" onclick = "initializeDinner(buttermilk); price(buttermilk);subTotal(buttermilk);total();"></p></td>
 				<td><p>Թան</p></td>
+<<<<<<< HEAD
                                 <td><input class= "mass" type="number" min = "0" max = "99" id = "hatButtermilk"  placeholder="1"  disabled onblur = "price(buttermilk);subTotal(buttermilk);total();">հատ</td>
                                 <td><p><input type = "text" class = "mass" id = "drButtermilk" placeholder="180"  disabled onblur ="price(buttermilk);subTotal(buttermilk);total();">դր</p></td>
                                 <td><p><input type = "text" class = "noneBorder" id = "buttermilk_price" size="5"readonly> </p></td>
+=======
+                                <td><input class= "mass" type="text" min = "0" max = "99" id = "hatButtermilk"  placeholder="1"  disabled onblur = "price(buttermilk);subTotal(buttermilk);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+                                <td><p><input type = "text" class = "mass" id = "drButtermilk" placeholder="180"  disabled onblur ="price(buttermilk);subTotal(buttermilk);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "buttermilk_price" size = "1%"readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
                         </tr>
 
 			<tr>
@@ -360,9 +463,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					<td><p>Այլ<input type = "text" id = "nameEtcDrink" placeholder="Անուն" size = "5" disabled></p></td>
 				</td>
 			
+<<<<<<< HEAD
 				<td><input class="mass" type="text" placeholder ="քանակ" min = "0" id = "hatEtcDrink" disabled onblur ="priceDrink(etcDrink);subTotal(etcDrink);total();">հատ</td>
                                 <td><p><input type = "text" class = "mass" id = "drEtcDrink" disabled onblur = "price(etcDrink); subTotal(etcDrink);total();">դր</p></td>
                                 <td><p><input type = "text" id = "etcDrink_price" size="5" class  = "noneBorder" readonly> </p></td>
+=======
+				<td><input class="mass" type="text" placeholder ="քանակ" min = "0" id = "hatEtcDrink" disabled onblur ="priceDrink(etcDrink);subTotal(etcDrink);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+                                <td><p><input type = "text" class = "mass" id = "drEtcDrink" disabled onblur = "price(etcDrink); subTotal(etcDrink);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                                <td><p><input type = "text" id = "etcDrink_price" size="1%" class  = "noneBorder" readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
                         </tr>			
 			</table>
 			</div>
@@ -370,13 +479,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			<table class="margin_vegetable">
 			<tr>
         			<td><p><input type="checkbox" value ="tomato" id = "tomato" onclick = "initializeDinner(tomato); price(tomato);subTotal(tomato);total();">Լոլիկ</p></td>
-        			<td><input class =  "mass" type = "number" min = "0" max = "99" id = "kgTomato" placeholder="1"  disabled onblur = "price(tomato); subTotal(tomato);total();">կգ</td>
-        			<td><input type = "text" class = "mass" id = "drTomato" placeholder="300"  disabled onblur = "price(tomato); subTotal(tomato);total();">դր</td>
+        			<td><input class =  "mass" type = "text" min = "0" max = "99" id = "kgTomato" placeholder="1"  disabled onblur = "price(tomato); subTotal(tomato);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+        			<td><input type = "text" class = "mass" id = "drTomato" placeholder="300"  disabled onblur = "price(tomato); subTotal(tomato);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
 
 				<td><p><input type = "text" id = "tomato_price" size="5" class  = "noneBorder" readonly> </p></td>
        			</tr>
         		<tr>
         	   		<td><p><input type="checkbox" value ="cucumbers" id = "cucumbers" onclick = "initializeDinner(cucumbers); price(cucumbers); subTotal(cucumbers);total();">Վարունգ</p></td>
+<<<<<<< HEAD
                			<td><input class = "mass" type = "number" min = "0" max = "99" id = "kgCucumbers" placeholder="1"  disabled onblur = "price(cucumbers); subTotal(cucumbers);total();">կգ</td>
            	   		<td><input type = "text" class = "mass" id = "drCucumbers" placeholder="400"  disabled onblur = "price(cucumbers); subTotal(cucumbers);total();">դր</td>
 			        <td><p><input type = "text" id = "cucumbers_price" size="5" class  = "noneBorder" readonly> </p></td>
@@ -416,6 +526,47 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 		<td><input class = "mass" type = "text" min = "0" id = "kgEtcVegetable" disabled onblur = "price(etcVegetable);subTotal(etcVegetable);total();">կգ</td>
         	    		<td><input type = "text" class = "mass"  id = "drEtcVegetable" disabled onblur = "price(etcVegetable); subTotal(etcVegetable);total();">դր</td>
 			    	<td><p><input type = "text" id = "etcVegetable_price" size="5" class  = "noneBorder" readonly> </p></td>
+=======
+               			<td><input class = "mass" type = "text" min = "0" max = "99" id = "kgCucumbers" placeholder="1"  disabled onblur = "price(cucumbers); subTotal(cucumbers);total();"onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+           	   		<td><input type = "text" class = "mass" id = "drCucumbers" placeholder="400"  disabled onblur = "price(cucumbers); subTotal(cucumbers);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+			        <td><p><input type = "text" id = "cucumbers_price" size="1%" class  = "noneBorder" readonly> </p></td>
+        		</tr>
+       			<tr>
+        	      		<td><p><input type="checkbox" value ="eggplant" id = "eggplant" onclick = "initializeDinner(eggplant); price(eggplant);subTotal(eggplant);total();">Սմբուկ</p></td>
+        	      		<td><input class = "mass" type = "text" min = "0" max = "99" id = "kgEggplant" placeholder="1"  disabled onblur = "price(eggplant);subTotal(eggplant);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+        	      		<td><input type = "text" class = "mass" id = "drEggplant" placeholder="500"  disabled onblur = "price(eggplant);subTotal(eggplant);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+			        <td><p><input type = "text" id = "eggplant_price" size="1%" class  = "noneBorder" readonly> </p></td>
+        		</tr>
+            		<tr>
+          	        	<td><p><input type="checkbox" value ="onion" id = "onion" onclick = "initializeDinner(onion); price(onion);subTotal(onion);total();">Սոխ</p></td>
+          	    		<td><input class = "mass" type = "text" min = "0" max = "99" id = "kgOnion" placeholder="1"  disabled onblur = "price(onion); subTotal(onion);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+          	    		<td><input type = "text" class = "mass" id = "drOnion" placeholder="350"  disabled onblur = "price(onion); subTotal(onion);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+			        <td><p><input type = "text" id = "onion_price" size="1%" class  = "noneBorder" readonly> </p></td>
+       			</tr>
+       			<tr>
+        			<td><p><input type="checkbox" value ="greens" id = "greens" onclick = "initializeDinner(greens); price(greens);subTotal(greens);total();">Կանաչի</p></td>
+        			<td><input class = "mass" type = "number" min = "0" max = "99" id = "punjGreens" placeholder="1"  disabled onblur = "price(greens); subTotal(greens);total();" onkeyPress ="return numbersOnly(this, event);">փունջ</td>
+       				<td><input type = "text" class = "mass" id = "drGreens" placeholder="250"  disabled onblur = "price(greens); subTotal(greens);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "greens_price" size="1%" class  = "noneBorder" readonly> </p></td>
+       			</tr>
+			<tr>
+                                <td><p><input type="checkbox" value ="potatoes" id = "potatoes" onclick = "initializeDinner(potatoes); price(potatoes);subTotal(potatoes);total();">Կարտոֆիլ</p></td>
+                                <td><input class = "mass" type = "text" min = "0" max = "99" id = "kgPotatoes" placeholder="1"  disabled onblur = "price(potatoes); subTotal(potatoes);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+                                <td><input type = "text" class = "mass" id = "drPotatoes" placeholder="200"  disabled onblur = "price(potatoes); subTotal(potatoes);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+                                <td><p><input type = "text" id = "potatoes_price" size="1%" class  = "noneBorder" readonly> </p></td>
+                        </tr>
+			<tr>
+                                <td><p><input type="checkbox" value ="pepper" id = "pepper" onclick = "initializeDinner(pepper); price(pepper);subTotal(pepper);total();">Բիբար</p></td>
+                                <td><input class = "mass" type = "text" min = "0" max = "99" id = "kgPepper" placeholder="1"  disabled onblur = "price(pepper); subTotal(pepper);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+                                <td><input type = "text" class = "mass" id = "drPepper" placeholder="450"  disabled onblur = "price(pepper); subTotal(pepper);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+                                <td><p><input type = "text" id = "pepper_price" size="1%" class  = "noneBorder" readonly> </p></td>
+                        </tr>
+       			<tr>
+       				<td><p><input type="checkbox" value ="etcVegetable" id = "etcVegetable" onclick = "initializeDinner(etcVegetable);price(etcVegetable);subTotal(etcVegetable);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameVegetable" size= "5" disabled></p></td>
+                		<td><input class = "mass" type = "text" min = "0" id = "kgEtcVegetable" disabled onblur = "price(etcVegetable);subTotal(etcVegetable);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+        	    		<td><input type = "text" class = "mass"  id = "drEtcVegetable" disabled onblur = "price(etcVegetable); subTotal(etcVegetable);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+			    	<td><p><input type = "text" id = "etcVegetable_price" size="1%" class  = "noneBorder" readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
        			</tr>
 		</table>
 		</div>
@@ -423,6 +574,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			<table id="margin_desert">
 		 	<tr>
         			<td><p><input type="checkbox" value ="sweetmeat" id = "sweetmeat" onclick = "initializeDinner(sweetmeat); price(sweetmeat);subTotal(sweetmeat);total();">Կոնֆետ</p></td>
+<<<<<<< HEAD
         			<td><input class="mass" type = "number" min = "0" max = "99"  id = "kgSweetmeat" placeholder="1"  disabled onblur = "price(sweetmeat); subTotal(sweetmeat);total();">կգ</td>
         			<td><input type = "text" class = "mass" id = "drSweetmeat" placeholder="2300"  disabled onblur = "price(sweetmeat);subTotal(sweetmeat);total();">դր</td>
 				<td><p><input type = "text" id = "sweetmeat_price" size="5" class  = "noneBorder" readonly></p></td>
@@ -456,6 +608,41 @@ google.maps.event.addDomListener(window, 'load', initialize);
      				<td><input class = "mass" type = "number" min = "0" max = "99" id = "hatInstant_coffee" placeholder="1"  disabled onblur = "price(Instant_coffee); subTotal(Instant_coffee);total();">հատ</td>
         			<td><input type = "text"  class = "mass" id = "drInstant_coffee" placeholder="70"  disabled onblur = "price(Instant_coffee); subTotal(Instant_coffee);total();">դր</td> 
 				<td><p><input type = "text" id = "Instant_coffee_price" size="5" class  = "noneBorder" readonly></p></td>
+=======
+        			<td><input class="mass" type ="text" min = "0" max = "99"  id = "kgSweetmeat" placeholder="1"  disabled onblur = "price(sweetmeat); subTotal(sweetmeat);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+        			<td><input type = "text" class = "mass" id = "drSweetmeat" placeholder="2300"  disabled onblur = "price(sweetmeat);subTotal(sweetmeat);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "sweetmeat_price" size="1%" class  = "noneBorder" readonly></p></td>
+       			</tr>
+			<tr>  
+                		<td><p><input type="checkbox" value ="Chocolates" id = "chocolates" onclick = "initializeDinner(chocolates); price(chocolates);subTotal(chocolates);total();">Շոկոլադ</p></td>
+                		<td><input class ="mass" type = "text" min = "0" max = "99" id = "kgChocolates" placeholder="1"  disabled onblur = "price(chocolates);subTotal(chocolates);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+                		<td><input type = "text" class = "mass" id = "drChocolates" placeholder="3000"  disabled onblur = "price(chocolates);subTotal(chocolates);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "chocolates_price" size="1%" class  = "noneBorder" readonly></p></td>
+       	    		</tr>
+			<tr>  
+                		<td><p><input type="checkbox" value ="Lobe" id = "lobe" onclick = "initializeDinner(lobe); price(lobe);subTotal(lobe);total();">Թխվածքաբլիթ</p></td>
+                		<td><input class ="mass" type = "text" min = "0" max = "99" id = "kgLobe" placeholder="1"  disabled onblur = "price(lobe); subTotal(lobe);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+                		<td><input type = "text" class = "mass" id = "drLobe" placeholder="450"  disabled onblur = "price(lobe); subTotal(lobe);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "lobe_price" size="1%" class  = "noneBorder" readonly></p></td>
+           		</tr> 
+           		<tr>
+        			<td><p><input type="checkbox" value ="Tea" id = "tea" onclick = "initializeDinner(tea); price(tea);subTotal(tea);total();">Թեյ</p></td>
+        			<td><input class = "mass" type = "text" min = "0" max = "99" id = "tupTea" placeholder="1"  disabled onblur = "price(tea); subTotal(tea);total();" onkeyPress ="return numbersOnly(this, event);">տուփ</td>
+        			<td><input type = "text" class = "mass" id = "drTea" placeholder="450"  disabled onblur = "price(tea); subTotal(tea);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "tea_price" size="1%" class  = "noneBorder" readonly></p></td>
+           		</tr>
+       	   		<tr>
+        			<td><p><input type="checkbox" value ="Coffee" id = "coffee" onclick = "initializeDinner(coffee); price(coffee);subTotal(coffee);total();">Սուրճ</p></td>
+            			<td><input class = "mass" type = "text" min = "0" max = "99" id = "tupCoffee" placeholder="1"  disabled onblur = "price(coffee); subTotal(coffee);total();" onkeyPress ="return numbersOnly(this, event);">տուփ</td>
+        			<td><input type = "text"  class = "mass" id = "drCoffee" placeholder="350"  disabled onblur = "price(coffee); subTotal(coffee);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "coffee_price" size="1%" class  = "noneBorder" readonly></p></td>
+          		</tr>
+   			<tr>
+        			<td><p><input type="checkbox" value ="Instant_coffee" id = "Instant_coffee" onclick = "initializeDinner(Instant_coffee); price(Instant_coffee);subTotal(Instant_coffee);total();">Լուծվող սուրճ</p></td>
+     				<td><input class = "mass" type = "text" min = "0" max = "99" id = "hatInstant_coffee" placeholder="1"  disabled onblur = "price(Instant_coffee); subTotal(Instant_coffee);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+        			<td><input type = "text"  class = "mass" id = "drInstant_coffee" placeholder="70"  disabled onblur = "price(Instant_coffee); subTotal(Instant_coffee);total();" onkeyPress ="return numbersOnly(this, event);">դր</td> 
+				<td><p><input type = "text" id = "Instant_coffee_price" size="1%" class  = "noneBorder" readonly></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
    			</tr>
           		<tr>
 				<td><p><input  type="checkbox" name="spice" value="fruit" id = "fruit" onclick = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();">Մրգեր
@@ -468,9 +655,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         			<option value="EtcFruit">Այլ</option>
 					</select>
                 		</td>
+<<<<<<< HEAD
 				<td><input class = "mass" type = "number" min = "0" max = "99" id = "kgFruit" placeholder="1"  disabled onblur = "priceDrink(fruitSelector); subTotal(fruitSelector);total();">կգ</td>
                 <td><input  class = "mass" type="text" id = "drFruit" placeholder="350"  disabled onblur = "priceDrink(fruitSelector); subTotal(fruitSelector);total();">դր</td>
 				<td><p><input type = "text" id = "fruit_price" size="5" class  = "noneBorder" readonly></p></td>
+=======
+				<td><input class = "mass" type = "text" min = "0" max = "99" id = "kgFruit" placeholder="1"  disabled onblur = "priceDrink(fruitSelector); subTotal(fruitSelector);total();" onkeyPress ="return numbersOnly(this, event);">կգ</td>
+                <td><input  class = "mass" type="text" id = "drFruit" placeholder="350"  disabled onblur = "priceDrink(fruitSelector); subTotal(fruitSelector);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "fruit_price" size="1%" class  = "noneBorder" readonly></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
           		</tr>
           		<tr>
                 		<td><p><input type="checkbox" name="spice" value="desserts" id = "desserts" onclick = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();">Աղանդեր
@@ -482,9 +675,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
                        				<option value="EtcDesserts">Այլ</option>
 					</select>
                 		</td>
+<<<<<<< HEAD
 				<td><input class = "mass" type = "number" min = "0" max = "99" id = "kgDesserts" placeholder="1"  disabled onblur = " priceDrink(dessertChips);subTotal(dessertChips);total();">կգ</td>
                 <td><input class = "mass" type="text" id = "drDesserts" placeholder="450"  disabled onblur = " priceDrink(dessertChips);subTotal(dessertChips);total();">դր</td>
 				<td><p><input type = "text" id = "desserts_price" size="5" class  = "noneBorder" readonly></p></td>
+=======
+				<td><input class = "mass" type = "text" min = "0" max = "99" id = "kgDesserts" placeholder="1"  disabled onblur = " priceDrink(dessertChips);subTotal(dessertChips);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+                <td><input class = "mass" type="text" id = "drDesserts" placeholder="450"  disabled onblur = " priceDrink(dessertChips);subTotal(dessertChips);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+				<td><p><input type = "text" id = "desserts_price" size="1%" class  = "noneBorder" readonly></p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
 
           	</tr>
 		<tr>
@@ -503,9 +702,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         </tr>
 			<tr>
                                 <td><p><input type="checkbox" value ="etcDesert" id = "etcDesert" onclick = "initializeDinner(etcDesert); price(etcDesert); subTotal(etcDesert);total();">Այլ<input type = "text" style = "margin-left:30%"  id = "nameEtcDesert" placeholder="Անուն" size = "8" disabled></p></td>
+<<<<<<< HEAD
                                 <td><input class="mass" type="text" id = "kgEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();">կգ</td>
                                 <td><p><input type = "text" class = "mass" id = "drEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();">դր</p></td>
                                 <td><p><input type = "text" id = "etcDesert_price" size="5" class  = "noneBorder" readonly> </p></td>
+=======
+                                <td><input class="mass" type="text" id = "kgEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
+                                <td><p><input type = "text" class = "mass" id = "drEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                                <td><p><input type = "text" id = "etcDesert_price" size="1%" class  = "noneBorder" readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
                         </tr>
 			</table>
 			</div>
@@ -517,12 +722,19 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			<table id= "margin_overnight">
         		<tr>
         			<td><p><input type="checkbox" value = "hotel" id = "hotel"  onclick = "initializeDinner(hotel); price(hotel);subTotal(hotel);total();">Հյուրանոց</p></td>
+<<<<<<< HEAD
 				<td><input class= "mass" type="number" min = "0" max = "99" id = "hamarHotel" disabled onblur = "price(hotel); subTotal(hotel);total();">համար</td>
 				<td><p><input type = "text" class = "mass" id = "drHotel" disabled onblur ="price(hotel);subTotal(hotel);total();">դր</p></td>
 				<td><p><input type = "text" class = "noneBorder" id = "hotel_price" size="5" readonly> </p></td>
+=======
+				<td><input class= "mass" type="text" min = "0" max = "99" id = "hamarHotel" disabled onblur = "price(hotel); subTotal(hotel);total();" onkeyPress ="return numbersOnly(this,event);">համար</td>
+				<td><p><input type = "text" class = "mass" id = "drHotel" disabled onblur ="price(hotel);subTotal(hotel);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+				<td><p><input type = "text" class = "noneBorder" id = "hotel_price" size = "1%" readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
         	 	</tr>
         	 	<tr>                        
 		                <td><p><input type="checkbox" value = "tent" id = "tent" onclick = "initializeDinner(tent); price(tent);subTotal(tent);total();">Վրան</p></td>
+<<<<<<< HEAD
                     		<td><input class= "mass" type="number" min = "0" max = "99" id = "qanakTent" disabled onblur = "price(tent);subTotal(tent);total();">հատ</td>
                     		<td><p><input type = "text" class = "mass" id = "drTent" disabled onblur ="price(tent); subTotal(tent);total();">դր</p></td>
                     		<td><p><input type = "text" class = "noneBorder" id = "tent_price" size= "5" readonly> </p></td>
@@ -532,6 +744,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();"></td>
                 		<td><input type = "text"  class = "mass"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();">դր</td>
                 		<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" size="5" readonly> </p></td>
+=======
+                    		<td><input class= "mass" type="text" min = "0" max = "99" id = "qanakTent" disabled onblur = "price(tent);subTotal(tent);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+                    		<td><p><input type = "text" class = "mass" id = "drTent" disabled onblur ="price(tent); subTotal(tent);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                    		<td><p><input type = "text" class = "noneBorder" id = "tent_price" size= "1%" readonly> </p></td>
+                	</tr>
+			<tr>
+                		<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);subTotal(etcOvernight);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameOvernight" size= "5" disabled></p></td>
+                		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();" onkeyPress ="return numbersOnly(this, event);">Հատ</td>
+                		<td><input type = "text"  class = "mass"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+                		<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" size="1%" readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
             		</tr> 
 			</table>
 		</div>
@@ -554,6 +777,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     	</tr>
 			<tr>
                                 <td><p><input type="checkbox" value = "salt" id = "salt" onclick = "initializeDinner(salt); price(salt);subTotal(salt);total();">Աղ</p></td>
+<<<<<<< HEAD
                                 <td><input class= "mass" type="number" min = "0" max = "99" id = "tupSalt" placeholder="1"  disabled onblur = "price(salt);subTotal(salt);total();">տուփ</td>
                                 <td><p><input type = "text"  class = "mass" id = "drSalt" placeholder="200"  disabled onblur ="price(salt);subTotal(salt);total();">դր</p></td>
                                 <td><p><input type = "text" class = "noneBorder" id = "salt_price" size="5"readonly> </p></td>
@@ -563,10 +787,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
                                 <td><input class= "mass" type="number" min = "0" max = "99" id = "tupGround_pepper" placeholder="1"  disabled onblur = "price(ground_pepper);subTotal(ground_pepper);total();">տուփ</td>
                                 <td><p><input type = "text" class = "mass" id = "drGround_pepper" placeholder="150"  disabled onblur ="price(ground_pepper);subTotal(ground_pepper);total();">դր</p></td>
                                 <td><p><input type = "text" class = "noneBorder" id = "ground_pepper_price" size="5"readonly> </p></td>
+=======
+                                <td><input class= "mass" type="text" min = "0" max = "99" id = "tupSalt" placeholder="1"  disabled onblur = "price(salt);subTotal(salt);total();" onkeyPress ="return numbersOnly(this, event);">տուփ</td>
+                                <td><p><input type = "text"  class = "mass" id = "drSalt" placeholder="200"  disabled onblur ="price(salt);subTotal(salt);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "salt_price" size = "1%"readonly> </p></td>
+                        </tr>
+			<tr>
+                                <td><p><input type="checkbox" value = "ground_pepper" id = "ground_pepper" onclick = "initializeDinner(ground_pepper); price(ground_pepper);subTotal(ground_pepper);total();">Պղպեղ</p></td>
+                                <td><input class= "mass" type="text" min = "0" max = "99" id = "tupGround_pepper" placeholder="1"  disabled onblur = "price(ground_pepper);subTotal(ground_pepper);total();" onkeyPress ="return numbersOnly(this, event);">տուփ</td>
+                                <td><p><input type = "text" class = "mass" id = "drGround_pepper" placeholder="150"  disabled onblur ="price(ground_pepper);subTotal(ground_pepper);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "ground_pepper_price" size = "1%"readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
                         </tr>
 
 			<tr>
                     		<td><p><input type="checkbox" value = "utensil" id = "utensil" onclick = "initializeDinner(utensil); price(utensil); subTotal(utensil);total();">Սպասք</p></td>
+<<<<<<< HEAD
                     		<td><input class= "mass" type="number" min = "0" max = "99" id = "qanakUtensil" placeholder="1"  disabled onblur = "price(utensil);subTotal(utensil);total();">հատ</td>
                     		<td><p><input type = "text" class = "mass" id = "drUtensil" placeholder="5000"  disabled onblur ="price(utensil);subTotal(utensil);total();">դր</p></td>
                     		<td><p><input type = "text" class = "noneBorder" id = "utensil_price" size="5" readonly> </p></td>
@@ -582,13 +818,36 @@ google.maps.event.addDomListener(window, 'load', initialize);
                                 <td><input class= "mass" type="number" min = "0" max = "99" id = "hatPouch" placeholder="1"  disabled onblur = "price(pouch);subTotal(pouch);total();">քանակ</td>
                                 <td><p><input type = "text" class = "mass" id = "drPouch" placeholder="100"  disabled onblur ="price(pouch);subTotal(pouch);total();">դր</p></td>
                                 <td><p><input type = "text" class = "noneBorder" id = "pouch_price" size="5"readonly> </p></td>
+=======
+                    		<td><input class= "mass" type="text" min = "0" max = "99" id = "qanakUtensil" placeholder="1"  disabled onblur = "price(utensil);subTotal(utensil);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+                    		<td><p><input type = "text" class = "mass" id = "drUtensil" placeholder="5000"  disabled onblur ="price(utensil);subTotal(utensil);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                    		<td><p><input type = "text" class = "noneBorder" id = "utensil_price" size = "1%" readonly> </p></td>
+                	</tr>
+			<tr>
+                    		<td><p><input type="checkbox" value = "skewer" id = "skewer" onclick = "initializeDinner(skewer); price(skewer);subTotal(skewer);total();">Շամփուր</p></td>
+                    		<td><input class= "mass" type="number" min = "0" max = "99" id = "qanakSkewer" placeholder="1"  disabled onblur = "price(skewer);subTotal(skewer);total();" onkeyPress ="return numbersOnly(this, event);">քանակ</td>
+                    		<td><p><input type = "text" class = "mass" id = "drSkewer" placeholder="0"  disabled onblur ="price(skewer);subTotal(skewer);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                    		<td><p><input type = "text" class = "noneBorder" id = "skewer_price" size = "1%"readonly> </p></td>
+                	</tr>
+			<tr>
+                                <td><p><input type="checkbox" value = "pouch" id = "pouch" onclick = "initializeDinner(pouch); price(pouch);subTotal(pouch);total();">Տոպրակ</p></td>
+                                <td><input class= "mass" type="text" min = "0" max = "99" id = "hatPouch" placeholder="1"  disabled onblur = "price(pouch);subTotal(pouch);total();" onkeyPress ="return numbersOnly(this, event);">քանակ</td>
+                                <td><p><input type = "text" class = "mass" id = "drPouch" placeholder="100"  disabled onblur ="price(pouch);subTotal(pouch);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
+                                <td><p><input type = "text" class = "noneBorder" id = "pouch_price" size = "1%"readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
                         </tr>
 
 			<tr>
                     		<td><p><input type="checkbox" value ="etcAccessories"id = "etcAccessories" onclick = "initializeDinner(etcAccessories);subTotal(etcAccessories);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameAccessories" size= "5" disabled></p></td>
+<<<<<<< HEAD
                     		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcAccessories" disabled onblur = "price(etcAccessories);subTotal(etcAccessories);total();">քանակ</td>
                     		<td><input type = "text" class = "mass"  id = "drEtcAccessories" disabled onblur = "price(etcAccessories);subTotal(etcAccessories);total();">դր</td>
                     		<td><p><input type = "text" id = "etcAccessories_price" class = "noneBorder" size="5"readonly> </p></td>
+=======
+                    		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcAccessories" disabled onblur = "price(etcAccessories);subTotal(etcAccessories);total();" onkeyPress ="return numbersOnly(this, event);">քանակ</td>
+                    		<td><input type = "text" class = "mass"  id = "drEtcAccessories" disabled onblur = "price(etcAccessories);subTotal(etcAccessories);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+                    		<td><p><input type = "text" id = "etcAccessories_price" class = "noneBorder" size = "1%"readonly> </p></td>
+>>>>>>> f6fb4fa65d2fa3ddff0ab8d7b67922610f9a52b4
                 	</tr>
            		</table>
 			</div>		
