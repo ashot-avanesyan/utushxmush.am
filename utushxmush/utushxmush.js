@@ -726,6 +726,22 @@ function initializeDinner(name)
                 	document.getElementById("qanakTent").disabled = true;
             		}	
 	    break;
+	    case arbor:
+                        if (document.getElementById("arbor").checked == true)
+                        {
+                        document.getElementById("qanakArbor").value = 1;
+                        document.getElementById("drArbor").value = 0 ;
+                        document.getElementById("drArbor").disabled = false;
+                        document.getElementById("qanakArbor").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("qanakArbor").value = "";
+                        document.getElementById("drArbor").value = "";
+                        document.getElementById("drArbor").disabled = true;
+                        document.getElementById("qanakArbor").disabled = true;
+                        }
+            break;
             case etcOvernight:
             		if (document.getElementById("etcOvernight").checked == true)
             		{
@@ -987,7 +1003,10 @@ function price(name)
             		break; 
 		case tent:
       	    		document.getElementById("tent_price").value = document.getElementById("qanakTent").value * document.getElementById("drTent").value;
-            		break; 
+            		break;
+		 case arbor:
+                        document.getElementById("arbor_price").value = document.getElementById("qanakArbor").value * document.getElementById("drArbor").value;
+                        break;
 		case etcOvernight:
       	    		document.getElementById("etcOvernight_price").value = document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
 			 break;

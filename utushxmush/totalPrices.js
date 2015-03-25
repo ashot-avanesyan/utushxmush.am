@@ -8,7 +8,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0,  olderHatButtermilk = 0, olderDrButtermilk = 0,  olderHatEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
 	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderQanakEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
-    olderQanakTent = 0, olderDrTent = 0,  olderTupSalt = 0, olderDrSalt = 0,  olderTupGround_pepper = 0, olderDrGround_pepper = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
+    olderQanakTent = 0, olderDrTent = 0,  olderQanakArbor = 0, olderDrArbor = 0,  olderTupSalt = 0, olderDrSalt = 0,  olderTupGround_pepper = 0, olderDrGround_pepper = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
 
 function subTotal(name)
 {
@@ -498,16 +498,38 @@ function subTotal(name)
 				document.getElementById("drJuice").disabled = false;
 				document.getElementById("amountJuice").disabled = false;
 
-			}	
-		break;
-	case fifthSpice: 
-			if (document.getElementById("fizzy").checked == false)
-			{
-                document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy; 
-				document.getElementById("drFizzy").disabled = true;
-				document.getElementById("amountFizzy").disabled = true;
-				document.getElementById("amountFizzy").value = "";
-				document.getElementById("drFizzy").value = "";
+e tent:
+                        if (document.getElementById("tent").checked == false)
+                        {
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakTent * olderDrTent;
+
+                                document.getElementById("drTent").disabled = true;
+                                document.getElementById("qanakTent").disabled = true;
+                                document.getElementById("drTent").value = "";
+                                document.getElementById("qanakTent").value = "";
+
+                                olderQanakTent = 0;
+                                olderDrTent = 0;
+
+                price(tent);
+                        }
+                        else
+                        {
+
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakTent * olderDrTent;
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +
+                                                                                                Number(document.getElementById("qanakTent").value) * Number(document.getElementById("drTent").value);
+
+                                olderQanakTent = Number(document.getElementById("qanakTent").value);
+                olderDrTent = Number(document.getElementById("drTent").value);
+
+
+                                document.getElementById("drTent").disabled = false;
+                                document.getElementById("qanakTent").disabled = false;
+
+                        }
+                break;
+
 
 				olderAmountFizzy = 0; 
 				olderDrFizzy = 0;
@@ -1271,6 +1293,37 @@ function subTotal(name)
 
 			}	
 		break;
+	case arbor:
+                        if (document.getElementById("arbor").checked == false)
+                        {
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakArbor * olderDrArbor;
+
+                                document.getElementById("drArbor").disabled = true;
+                                document.getElementById("qanakArbor").disabled = true;
+                                document.getElementById("drArbor").value = "";
+                                document.getElementById("qanakArbor").value = "";
+
+                                olderQanakArbor = 0;
+                                olderDrArbor = 0;
+
+                price(arbor);
+                        }
+                        else
+                        {
+
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakArbor * olderDrArbor;
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +
+                                                                                                Number(document.getElementById("qanakArbor").value) * Number(document.getElementById("drarbor").value);
+
+                                olderQanakArbor = Number(document.getElementById("qanakArbor").value);
+                                olderDrArbor = Number(document.getElementById("drArbor").value);
+
+
+                                document.getElementById("drarbor").disabled = false;
+                                document.getElementById("qanakarbor").disabled = false;
+
+                        }
+                break;
          case salt:
                          if (document.getElementById("salt").checked == false)
                          {
