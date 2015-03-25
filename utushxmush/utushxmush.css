@@ -401,6 +401,6 @@ button.acthiv  {
 	border-color: #90F17A;
 	background-color: #90F17A;
 }
-div#sizeOfDiv {
-	position: fixed;
+table#transport {
+	margin: 5% 17% 30% 17%;
 }
