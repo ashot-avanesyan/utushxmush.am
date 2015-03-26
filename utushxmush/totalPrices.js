@@ -1289,7 +1289,7 @@ function subTotal(name)
 
 			}	
 		break;
-	case arbor:
+        case arbor:
                         if (document.getElementById("arbor").checked == false)
                         {
                                 document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakArbor * olderDrArbor;
@@ -1312,11 +1312,11 @@ function subTotal(name)
                                                                                                 Number(document.getElementById("qanakArbor").value) * Number(document.getElementById("drArbor").value);
 
                                 olderQanakArbor = Number(document.getElementById("qanakArbor").value);
-                                olderDrArbor = Number(document.getElementById("drArbor").value);
+                		olderDrArbor = Number(document.getElementById("drArbor").value);
 
 
-                                document.getElementById("drarbor").disabled = false;
-                                document.getElementById("qanakarbor").disabled = false;
+                                document.getElementById("drArbor").disabled = false;
+                                document.getElementById("qanakArbor").disabled = false;
 
                         }
                 break;
