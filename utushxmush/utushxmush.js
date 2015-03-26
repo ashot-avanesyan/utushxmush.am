@@ -1037,11 +1037,11 @@ function price(name)
 		case etcDrink:
                         document.getElementById("etcDrink_price").value = document.getElementById("hatEtcDrink").value * document.getElementById("drEtcDrink").value;
                         break;
-	/*	case etcDesert:
+		case etcDesert:
                         document.getElementById("etcDesert_price").value = document.getElementById("kgEtcDesert").value * document.getElementById("drEtcDesert").value;
-				document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
+	//			document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
 		break;
-		case lamb:
+	/*	case lamb:
 			document.getElementById("lamb_price").value = "= " + document.getElementById("kgLamb").value * document.getElementById("drLamb").value;
 			break;
 		case goat:
