@@ -922,6 +922,7 @@ function initializeDinner(name)
 // price function returns = kg*dr
 function price(name) 
 {
+//	window.alert("TEST-ing price() function");
 	switch(name)
 	{
 		case pig:

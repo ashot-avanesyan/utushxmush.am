@@ -12,6 +12,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 
 function subTotal(name)
 {
+//			window.alert("TEST for pig"); 
 		// total price for barbecue 
 	switch (name) 
     {
@@ -498,45 +499,42 @@ function subTotal(name)
 
 				document.getElementById("drJuice").disabled = false;
 				document.getElementById("amountJuice").disabled = false;
+			} 
+			break;
+		   
+		case  fifthSpice: 		
+            if (document.getElementById("fizzy").checked == false)
+            {
+               document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy;
+			   document.getElementById("drFizzy").disabled = true;
+               document.getElementById("amountFizzy").disabled = true;
+               document.getElementById("drFizzy").value = "";
+               document.getElementById("amountFizzy").value = "";
 
-e tent:
-                        if (document.getElementById("tent").checked == false)
-                        {
-                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakTent * olderDrTent;
+               olderAmountFizzy = 0;
+               olderDrFizzy = 0;
 
-                                document.getElementById("drTent").disabled = true;
-                                document.getElementById("qanakTent").disabled = true;
-                                document.getElementById("drTent").value = "";
-                                document.getElementById("qanakTent").value = "";
+               priceDrink(fifthSpice);
+            }
+            else
+            {
 
-                                olderQanakTent = 0;
-                                olderDrTent = 0;
+               document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy;
+               document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) +
+                              Number(document.getElementById("amountFizzy").value) * Number(document.getElementById("drFizzy").value);
 
-                price(tent);
-                        }
-                        else
-                        {
-
-                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakTent * olderDrTent;
-                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +
-                                                                                                Number(document.getElementById("qanakTent").value) * Number(document.getElementById("drTent").value);
-
-                                olderQanakTent = Number(document.getElementById("qanakTent").value);
-                olderDrTent = Number(document.getElementById("drTent").value);
-
-
-                                document.getElementById("drTent").disabled = false;
-                                document.getElementById("qanakTent").disabled = false;
-
-                        }
-                break;
+                olderAmountFizzy = Number(document.getElementById("amountFizzy").value);
+                olderDrFizzy = Number(document.getElementById("drFizzy").value);
 
 
-				olderAmountFizzy = 0; 
-				olderDrFizzy = 0;
+                document.getElementById("drFizzy").disabled = false;
+                document.getElementById("amountFizzy").disabled = false;
+
+             }
+             break;
                
-                priceDrink(fifthSpice);
-			}
+           
+	/*		}
 			else 
 			{
 				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy;
@@ -551,7 +549,7 @@ e tent:
 				document.getElementById("amountFizzy").disabled = false;
 
 			}	
-		break;
+		break; */
 	case sixthSpice: 
 			if (document.getElementById("water").checked == false)
 			{
@@ -1084,7 +1082,7 @@ e tent:
                                 olderHatButtermilk = 0;
                                 olderDrButtermilk = 0;
 
-                price(buttermilk);
+               price(buttermilk);
                         }
                         else
                         {
@@ -1522,7 +1520,8 @@ e tent:
 
 // total!!!
 function total()
-{
+ {
+//	window.alert("TEST-ing total() function");
 	document.getElementById("total").value =  Number(document.getElementById("totalAccessories").value)	+ Number(document.getElementById("totalOvernight").value) + Number(document.getElementById("totalDesert").value) + Number(document.getElementById("totalVegetable").value) +  Number(document.getElementById("totalDrink").value) + Number(document.getElementById("totalBarbecue").value);
 
 	 document.getElementById("totalForOne").value = Math.ceil((Number(document.getElementById("total").value) / (Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))) / 10)*10 ;
