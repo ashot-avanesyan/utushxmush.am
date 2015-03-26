@@ -73,6 +73,7 @@ input.mount {
 }
 .inputParticipants {
 	float: right;
+	margin-left: 6%;
 /*	size: 20%;*/
 }
 table#barbecue
@@ -172,26 +173,22 @@ table#margin_desert {
 }*/
 div#d_2_2_tabs {
 	display: none;
-	margin-left: 6%;
-	margin-top: 19%;
-	margin-right: 2%;
+	padding: 25% 0% 0% 0%;
+	margin-left: 5%;
 }
 div#d_2_3_tabs {
 	display: none;
-	margin-left: 6%;
-	margin-top: 19%;
-	margin-right: 2%;
+	padding: 25% 0% 0% 0%;
+	margin-left: 5%;
 }
 div#d_2_4_tabs {
 	display: none;
-	margin-left: 6%;
-	margin-top: 19%;
-	margin-right: 2%;
+	padding: 18% 0% 0% 0%;
+	margin-left: -2%;
 }
 div#d_2_1_tabs {
-	margin-left: 6%;
-	margin-top: 19%;
-	margin-right: 2%;
+	padding: 18% 0% 0% 0%;
+	margin-left: 8%;
 }
 div#d_2_1 {
 	margin: center;
@@ -401,9 +398,5 @@ button#colorDesert {
 	background-color: #90F17A;
 }
 table#transport {
-	margin-left: 24%;
-	margin-top: 25%;
-}
-input.margin {
-	margin-left: 34%;
+	margin: 5% 17% 30% 17%;
 }
