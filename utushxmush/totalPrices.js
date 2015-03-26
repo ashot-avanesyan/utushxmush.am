@@ -15,7 +15,8 @@ function subTotal(name)
 		// total price for barbecue 
 	switch (name) 
     {
-		case pig: 
+		case pig:
+			window.alert("TEST for pig"); 
 			if (document.getElementById("pig").checked == false)
 			{
                 document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPig * olderDrPig; 
