@@ -46,20 +46,19 @@
 			<table id= "transport">
 			<tr>
         		<td>Մեկնման վայր</td>
-           		<td><input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"> <br> <br></td>
+           		<td><input  class ="margin" size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"> <br> <br></td>
 			</tr>
 			<tr>
         		<td>Ժամանման վայր</td>
-           		<td><input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"> <br> <br></td>
+           		<td><input  class ="margin"size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"> <br> <br></td>
 			</tr>
 			<tr>
           	<td>Հեռավորությունը</td>
-				<td></td>
-           	<td><input  size="12"  type="text" id = "distance" name="fname" class = "inputParticipants" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();"><br><br> </td>
+           	<td><input class ="margin" size="12"  type="text" id = "distance" name="fname" class = "inputParticipants" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();"><br><br> </td>
            	</tr>
 				<tr>
 					<td>Տրանսպորտի ծախսը</td>
-					<td id="TransportCostsTd"><input size="4" id = "cost" type="text" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();">դր/կմ</td>
+					<td id="TransportCostsTd"><input class ="margin" size="2" id = "cost" type="text" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();">կմ/դր</td>
 					<td><input size="4" id = "totalCost" type="text" readonly>դր</td>
 				</tr>
 			</table>
@@ -411,7 +410,7 @@
 			</div>
 		<div id = "d3">
            <ul id ="overnight" style = "text-align:center">
-              <li><button onclick="hide3 (), blur ()" style = "margin: 25px 50% 60px 33%; padding-top: 10px;" >Գիշերակաց<br><input type = "text" class="InputButton" size="6" placeholder= "Ընդամենը" readonly id = "totalOvernight" onchange = "total();total();"></button></li>
+              <li><button onclick="hide3 (), blur ()" style = "margin: 25px 50% 60px 33%; padding-top: 10px; border-color: rgb(144, 225, 122); background-color: rgb(144,225,122);" >Գիշերակաց<br><input type = "text" style = "border-color: rgb(144, 225, 122); background-color: rgb(144,225,122);" class="InputButton" size="6" placeholder= "Ընդամենը" readonly id = "totalOvernight" onchange = "total();"></button></li>
                </ul>
 			<table id= "margin_overnight">
         		<tr>
@@ -442,7 +441,7 @@
 		</div>
 		<div id = "d4">
         	      <ul id ="accessories" style = "text-align:center">
-                	<li><button onclick="hide4 (), blur ()" style = "margin: 25px 50% 60px 33%; padding-top: 10px;">Պարագաներ<br><input type="text" class="InputButton" size="6"placeholder="Ընդամենը" readonly id ="totalAccessories" onchange = "total();subTotal();"></button></li>
+                	<li><button onclick="hide4 (), blur ()" style = "margin: 25px 50% 60px 33%; padding-top: 10px; border-color: rgb(144, 225, 122); background-color: rgb(144,225,122);">Պարագաներ<br><input type="text" class="InputButton" size="6"placeholder="Ընդամենը" readonly id ="totalAccessories" onchange = "total();subTotal();" style = "border-color: rgb(144, 225, 122); background-color: rgb(144,225,122);"></button></li>
 			</ul>
         		<table id= "margin_accessories">
 			<tr>
