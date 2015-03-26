@@ -398,5 +398,9 @@ button#colorDesert {
 	background-color: #90F17A;
 }
 table#transport {
-	margin: 5% 17% 30% 17%;
+	margin-top: 25%;	
+	margin-left: 24%;
+}
+input.margin {
+	margin-left: 29%;
 }
