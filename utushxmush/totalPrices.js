@@ -1527,3 +1527,8 @@ function total()
 	 document.getElementById("totalForOne").value = Math.ceil((Number(document.getElementById("total").value) / (Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))) / 10)*10 ;
 }
 
+// totalTransport
+function totalTransport() 
+{
+	document.getElementById("totalCost").value = Number(document.getElementById("distance").value) * Number(document.getElementById("cost").value);
+}
