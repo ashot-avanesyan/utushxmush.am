@@ -17,7 +17,7 @@ function subTotal(name)
 	switch (name) 
     {
 		case pig:
-			window.alert("TEST for pig"); 
+//			window.alert("TEST for pig"); 
 			if (document.getElementById("pig").checked == false)
 			{
                 document.getElementById("totalBarbecue").value = Number(document.getElementById("totalBarbecue").value) - olderKgPig * olderDrPig; 
