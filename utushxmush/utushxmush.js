@@ -1867,6 +1867,6 @@ function numbersOnly( myField, e )
 // initialize transport 
 function initializeTransport() 
 {
-	window.alert("testing initializeTransport function");
+//	window.alert("testing initializeTransport function");
 	document.getElementById("cost").value = 200; 
 }
