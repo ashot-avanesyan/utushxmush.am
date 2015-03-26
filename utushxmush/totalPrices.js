@@ -3,7 +3,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgSausage = 0, olderDrSausage = 0, olderKgFrankfurter = 0, olderDrFrankfurter = 0,  olderKgAnvil = 0, olderDrAnvil = 0, olderKgInternal_organs = 0, olderDrInternal_organs = 0,
 	olderKgEtc = 0, olderDrEtc = 0, olderAmountSpice = 0, olderDrSpice = 0, olderAmountWine = 0, olderDrWine = 0, olderAmountBeer = 0, olderDrBeer = 0,
 	olderAmountJuice = 0, olderDrJuice = 0, olderAmountWater = 0, olderDrWater = 0, olderKgCucumbers = 0, olderDrCucumbers = 0, olderKgTomato = 0, olderDrTomato = 0, 
-	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderDrOnion = 0, olderPunjGreen = 0, olderDrGreen = 0, olderKgPotatoes = 0, olderDrPotatoes = 0, olderKgPepper = 0, olderDrPepper = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
+	olderKgEggplant = 0, olderDrEggplant = 0, olderKgOnion = 0, olderOnion = 0,  olderPunjGreen = 0, olderDrGreen = 0, olderKgPotatoes = 0, olderDrPotatoes = 0, olderKgPepper = 0, olderDrPepper = 0, olderAmountFizzy = 0, olderDrFizzy = 0,
 	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderTupTea = 0, olderDrTea = 0,
 	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0,  olderHatButtermilk = 0, olderDrButtermilk = 0,  olderHatEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
@@ -675,7 +675,38 @@ function subTotal(name)
 
 			}	
 		break;
-	case onion: 
+		case onion:
+                        if (document.getElementById("onion").checked == false)
+                        {
+                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgOnion * olderDrOnion;
+                                document.getElementById("drOnion").disabled = true;
+                                document.getElementById("kgOnion").disabled = true;
+                                document.getElementById("kgOnion").value = "";
+                                document.getElementById("drOnion").value = "";
+
+                                olderKgOnion = 0;
+                                olderDrOnion = 0;
+
+                price(Onion);
+                        }
+                        else
+                        {
+
+                                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgOnion * olderDrOnion;
+                                document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) +
+                                                                                                Number(document.getElementById("kgOnion").value) * Number(document.getElementById("drOnion").value);
+
+                                olderKgOnion = Number(document.getElementById("kgOnion").value);
+                                olderDrOnion = Number(document.getElementById("drOnion").value);
+
+
+                                document.getElementById("drOnion").disabled = false;
+                                document.getElementById("kgOnion").disabled = false;
+
+                        }
+                break;
+
+	/*case onion: 
 			if (document.getElementById("onion").checked == false)
 			{
              document.getElementById("totalVegetable").value = Number(document.getElementById("totalVegetable").value) - olderKgEggplant * olderDrOnion
@@ -707,7 +738,7 @@ function subTotal(name)
 				document.getElementById("kgOnion").disabled = false;
 
 			}	
-		break;
+		break;*/
 	case greens: 
 			if (document.getElementById("greens").checked == false)
 			{
