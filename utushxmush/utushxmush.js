@@ -922,6 +922,7 @@ function initializeDinner(name)
 // price function returns = kg*dr
 function price(name) 
 {
+//	window.alert("TEST-ing price() function");
 	switch(name)
 	{
 		case pig:
@@ -1036,7 +1037,7 @@ function price(name)
 		case etcDrink:
                         document.getElementById("etcDrink_price").value = document.getElementById("hatEtcDrink").value * document.getElementById("drEtcDrink").value;
                         break;
-		case etcDesert:
+	/*	case etcDesert:
                         document.getElementById("etcDesert_price").value = document.getElementById("kgEtcDesert").value * document.getElementById("drEtcDesert").value;
 				document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
 		break;
@@ -1147,7 +1148,7 @@ function price(name)
                         break;
 		case etcDesert:
                         document.getElementById("etcDesert_price").value = "= " + document.getElementById("kgEtcDesert").value * document.getElementById("drEtcDesert").value;
-                        break;
+                        break;*/
 	   	default: 
 		window.alert("This is default value.");
 		break;
@@ -1731,31 +1732,31 @@ function priceDrink(name)
 							break;
 				case breadSelector:
                         	document.getElementById("bread_price").value = document.getElementById("hatBread").value * document.getElementById("drBread").value;
-                    document.getElementById("spice_price").value = "= " + document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
+                    document.getElementById("spice_price").value =  document.getElementById("amountSpice").value * document.getElementById("drSpice").value;
 				    break;
 				case secondSpice: 
-                        	 document.getElementById("wine_price").value = "= " + document.getElementById("amountWine").value * document.getElementById("drWine").value;
+                        	 document.getElementById("wine_price").value = document.getElementById("amountWine").value * document.getElementById("drWine").value;
 							break;
 				case thirdSpice: 
-                        	 document.getElementById("beer_price").value = "= " + document.getElementById("amountBeer").value * document.getElementById("drBeer").value;
+                        	 document.getElementById("beer_price").value = document.getElementById("amountBeer").value * document.getElementById("drBeer").value;
 							break;
 				case fourthSpice: 
-                        	 document.getElementById("juice_price").value = "= " + document.getElementById("amountJuice").value * document.getElementById("drJuice").value;
+                        	 document.getElementById("juice_price").value = document.getElementById("amountJuice").value * document.getElementById("drJuice").value;
 							break;
 				case fifthSpice:
-                        	document.getElementById("fizzy_price").value = "= " + document.getElementById("amountFizzy").value * document.getElementById("drFizzy").value;
+                        	document.getElementById("fizzy_price").value = document.getElementById("amountFizzy").value * document.getElementById("drFizzy").value;
 							break;
 				case sixthSpice:
-                        	document.getElementById("water_price").value = "= " + document.getElementById("amountWater").value * document.getElementById("drWater").value;
+                        	document.getElementById("water_price").value = document.getElementById("amountWater").value * document.getElementById("drWater").value;
 							break;
 				case fruitSelector:
-                        	document.getElementById("fruit_price").value = "= " + document.getElementById("kgFruit").value * document.getElementById("drFruit").value;
+                        	document.getElementById("fruit_price").value = document.getElementById("kgFruit").value * document.getElementById("drFruit").value;
 							break;
 				case dessertChips:
-                        	document.getElementById("desserts_price").value = "= " + document.getElementById("kgDesserts").value * document.getElementById("drDesserts").value;
+                        	document.getElementById("desserts_price").value = document.getElementById("kgDesserts").value * document.getElementById("drDesserts").value;
 							break;
 				case breadSelector:
-                        	document.getElementById("bread_price").value = "= " + document.getElementById("hatBread").value * document.getElementById("drBread").value;
+                        	document.getElementById("bread_price").value = document.getElementById("hatBread").value * document.getElementById("drBread").value;
 							break;
 
 		}
