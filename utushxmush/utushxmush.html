@@ -155,7 +155,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<td></td>
         		<td>Մեկնման վայր</td>
 				<td></td>
-           		<td><input  size="12" type="text" name="fname"id="pac-input" class="controls" class = "inputParticipants"> <br> <br></td>
+           		<td><input  size="12" type="text" name="fname" id="pac-input" class="controls" class = "inputParticipants"> <br> <br></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -167,13 +167,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<td></td>
           	<td>Հեռավորությունը</td>
 				<td></td>
-           	<td><input  size="12"  type="text" name="fname" class = "inputParticipants"><br><br> </td>
+           	<td><input  size="12"  type="text" id = "distance" name="fname" class = "inputParticipants" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();"><br><br> </td>
            	</tr>
 				<tr>
 					<td><input type="checkbox"></td>
 					<td>Տրանսպորտի ծախսը</td>
-					<td id=TransportCostsTd><input size="4" type="text">դր/կմ</td>
-					<td><input size="4" type="text">դր</td>
+					<td id="TransportCostsTd"><input size="4" id = "cost" type="text" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();">դր/կմ</td>
+					<td><input size="4" id = "totalCost" type="text" readonly>դր</td>
 				</tr>
 			</table>
 	</div>
