@@ -498,23 +498,6 @@ function initializeDinner(name)
             		document.getElementById("drEggplant").disabled = true;
             		document.getElementById("kgEggplant").disabled = true;
             		}
-           /*break;
-       	    case onion:
-           	 	if (document.getElementById("onion").checked == true)
-            		{
-            		document.getElementById("kgOnion").value = 1; 
-//            		document.getElementById("kgOnion").value = 1; 
-            		document.getElementById("drOnion").value = 350;
-            		document.getElementById("drOnion").disabled = false;
-            		document.getElementById("kgOnion").disabled = false;
-            		}
-            		else
-            		{
-            		document.getElementById("kgOnion").value = "";
-            		document.getElementById("drOnion").value = "";
-            		document.getElementById("drOnion").disabled = true;
-            		document.getElementById("kgOnion").disabled = true;
-            		}*/
 	     break;
              case onion:
                         if (document.getElementById("onion").checked == true)
@@ -978,9 +961,6 @@ function price(name)
         	case eggplant:
             		document.getElementById("eggplant_price").value = document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
             		break;
-        	/*case onion:
-            		document.getElementById("onion_price").value = document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
-            		break;*/
 		case onion:
                         document.getElementById("onion_price").value = document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
                         break;
