@@ -1863,3 +1863,10 @@ function numbersOnly( myField, e )
 
 	return false; 
 }
+
+// initialize transport 
+function initializeTransport() 
+{
+//	window.alert("testing initializeTransport function");
+	document.getElementById("cost").value = 200; 
+}
