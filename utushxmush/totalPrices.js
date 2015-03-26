@@ -687,7 +687,7 @@ function subTotal(name)
                                 olderKgOnion = 0;
                                 olderDrOnion = 0;
 
-                price(Onion);
+                price(onion);
                         }
                         else
                         {
@@ -1309,7 +1309,7 @@ function subTotal(name)
 
                                 document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakArbor * olderDrArbor;
                                 document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +
-                                                                                                Number(document.getElementById("qanakArbor").value) * Number(document.getElementById("drarbor").value);
+                                                                                                Number(document.getElementById("qanakArbor").value) * Number(document.getElementById("drArbor").value);
 
                                 olderQanakArbor = Number(document.getElementById("qanakArbor").value);
                                 olderDrArbor = Number(document.getElementById("drArbor").value);
