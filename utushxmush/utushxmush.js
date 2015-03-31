@@ -120,20 +120,20 @@ function hide20_1() {
                 document.getElementById("d_2_4_tabs").style.display = "none";
                 document.getElementById("d_2_1_tabs").style.display = "block";
 //button background color
-				document.getElementById("colorBarbecue").style.backgroundColor = "#90E17A";
-				document.getElementById("colorDesert").style.backgroundColor = "#FFFFFF";
-				document.getElementById("colorDrink").style.backgroundColor = "#FFFFFF";
-				document.getElementById("colorVegetable").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorBarbecue").style.backgroundColor = "#90E17A";
+			document.getElementById("colorDesert").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorVegetable").style.backgroundColor = "#FFFFFF";
 //button border color
-				document.getElementById("colorBarbecue").style.borderColor = "#90E17A";
-				document.getElementById("colorDesert").style.borderColor = "#FFFFFF";
-				document.getElementById("colorDrink").style.borderColor = "#FFFFFF";
-				document.getElementById("colorVegetable").style.borderColor = "#FFFFFF";
+			document.getElementById("colorBarbecue").style.borderColor = "#90E17A";
+			document.getElementById("colorDesert").style.borderColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.borderColor = "#FFFFFF";
+			document.getElementById("colorVegetable").style.borderColor = "#FFFFFF";
 //input background color
-				document.getElementById("totalBarbecue").style.backgroundColor = "#90E17A";
-				document.getElementById("totalDrink").style.backgroundColor = "#FFFFFF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#FFFFFF";
-				document.getElementById("totalDesert").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalBarbecue").style.backgroundColor = "#90E17A";
+			document.getElementById("totalDrink").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalVegetable").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalDesert").style.backgroundColor = "#FFFFFF";
 }
 function hide20_2() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
@@ -141,21 +141,20 @@ function hide20_2() {
                 document.getElementById("d_2_4_tabs").style.display = "none";
                 document.getElementById("d_2_2_tabs").style.display = "block";
 //button background color
-				document.getElementById("colorDrink").style.backgroundColor = "#90E17A";
-				document.getElementById("colorDesert").style.backgroundColor = "#FFFFFF";
-				document.getElementById("colorBarbecue").style.backgroundColor ="#FFFFFF";
-				document.getElementById("colorVegetable").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.backgroundColor = "#90E17A";
+			document.getElementById("colorDesert").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorBarbecue").style.backgroundColor ="#FFFFFF";
+			document.getElementById("colorVegetable").style.backgroundColor = "#FFFFFF";
 //button border color
-				document.getElementById("colorDrink").style.borderColor = "#90E17A";
-				document.getElementById("colorDesert").style.borderColor = "#FFFFFF";
-				document.getElementById("colorBarbecue").style.borderColor = "#FFFFFF";
-				document.getElementById("colorVegetable").style.borderColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.borderColor = "#90E17A";
+			document.getElementById("colorDesert").style.borderColor = "#FFFFFF";
+			document.getElementById("colorBarbecue").style.borderColor = "#FFFFFF";
+			document.getElementById("colorVegetable").style.borderColor = "#FFFFFF";
 //input background color
-				document.getElementById("totalDrink").style.backgroundColor = "#90E17A";
-				document.getElementById("totalDesert").style.backgroundColor = "#FFFFFF";
-				document.getElementById("totalBarbecue").style.backgroundColor ="#FFFFFF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#FFFFFF";
-	
+			document.getElementById("totalDrink").style.backgroundColor = "#90E17A";
+			document.getElementById("totalDesert").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalBarbecue").style.backgroundColor ="#FFFFFF";
+			document.getElementById("totalVegetable").style.backgroundColor = "#FFFFFF";
 }
 function hide20_3() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
@@ -163,21 +162,20 @@ function hide20_3() {
                 document.getElementById("d_2_4_tabs").style.display = "none";
                 document.getElementById("d_2_3_tabs").style.display = "block";
 //button background color
-				document.getElementById("colorVegetable").style.backgroundColor = "#90E17A";
-				document.getElementById("colorDesert").style.backgroundColor = "#FFFFFF";
-				document.getElementById("colorBarbecue").style.backgroundColor = "#FFFFFF";
-				document.getElementById("colorDrink").style.backgroundColor = "#FFFFFF";
-//button border color
-				document.getElementById("colorVegetable").style.borderColor = "#90E17A";
-				document.getElementById("colorDesert").style.borderColor = "#FFFFFF";
-				document.getElementById("colorBarbecue").style.borderColor = "#FFFFFF";
-				document.getElementById("colorDrink").style.borderColor = "#FFFFFF";
+			document.getElementById("colorVegetable").style.backgroundColor = "#90E17A";
+			document.getElementById("colorDesert").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorBarbecue").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.backgroundColor = "#FFFFFF";
+//button  border color
+			document.getElementById("colorVegetable").style.borderColor = "#90E17A";
+			document.getElementById("colorDesert").style.borderColor = "#FFFFFF";
+			document.getElementById("colorBarbecue").style.borderColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.borderColor = "#FFFFFF";
 //input background color
-				document.getElementById("totalDrink").style.backgroundColor = "#FFFFFF";
-				document.getElementById("totalDesert").style.backgroundColor = "#FFFFFF";
-				document.getElementById("totalBarbecue").style.backgroundColor ="#FFFFFF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#90E17A";
-
+			document.getElementById("totalDrink").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalDesert").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalBarbecue").style.backgroundColor ="#FFFFFF";
+			document.getElementById("totalVegetable").style.backgroundColor = "#90E17A";
 }
 function hide20_4() {
                 document.getElementById("d_2_1_tabs").style.display = "none";
@@ -185,25 +183,21 @@ function hide20_4() {
                 document.getElementById("d_2_3_tabs").style.display = "none";
                 document.getElementById("d_2_4_tabs").style.display = "block";
 //button background color
-				document.getElementById("colorDesert").style.backgroundColor = "#90E17A";
-				document.getElementById("colorBarbecue").style.backgroundColor = "#FFFFFF";
-				document.getElementById("colorDrink").style.backgroundColor = "#FFFFFF";
-				document.getElementById("colorVegetable").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorDesert").style.backgroundColor = "#90E17A";
+			document.getElementById("colorBarbecue").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.backgroundColor = "#FFFFFF";
+			document.getElementById("colorVegetable").style.backgroundColor = "#FFFFFF";
 //button border color
-				document.getElementById("colorDesert").style.borderColor = "#90E17A";
-				document.getElementById("colorVegetable").style.borderColor = "#FFFFFF";
-				document.getElementById("colorBarbecue").style.borderColor = "#FFFFFF";
-				document.getElementById("colorDrink").style.borderColor = "#FFFFFF";
+			document.getElementById("colorDesert").style.borderColor = "#90E17A";
+			document.getElementById("colorVegetable").style.borderColor = "#FFFFFF";
+			document.getElementById("colorBarbecue").style.borderColor = "#FFFFFF";
+			document.getElementById("colorDrink").style.borderColor = "#FFFFFF";
 //input background color
-				document.getElementById("totalDrink").style.backgroundColor = "#FFFFFF";
-				document.getElementById("totalDesert").style.backgroundColor = "#90E17A";
-				document.getElementById("totalBarbecue").style.backgroundColor ="#FFFFFF";
-				document.getElementById("totalVegetable").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalDrink").style.backgroundColor = "#FFFFFF";
+			document.getElementById("totalDesert").style.backgroundColor = "#90E17A";
+			document.getElementById("totalBarbecue").style.backgroundColor ="#FFFFFF";
+			document.getElementById("totalVegetable").style.backgroundColor = "#FFFFFF";
 }
-
-                
-             
-
 
 // Armine Calculator
 
@@ -504,23 +498,24 @@ function initializeDinner(name)
             		document.getElementById("drEggplant").disabled = true;
             		document.getElementById("kgEggplant").disabled = true;
             		}
-            break;
-       	    case onion:
-           	 	if (document.getElementById("onion").checked == true)
-            		{
-            		document.getElementById("kgOnion").value = 1; 
-//            		document.getElementById("kgOnion").value = 1; 
-            		document.getElementById("drOnion").value = 350;
-            		document.getElementById("drOnion").disabled = false;
-            		document.getElementById("kgOnion").disabled = false;
-            		}
-            		else
-            		{
-            		document.getElementById("kgOnion").value = "";
-            		document.getElementById("drOnion").value = "";
-            		document.getElementById("drOnion").disabled = true;
-            		document.getElementById("kgOnion").disabled = true;
-            		}
+	     break;
+             case onion:
+                        if (document.getElementById("onion").checked == true)
+                        {
+                                document.getElementById("kgOnion").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+//                      document.getElementById("kgEggplant").value = 1;
+                        document.getElementById("drOnion").value = 350;
+                        document.getElementById("drOnion").disabled = false;
+                        document.getElementById("kgOnion").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("kgOnion").value = "";
+                        document.getElementById("drOnion").value = "";
+                        document.getElementById("drOnion").disabled = true;
+                        document.getElementById("kgOnion").disabled = true;
+                        }
+
             break;
        	    case greens:
             		if (document.getElementById("greens").checked == true)
@@ -966,9 +961,9 @@ function price(name)
         	case eggplant:
             		document.getElementById("eggplant_price").value = document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
             		break;
-        	case onion:
-            		document.getElementById("onion_price").value = document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
-            		break;
+		case onion:
+                        document.getElementById("onion_price").value = document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
+                        break;
         	case greens:
             		document.getElementById("greens_price").value = document.getElementById("punjGreens").value * document.getElementById("drGreens").value;
 			 break;
