@@ -1521,10 +1521,19 @@ function subTotal(name)
 // total!!!
 function total()
  {
-//	window.alert("TEST-ing total() function");
-	document.getElementById("total").value =  Number(document.getElementById("totalAccessories").value)	+ Number(document.getElementById("totalOvernight").value) + Number(document.getElementById("totalDesert").value) + Number(document.getElementById("totalVegetable").value) +  Number(document.getElementById("totalDrink").value) + Number(document.getElementById("totalBarbecue").value);
 
-	 document.getElementById("totalForOne").value = Math.ceil((Number(document.getElementById("total").value) / (Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))) / 10)*10 ;
+//	window.alert("hello");
+/*	window.alert(Number(document.getElementById("participantsInput2").value));   
+	window.alert(document.getElementById("participantsInput3").value);   
+	window.alert(document.getElementById("participantsInput4").value);   */
+	document.getElementById("total").value =  Number(document.getElementById("totalAccessories").value)	+ Number(document.getElementById("totalOvernight").value) + Number(document.getElementById("totalDesert").value) + Number(document.getElementById("totalVegetable").value) +  Number(document.getElementById("totalDrink").value) + Number(document.getElementById("totalBarbecue").value);
+		
+	if ((document.getElementById("participantsInput2").value + document.getElementById("participantsInput3").value + document.getElementById("participantsInput4").value) != 0 )
+	 	document.getElementById("totalForOne").value = Math.ceil((Number(document.getElementById("total").value) / (Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))) / 10)*10 ;
+	else 
+		document.getElementById("totalForOne").value = 0; 
+//	window.alert("TEST-ing total() function");
+
 }
 
 // totalTransport
