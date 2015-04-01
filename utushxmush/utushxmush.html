@@ -40,7 +40,7 @@
        	<input type = "text" min = "0" class = "inputParticipants" id = "participantsInput1" ><br><br>
 		<br> --> 
        	<label id = "Participants">Տղամարդիկ</label>
-       	<input type = "text"  min = "1" max = "99" class = "inputParticipants" id = "participantsInput2" onblur="total()" onkeypress = "document.getElementById('toolTipID').style.display = 'none'; return numbersOnly(this, event);" size = "10%" ><br><br>
+       	<input type = "text" min = "1" max = "99" class = "inputParticipants" id = "participantsInput2" onblur="total()" onkeypress = "document.getElementById('toolTipID').style.display = 'none'; return numbersOnly(this, event);" size = "10%" ><br><br>
 
 	<!--	<input type = "submit">Submit</input> --> 
 		<br>
@@ -73,11 +73,11 @@
 			</table>
 	</div>
  	<div id = "d2">
-		<ul id = "chashacank" style="text-align:center" >
-        		<li><button id = "colorBarbecue" class = "acthiv" onclick="hide20_1(), blur()" >Մսամթերք<br><input  class = "acthiv" type = "text" class="InputButton"size="10%" placeholder="Ընդամենը"readonly id ="totalBarbecue"></button></li>
-	 		<li><button id="colorDrink"class = "inacthiv"  onclick="hide20_2(), blur()">Խմիչք<br><input class = "inacthiv"  type = "text" class="InputButton"size="10%" placeholder="Ընդամենը" readonly id = "totalDrink"></button></li>
-           		<li><button id="colorVegetable"class = "inacthiv"  onclick="hide20_3(), blur()">Բանջարեղեն<br><input  class = "inacthiv" type = "text" class="InputButton" size="10%" placeholder="Ընդամենը" readonly id = "totalVegetable"></button></li>
-            		<li><button id="colorDesert"class = "inacthiv"  onclick="hide20_4(), blur()">Դեսերտ<br><input class = "inacthiv"ype = "text" class="InputButton" size="10%" placeholder="Ընդամենը"  readonly id = "totalDesert"></button></li>
+			<ul id = "chashacank" style="text-align:center" >
+        		<li><button id = "colorBarbecue" class = "acthiv" onclick="hide20_1(), blur()" >Մսամթերք<br><input  class = "acthiv" type = "text" class="InputButton"size="11%" placeholder="Ընդամենը"readonly id ="totalBarbecue"></button></li>
+	 		<li><button id="colorDrink"class = "inacthiv"  onclick="hide20_2(), blur()">Խմիչք<br><input class = "inacthiv"  type = "text" class="InputButton"size="11%" placeholder="Ընդամենը" readonly id = "totalDrink"></button></li>
+           		<li><button id="colorVegetable"class = "inacthiv"  onclick="hide20_3(), blur()">Բանջարեղեն<br><input  class = "inacthiv" type = "text" class="InputButton" size= "8%" placeholder="Ընդամենը" readonly id = "totalVegetable"></button></li>
+            		<li><button id="colorDesert"class = "inacthiv"  onclick="hide20_4(), blur()">Դեսերտ<br><input class = "inacthiv"ype = "text" class="InputButton" size="11%" placeholder="Ընդամենը"  readonly id = "totalDesert"></button></li>
     		</ul>
 		<div id="d_2_1_tabs">
         		<table class= "margin_barbecue">
@@ -410,7 +410,7 @@
                         </tr>
 			</table>
 			</div>
-			</div>
+		</div>
 		<div id = "d3">
            <ul id ="overnight" style = "text-align:center">
               <li><button onclick="hide3 (), blur ()" style = "margin: 25px 50% 60px 33%; padding-top: 10px; border-color: rgb(144, 225, 122); background-color: rgb(144,225,122);" >Գիշերակաց<br><input type = "text" style = "border-color: rgb(144, 225, 122); background-color: rgb(144,225,122);" class="InputButton" size="6" placeholder= "Ընդամենը" readonly id = "totalOvernight" onchange = "total();"></button></li>
@@ -505,12 +505,12 @@
 			<table>
 				<tr>
 					<td><b> Ընդհանուր ծախսը <b id="GlobalGenral"> 
-						<input type = "text" size = "8%" id = "total" readonly class = "totalNoneBorder"> </b> </td>
+						<input type = "text" size = "14%" id = "total" readonly class = "totalNoneBorder"> </b> </td>
 				</tr>					
 				<br>
 				<tr>
 					<td><b> 1 հոգու ծախսը</b>  <b id="1menGenral">
-						<input type = "text" size = "8%" id = "totalForOne" readonly class = "totalNoneBorder"></b></td>
+						<input type = "text" size = "14%" id = "totalForOne" readonly class = "totalNoneBorder"></b></td>
 				</tr>
 			</table>
 			<br>
