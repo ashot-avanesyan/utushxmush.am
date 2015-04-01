@@ -74,10 +74,10 @@
 	</div>
  	<div id = "d2">
 		<ul id = "chashacank" style="text-align:center" >
-        		<li><button id = "colorBarbecue" class = "acthiv" onclick="hide20_1(), blur()" >Մսամթերք<br><input  class = "acthiv" type = "text" class="InputButton"size="6%" placeholder="Ընդամենը"readonly id ="totalBarbecue"></button></li>
-	 		<li><button id="colorDrink"class = "inacthiv"  onclick="hide20_2(), blur()">Խմիչք<br><input class = "inacthiv"  type = "text" class="InputButton"size="6%" placeholder="Ընդամենը" readonly id = "totalDrink"></button></li>
-           		<li><button id="colorVegetable"class = "inacthiv"  onclick="hide20_3(), blur()">Բանջարեղեն<br><input  class = "inacthiv" type = "text" class="InputButton" size="6%" placeholder="Ընդամենը" readonly id = "totalVegetable"></button></li>
-            		<li><button id="colorDesert"class = "inacthiv"  onclick="hide20_4(), blur()">Դեսերտ<br><input class = "inacthiv"ype = "text" class="InputButton" size="6%" placeholder="Ընդամենը"  readonly id = "totalDesert"></button></li>
+        		<li><button id = "colorBarbecue" class = "acthiv" onclick="hide20_1(), blur()" >Մսամթերք<br><input  class = "acthiv" type = "text" class="InputButton"size="10%" placeholder="Ընդամենը"readonly id ="totalBarbecue"></button></li>
+	 		<li><button id="colorDrink"class = "inacthiv"  onclick="hide20_2(), blur()">Խմիչք<br><input class = "inacthiv"  type = "text" class="InputButton"size="10%" placeholder="Ընդամենը" readonly id = "totalDrink"></button></li>
+           		<li><button id="colorVegetable"class = "inacthiv"  onclick="hide20_3(), blur()">Բանջարեղեն<br><input  class = "inacthiv" type = "text" class="InputButton" size="10%" placeholder="Ընդամենը" readonly id = "totalVegetable"></button></li>
+            		<li><button id="colorDesert"class = "inacthiv"  onclick="hide20_4(), blur()">Դեսերտ<br><input class = "inacthiv"ype = "text" class="InputButton" size="10%" placeholder="Ընդամենը"  readonly id = "totalDesert"></button></li>
     		</ul>
 		<div id="d_2_1_tabs">
         		<table class= "margin_barbecue">
@@ -360,7 +360,7 @@
    			</tr>
           		<tr>
 				<td><p><input  type="checkbox" name="spice" value="fruit" id = "fruit" onclick = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();">Մրգեր
-                			<select name="character" style = "margin-left:16%;" class = "lengthOfButton1" id = "fruitSelector" onchange = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();"></p>
+                			<select name="character" style = "margin-left:12%;" class = "lengthOfButton1" id = "fruitSelector" onchange = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();"></p>
                     				<option value="Apple">Խնձոր</option>
                        				<option value="Pear">Տանձ</option>
                         			<option value="Banana">Բանան</option>
@@ -375,7 +375,7 @@
           		</tr>
           		<tr>
                 		<td><p><input type="checkbox" name="spice" value="desserts" id = "desserts" onclick = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();">Աղանդեր
-                			<select name="character" style = "margin-left:5%;"  class = "lengthOfButton1" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
+                			<select name="character" style = "margin-left:1%;"  class = "lengthOfButton1" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
 						<option value="Chips">Չիպս</option>
                     				<option value="Sunflower">Արևածաղիկ</option>
                        				<option value="Peanut">Գետնանուշ</option>
@@ -390,7 +390,7 @@
           	</tr>
 		<tr>
                                 <td><p><input  type="checkbox" name="spice" value="bread" id = "bread" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total();">Հաց
-                                       <select name="character" style = "margin-left:22%;"  class = "lengthOfButton1" id = "breadSelector" onchange = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total(); "></p>
+                                       <select name="character" style = "margin-left:19%;"  class = "lengthOfButton1" id = "breadSelector" onchange = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total(); "></p>
                                                 <option value="Lavash">Լավաշ</option>
                                                 <option value="Matnaqash">Մատնաքաշ</option>
                                                 <option value="Romashka">Ռոմաշկա</option>
@@ -403,7 +403,7 @@
                                 <td><p><input type = "text" id = "bread_price" size="1%" class  = "noneBorder" readonly></p></td>
                         </tr>
 			<tr>
-                                <td><p><input type="checkbox" value ="etcDesert" id = "etcDesert" onclick = "initializeDinner(etcDesert); price(etcDesert); subTotal(etcDesert);total();">Այլ<input type = "text" size="7" style = "margin-left:30%"  id = "nameEtcDesert" placeholder="Անուն" size = "8" disabled></p></td>
+                                <td><p><input type="checkbox" value ="etcDesert" id = "etcDesert" onclick = "initializeDinner(etcDesert); price(etcDesert); subTotal(etcDesert);total();">Այլ<input type = "text" size="7" style = "margin-left:30%"  id = "nameEtcDesert" placeholder="Անուն" disabled></p></td>
                                 <td><input class="mass" type="text" id = "kgEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</td>
                                 <td><p><input type = "text" class = "mass" id = "drEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
                                 <td><p><input type = "text" id = "etcDesert_price" size="1%" class  = "noneBorder" readonly> </p></td>
