@@ -27,7 +27,7 @@ div#expenditure {
 }
 input#general {
 	padding: 0% 5% 0% 5%;
-        size = "10"
+        size = "10%";
 }
 input.InputButton {
 	border-style: ridge;
@@ -54,10 +54,6 @@ form.amountParticipants1 {
         margin: auto 30% 2% 15%;
         padding: 10%;
         width: 50%;
-}
-	
-input#general {
-	padding: 28% 2% 15% 1%;
 }
 label#participants {
 	position: absolute;
@@ -234,6 +230,7 @@ div#d {
 /* Armine */
 .noneBorder {
 	border: 0%;
+	width: 300%; 
 }
 
 input.totalNoneBorder {
@@ -241,6 +238,7 @@ input.totalNoneBorder {
 	background-color:#cda373;
 	border-style: solid;
 	border-color:#cda373;
+	width: 20%;
 }
 /*table#TransportCosts,tr,td {
 	margin: 0% 0% 0% 1%;
@@ -404,3 +402,5 @@ table#transport {
 input.margin {
 	margin-left: 29%;
 }
+
+
