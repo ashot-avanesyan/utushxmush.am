@@ -1538,3 +1538,4 @@ function totalTransport()
 {
 	document.getElementById("totalCost").value = Number(document.getElementById("distance").value) * Number(document.getElementById("cost").value);
 }
+//aaa
