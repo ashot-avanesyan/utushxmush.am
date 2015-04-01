@@ -234,6 +234,7 @@ div#d {
 /* Armine */
 .noneBorder {
 	border: 0%;
+	width: 300%; 
 }
 
 input.totalNoneBorder {
@@ -241,6 +242,7 @@ input.totalNoneBorder {
 	background-color:#cda373;
 	border-style: solid;
 	border-color:#cda373;
+	width: 20%;
 }
 /*table#TransportCosts,tr,td {
 	margin: 0% 0% 0% 1%;
@@ -404,3 +406,5 @@ table#transport {
 input.margin {
 	margin-left: 29%;
 }
+
+
