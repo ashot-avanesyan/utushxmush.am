@@ -252,7 +252,7 @@
 					<td><p>Այլ<input type = "text" id = "nameEtcDrink" placeholder="Անուն" size = "5" disabled></p></td>
 				</td>
 			
-				<td><input class="mass" type="text" placeholder ="քանակ" min = "0" id = "hatEtcDrink" disabled onblur ="priceDrink(etcDrink);subTotal(etcDrink);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
+				<td><input class="mass" type="text" min = "0" id = "hatEtcDrink" disabled onblur ="priceDrink(etcDrink);subTotal(etcDrink);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
                                 <td><p><input type = "text" class = "mass" id = "drEtcDrink" disabled onblur = "price(etcDrink); subTotal(etcDrink);total();" onkeyPress ="return numbersOnly(this, event);">դր</p></td>
                                 <td><p><input type = "text" id = "etcDrink_price" size="1%" class  = "noneBorder" readonly> </p></td>
                         </tr>			
@@ -426,11 +426,11 @@
                                 <td><p><input type = "text" class = "noneBorder" id = "arbor_price" size= "1%" readonly> </p></td>
                         </tr>
 			<tr>
-                		<td><p><input type="checkbox" value ="etcOvernight"id = "etcOvernight" onclick = "initializeDinner(etcOvernight);subTotal(etcOvernight);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameOvernight" size= "5" disabled></p></td>
-                		<td><input class = "mass" type = "text" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();" onkeyPress ="return numbersOnly(this, event);">հատ</td>
-                		<td><input type = "text"  class = "mass"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
-                		<td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" size="1%" readonly> </p></td>
-            		</tr> 
+                                <td><p><input type="checkbox" value ="etcOvernight" id = "etcOvernight" onclick = "initializeDinner(etcOvernight);subTotal(etcOvernight);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameOvernight" size= "5" disabled></p></td>
+                                <td><input class = "mass" type = "text" min = "0" id = "qanakEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();" onkeyPress ="return numbersOnly(this, event);">քանակ</td>
+                                <td><input type = "text" class = "mass"  id = "drEtcOvernight" disabled onblur = "price(etcOvernight);subTotal(etcOvernight);total();" onkeyPress ="return numbersOnly(this, event);">դր</td>
+                                <td><p><input type = "text" id = "etcOvernight_price" class = "noneBorder" size = "1%"readonly> </p></td>
+                        </tr> 
 			</table>
 		</div>
 		<div id = "d4">

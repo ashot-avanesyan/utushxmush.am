@@ -7,7 +7,7 @@ var olderKgPig = 0, olderDrPig = 0, olderKgLamb = 0, olderDrLamb = 0, olderKgGoa
 	olderKgSweet = 0, olderDrSweet = 0, olderKgChocolates = 0, olderDrChocolates = 0, olderKgLobe = 0, olderDrLobe = 0, olderTupTea = 0, olderDrTea = 0,
 	olderTupCoffee = 0, olderDrCoffee = 0, olderKgInstant = 0, olderDrInstant = 0, olderKgFruit = 0, olderDrFruit = 0, olderKgChips = 0, olderDrChips = 0, 
 	olderKgBread = 0, olderDrBread = 0,  olderHatButtermilk = 0, olderDrButtermilk = 0,  olderHatEtcDrink = 0, olderDrEtcDrink = 0, olderKgEtcVegetable = 0, olderDrEtcVegetable = 0, 
-	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderQanakEtcOvernight = 0, olderDrEtcOvernight = 0, olderHamarHotel = 0, olderDrHotel = 0,
+	olderKgEtcDesert = 0, olderDrEtcDesert = 0, olderQanakEtcOvernight = 0, olderDrEtcOvernight = 0,  olderHamarHotel = 0, olderDrHotel = 0,
     olderQanakTent = 0, olderDrTent = 0,  olderQanakArbor = 0, olderDrArbor = 0,  olderTupSalt = 0, olderDrSalt = 0,  olderTupGround_pepper = 0, olderDrGround_pepper = 0, olderQanakUtensil = 0, olderDrUtensil = 0, olderQanakSkewer = 0, olderDrSkewer = 0, olderQanakEtcA = 0, olderHatPouch = 0, olderDrPouch = 0, olderDrEtcA = 0; 
 
 function subTotal(name)
@@ -532,24 +532,6 @@ function subTotal(name)
 
              }
              break;
-               
-           
-	/*		}
-			else 
-			{
-				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) - olderAmountFizzy * olderDrFizzy;
-				document.getElementById("totalDrink").value = Number(document.getElementById("totalDrink").value) +  
-												Number(document.getElementById("amountFizzy").value) * Number(document.getElementById("drFizzy").value);
-
-		 	 	olderAmountFizzy = Number(document.getElementById("amountFizzy").value);
-                olderDrFizzy = Number(document.getElementById("drFizzy").value);
-
-
-				document.getElementById("drFizzy").disabled = false;
-				document.getElementById("amountFizzy").disabled = false;
-
-			}	
-		break; */
 	case sixthSpice: 
 			if (document.getElementById("water").checked == false)
 			{
@@ -1160,6 +1142,21 @@ function subTotal(name)
 				document.getElementById("kgEtcVegetable").disabled = false;
 
 			}	
+<<<<<<< HEAD
+		 break;
+        case etcOvernight:
+                        if (document.getElementById("etcOvernight").checked == false)
+                        {
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakEtcOvernight * olderDrEtcOvernight;
+
+                                document.getElementById("drEtcOvernight").disabled = true;
+                                document.getElementById("qanakEtcOvernight").disabled = true;
+                                document.getElementById("drEtcOvernight").value = "";
+                                document.getElementById("qanakEtcOvernight").value = "";
+
+                                olderQanakEtcOvernight = 0;
+                                olderDrEtcOvernight = 0;
+=======
 		
 		break;
 	case etcOvernight:
@@ -1171,27 +1168,25 @@ function subTotal(name)
 				document.getElementById("drEtcOvernight").disabled = true;
 				document.getElementById("qanakEtcOvernight").disabled = true;
 				document.getElementById("qanakEtcOvernight").value = "";
+>>>>>>> d2438c591c4c6d205733884b71bb3a2ee4fe4402
 
-				olderQanakEtcOvernight = 0; 
-				olderDrEtcOvernight = 0;
-               
                 price(etcOvernight);
-			}
-			else 
-			{
+                        }
+                        else
+                        {
 
-				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakEtcOvernight * olderDrEtcOvernight; 
-				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +  
-												Number(document.getElementById("qanakEtcOvernight").value) * Number(document.getElementById("drEtcOvernight").value);
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakEtcOvernight * olderDrEtcOvernight;
+                                document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) +
+                                                                                                Number(document.getElementById("qanakEtcOvernight").value) * Number(document.getElementById("drEtcOvernight").value);
 
-		 	 	olderQanakEtcOvernight = Number(document.getElementById("qanakEtcOvernight").value);
-                olderDrEtcOvernight = Number(document.getElementById("drEtcOvernight").value);
+                                olderQanakEtcOvernight = Number(document.getElementById("qanakEtcOvernight").value);
+                		olderDrEtcOvernight = Number(document.getElementById("drEtcOvernight").value);
 
 
-				document.getElementById("drEtcOvernight").disabled = false;
-				document.getElementById("qanakEtcOvernight").disabled = false;
+                                document.getElementById("drEtcOvernight").disabled = false;
+                                document.getElementById("qanakEtcOvernight").disabled = false;
 
-			}	
+                        }	
 		
 		break;
 	case etcDesert: 

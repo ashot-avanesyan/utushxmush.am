@@ -261,7 +261,6 @@ function initializeDinner(name)
 			if (document.getElementById("pig").checked == true)	
 			{
 				document.getElementById("kgPig").value = Math.round(0.25*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2; 
-//				document.getElementById("kgPig").value = 1; 		
 				document.getElementById("drPig").value = 3800;
 				document.getElementById("drPig").disabled = false;
 				document.getElementById("kgPig").disabled = false;
@@ -280,7 +279,6 @@ function initializeDinner(name)
 			if (document.getElementById("lamb").checked == true)	
 			{
 				document.getElementById("kgLamb").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgLamb").value = 1;
 				document.getElementById("drLamb").value = 3000;
 				document.getElementById("drLamb").disabled = false;
 				document.getElementById("kgLamb").disabled = false;
@@ -297,7 +295,6 @@ function initializeDinner(name)
            		if (document.getElementById("goat").checked == true)
                 	{
                 		document.getElementById("kgGoat").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgGoat").value = 1;
                     		document.getElementById("drGoat").value = 3500;
                     		document.getElementById("drGoat").disabled = false;
                     		document.getElementById("kgGoat").disabled = false;
@@ -314,7 +311,6 @@ function initializeDinner(name)
 			if (document.getElementById("chicken").checked == true)	
 			{
 				document.getElementById("kgChicken").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgChicken").value = 1;
 				document.getElementById("drChicken").value = 1600;
 				document.getElementById("drChicken").disabled = false;
 				document.getElementById("kgChicken").disabled = false;
@@ -331,7 +327,6 @@ function initializeDinner(name)
 			if (document.getElementById("wing").checked == true)	
 			{
 				document.getElementById("kgWing").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgWing").value = 1;
 				document.getElementById("drWing").value = 1600;
 				document.getElementById("drWing").disabled = false;
 				document.getElementById("kgWing").disabled = false;
@@ -348,7 +343,6 @@ function initializeDinner(name)
 			if (document.getElementById("haunch").checked == true)	
 			{
 				document.getElementById("kgHaunch").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgHaunch").value = 1;
 				document.getElementById("drHaunch").value = 1600;
 				document.getElementById("drHaunch").disabled = false;
 				document.getElementById("kgHaunch").disabled = false;
@@ -365,7 +359,6 @@ function initializeDinner(name)
 			if (document.getElementById("sausage").checked == true)	
 			{
 				document.getElementById("kgSausage").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgSausage").value = 1;
 				document.getElementById("drSausage").value = 1700;
 				document.getElementById("drSausage").disabled = false;
 				document.getElementById("kgSausage").disabled = false;
@@ -382,7 +375,6 @@ function initializeDinner(name)
                         if (document.getElementById("frankfurter").checked == true) 
                         {
                                 document.getElementById("kgFrankfurter").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgFrankfurter").value = 1;
                                 document.getElementById("drFrankfurter").value = 1000;
                                 document.getElementById("drFrankfurter").disabled = false;
                                 document.getElementById("kgFrankfurter").disabled = false;
@@ -400,7 +392,6 @@ function initializeDinner(name)
 			if (document.getElementById("anvil").checked == true)	
 			{
 				document.getElementById("kgAnvil").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgAnvil").value = 1;
 				document.getElementById("drAnvil").value = 1000;
 				document.getElementById("drAnvil").disabled = false;
 				document.getElementById("kgAnvil").disabled = false;
@@ -417,7 +408,6 @@ function initializeDinner(name)
 			if (document.getElementById("internal_organs").checked == true)	
 			{
 				document.getElementById("kgInternal_organs").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgInternal_organs").value = 1;
 				document.getElementById("drInternal_organs").value = 1000;
 				document.getElementById("drInternal_organs").disabled = false;
 				document.getElementById("kgInternal_organs").disabled = false;
@@ -452,7 +442,6 @@ function initializeDinner(name)
              		if (document.getElementById("tomato").checked == true)
             		{
             	        	document.getElementById("kgTomato").value = 0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-//				document.getElementById("kgTomato").value = 1;
                 		document.getElementById("drTomato").value = 300;
                 		document.getElementById("drTomato").disabled = false;
                 		document.getElementById("kgTomato").disabled = false;
@@ -469,7 +458,6 @@ function initializeDinner(name)
            	 	if (document.getElementById("cucumbers").checked == true)
             		{
             			document.getElementById("kgCucumbers").value = Math.round(0.25 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//				document.getElementById("kgCucumbers").value = 1;
             			document.getElementById("drCucumbers").value = 400;
             			document.getElementById("drCucumbers").disabled = false;
             			document.getElementById("kgCucumbers").disabled = false;
@@ -486,7 +474,6 @@ function initializeDinner(name)
            		if (document.getElementById("eggplant").checked == true)
             		{
             			document.getElementById("kgEggplant").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//			document.getElementById("kgEggplant").value = 1;
             		document.getElementById("drEggplant").value = 500;
             		document.getElementById("drEggplant").disabled = false;
             		document.getElementById("kgEggplant").disabled = false;
@@ -503,7 +490,6 @@ function initializeDinner(name)
                         if (document.getElementById("onion").checked == true)
                         {
                                 document.getElementById("kgOnion").value = Math.round(0.2*(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//                      document.getElementById("kgEggplant").value = 1;
                         document.getElementById("drOnion").value = 350;
                         document.getElementById("drOnion").disabled = false;
                         document.getElementById("kgOnion").disabled = false;
@@ -520,9 +506,8 @@ function initializeDinner(name)
        	    case greens:
             		if (document.getElementById("greens").checked == true)
             		{
-//            		document.getElementById("punjGreens").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2; 
-		//			document.getElementById("punjGreens").value = 1;
-			document.getElementById("punjGreens").value = 1;
+//            		document.getElementById("punjGreens").value = Math.round(0.1 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
+			document.getElementById("punjGreens").value = 1; 
             		document.getElementById("drGreens").value = 250;
             		document.getElementById("drGreens").disabled = false;
             		document.getElementById("punjGreens").disabled = false;
@@ -539,7 +524,6 @@ function initializeDinner(name)
                         if (document.getElementById("potatoes").checked == true)
                         {
                         document.getElementById("kgPotatoes").value = Math.round(0.5 *(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value))*2)/2;
-//			document.getElementById("kgPotatoes").value = 1;
                         document.getElementById("drPotatoes").value = 200;
                         document.getElementById("drPotatoes").disabled = false;
                         document.getElementById("kgPotatoes").disabled = false;
@@ -591,8 +575,7 @@ function initializeDinner(name)
             case sweetmeat:
             		if (document.getElementById("sweetmeat").checked == true)
             		{
-             		document.getElementById("kgSweetmeat").value = 1;
-//            		document.getElementById("kgSweetmeat").value = 1;
+			document.getElementById("kgSweetmeat").value = 1;
             		document.getElementById("drSweetmeat").value = 2300;
             		document.getElementById("drSweetmeat").disabled = false;
             		document.getElementById("kgSweetmeat").disabled = false;
@@ -625,7 +608,6 @@ function initializeDinner(name)
             		if (document.getElementById("lobe").checked == true)
             		{
             		document.getElementById("kgLobe").value = 1;
-//            		document.getElementById("kgLobe").value = 1;
             		document.getElementById("drLobe").value = 450;
             		document.getElementById("drLobe").disabled = false;
             		document.getElementById("kgLobe").disabled = false;
@@ -642,7 +624,6 @@ function initializeDinner(name)
             		if (document.getElementById("tea").checked == true)
             		{
             		document.getElementById("tupTea").value = 1;
-//            		document.getElementById("tupTea").value = 1;
             		document.getElementById("drTea").value = 450;
             		document.getElementById("drTea").disabled = false;
             		document.getElementById("tupTea").disabled = false;
@@ -659,7 +640,6 @@ function initializeDinner(name)
          		if (document.getElementById("coffee").checked == true)
             		{
             		document.getElementById("tupCoffee").value = 1;
-//            		document.getElementById("tupCoffee").value = 1;
             		document.getElementById("drCoffee").value = 350;
             		document.getElementById("drCoffee").disabled = false;
             		document.getElementById("tupCoffee").disabled = false;
@@ -676,7 +656,6 @@ function initializeDinner(name)
             		if (document.getElementById("Instant_coffee").checked == true)
             		{
             		document.getElementById("hatInstant_coffee").value =(Number(document.getElementById("participantsInput2").value) + Number(document.getElementById("participantsInput3").value));
-//			document.getElementById("hatInstant_coffee").value = 1;
             		document.getElementById("drInstant_coffee").value = 70;
             		document.getElementById("drInstant_coffee").disabled = false;
             		document.getElementById("hatInstant_coffee").disabled = false;
@@ -736,22 +715,23 @@ function initializeDinner(name)
                         document.getElementById("drArbor").disabled = true;
                         document.getElementById("qanakArbor").disabled = true;
                         }
-            break;
-            case etcOvernight:
-            		if (document.getElementById("etcOvernight").checked == true)
-            		{
-                	document.getElementById("drEtcOvernight").disabled = false;
-                	document.getElementById("qanakEtcOvernight").disabled = false;
-                	document.getElementById("nameOvernight").disabled = false;
-            		}
-            		else
-            		{
-                	document.getElementById("qanakEtcOvernight").value = "";
-                	document.getElementById("drEtcOvernight").value = "";
-                	document.getElementById("drEtcOvernight").disabled = true;
-                	document.getElementById("qanakEtcOvernight").disabled = true;
-                	document.getElementById("nameOvernight").disabled = true;
-            		}
+	     break;
+             case etcOvernight:
+                        if (document.getElementById("etcOvernight").checked == true)
+                        {
+                        document.getElementById("drEtcOvernight").disabled = false;
+                        document.getElementById("qanakEtcOvernight").disabled = false;
+                        document.getElementById("nameOvernight").disabled = false;
+                        }
+                        else
+                        {
+                        document.getElementById("qanakEtcOvernight").value = "";
+                        document.getElementById("drEtcOvernight").value = "";
+                        document.getElementById("nameOvernight").value = '';
+                        document.getElementById("drEtcOvernight").disabled = true;
+                        document.getElementById("qanakEtcOvernight").disabled = true;
+                        document.getElementById("nameOvernight").disabled = true;
+                        }
 	    break;
             case salt:
                         if (document.getElementById("salt").checked == true)
@@ -1003,8 +983,8 @@ function price(name)
 		 case arbor:
                         document.getElementById("arbor_price").value = document.getElementById("qanakArbor").value * document.getElementById("drArbor").value;
                         break;
-		case etcOvernight:
-      	    		document.getElementById("etcOvernight_price").value = document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
+	 	  case etcOvernight:
+                        document.getElementById("etcOvernight_price").value = document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
 			 break;
                 case salt:
                         document.getElementById("salt_price").value = document.getElementById("tupSalt").value * document.getElementById("drSalt").value;	                
@@ -1036,115 +1016,8 @@ function price(name)
                         document.getElementById("etcDesert_price").value = document.getElementById("kgEtcDesert").value * document.getElementById("drEtcDesert").value;
 	//			document.getElementById("pig_price").value = "= " + document.getElementById("kgPig").value * document.getElementById("drPig").value;
 		break;
-	/*	case lamb:
-			document.getElementById("lamb_price").value = "= " + document.getElementById("kgLamb").value * document.getElementById("drLamb").value;
-			break;
-		case goat:
-			document.getElementById("goat_price").value = "= " + document.getElementById("kgGoat").value * document.getElementById("drGoat").value;
-			break;
-		case chicken: 
-			document.getElementById("chicken_price").value = "= " + document.getElementById("kgChicken").value * document.getElementById("drChicken").value;
-			break;
-		case wing: 
-			document.getElementById("wing_price").value = "= " + document.getElementById("kgWing").value * document.getElementById("drWing").value;
-			break;
-		case haunch: 
-			document.getElementById("haunch_price").value = "= " + document.getElementById("kgHaunch").value * document.getElementById("drHaunch").value;
-			break;
-		case sausage: 
-			document.getElementById("sausage_price").value = "= " + document.getElementById("kgSausage").value * document.getElementById("drSausage").value;
-		 case frankfurter: 
-                        document.getElementById("frankfurter_price").value = "= " + document.getElementById("kgFrankfurter").value * document.getElementById("drFrankfurter").value;
-			break;
-		case anvil: 
-			document.getElementById("anvil_price").value = "= " + document.getElementById("kgAnvil").value * document.getElementById("drAnvil").value;
-			break;
-		case internal_organs: 
-			document.getElementById("internal_organs_price").value = "= " + document.getElementById("kgInternal_organs").value * document.getElementById("drInternal_organs").value;
-			break;
-		case etc:
-			document.getElementById("etc_price").value = "= " + document.getElementById("kgEtc").value * document.getElementById("drEtc").value;
-			break;
-        	case tomato:
-            		document.getElementById("tomato_price").value = "= " + document.getElementById("kgTomato").value * document.getElementById("drTomato").value;
-            		break;
-        	case cucumbers:
-            		document.getElementById("cucumbers_price").value = "= " + document.getElementById("kgCucumbers").value * document.getElementById("drCucumbers").value;
-            		break;
-        	case eggplant:
-            		document.getElementById("eggplant_price").value = "= " + document.getElementById("kgEggplant").value * document.getElementById("drEggplant").value;
-            		break;
-        	case onion:
-            		document.getElementById("onion_price").value = "= " + document.getElementById("kgOnion").value * document.getElementById("drOnion").value;
-            		break;
-        	case greens:
-            		document.getElementById("greens_price").value = "= " + document.getElementById("punjGreens").value * document.getElementById("drGreens").value;
-			 break;
-                case potatoes:
-                        document.getElementById("potatoes_price").value = "= " + document.getElementById("kgPotatoes").value * document.getElementById("drPotatoes").value;
-			 break;
-                case pepper:
-                        document.getElementById("pepper_price").value = "= " + document.getElementById("kgPepper").value * document.getElementById("drPepper").value;
-            		break;
-        	case etcVegetable:
-            		document.getElementById("etcVegetable_price").value = "= " + document.getElementById("kgEtcVegetable").value * document.getElementById("drEtcVegetable").value;
-            		break;
-		case sweetmeat:
-            		document.getElementById("sweetmeat_price").value = "= " + document.getElementById("kgSweetmeat").value * document.getElementById("drSweetmeat").value;
-            		break;
-        	case chocolates:
-            		document.getElementById("chocolates_price").value = "= " + document.getElementById("kgChocolates").value * document.getElementById("drChocolates").value;
-            		break;
-        	case lobe:
-            		document.getElementById("lobe_price").value = "= " + document.getElementById("kgLobe").value * document.getElementById("drLobe").value;
-            		break;
-        	case tea:
-            		document.getElementById("tea_price").value = "= " + document.getElementById("tupTea").value * document.getElementById("drTea").value;
-            		break;
-        	case coffee:
-            		document.getElementById("coffee_price").value = "= " + document.getElementById("tupCoffee").value * document.getElementById("drCoffee").value;
-            		break;
-        	case Instant_coffee:
-            		document.getElementById("Instant_coffee_price").value = "= " + document.getElementById("hatInstant_coffee").value * document.getElementById("drInstant_coffee").value;
-            		break;
-		case hotel:
-      	    		document.getElementById("hotel_price").value = "= " + document.getElementById("hamarHotel").value * document.getElementById("drHotel").value;
-            		break; 
-		case tent:
-      	    		document.getElementById("tent_price").value = "= " + document.getElementById("qanakTent").value * document.getElementById("drTent").value;
-            		break; 
-		case etcOvernight:
-      	    		document.getElementById("etcOvernight_price").value = "= " + document.getElementById("qanakEtcOvernight").value * document.getElementById("drEtcOvernight").value;
-			 break;
-                case salt:
-                        document.getElementById("salt_price").value = "= " + document.getElementById("tupSalt").value * document.getElementById("drSalt").value;	                 break;
-                case ground_pepper:
-                        document.getElementById("ground_pepper_price").value = "= " + document.getElementById("tupGround_pepper").value * document.getElementById("drGround_pepper").value;
-            	
-			break;
-		case utensil:
-            		document.getElementById("utensil_price").value = "= " + document.getElementById("qanakUtensil").value * document.getElementById("drUtensil").value;
-            		break;
-	 	case skewer:
-            		document.getElementById("skewer_price").value = "= " + document.getElementById("qanakSkewer").value * document.getElementById("drSkewer").value;
-		 case pouch:
-                        document.getElementById("pouch_price").value = "= " + document.getElementById("hatPouch").value * document.getElementById("drPouch").value;
-
-            		break;
-	 	case etcAccessories:
-            		document.getElementById("etcAccessories_price").value = "= " + document.getElementById("qanakEtcAccessories").value * document.getElementById("drEtcAccessories").value;
-			break;
-                case buttermilk:
-                        document.getElementById("buttermilk_price").value = "= " + document.getElementById("hatButtermilk").value * document.getElementById("drButtermilk").value;
-
-            		break;
-		case etcDrink:
-                        document.getElementById("etcDrink_price").value = "= " + document.getElementById("hatEtcDrink").value * document.getElementById("drEtcDrink").value;
-                        break;
-		case etcDesert:
-                        document.getElementById("etcDesert_price").value = "= " + document.getElementById("kgEtcDesert").value * document.getElementById("drEtcDesert").value;
-                        break;*/
-	   	default: 
+	   	
+		default: 
 		window.alert("This is default value.");
 		break;
 	}
