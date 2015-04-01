@@ -22,12 +22,11 @@ div#logo img {
 div#expenditure {
 	position: fixed;
     	top: 69.3%;
-    	right: 6%;
+    	right: 4%;
 	font-family:Courier New;
 }
 input#general {
 	padding: 0% 5% 0% 5%;
-        size = "10%";
 }
 input.InputButton {
 	border-style: ridge;
