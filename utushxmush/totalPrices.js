@@ -1165,12 +1165,12 @@ function subTotal(name)
 	case etcOvernight:
 			if (document.getElementById("etcOvernight").checked == false)
 			{
-				document.getElementById("totaOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakEtcOvernight * olderDrEtcOvernight; 
+				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakEtcOvernight * olderDrEtcOvernight; 
 				
+				document.getElementById("drEtcOvernight").value = "";
 				document.getElementById("drEtcOvernight").disabled = true;
 				document.getElementById("qanakEtcOvernight").disabled = true;
 				document.getElementById("qanakEtcOvernight").value = "";
-				document.getElementById("drEtcOvernight").value = "";
 
 				olderQanakEtcOvernight = 0; 
 				olderDrEtcOvernight = 0;
