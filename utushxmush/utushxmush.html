@@ -63,11 +63,11 @@
 			</tr>
 			<tr>
           	<td>Հեռավորությունը</td>
-           	<td><input class ="margin" size="12"  type="text" id = "distance" name="fname" class = "inputParticipants" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();"><br><br> </td>
+           	<td><input class ="margin" size="12"  type="text" id = "distance" name="fname" class = "inputParticipants" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();total();"><br><br> </td>
            	</tr>
 				<tr>
 					<td>Տրանսպորտի ծախսը</td>
-					<td id="TransportCostsTd"><input class ="margin" size="2" id = "cost" type="text" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport();">կմ/դր</td>
+					<td id="TransportCostsTd"><input class ="margin" size="2" id = "cost" type="text" onkeyPress = "return numbersOnly(this, event);" onblur = "totalTransport(); total();">կմ/դր</td>
 					<td><input size="4" id = "totalCost" type="text" readonly>դր</td>
 				</tr>
 			</table>
