@@ -1142,7 +1142,6 @@ function subTotal(name)
 				document.getElementById("kgEtcVegetable").disabled = false;
 
 			}	
-<<<<<<< HEAD
 		 break;
         case etcOvernight:
                         if (document.getElementById("etcOvernight").checked == false)
@@ -1156,21 +1155,8 @@ function subTotal(name)
 
                                 olderQanakEtcOvernight = 0;
                                 olderDrEtcOvernight = 0;
-=======
 		
-		break;
-	case etcOvernight:
-			if (document.getElementById("etcOvernight").checked == false)
-			{
-				document.getElementById("totalOvernight").value = Number(document.getElementById("totalOvernight").value) - olderQanakEtcOvernight * olderDrEtcOvernight; 
-				
-				document.getElementById("drEtcOvernight").value = "";
-				document.getElementById("drEtcOvernight").disabled = true;
-				document.getElementById("qanakEtcOvernight").disabled = true;
-				document.getElementById("qanakEtcOvernight").value = "";
->>>>>>> d2438c591c4c6d205733884b71bb3a2ee4fe4402
-
-                price(etcOvernight);
+								price(etcOvernight);
                         }
                         else
                         {
