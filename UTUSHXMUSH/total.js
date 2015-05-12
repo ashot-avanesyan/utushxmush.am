@@ -20,115 +20,28 @@ jQuery(document).ready(function($){
 			$("#totalForOne").val(0); 
 		}
 	}
+
+// Input field let only numbers	
+  $("input").keypress(function (e) {
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        
+               return false;
+    }
+   });
+
 });
-
-//check amount of participants and display toottip 
-/*function checkAmount(name)
-{
-
-	if (($("#inputMenl3").val() + $("#inputWomen3").val())
-		return true;
-
-	//window.alert("name");
-    switch(name)
-	{ 
-		 case butTransport: 
-			$('#toolTipID').style.left='33.3%';
-	
-			break; 
-		case butDinner: 
-			$('#toolTipID').class='extra';
-			$('#toolTipID').style.left='40.7%';
-			break; 
-		case butOvernight:
-			$('#toolTipID').class='extra';
-			$('#toolTipID').style.left='48.4%';
-			break; 
-		case butAccessories: 
-			$('#toolTipID').class='extra';
-			$('#toolTipID').style.left='56.35%';
-			break;
-	} 
-	
-	$('#toolTipID').style.display='block';
-	
-	return false;
-}
-
-// Input field let only numbers (integer and float types)
-function numbersOnlyFloat( myField, e )
-{
-	var key, keyChar; 
-
-	if ( window.event )
-		key = window.event.keyCode; 
-	else 
-		if ( e )
-			key = e.which; 
-		else 
-			return true; 
-
-	keyChar = String.fromCharCode( key );
-	
-	// control keys 
-	if ( (key == null) || (key == 0) || (key == 8)
-		|| (key == 9) || (key == 13) || (key == 27))
-		return true; 
-
-	// numbers 
-	else if ( (("0123456789").indexOf(keyChar)) > -1 )
-			return true;
-	
-	// decimal point jump 
-	else if ( keyChar == "." )
-			return true; 
-
-	return false; 
-}
-
-// Input field let only numbers ( integer and float types)
-// Only  INTEGERS 
-function numbersOnly( myField, e )
-{
-	var key, keyChar; 
-
-	if ( window.event )
-		key = window.event.keyCode; 
-	else 
-		if ( e )
-			key = e.which; 
-		else 
-			return true; 
-
-	keyChar = String.fromCharCode( key );
-	
-	// control keys 
-	if ( (key == null) || (key == 0) || (key == 8)
-		|| (key == 9) || (key == 13) || (key == 27))
-		return true; 
-
-	// numbers 
-	else if ( (("0123456789").indexOf(keyChar)) > -1 )
-			return true;
-	
-	// decimal point jump 
-/*	else if ( keyChar == "." )
-			return true; */
-/*
-	return false; 
-}
-
-// initialize transport 
-function initializeTransport() 
-{
-//	window.alert("testing initializeTransport function");
-	$("#cost").value = 200; 
-}*/
-
-
- //totalTransport()
+//totalTransport()
 function totalTransport ()
  {
      document.getElementById("totalCost").value = Number(document.getElementById("distance").value) * Number(document.getElementById("cost").value);
  }
+//check amount of participants and display tooltip
+function myFunction() {
+    
+    if (document.getElementById("inputMenl3").value < 1 && document.getElementById("inputWomen3").value < 1) {
+
+    	alert("Մուտքագրեք մասնակիցնրի քանակը");
+    }
+}
 
