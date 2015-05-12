@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+										initial-scale=1.0,
+										maximum-scale=1.0,
+										user-scalable=no">
+	<link rel = "stylesheet" type = "text/css" href = "Button.css">
+     <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+	<script src = "Overnight.js"></script> 
+  </head>
+  <body>
+  	<div class="container">
+		<div class = "row">
+			<div class = "center-block">
+				<button role = "presentation" class = "Button">Գիշերակաց</br>
+					<input type = "text" size = "10" class = "Input" readonly placeholder= "Ընդամենը" id = "totalOvernight">
+				</button>
+			</div>
+		</div>
+    	<div class = "row">
+		<div class = "col-sm-2"></div>
+        	<div class = "col-sm-2">
+            	<p><input type = "checkbox" id = "Hyuranoc">Հյուրանոց</p>
+        	</div>
+        	<div class = "col-sm-2">
+            	<p><input type = "text" size = "5" id = "HyuranocHamar" placeholder = "1" disabled>համար</p>
+        	</div>
+        	<div class = "col-sm-2">
+            	<p><input type = "text" size = "5" id = "HyuranocDr" placeholder = "2000" disabled>դր</p>
+        	</div>
+        	<div class = "col-sm-2">
+            	<p><input type = "text" readonly size = "5" id = "HyuranocPrice"></p>
+        	</div>
+			<div class = "col-sm-2"></div>
+			</div>
+    	<div class = "row">
+			<div class = "col-sm-2"></div>
+        	<div class = "col-sm-2">
+            	<p><input type = "checkbox" size = "5" id = "Vran">Վրան</p>
+        	</div>
+        	<div class = "col-sm-2">
+           		<p><input type = "text" size = "5" id = "VranHat" placeholder = "1" disabled>հատ</p>
+        	</div>
+        	<div class = "col-sm-2">
+            	<p><input type = "text" size = "5" id = "VranDr" placeholder = "2000" disabled>դր</p>
+        	</div>
+        	<div class = "col-sm-2">
+            	<p><input type = "text" readonly size = "5" id = "VranPrice"></p>
+        	</div>
+			<div class = "col-sm-2"></div>
+    	</div>
+    		<div class = "row">
+				<div class = "col-sm-2"></div>
+        		<div class = "col-sm-2">
+            		<p><input type = "checkbox" id = "Taxavar">Տաղավար</p>
+        		</div>
+        		<div class = "col-sm-2">
+            		<p><input type = "text" size = "5" id = "TaxavarHat" placeholder = "1" disabled>հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+            		<p><input type = "text" size = "5" id = "TaxavarDr" placeholder = "5000" disabled>դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+            		<p><input type = "text" readonly size = "5" id = "TaxavarPrice"></p>
+        		</div>
+				<div class = "col-sm-2"></div>
+    		</div>
+    		<div class = "row">
+				<div class = "col-sm-2"></div>
+        		<div class = "col-sm-2">
+            		<p><input type = "checkbox" id = "EtcGisherakac">Այլ
+            		<input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcGisherakacName"></p>
+        		</div>
+        		<div class = "col-sm-2">
+            		<p><input type = "text" size = "5" id = "EtcGisherakacHat" disabled>հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+            		<p><input type = "text" size = "5" id = "EtcGisherakacDr" disabled>դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+            		<p><input type = "text" readonly size = "5" id = "EtcGisherakacPrice"></p>
+        		</div>
+    		</div>
+		</div>
+ 	 </body>
+ </html>
