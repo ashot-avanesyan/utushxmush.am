@@ -1,0 +1,160 @@
+<!DOCTYPE.html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+ <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+       <!-- jQuery library -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+       <!-- Latest compiled JavaScript -->
+       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+	<script src="Banjarexen.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class = "row">
+			<div class = "center-block">
+				<button role = "presentation" class = "Button">Բանջարեղեն</br>
+					<input type = "text" size = "10" class = "Input" readonly placeholder= "Ընդամենը" id = "totalVegetable">
+				</button>
+			</div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id = "Lolik" >Լոլիկ</p>
+			</div>
+			<div class="col-sm-2">
+				<input class =  "mass" type = "text" min = "0" size="5"max = "99" id = "kgLolik" placeholder = "1" disabled >կգ
+			</div>
+			<div class="col-sm-2">
+				<input type = "text" class = "mass" size="5" id = "drLolik" placeholder = "300" disabled >դր
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "LolikPrice"> </p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id = "Varung">Վարունգ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgVarung" placeholder = "1" disabled >կգ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" class = "mass" size="5" id = "drVarung" placeholder = "400" disabled>դր</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "VarungPrice"> </p>
+			</div>
+			<div class="col-sm-2">
+			</div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id = "Smbuk">Սմբուկ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgSmbuk" placeholder = "1" disabled>կգ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" class = "mass" size="5" id = "drSmbuk"placeholder = "500" disabled>դր</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "SmbukPrice"> </p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id = "Sox">Սոխ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgSox" placeholder = "1" disabled>կգ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" class = "mass" size="5" id = "drSox" placeholder = "350" disabled>դր</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "SoxPrice" > </p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id = "Kanachi">Կանաչի</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "punjKanachi" placeholder = "1" disabled >փունջ</p>
+			</div> 
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" id = "drKanachi" placeholder = "250" disabled >դր</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "KanachiPrice" > </p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id = "Kartofil">Կարտոֆիլ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgKartofil" placeholder = "1" disabled>կգ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" class = "mass" size="5" id = "drKartofil" placeholder = "200" disabled>դր</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "KartofilPrice"></p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id= "Bibar">Բիբար</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgBibar" placeholder = "1" disabled>կգ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" class = "mass" size="5" id = "drBibar" placeholder = "450" disabled>դր</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "BibarPrice"> </p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div  class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<p><input type="checkbox" id = "EtcB">Այլ
+		 			<input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcBName"></p>
+			</div>
+			<div class="col-sm-2">
+				<p><input class = "mass" type = "text" size="5" min = "0" id = "kgEtcB" disabled >կգ</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" class = "mass" size="5" id = "drEtcB" disabled >դր</p>
+			</div>
+			<div class="col-sm-2">
+				<p><input type = "text" size="5" readonly id = "EtcBPrice"> </p>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+</body>
+</html>
