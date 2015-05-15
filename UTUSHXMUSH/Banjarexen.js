@@ -44,7 +44,7 @@
 			case "Smbuk":
 				if ($("#Smbuk").is(":checked"))
 				{
-					$("#kgSmbuk").val(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))); 
+					$("#kgSmbuk").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val())))); 
 					$("#drSmbuk").val('500'); 
 					$("#kgSmbuk").prop('disabled',false); 
 					$("#drSmbuk").prop('disabled',false);
@@ -62,7 +62,7 @@
 			case "Sox":
 				if ($("#Sox").is(":checked"))
 				{
-					$("#kgSox").val(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val())));
+					$("#kgSox").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))));
 					$("#drSox").val('350'); 
 					$("#kgSox").prop('disabled',false); 
 					$("#drSox").prop('disabled',false);

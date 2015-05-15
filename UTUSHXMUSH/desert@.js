@@ -100,8 +100,8 @@ jQuery(document).ready(function($){
 			case "LS":
 				if ($("#LS").is(":checked"))
 				{
-					$("#drLS").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
-					$("#drLS").val('400'); 
+					$("#kgLS").val(Math.round(1 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+					$("#drLS").val('80'); 
 					$("#kgLS").prop('disabled', false); 
 					$("#drLS").prop('disabled',false);
 				} 

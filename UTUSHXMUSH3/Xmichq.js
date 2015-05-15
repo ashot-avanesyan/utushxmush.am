@@ -43,12 +43,15 @@ console.log("input")
 					//window.alert("Switch");
 				if ($("#Oxi").is(":checked"))
 				{
-					$("#hatOxi").val('1');
 					$("#drOxi").val('2700');
 					$("#hatOxi").prop('disabled', false); 
 					$("#drOxi").prop('disabled',false);
+
+					$("#hatOxi").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
  					
-					$("#firstSpice").change(function(){	
+					$("#firstSpice").change(function(){
+
+						$("#hatOxi").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));		 				 
 						var x = $("#firstSpice").val();
 						switch(x)
 						{
@@ -86,12 +89,18 @@ console.log("input")
 					//window.alert("Switch");
 				if ($("#Gini").is(":checked"))
 				{
-					$("#hatGini").val('1');
+					
 					$("#drGini").val('1720');
 					$("#hatGini").prop('disabled', false); 
 					$("#drGini").prop('disabled',false);
+
+					$("#hatGini").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
  					
-					$("#secondSpice").change(function(){	
+ 					
+					$("#secondSpice").change(function(){
+
+					$("#hatGini").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+ 						
 						var x = $("#secondSpice").val();
 						switch(x)
 						{
@@ -133,12 +142,18 @@ console.log("input")
 					//window.alert("Switch");
 				if ($("#Garejur").is(":checked"))
 				{
-					$("#hatGarejur").val('1');
+					
 					$("#drGarejur").val('430');
 					$("#hatGarejur").prop('disabled', false); 
 					$("#drGarejur").prop('disabled',false);
+
+					$("#hatGarejur").val(Math.round((Number($("#inputMenl3").val()*1)+ Number($("#inputWomen3").val()) )));
+ 					
  					
 					$("#thirdSpice").change(function(){	
+
+					$("#hatGarejur").val(Math.round((Number($("#inputMenl3").val()*1)+ Number($("#inputWomen3").val()) )));
+ 					
 						var x = $("#thirdSpice").val();
 						switch(x)
 						{
@@ -180,12 +195,18 @@ console.log("input")
 					//window.alert("Switch");
 				if ($("#BnakanHyut").is(":checked"))
 				{
-					$("#hatBnakanHyut").val('1');
+					
 					$("#drBnakanHyut").val('450');
 					$("#hatBnakanHyut").prop('disabled', false); 
 					$("#drBnakanHyut").prop('disabled',false);
+
+					$("#hatBnakanHyut").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
  					
-					$("#fourthSpice").change(function(){	
+ 					
+					$("#fourthSpice").change(function(){
+
+					$("#hatBnakanHyut").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+ 						
 						var x = $("#fourthSpice").val();
 						switch(x)
 						{
@@ -227,12 +248,18 @@ console.log("input")
 					//window.alert("Switch");
 				if ($("#GazayinHyut").is(":checked"))
 				{
-					$("#hatGazayinHyut").val('1');
+					
 					$("#drGazayinHyut").val('390');
 					$("#hatGazayinHyut").prop('disabled', false); 
 					$("#drGazayinHyut").prop('disabled',false);
+
+					$("#hatGazayinHyut").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
  					
-					$("#fifthSpice").change(function(){	
+ 					
+					$("#fifthSpice").change(function(){
+
+					$("#hatGazayinHyut").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+ 						
 						var x = $("#fifthSpice").val();
 						switch(x)
 						{
@@ -273,12 +300,18 @@ console.log("input")
 					//window.alert("Switch");
 				if ($("#Jur").is(":checked"))
 				{
-					$("#hatJur").val('1');
+					
 					$("#drJur").val('250');
 					$("#hatJur").prop('disabled', false); 
 					$("#drJur").prop('disabled',false);
+
+					$("#hatJur").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+ 					
  					
 					$("#SixthSpice").change(function(){	
+
+					$("#hatJur").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+ 					
 						var x = $("#SixthSpice").val();
 						switch(x)
 						{
@@ -318,10 +351,13 @@ console.log("input")
 		case "Tan":
                 	if ($("#Tan").is(":checked"))
                 	{
-                    		$("#hatTan").val('1'); 
+                    		
                     		$("#drTan").val('180'); 
                     		$("#hatTan").prop('disabled', false); 
                     		$("#drTan").prop('disabled',false);
+
+					$("#hatTan").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+ 					
                 	} 
                 	else 
                 	{

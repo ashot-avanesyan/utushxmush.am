@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
 			case "Xoz":
 				if ($("#Xoz").is(":checked"))
 				{
-					$("#kgXoz").val('1'); 
+					$("#kgXoz").val(Math.round(0.25*(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2); 
 					$("#drXoz").val('3800'); 
 					$("#kgXoz").prop('disabled', false); 
 					$("#drXoz").prop('disabled',false);
@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 			case "Gar":
 				if ($("#Gar").is(":checked"))
 				{
-					$("#kgGar").val('1'); 
+					$("#kgGar").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2); 
 					$("#drGar").val('3000');  
 					$("#kgGar").prop('disabled', false); 
 					$("#drGar").prop('disabled',false);
@@ -35,14 +35,14 @@ jQuery(document).ready(function($){
 					$("#kgGar").val('0'); 
 					$("#drGar").val('0');  
 					$("#kgGar").prop('disabled',true); 
-			$("#drGar").prop('disabled',true);
+					$("#drGar").prop('disabled',true);
 				} 
 			$("#GarPrice").val(Number($("#kgGar").val()) * Number($("#drGar").val()));
 			break; 
 			case "Ayc":
 				if ($("#Ayc").is(":checked"))
 				{
-					$("#kgAyc").val('1'); 
+					$("#kgAyc").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drAyc").val('3500'); 
 					$("#kgAyc").prop('disabled',false); 
 					$("#drAyc").prop('disabled',false);
@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
 			case "Hav":
 				if ($("#Hav").is(":checked"))
 				{
-					$("#kgHav").val('1'); 
+					$("#kgHav").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drHav").val('1600'); 
 					$("#kgHav").prop('disabled',false); 
 					$("#drHav").prop('disabled',false);
@@ -79,7 +79,7 @@ jQuery(document).ready(function($){
 			case "Tev":
 				if ($("#Tev").is(":checked"))
 				{
-					$("#kgTev").val('1'); 
+					$("#kgTev").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drTev").val('1600'); 
 					$("#kgTev").prop('disabled',false); 
 					$("#drTev").prop('disabled',false);
@@ -97,7 +97,7 @@ jQuery(document).ready(function($){
 			case "Bud":
 				if ($("#Bud").is(":checked"))
 				{
-					$("#kgBud").val('1'); 
+					$("#kgBud").val(Math.round(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drBud").val('1200'); 
 					$("#kgBud").prop('disabled',false); 
 					$("#drBud").prop('disabled',false);
@@ -115,7 +115,7 @@ jQuery(document).ready(function($){
 			case "Ershik":
 				if ($("#Ershik").is(":checked"))
 				{
-					$("#kgErshik").val('1'); 
+					$("#kgErshik").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drErshik").val('1700'); 
 					$("#kgErshik").prop('disabled',false); 
 					$("#drErshik").prop('disabled',false);
@@ -133,7 +133,7 @@ jQuery(document).ready(function($){
 			case "Nrbershik":
 				if ($("#Nrbershik").is(":checked"))
 				{
-					$("#kgNrbershik").val('1'); 
+					$("#kgNrbershik").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drNrbershik").val('1200'); 
 					$("#kgNrbershik").prop('disabled',false); 
 					$("#drNrbershik").prop('disabled',false);
@@ -151,7 +151,7 @@ jQuery(document).ready(function($){
 			case "Sal":
 				if ($("#Sal").is(":checked"))
 				{
-					$("#kgSal").val('1'); 
+					$("#kgSal").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drSal").val('1000'); 
 					$("#kgSal").prop('disabled',false); 
 					$("#drSal").prop('disabled',false);
@@ -169,7 +169,7 @@ jQuery(document).ready(function($){
 			case "Xorotik":
 				if ($("#Xorotik").is(":checked"))
 				{
-					$("#kgXorotik").val('1'); 
+					$("#kgXorotik").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))*2)/2);
 					$("#drXorotik").val('1000'); 
 					$("#kgXorotik").prop('disabled',false); 
 					$("#drXorotik").prop('disabled',false);
