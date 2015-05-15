@@ -100,8 +100,8 @@ jQuery(document).ready(function($){
 			case "LS":
 				if ($("#LS").is(":checked"))
 				{
-					$("#kgLS").val('1'); 
-					$("#drLS").val('400'); 
+					$("#kgLS").val(Math.round(1 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
+					$("#drLS").val('80'); 
 					$("#kgLS").prop('disabled', false); 
 					$("#drLS").prop('disabled',false);
 				} 
@@ -118,12 +118,14 @@ jQuery(document).ready(function($){
 					//window.alert("Switch");
 				if ($("#Mrger").is(":checked"))
 				{
-					$("#kgMrger").val('1');
 					$("#drMrger").val('250');
 					$("#kgMrger").prop('disabled', false); 
 					$("#drMrger").prop('disabled',false);
+					
+					$("#kgMrger").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
  					
 					$("#firstMrger").change(function(){	
+						$("#kgMrger").val(Math.round(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
 						var x = $("#firstMrger").val();
 						switch(x)
 						{
@@ -165,12 +167,13 @@ jQuery(document).ready(function($){
 				//window.alert("Switch");
 				if ($("#Axander").is(":checked"))
 				{
-					$("#kgAxander").val('1');
+					$("#kgAxander").val('1'); 
 					$("#drAxander").val('450');
 					$("#kgAxander").prop('disabled', false); 
 					$("#drAxander").prop('disabled',false);
- 					
-					$("#firstAxander").change(function(){	
+					
+					$("#firstAxander").change(function(){
+						
 						var x = $("#firstAxander").val();
 						switch(x)
 						{
@@ -210,12 +213,14 @@ jQuery(document).ready(function($){
 				//window.alert("Switch");
 				if ($("#Hac").is(":checked"))
 				{
-					$("#hatHac").val('1');
+					
 					$("#drHac").val('370');
 					$("#hatHac").prop('disabled', false); 
 					$("#drHac").prop('disabled',false);
+					$("#hatHac").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));
  					
-					$("#firstHac").change(function(){	
+					$("#firstHac").change(function(){
+					$("#hatHac").val(Math.round(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) )));	
 						var x = $("#firstHac").val();
 						switch(x)
 						{
