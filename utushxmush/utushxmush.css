@@ -141,7 +141,8 @@ div#d1 {
 }
 div#d2 {
 	width: auto;
-	height: 30%;
+	height: 90%;
+	padding: 15% 0% 0% 0%;
 	margin: auto;
 	display: none;
 	font-family:Arial;
