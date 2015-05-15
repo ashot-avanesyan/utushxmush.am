@@ -14,9 +14,10 @@
 #TotalButton {
 	position: fixed;
 	top: 71%;
-	left: 82%;
-	background-color: #CDA373;
+	left: 80%;
+	background-color:transparent !important;
 	border-style: none;
+	font-size: 18px;
 }
 body {
    /* background-image: url("kanach1.jpg");*/
@@ -34,19 +35,23 @@ body {
 	width: 100%;
 	z-index: -4;
 }	
-#Xoz {
-
-}
-.navbar {
+.border-color {
+	background-color: transparent !important;
+    border-color: transparent !important;
     margin-bottom: 200px !important;
 }
+
+nav nav-pills nav-stacked{
+     color: yellow !important;
+}
+
 #total{
 	background-color: #CDA373;
 	 border-style: none;
 
 }
 #totalForOne{
-	background-color: #CDA373;
+	background-color: transparent !important;
 	 border-style: none;
 
 }
@@ -100,3 +105,7 @@ div#sky {
 @keyframes mySkymove {
     100% {background-position: left;} 
 }
+/*.border-color {
+	background: transparent;
+    border: transparent;
+}*/
