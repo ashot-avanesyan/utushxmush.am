@@ -8,7 +8,7 @@
 			case "Lolik":
 				if ($("#Lolik").is(":checked"))
 				{
-					$("#kgLolik").val('1'); 
+					$("#kgLolik").val(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val())));					
 					$("#drLolik").val('300'); 
 					$("#kgLolik").prop('disabled', false); 
 					$("#drLolik").prop('disabled',false);
@@ -25,7 +25,7 @@
 			case "Varung":
 				if ($("#Varung").is(":checked"))
 				{
-					$("#kgVarung").val('1'); 
+					$("#kgVarung").val(0.25 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val())));	 
 					$("#drVarung").val('400'); 
 					$("#kgVarung").prop('disabled', false); 
 					$("#drVarung").prop('disabled',false);
@@ -44,7 +44,7 @@
 			case "Smbuk":
 				if ($("#Smbuk").is(":checked"))
 				{
-					$("#kgSmbuk").val('1'); 
+					$("#kgSmbuk").val(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))); 
 					$("#drSmbuk").val('500'); 
 					$("#kgSmbuk").prop('disabled',false); 
 					$("#drSmbuk").prop('disabled',false);
@@ -62,7 +62,7 @@
 			case "Sox":
 				if ($("#Sox").is(":checked"))
 				{
-					$("#kgSox").val('1'); 
+					$("#kgSox").val(0.2 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val())));
 					$("#drSox").val('350'); 
 					$("#kgSox").prop('disabled',false); 
 					$("#drSox").prop('disabled',false);
@@ -81,7 +81,7 @@
 			case "Kanachi":
 				if ($("#Kanachi").is(":checked"))
 				{
-					$("#punjKanachi").val('1'); 
+					$("#punjKanachi").val('1');
 					$("#drKanachi").val('250'); 
 					$("#punjKanachi").prop('disabled',false); 
 					$("#drKanachi").prop('disabled',false);
@@ -99,7 +99,7 @@
 			case "Kartofil":
 				if ($("#Kartofil").is(":checked"))
 				{
-					$("#kgKartofil").val('1'); 
+					$("#kgKartofil").val(0.5 *(Number($("#inputMenl3").val()) + Number($("#inputWomen3").val())));
 					$("#drKartofil").val('250'); 
 					$("#kgKartofil").prop('disabled',false); 
 					$("#drKartofil").prop('disabled',false);
