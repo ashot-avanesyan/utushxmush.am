@@ -1695,7 +1695,12 @@ function numbersOnlyFloat( myField, e )
 	
 	// decimal point jump 
 	else if ( keyChar == "." )
-			return true; 
+             case "inputDistance3":
+    case "price":
+          $("#totalCost").val(Number($("#inputDistance3").val()) * Number($("#price").val()));
+     break;
+
+	return true; 
 
 	return false; 
 }

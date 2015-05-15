@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, 
+					initial-scale=1.0,
+					maximum-scale=1.0,
+					user-scalable=no">
+
+       <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+       <!-- jQuery library -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+       <!-- Latest compiled JavaScript -->
+       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+	<script src="Xmichq.js"></script>
+  </head>
+  <body>
+   <!-- <div class = "container">  	
+      <div id="d_2_1_tabs" class="row">
+        <div class ="col-sm-2">
+	  <ul class="nav nav-pills nav-stacked">
+	    <button role="presentation" ><a href="#">Մսամթերք</a><br><input size="10"></input></button><br><br>
+ 	    <button role="presentation"><a href="#">Խմիչք</a><br><input size="10"></input></button><br><br>
+ 	    <button role="presentation"><a href="#">Բանջարեղեն</a><br><input size="10"></input></button><br><br>
+            <button role="presentation"><a href="#">Դեսերտ</a><br><input size="10"></input></button>
+          </ul>
+        </div>
+      </div>
+    </div>  --> 
+	<div class="container">
+        	<div class = "row">
+            		<div class = "center-block">
+                		<button role = "presentation" class = "Button">Խմիչք</br>
+                    			<input type = "text" size = "10" class = "Input" readonly placeholder= "Ընդամենը" id = "totalKhimchq">
+                		</button>
+            		</div>
+        	</div>
+	<div class = "container">
+      		<div class = "row item" >
+			<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox" id = "Oxi">
+		  			<select name="character" id = "firstSpice">
+     		  				<option value="Nemiroff">Nemiroff</option>
+        	  				<option value="RusskiyMed">Русский мед</option>
+         	  				<option value="Artsakh">Арцах</option>
+       		  				<option value="Putinka">Путинка</option>
+          	  				<option value="EtcOxi">Այլ</option>
+    	  				</select>
+          			</p>
+        		</div> 
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatOxi" disabled placeholder = "1">հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "drOxi" disabled placeholder = "2700">դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+            			<p><input type = "text" readonly size = "5" id = "OxiPrice" class = "gumar"></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div>
+      		<div class = "row item">
+	    		<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox" id = "Gini">
+		    			<select name="character" id = "secondSpice">
+       		  				<option value="Armenia">Armenia</option>
+          	  				<option value="Areni">Արենի</option>
+          	  				<option value="Kagor">Կագոր</option>
+         	  				<option value="Amaras">Ամարաս</option>
+          	  				<option value="Shushi">Շուշի</option>
+          	  				<option value="EtcGini">Այլ</option>
+		    			</select>
+          			</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatGini" disabled placeholder = "1">հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "drGini" disabled placeholder = "1720">դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "GiniPrice" class = "gumar" readonly></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div>
+       		<div class = "row item">
+	    		<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox" id = "Garejur">
+		    			<select name="character" id = "thirdSpice">
+       						<option value="Gyumri">Գյումրի</option>
+     						<option value="Baltika">Балтика</option>
+          					<option value="Kilikia">Kilikia</option>
+          					<option value="Kotayk">Kotayk</option>
+          					<option value="Ararat">Ararat</option>
+          					<option value="EtcGarejur">Այլ</option>
+		    			</select>
+          			</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatGarejur" disabled placeholder = "1">հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "drGarejur" disabled placeholder = "430">դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "GarejurPrice" class = "gumar" readonly></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div>
+      		<div class = "row item">
+	    		<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox" id = "BnakanHyut">
+		    			<select name="character" id = "fourthSpice">
+       		  				<option value="Menq">Մենք</option>
+          	  				<option value="Noy">Նոյ</option>
+          	 				<option value="Ararat">Արարատ</option>
+          	  				<option value="Sis">Սիս</option>
+          	  				<option value="J7">J7</option>
+          	  				<option value="EtcBnakanHyut">Այլ</option>
+		    			</select>
+          			</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatBnakanHyut" disabled placeholder = "1">հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "drBnakanHyut" disabled placeholder = "450">դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "BnakanHyutPrice" class = "gumar" readonly></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div>       
+       		<div class = "row item">
+	    		<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox" id = "GazayinHyut">
+		    			<select name="character" id = "fifthSpice">
+       		  				<option value="CocaCola">Coca-Cola</option>
+          	  				<option value="Fanta">Fanta</option>
+          	 				<option value="Sprite">Sprite</option>
+          	  				<option value="PapaKarlo">Պապա Կառլո</option>
+          	  				<option value="Tnjri">Տնջրի</option>
+          	  				<option value="EtcGazayinHyut">Այլ</option> 
+		    			</select>
+          			</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatGazayinHyut" disabled placeholder = "1">հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "drGazayinHyut" disabled placeholder = "390">դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "GazayinHyutPrice" class = "gumar" readonly></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div> 
+      		<div class = "row item">
+	    		<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox" id = "Jur">
+		    			<select name="character" id = "SixthSpice">
+       		  				<option value="Jermuk">Ջերմուկ</option>
+          	  				<option value="Bjni">Բջնի</option>
+          	  				<option value="Byuregh">Բյուրեղ</option>
+          	  				<option value="Noy">Նոյ</option>
+           	  				<option value="Arzni">Արզնի</option>
+           	  				<option value="EtcJur">Այլ</option> 
+		    			</select>
+          			</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatJur" disabled placeholder = "1">հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "drJur" disabled placeholder = "250">դր</p>
+        		</div>
+       	 		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "JurPrice" class = "gumar" readonly></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div>
+      		<div class = "row item">
+        		<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox" value = "Tan" id = "Tan">Թան</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatTan" disabled placeholder = "1">հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+           			<p><input type = "text" size = "5" id = "drTan" disabled placeholder = "180">դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "TanPrice" class = "gumar" readonly></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div>  
+      		<div class = "row item">
+        		<div class = "col-sm-2"></div>
+        		<div class = "col-sm-3">
+          			<p><input type="checkbox"   id = "etcXmichq">Այլ
+             				<input type = "text" id = "EtcNameXmichq" placeholder="Անուն" size = "8" disabled>
+          			</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "hatEtcXmichq" disabled>հատ</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "drEtcXmichq" disabled>դր</p>
+        		</div>
+        		<div class = "col-sm-2">
+          			<p><input type = "text" size = "5" id = "EtcXmichqPrice" class = "gumar" readonly></p>
+        		</div>
+        		<div class = "col-sm-1"></div>
+      		</div>
+	</div>
+    	</div>         
+    </body>
+</html>  
