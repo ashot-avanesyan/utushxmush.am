@@ -1,0 +1,23 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar {
+    margin-bottom: 40px;
+}
+#TotalButton {
+	border-color: ff00ff;
+	position: fixed;
+	top: 80%;
+	left: 70px;
+}
+ul#nav {
+right: 80%;
+}
+div .row {
+margin-top:-350px;
+}
+{
+    background-image: url("kanach1.jpg");
+    background-color: #cccccc;
+}

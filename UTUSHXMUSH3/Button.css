@@ -1,0 +1,102 @@
+.Button{
+	margin-top: 10%;
+	margin-right: 35%;
+	margin-left: 45%;
+	margin-bottom: 10%;
+	border-color: rgb(144, 225, 122);
+	background-color: rgb(144,225,122);
+}
+
+.Input{
+	border-color: rgb(144, 225, 122); 
+	background-color: rgb(144,225,122);
+}
+#TotalButton {
+	position: fixed;
+	top: 71%;
+	left: 82%;
+	background-color: #CDA373;
+	border-style: none;
+}
+body {
+   /* background-image: url("kanach1.jpg");*/
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+
+}
+ #kanach {
+	position: fixed;
+	top: 21%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	height: 79%;
+	width: 100%;
+	z-index: -4;
+}	
+#Xoz {
+
+}
+.navbar {
+    margin-bottom: 200px !important;
+}
+#total{
+	background-color: #CDA373;
+	 border-style: none;
+
+}
+#totalForOne{
+	background-color: #CDA373;
+	 border-style: none;
+
+}
+div#logo img {
+	width: 10%;
+	height: 18%;
+	margin-left: 5%;
+	position: fixed;
+}
+iv#clouds { 
+	position: fixed; 
+	top: 0%;
+	left: 0%; 
+	width: 100%; 
+	height: 13%; 
+	background: url("clouds1.png");
+	z-index: -2; 
+	opacity: 0.5;
+	background-position: left;
+	-webkit-animation: mymove 60s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 60s infinite;
+}
+
+@-webkit-keyframes mymove {
+    100% { background-position: right;} 
+}
+
+@keyframes mymove {
+    100% {background-position: right;} 
+}
+
+div#sky { 
+	position: fixed; 
+	top: 0;
+	left: 0; 
+	width: 100%; 
+	height: 23%;
+	background: url("sky_bg.jpg");
+    	z-index: -3;
+	opacity: 0.5;
+	background-position: right; 
+	-webkit-animation: mySkymove 60s infinite; /* Chrome, Safari, Opera */
+    animation: mySkymove 60s infinite;
+    
+}
+
+@-webkit-keyframes mySkymove {
+    100% { background-position: left;} 
+}
+
+@keyframes mySkymove {
+    100% {background-position: left;} 
+}
