@@ -44,4 +44,7 @@ function myFunction() {
     	alert("Մուտքագրեք մասնակիցնրի քանակը");
     }
 }
-
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})

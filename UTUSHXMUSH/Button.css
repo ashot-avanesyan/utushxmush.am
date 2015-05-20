@@ -3,16 +3,38 @@
 	margin-right: 35%;
 	margin-left: 45%;
 	margin-bottom: 10%;
-	border-color: rgb(144, 225, 122);
-	background-color: rgb(144,225,122);
+	
 }
 
 .Input{
-	border-color: rgb(144, 225, 122); 
-	background-color: rgb(144,225,122);
+	
+	background-color: transparent !important;
+	border-style: none;
+	border-color: transparent !important;
+	font-weight: bold;
 }
 #TotalButton {
 	position: fixed;
 	top: 80%;
 	left: 80%;
+	background-color: transparent !important;
+	border-style: none;
+	border-color: transparent !important
+
 }
+#total{
+	background-color: transparent !important;
+	border-style: none;
+	border-color: transparent !important;
+
+}
+#totalForOne{
+	background-color: transparent !important;
+	border-style: none;
+	border-color: transparent !important;
+
+}
+hr{
+	border-color: #000 !important;
+}
+
