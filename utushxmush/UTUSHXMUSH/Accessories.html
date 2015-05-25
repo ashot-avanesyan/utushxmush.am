@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+										initial-scale=1.0,
+										maximum-scale=1.0,
+										user-scalable=no">
+	<link rel = "stylesheet" type = "text/css" href = "Button.css">
+     <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+	<script src = "Accessories.js"></script> 
+  </head>
+  <body>
+    <div class="container">
+		<div class = "row">
+			<div class = "center-block">
+				<button role = "presentation" class = "Button">Պարագաներ</br>
+					<input type = "text" size = "10" class = "Input" readonly placeholder= "Ընդամենը" id = "totalAccessories">
+				</button>
+			</div>
+		</div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+		<div class = "col-sm-8">
+        	<p><input type = "checkbox">Առաջին բուժօգնության պարագաներ</p>
+        </div>
+		<div class = "col-sm-2"></div>
+	</div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+		<div class = "col-sm-8">
+        	<p><input type = "checkbox">ժամանցի պարագաներ (գնդակ, բադմինտոն և այլ )</p>
+        </div>
+		<div class = "col-sm-2"></div>
+	</div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+		<div class = "col-sm-8">
+        	<p><input type = "checkbox">Ծածկոցներ</p>
+        </div>
+		<div class = "col-sm-2"></div>
+	</div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+		<div class = "col-sm-8">
+        	<p><input type = "checkbox">Ինքնաեռ</p>
+        </div>
+		<div class = "col-sm-2"></div>
+	</div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+        <div class = "col-sm-2">
+        	<p><input type = "checkbox" id = "Ax">Աղ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5" placeholder = "1" id = "AxTup" disabled>տուփ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5"  placeholder = "200" id = "AxDr" disabled>դր</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" readonly size = "5" id = "AxPrice"></p>
+        </div>
+		<div class = "col-sm-2"></div>
+    </div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+        <div class = "col-sm-2">
+        	<p><input type = "checkbox" id = "Pxpex">Պղպեղ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5"  placeholder = "1" id = "PxpexTup" disabled>տուփ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5"  placeholder = "150" id = "PxpexDr" disabled>դր</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" readonly size = "5" id = "PxpexPrice"></p>
+        </div>
+		<div class = "col-sm-2"></div>
+    	</div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+        <div class = "col-sm-2">
+        	<p><input type = "checkbox" id = "Spasq">Սպասք</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5" placeholder = "1" id = "SpasqHat" disabled>հատ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5" placeholder = "5000" id = "SpasqDr" disabled>դր</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" readonly size = "5" id = "SpasqPrice"></p>
+        </div>
+		<div class = "col-sm-2"></div>
+    </div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+        <div class = "col-sm-2">
+        	<p><input type = "checkbox" id = "Shampur">Շամփուր</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5" placeholder = "1" id = "ShampurQanak" disabled>քանակ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5"  placeholder = "200" id = "ShampurDr" disabled>դր</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" readonly size = "5" id = "ShampurPrice"></p>
+        </div>
+		<div class = "col-sm-2"></div>
+    </div>
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+        <div class = "col-sm-2">
+        	<p><input type = "checkbox" id = "Toprak">Տոպրակ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5" placeholder = "1" id = "ToprakQanak" disabled>քանակ</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" size = "5"  placeholder = "100" id = "ToprakDr" disabled>դր</p>
+        </div>
+        <div class = "col-sm-2">
+        	<p><input type = "text" readonly size = "5" id = "ToprakPrice"></p>
+        </div>
+		<div class = "col-sm-2"></div>
+    </div>
+    <div  class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-2">
+			<p><input type="checkbox" id = "EtcP">Այլ
+		 		<input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcPName"></p>
+		</div>
+		<div class="col-sm-2">
+			<p><input class = "mass" type = "text" size="5" min = "0" id = "qanakEtcP" disabled >քանակ</p>
+		</div>
+		<div class="col-sm-2">
+			<p><input type = "text" class = "mass" size="5" id = "drEtcP" disabled >դր</p>
+		</div>
+		<div class="col-sm-2">
+			<p><input type = "text" size="5" readonly id = "EtcPPrice"> </p>
+		</div>
+		<div class="col-sm-2">
+	</div>
+	</div>
+  </div>
+		
+  </body>
+  </html>

@@ -1,0 +1,30 @@
+.Input{
+	
+	background-color: transparent !important;
+	border-style: none;
+	border-color: transparent !important;
+	font-weight: bold;
+}
+#TotalButton {
+	position: fixed;
+	top: 70%;
+	left: 80%;
+	background-color: transparent !important;
+	border-style: none;
+	border-color: transparent !important
+
+}
+#total{
+	background-color: transparent !important;
+	border-style: none;
+}
+#totalForOne{
+	background-color: transparent !important;
+	border-style: none;
+	border-color: transparent !important;
+
+}
+hr{
+	border-color: #000 !important;
+}
+

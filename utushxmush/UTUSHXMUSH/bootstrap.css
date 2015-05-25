@@ -1,0 +1,19 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+#TotalButton {
+	border-color: ff00ff;
+	position: fixed;
+	top: 50%;
+
+}
+ul#nav {
+right: 80%;
+}
+div .row {
+margin-top:-350px;
+}
