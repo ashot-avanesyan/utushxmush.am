@@ -1,5 +1,9 @@
 jQuery(document).ready(function($){
 
+	$("input").click(function(){  
+		calculator();
+	});
+
 	$("input").blur(function(){  
 		calculator();
 	});
@@ -7,12 +11,20 @@ jQuery(document).ready(function($){
 	$("input").change(function(){  
 		calculator();
 	});
+      
+	$("#inputDistance3").blur(function(){ 
+		totalTransport(); 
+	}); 
+	$("#inputSuccess").blur(function(){ 
+		totalTransport(); 
+	}); 
 
 	function calculator() {
+				
 		$("#total").val(Number($("#totalAccessories").val()) + 
 			Number($("#totalOvernight").val()) + Number($("#totalDesert").val()) + 
 			Number($("#totalVegetable").val()) +  Number($("#totalKhimchq").val()) + 
-			Number($("#totalMsamterq").val()));
+			Number($("#totalMsamterq").val())  + Number($("#totalCost").val()));
 		var count = Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()) + Number($("#inputChildren3").val());
 		if (count != 0) {
 		 	$("#totalForOne").val(Math.ceil((Number($("#total").val()) / (Number($("#inputMenl3").val()) + Number($("#inputWomen3").val()))) / 10)*10);
@@ -20,6 +32,12 @@ jQuery(document).ready(function($){
 			$("#totalForOne").val(0); 
 		}
 	}
+	//totalTransport()
+	function totalTransport ()
+	 {
+	     document.getElementById("totalCost").value = Number(document.getElementById("inputDistance3").value) * Number(document.getElementById("inputSuccess").value);
+	     calculator();
+	 }
 
 // Input field let only numbers	
   $("input").keypress(function (e) {
@@ -31,20 +49,20 @@ jQuery(document).ready(function($){
    });
 
 });
-//totalTransport()
-function totalTransport ()
- {
-     document.getElementById("totalCost").value = Number(document.getElementById("distance").value) * Number(document.getElementById("cost").value);
- }
 //check amount of participants and display tooltip
-function myFunction() {
+function myFunction(e) {
     
     if (document.getElementById("inputMenl3").value < 1 && document.getElementById("inputWomen3").value < 1) {
-
     	alert("Մուտքագրեք մասնակիցնրի քանակը");
+    //	return e.preventDefault()
     }
 }
+
+
+
 $('#myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
-})
+}) 
+
+

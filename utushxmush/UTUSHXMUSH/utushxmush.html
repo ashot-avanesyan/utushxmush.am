@@ -1,309 +1,963 @@
 
 <!DOCTYPE html>
+
 <html>
 <head>
-	 <meta charset="utf-8">
-    	 <meta name="viewport" content="width=device-width, 
-					initial-scale=1.0,
-					maximum-scale=1.0,
-					user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel = "stylesheet" type = "text/css" href = "button.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-        <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-   
-	<script src="Chashacank.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src = "overnight.js"></script>
+  <script type ="text/javascript" src = "accessories.js"></script>
+  <script type ="text/javascript" src = "meatProducts.js"></script>
+  <script type ="text/javascript" src = "spice.js"></script>
+  <script type ="text/javascript" src = "vegetable.js"></script>
+  <script type ="text/javascript" src = "dessert.js"></script>
+  <script type ="text/javascript" src = "total.js"></script>
 </head>
 <body>
-<div id="d_2_1_tabs" class="row">
-	<div class ="col-sm-2">
-		<ul class="nav nav-pills nav-stacked">
-			<button role="presentation" ><a href="#">Մսամթերք</a><br><input size="10"></input></button>
-			<br>
-        	<br>
- 			<button role="presentation"><a href="#">Խմիչք</a><br><input size="10"></input></button>
-            <br>
-        	<br>
- 			<button role="presentation"><a href="#">Բանջարեղեն</a><br><input size="10"></input></button>
-            <br>
-        	<br>
-		 	<button role="presentation"><a href="#">Դեսերտ</a><br><input size="10"></input></button>
-		</ul>
-	</div>
-	<div class="col-sm-2">
-		<p><input type="checkbox" id = "Xoz" onclick = "initializeDinner(pig); price(pig); subTotal(pig);total();">Խոզ</p>
-		<p><input type="checkbox" id = "Gar" onclick = "initializeDinner(lamb); price(lamb); subTotal(lamb);total();">Գառ</p>
-		<p><input type="checkbox" id = "Ayc" onclick = "initializeDinner(goat); price(goat);subTotal(goat);total();">Այծ</p>
-		<p><input type="checkbox" id = "Hav" onclick = "initializeDinner(chicken); price(chicken);subTotal(chicken);total();">Հավ</p>
-		<p><input type="checkbox" id = "Tev" onclick = "initializeDinner(wing); price(wing); subTotal(wing);total();">Թև</p>
-		<p><input type="checkbox" id = "Bud" onclick = "initializeDinner(haunch); price(haunch); subTotal(haunch);total();">Բուդ</p>
-		<input type = "checkbox"  id = "Ershik" onclick = "initializeDinner(sausage); price(sausage); subTotal(sausage);total();">Երշիկ</p>
-		<input type = "checkbox"  id = "Nrbershik" onclick = "initializeDinner(frankfurter); price(frankfurter); subTotal(frankfurter);total();">Նրբերշիկ</p>
-		<p><input type="checkbox" id = "Sal" onclick = "initializeDinner(anvil); price(anvil); subTotal(anvil);total();">Սալ</p>
-		<p><input type="checkbox"  id = "Xorotik" onclick = "initializeDinner(internal_organs); price(internal_organs);subTotal(internal_organs);total();">Խորոտիկ</p>
-		<p><input type="checkbox" id = "Etc" onclick = "initializeDinner(etc); price(etc); subTotal(etc);total();">Այլ
-			<input type = "text" id = "name" placeholder="Անուն" size = "5" disabled></p>
-	</div>
-	<div class="col-sm-2">
-		<p><input class= "mass"  size="5" type="text" id = "kgXoz" placeholder="1" disabled onblur = "price(pig); subTotal(pig);total();" onkeyPress = "return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class= "mass"  size="5" type = text" id = "kgGar" disabled placeholder="1" onblur = "price(lamb);subTotal(lamb);total();" onkeyPress ="return numbersOnlyFloat(this,event);">կգ</p>
-		<p><input  size="5" class= "mass" type="text" id = "kgAyc" placeholder="1"  disabled onblur = "price(goat); subTotal(goat);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class= "mass"  size="5" type = "text" id = "kgHav" placeholder="1"  disabled onblur = "price(chicken); subTotal(chicken);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class="mass" type = "text" size = "5" id = "kgTev" placeholder="1"  disabled onblur = "price(wing); subTotal(wing);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class="mass" type = "text"  size="5" id = "kgBud" placeholder="1"  disabled onblur = "price(haunch); subTotal(haunch);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class= "mass" size="5"type = "text" id = "kgErshik" placeholder="1"  disabled onblur = "price(sausage); subTotal(sausage);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-   		<p><input class= "mass" size="5"type = "text" id = "kgNrbershik" placeholder="1"  disabled onblur = "price(frankfurter); subTotal(frankfurter);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class= "mass" type = "text" size="5" id = "kgSal" placeholder="1"  disabled onblur = "price(anvil); subTotal(anvil);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<input class="mass" type = "text" size = "5" id = "kgXorotik" placeholder="1"  disabled onblur = "price(internal_organs); subTotal(internal_organs);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class="mass" type="text" size="5" id = "kgEtc" disabled onblur = "price(etc); subTotal(etc);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-	</div>
-	 <div class="col-sm-2">
-		<p><input  type = "text" size="5"class = "mass" id = "drXoz" placeholder="3800"  disabled onblur ="price(pig);subTotal(pig);total()" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input  size="5" type = "text" class = "mass"  id = "drGar" placeholder="3000"  disabled onblur = "price(lamb); subTotal(lamb);total();" onkeyPress ="return numbersOnly(this,event);">դր</p>
-		<p><input type = "text" class = "mass"   size="5" id = "drAyc" placeholder="3500"  disabled onblur = "price(goat); subTotal(goat);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass"  size="5"  id = "drHav" placeholder="1600"  disabled onblur = "price(chicken); subTotal(chicken);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" size = "5" class = "mass" id = "drTev" placeholder="1600"  disabled onblur = "price(wing); subTotal(wing);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5"id = "drBud" placeholder="1200"  disabled onblur = "price(haunch); subTotal(haunch);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" size="5"class = "mass" id = "drErshik" placeholder="1700"  disabled onblur = "price(sausage); subTotal(sausage);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drNrbershik" placeholder="1200"  disabled onblur = "price(frankfurter); subTotal(frankfurter);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5"id = "drSal" placeholder="1000"  disabled onblur = "price(anvil); subTotal(anvil);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5"id = "drXorotik" placeholder="1000"  disabled onblur = "price(internal_organs); subTotal(internal_organs);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5"id = "drEtc" disabled onblur = "price(etc); subTotal(etc);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-	</div>
-	<div class="col-sm-2">
-		<p><input type = "text" size = "5"  id = "XozPrice" class = "noneBorder" readonly> </p>
-		<p><input type = "text" size="5" class  = "noneBorder" id = "GarPrice" readonly> </p>	
-		<p><input type = "text" id = "AycPrice" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "HavPrice" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "TevPrice" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "BudPrice" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "ErshikPrice"size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "NrbershikPrice" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "SalPrice" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "XorotikPrice" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "EtcPrice" size="5" class  = "noneBorder" readonly> </p>
-	</div>	
-	<div class="col-sm-2">
-	</div>
-</div>
-<div id="d_2_2_tabs" class="row">
-	<div class="col-sm-2">
-	</div>
-	<div class="col-sm-2">
-		<p><input type="checkbox" id = "spice" min = "1" max = "99" name="spice" >
-		<select name="character" id = "firstSpice" class = "lengthOfButton" onchange = "initializeDrink(firstSpice); priceDrink(firstSpice); subTotal(firstSpice);total();">
-     		<option value="Nemiroff">Nemiroff</option>
-        	<option value="Talka">Зеленая Марка</option>
-        	<option value="5_ozer">Русский мед</option>
-         	<option value="Artsakh">Арцах</option>
-       		<option value="Zima">Путинка</option>
-          	<option value="EtcSpice">Այլ</option>
-    	</select></p>
-		<p><input type="checkbox" id = "wine" name="spice" value="Salt" onclick = "initializeDrink(secondSpice); priceDrink(secondSpice);subTotal(secondSpice);total();">
-		<select name="character" id = "secondSpice" class = "lengthOfButton" onchange = "initializeDrink(secondSpice); priceDrink(secondSpice);subTotal(secondSpice);total();">
-       		<option value="Armenia">Armenia</option>
-          	<option value="Areni">Արենի</option>
-          	<option value="Kagor">Կագոր</option>
-         	<option value="Sapiravi">Ամարաս</option>
-          	<option value="Shushi">Շուշի</option>
-          	<option value="EtcWine">Այլ</option>
-		</select></p>
-		<p><input id ="beer" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(thirdSpice); priceDrink(thirdSpice); subTotal(thirdSpice);total();">
-		<select name="character"  class = "lengthOfButton" id = "thirdSpice" onchange = "initializeDrink(thirdSpice); priceDrink(thirdSpice); subTotal(thirdSpice);total();">
-       		<option value="Gyumri">Գյումրի</option>
-     		<option value="Miller">Балтика</option>
-          	<option value="Kilikia">Kilikia</option>
-          	<option value="Kotayk">Kotayk</option>
-          	<option value="Kellers_Gold">Ararat</option>
-          	<option value="EtcBeer">Այլ</option>
-		</select></p>
-		<p><input id="juice" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fourthSpice); priceDrink(fourthSpice);subTotal(fourthSpice);total();">
-		<select name="character" class = "lengthOfButton" id = "fourthSpice" onchange = "initializeDrink(fourthSpice); priceDrink(fourthSpice);subTotal(fourthSpice);total();">
-         	<option value="Menq">Մենք</option>
-          	<option value="Noy">Նոյ</option>
-          	<option value="Ararat">Արարատ</option>
-          	<option value="Sis">Սիս</option>
-          	<option value="J7">J7</option>
-          	<option value="EtcJuice">Այլ</option>
-		</select></p>
-		<p><input id="fizzy" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(fifthSpice); priceDrink(fifthSpice); subTotal(fifthSpice);total();">
-		<select name="character" class  = "lengthOfButton" id = "fifthSpice" onchange = "initializeDrink(fifthSpice); priceDrink(fifthSpice);subTotal(fifthSpice);total();">
-          	<option value="Coca_Cola">Coca-Cola</option>
-          	<option value="Fanta">Fanta</option>
-          	<option value="Sprite">Sprite</option>
-          	<option value="Papa_Karlo">Պապա Կառլո</option>
-          	<option value="Tnjri">Տնջրի</option>
-          	<option value="EtcFizzy">Այլ</option> 
-		</select></p>
-		<p><input id="water" type="checkbox" name="spice" value="Salt" onclick = "initializeDrink(sixthSpice); priceDrink(sixthSpice);subTotal(sixthSpice);total();">
-		<select name="character" class = "lengthOfButton" id = "sixthSpice" onchange = "initializeDrink(sixthSpice); priceDrink(sixthSpice);subTotal(sixthSpice);total();">
-        	<option value="Jermuk">Ջերմուկ</option>
-          	<option value="Bjni">Բջնի</option>
-          	<option value="Byuregh">Բյուրեղ</option>
-          	<option value="Noy">Նոյ</option>
-           	<option value="Arzni">Արզնի</option>
-           	<option value="EtcWater">Այլ</option> 
-		</select>
-		<p><input type="checkbox" value = "buttermilk" id = "buttermilk" onclick = "initializeDinner(buttermilk); price(buttermi    lk);subTotal(buttermilk);total();">Թան</p>
-		<p><input type="checkbox"  value ="etcDrink" id = "etcDrink" onclick = "initializeDinner(etcDrink); price(etcDrink); sub    Total(etcDrink);total();">Այլ<input type = "text" id = "nameEtcDrink" placeholder="Անուն" size = "8" disabled></p>
-	</div>
-	<div class="col-sm-2">
-		<p><input class="mass" type="text" placeholder ="1"size="5" min="0" max = "99" id = "amountSpice" disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</p>
-		<p><input class="mass" type="text"size="5" min="0" max = "99" placeholder ="1" id = "amountWine" disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</p>
- 		<p><input class="mass" size="5" type="text" placeholder ="1" min = "0" max = "99" id = "amountBeer" disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</p>
-		<p><input class="mass" size="5"type="text" placeholder ="1" min = "0" max = "99" id = "amountJuice" disabled onblur = "priceDrink(fourthSpice);subTotal(fourthSpice);total();"onkeyPress ="return numbersOnly(this, event);">հատ</p>
-		<p><input class="mass" size="5" type="text" placeholder ="1" min = "0" max = "99" id = "amountFizzy" disabled onblur = "priceDrink(fifthSpice)" onchange ="subTotal(fifthSpice);total();">հատ</p>
-		<p><input class="mass" size="5" type="text" placeholder ="1" min = "0" max = "99" id = "amountWater" disabled onblur ="priceDrink(sixthSpice);subTotal(sixthSpice);total();" onkeyPress ="return numbersOnly(this, event);">հատ</p>
-		<p><input size="5"class= "mass" type="text" min = "0" max = "99" id = "hatButtermilk"  placeholder="1"  disabled onblur = "price(bu    ttermilk);subTotal(buttermilk);total();" onkeyPress ="return numbersOnly(this, event);">հատ</p>
-		<p><input size="5"class="mass" type="text" min = "0" id = "hatEtcDrink" disabled onblur ="priceDrink(etcDrink);subTotal(etcDrink);total();" onkeyPr    ess ="return numbersOnly(this, event);">հատ</p>
-	</div>
-	<div class="col-sm-2">
-		<p><input class = "mass" type="text" id = "drSpice" size="5" placeholder="2700"  disabled onblur = "priceDrink(firstSpice); subTotal(firstSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input class = "mass"size="5" type="text" id = "drWine" placeholder="1720"  disabled onblur = "priceDrink(secondSpice); subTotal(secondSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input class = "mass"size="5" type="text" id = "drBeer" placeholder="430"  disabled onblur = "priceDrink(thirdSpice); subTotal(thirdSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input  class = "mass" size="5" type="text" id = "drJuice" placeholder="450"  disabled onblur = "priceDrink(fourthSpice); subTotal(fourthSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input class = "mass" size="5" type="text" id = "drFizzy" placeholder="390"  disabled onblur = "priceDrink(fifthSpice)" onchange = "subTotal(fifthSpice);total();">դր</p>
-		<p><input class = "mass" size="5" type="text" id = "drWater" placeholder="250"  disabled onblur = "priceDrink(sixthSpice); subTotal(sixthSpice);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" size="5"class = "mass" id = "drButtermilk" placeholder="180"  disabled onblur ="price(buttermilk);subTot    al(buttermilk);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" id = "drEtcDrink" size="5" disabled onblur = "price(etcDrink); subTotal(etcDrink);total();    " onkeyPress ="return numbersOnly(this, event);">դր</p>
-	</div>
-	<div class="col-sm-2">
-		<p><input type = "text" id = "spice_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "wine_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type ="text" id = "beer_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "juice_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "fizzy_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "water_price" size="5" class  = "noneBorder" readonly></p>
-        <p><input type = "text" id = "water_price" size="5" class  = "noneBorder" readonly></p>  		
-		<p><input type = "text" id = "etcDrink_price" size="5" class  = "noneBorder" readonly> </p>
-	</div>
-	<div class="col-sm-2">
-	</div>
-</div>
-<div id="d_2_3_tabs" class="row">
-	<div class="col-sm-2">
-	</div>
-	<div class="col-sm-2">
-		<p><input type="checkbox" value ="tomato" id = "tomato" size="5"onclick = "initializeDinner(tomato); price(tomato);subTotal(tomato);total();    ">Լոլիկ</p>
-		<p><input type="checkbox" value ="cucumbers"  id = "cucumbers" onclick = "initializeDinner(cucumbers); price(cucumbers); subTotal(cuc    umbers);total();">Վարունգ</p>
-		<p><input type="checkbox" value ="eggplant" id = "eggplant" onclick = "initializeDinner(eggplant); price(eggplant);subTotal(eggplant);total();">Սմբուկ</p>
-		<p><input type="checkbox" value ="onion" id = "onion" onclick = "initializeDinner(onion); price(onion);subTotal(onion);total();">Սոխ</p>
-		<p><input type="checkbox" value ="greens" id = "greens" onclick = "initializeDinner(greens); price(greens);subTotal(greens);total();">Կանաչի</p>
-		<p><input type="checkbox" value ="potatoes" id = "potatoes" onclick = "initializeDinner(potatoes); price(potatoes);subTotal(potatoes);total();">Կարտոֆիլ</p>
-		<p><input type="checkbox" value ="pepper" id = "pepper" onclick = "initializeDinner(pepper); price(pepper);subTotal(pepper);total();">Բիբար</p>
-		<p><input type="checkbox" value ="etcVegetable" id = "etcVegetable" onclick = "initializeDinner(etcVegetable);price(etcVegetable);subTotal(etcVegetable);total();">Այլ<input type ="text" placeholder="Անուն" id = "nameVegetable" size= "5" disabled></p>
-	</div>
-	<div class="col-sm-2">
-		<input class =  "mass" type = "text" min = "0" size="5"max = "99" id = "kgTomato" placeholder="1"  disabled onblur = "price(tomato); subTota    l(tomato);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgCucumbers" placeholder="1"  disabled onblur = "price(cucumbers)    ; subTotal(cucumbers);total();"onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgEggplant" placeholder="1"  disabled onblur = "price(eggplant);subTotal(eggplant);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgOnion" placeholder="1"  disabled onblur = "price(onion);subTotal(onion);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "punjGreens" placeholder="1"  disabled onblur = "price(greens); subTotal(greens);total();" onkeyPress ="return numbersOnly(this, event);">փունջ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgPotatoes" placeholder="1"  disabled onblur = "price(potatoes); subTotal(potatoes);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgPepper" placeholder="1"  disabled onblur = "price(pepper); subTotal(pepper);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" id = "kgEtcVegetable" disabled onblur = "price(etcVegetable);subTotal(etcVegetable);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-	</div>
-	<div class="col-sm-2">
-		<input type = "text" class = "mass" size="5"id = "drTomato" placeholder="300"  disabled onblur = "price(tomato); subTotal(tomato);total();"     onkeyPress ="return numbersOnly(this, event);">դր
-		<p><input type = "text" class = "mass" size="5" id = "drCucumbers" placeholder="400"  disabled onblur = "price(cucumbers); subTotal(cucumbers);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drEggplant" placeholder="500"  disabled onblur = "price(eggplant);subTotal(eggplant);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drOnion" placeholder="350"  disabled onblur = "price(onion);subTotal(onion);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drGreens" placeholder="250"  disabled onblur = "price(greens); subTotal(greens);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drPotatoes" placeholder="200"  disabled onblur = "price(potatoes); subTotal(potatoes);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drPepper" placeholder="450"  disabled onblur = "price(pepper); subTotal(pepper);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" id = "kgEtcVegetable" disabled onblur = "price(etcVegetable);subTotal(etcVegetable);total();" onkeyPress ="return numbersOnlyFloat(this, event);">դր</p>
-	</div>
-	<div class="col-sm-2">
-		<p><input type = "text" id = "tomato_price" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "cucumbers_price" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "eggplant_price" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "onion_price" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "greens_price" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "potatoes_price" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "pepper_price" size="5" class  = "noneBorder" readonly> </p>
-		<p><input type = "text" id = "etcVegetable_price" size="5" class  = "noneBorder" readonly> </p>
-	</div>
-</div>
-<div id="d_2_4_tabs" class="row">
-	<div class="col-sm-2">
-	</div>
-    <div class="col-sm-2">
-		<p><input type="checkbox" value ="sweetmeat" id = "sweetmeat" onclick = "initializeDinner(sweetmeat); price(sweetmeat);subTotal(sweetmeat);total();">Կոնֆետ</p>
-		<p><input type="checkbox" value ="Chocolates" id = "chocolates" onclick = "initializeDinner(chocolates); price(chocolates);subTotal(chocolates);total();">Շոկոլադ</p>
-		<p><input type="checkbox" value ="Lobe" id = "lobe" onclick = "initializeDinner(lobe); price(lobe);subTotal(lobe);total();">Թխվածքաբլիթ</p>
-		<p><input type="checkbox" value ="Tea" id = "tea" onclick = "initializeDinner(tea); price(tea);subTotal(tea);total();">Թեյ</p>
-		<p><input type="checkbox" value ="Coffee" id = "coffee" onclick = "initializeDinner(coffee); price(coffee);subTotal(coffee);total();">Սուրճ</p>
-		<p><input type="checkbox" value ="Instant_coffee" id = "Instant_coffee" onclick = "initializeDinner(Instant_coffee); price(Instant_coffee);subTotal(Instant_coffee);total();">Լուծվող սուրճ</p>
-		<p><input  type="checkbox" name="spice" value="fruit" id = "fruit" onclick = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();">Մրգեր
-		<select name="character" style = "margin-left:12%;" class = "lengthOfButton1" id = "fruitSelector" onchange = "initializeDrink(fruitSelector); priceDrink(fruitSelector);subTotal(fruitSelector);total();"></p>
-     		<option value="Apple">Խնձոր</option>
-          	<option value="Pear">Տանձ</option>
-          	<option value="Banana">Բանան</option>
-          	<option value="Orange">Նարինջ</option>
-          	<option value="Mandarin">Մանդարին</option>
-         	<option value="EtcFruit">Այլ</option>
-		</select>
-		<p><input type="checkbox" name="spice" value="desserts" id = "desserts" onclick = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();">Աղանդեր
-		<select name="character" style = "margin-left:1%;"  class = "lengthOfButton1" id = "dessertChips" onchange = "initializeDrink(dessertChips); priceDrink(dessertChips);subTotal(dessertChips);total();"></p>
-			<option value="Chips">Չիպս</option>
-          	<option value="Sunflower">Արևածաղիկ</option>
-           	<option value="Peanut">Գետնանուշ</option>
-			<option value="Salt_sticks">Աղի ձողիկներ</option>
-          	<option value="EtcDesserts">Այլ</option>
-		</select>
-		<p><input  type="checkbox" name="spice" value="bread" id = "bread" onclick = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total();">Հաց
-			<select name="character" style = "margin-left:19%;"  class = "lengthOfButton1" id = "breadSelector" onchange = "initializeDrink(breadSelector); priceDrink(breadSelector);subTotal(breadSelector);total(); "></p>
-        	<option value="Lavash">Լավաշ</option>
-         	<option value="Matnaqash">Մատնաքաշ</option>
-         	<option value="Romashka">Ռոմաշկա</option>
-           	<option value="Baton">Բատոն</option>
-         	<option value="etcBread">Այլ</option>
-       	</select>
-		<p><input type="checkbox" value ="etcDesert" id = "etcDesert" onclick = "initializeDinner(etcDesert); price(etcDesert); subTotal(etcDesert);total();">Այլ<input type = "text" size="7" style = "margin-left:30%"  id = "nameEtcDesert" placeholder="Անուն" disabled></p>
-  	</div>
-	<div class="col-sm-2">
-		<p><input class="mass" type ="text" size="5" min = "0" max = "99"  id = "kgSweetmeat" placeholder="1"  disabled onblur = "price(sweetmeat); subTotal(sweetmeat);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class ="mass" type = "text" size="5" min = "0" max = "99" id = "kgChocolates" placeholder="1"  disabled onblur = "price(chocolates);subTotal(chocolates);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class ="mass" type = "text" size="5" min = "0" max = "99" id = "kgLobe" placeholder="1"  disabled onblur = "price(lobe); subTotal(lobe);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "tupTea" placeholder="1"  disabled onblur = "price(tea); subTotal(tea);total();" onkeyPress ="return numbersOnly(this, event);">տուփ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "tupCoffee" placeholder="1"  disabled onblur = "price(coffee); subTotal(coffee);total();" onkeyPress ="return numbersOnly(this, event);">տուփ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "hatInstant_coffee" placeholder="1"  disabled onblur = "price(Instant_coffee); subTotal(Instant_coffee);total();" onkeyPress ="return numbersOnly(this, event);">հատ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgFruit" placeholder="1"  disabled onblur = "priceDrink(fruitSelector); subTotal(fruitSelector);total();" onkeyPress ="return numbersOnly(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgDesserts" placeholder="1"  disabled onblur = " priceDrink(dessertChips);subTotal(dessertChips);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-		<p><input class = "mass" type = "text" size="5" min = "0" max = "99" placeholder="1"  id = "hatBread" disabled onblur = "priceDrink(BreadSelector); subTotal(breadSelector);total(); ">հատ</p>
-		<p><input class="mass" type="text" size="5" id = "kgEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();" onkeyPress ="return numbersOnlyFloat(this, event);">կգ</p>
-	</div>
-	<div class="col-sm-2">
-		<p><input type = "text" class = "mass" size="5" id = "drSweetmeat" placeholder="2300"  disabled onblur = "price(sweetmeat);subTotal(sweetmeat);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drChocolates" placeholder="3000"  disabled onblur = "price(chocolates);subTotal(chocolates);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drLobe" placeholder="450"  disabled onblur = "price(lobe); subTotal(lobe);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drTea" placeholder="450"  disabled onblur = "price(tea); subTotal(tea);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text"  class = "mass" size="5" id = "drCoffee" placeholder="350"  disabled onblur = "price(coffee); subTotal(coffee);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input type = "text"  class = "mass" size="5" id = "drInstant_coffee" placeholder="70"  disabled onblur = "price(Instant_coffee); subTotal(Instant_coffee);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input  class = "mass" type="text" size="5" id = "drFruit" placeholder="350"  disabled onblur = "priceDrink(fruitSelector); subTotal(fruitSelector);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input class = "mass" type="text" size="5" id = "drDesserts" placeholder="450"  disabled onblur = " priceDrink(dessertChips);subTotal(dessertChips);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-		<p><input class = "mass" type="text" size="5" id = "drBread" placeholder="370"  disabled onblur = "priceDrink(breadSelector); subTotal(breadSelector);total();">դր</p>
-		<p><input type = "text" class = "mass" size="5" id = "drEtcDesert" disabled onblur = "price(etcDesert); subTotal(etcDesert);total();" onkeyPress ="return numbersOnly(this, event);">դր</p>
-	</div>
-	<div class="col-sm-2">
-		<p><input type = "text" id = "sweetmeat_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "chocolates_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "lobe_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "tea_price" size="5"  class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "coffee_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "Instant_coffee_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "fruit_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "desserts_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "bread_price" size="5" class  = "noneBorder" readonly></p>
-		<p><input type = "text" id = "etcDesert_price" size="5" class  = "noneBorder" readonly> </p>
-	</div>
-	<div class="col-sm-2">
-	</div>
-	</div>
+  <div class="container">
+    <div  class="row">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+       <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" id="myTab">
+              <li class="active"><a href="#Մասնակիցներ" data-toggle="tab">Մասնակիցներ</a></li>
+              <li><a href="#Տրանսպորտ" data-toggle="tab" onclick = "myFunction(event);">Տրանսպորտ</a></li>
+              <li><a href="#Ճաշացանկ" data-toggle="tab"  onclick = "myFunction(event)">Ճաշացանկ</a></li>
+              <li><a href="#Գիշերակաց" data-toggle="tab" onclick = "myFunction(event)">Գիշերակաց</a></li>
+              <li><a href="#Պարագաներ" data-toggle="tab" onclick = "myFunction(event)">Պարագաներ</a></li>
+            </ul>
+          </div>
+      <!-- /.navbar-collapse -->
+        </div>
+    <!-- /.container-fluid -->
+      </nav>
+  <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="Մասնակիցներ">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputMenl3" class="col-sm-5 control-label" id = "participantsInput2">Տղամարդիկ</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="inputMenl3"> 
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputWomen3" class="col-sm-5 control-label" id = "participantsInput3">Կանայք</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="inputWomen3"> 
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputChildren3" class="col-sm-5 control-label" id="participantsInput4">Մինչև 7տ. երեխաներ</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="inputChildren3"/> 
+            </div>
+          </div>
+        </form>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="Տրանսպորտ">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputPlace_of_departure3" class="col-sm-5 control-label">Մեկնման վայր</label>
+            <div class="col-sm-2">
+              <input class="form-control" id="inputPlace_of_departure3"/> 
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputWhither3" class="col-sm-5 control-label">Ժամանման վայր</label>
+            <div class="col-sm-2">
+              <input class="form-control"id="inputWhither3"/> 
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputDistance3" class="col-sm-5 control-label">Հեռավորությունը</label>
+            <div class="col-sm-2 ">
+              <input class="form-control" id="inputDistance3"/> 
+            </div>
+          </div>
+          <div class="control-group success">
+            <label class="col-sm-5 control-label" for="inputSuccess">Տրանսպորտի ծախսը</label>
+            <div class="col-sm-1">
+              <input class="form-control"id="inputSuccess" size="5" class="form-control" placeholder = "կմ/դր"/> 
+            </div>
+            <div class= "col-sm-1">
+              <input class="form-control" size="5" class="form-control"  placeholder = "դր" id = "totalCost" disabled/>  
+            </div>
+          </div>
+        </form>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="Ճաշացանկ">
+        <div role="tabpanel">
+          <!-- Nav tabs -->              
+          <ul class="nav nav-tabs nav-stacked col-sm-2"role="tablist">
+            <li role="presentation" class="active"><a href="#Մսամթերք" aria-controls="մսամթերք" role="tab" data-toggle="tab">Մսամթերք</a></li>
+            <li role="presentation"><a href="#Խմիչք" aria-controls="խմիչք" role="tab" data-toggle="tab">Խմիչք</a></li>
+            <li role="presentation"><a href="#Բանջարեղեն" aria-controls="բանջարեղեն" role="tab" data-toggle="tab">Բանջարեղեն</a></li>
+            <li role="presentation"><a href="#Դեսերտ" aria-controls="դեսերտ" role="tab" data-toggle="tab">Դեսերտ</a></li>
+          </ul>        
+          <!-- Tab panes -->
+          <div class="tab-content col-sm-10">
+            <div role="tabpanel" class="tab-pane active" id="Մսամթերք">
+              <div class = "row">                
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Xoz"/>Խոզ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgXoz" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drXoz" disabled placeholder = "3800"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "XozPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Gar"/>Գառ</p>
+                </div>  
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgGar" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drGar" disabled placeholder = "3000"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "GarPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Ayc"/>Այծ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgAyc" disabled placeholder = "1">կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drAyc" disabled placeholder = "3500"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "AycPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Hav"/>Հավ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgHav" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drHav" disabled placeholder = "1600"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "HavPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Tev"/>Թև</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgTev" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drTev" disabled placeholder = "1600"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "TevPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Bud"/>Բուդ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgBud" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drBud" disabled placeholder = "1200"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "BudPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Ershik"/>Երշիկ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgErshik" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drErshik" disabled placeholder = "1700"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "ErshikPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Nrbershik"/>Նրբերշիկ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgNrbershik" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drNrbershik" disabled placeholder = "1200"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "NrbershikPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Sal"/>Սալ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgSal" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drSal" disabled placeholder = "1000"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "SalPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Xorotik"/>Խորոտիկ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "kgXorotik" disabled placeholder = "1"/>կգ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drXorotik" disabled placeholder = "1000"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "XorotikPrice"/></p>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-2">
+                  <p><input type = "checkbox" id = "Etc"/>Այլ
+                    <input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcName"></p>
+                  </div>
+                  <div class = "col-sm-2">
+                    <p><input type = "text" size = "5" id = "kgEtc" disabled/>կգ</p>
+                  </div>
+                  <div class = "col-sm-2">
+                    <p><input type = "text" size = "5" id = "drEtc" disabled/>դր</p>
+                  </div>
+                  <div class = "col-sm-2">
+                    <p><input type = "text" readonly size = "5" id = "EtcPrice"/></p>
+                  </div>
+              </div>              
+              <div class="row">
+                <hr>
+                <div class="col-md-2 col-md-offset-10">
+                  <input type="text" id="totalMsamterq" placeholder="Ընդամենը" readonly="" class="Input" size="5"/>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Խմիչք">
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox" id = "Oxi"/>
+                    <select name="character" id = "firstSpice">
+                      <option value="Nemiroff">Nemiroff</option>
+                      <option value="RusskiyMed">Русский мед</option>
+                      <option value="Artsakh">Арцах</option>
+                      <option value="Putinka">Путинка</option>
+                      <option value="EtcOxi">Այլ</option>
+                    </select>
+                  </p>
+                </div> 
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatOxi" disabled placeholder = "1"/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drOxi" disabled placeholder = "2700"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" readonly size = "5" id = "OxiPrice" class = "gumar"/></p>
+                </div>
+              </div>
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox" id = "Gini"/>
+                    <select name="character" id = "secondSpice">
+                      <option value="Armenia">Armenia</option>
+                      <option value="Areni">Արենի</option>
+                      <option value="Kagor">Կագոր</option>
+                      <option value="Amaras">Ամարաս</option>
+                      <option value="Shushi">Շուշի</option>
+                      <option value="EtcGini">Այլ</option>
+                    </select>
+                  </p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatGini" disabled placeholder = "1"/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drGini" disabled placeholder = "1720"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "GiniPrice" class = "gumar" readonly/></p>
+                </div>
+              </div>
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox" id = "Garejur"/>
+                    <select name="character" id = "thirdSpice">
+                      <option value="Gyumri">Գյումրի</option>
+                      <option value="Baltika">Балтика</option>
+                      <option value="Kilikia">Kilikia</option>
+                      <option value="Kotayk">Kotayk</option>
+                      <option value="Ararat">Ararat</option>
+                      <option value="EtcGarejur">Այլ</option>
+                    </select>
+                  </p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatGarejur" disabled placeholder = "1"/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drGarejur" disabled placeholder = "430"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "GarejurPrice" class = "gumar" readonly/></p>
+                </div>
+              </div>
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox" id = "BnakanHyut"/>
+                    <select name="character" id = "fourthSpice">
+                      <option value="Menq">Մենք</option>
+                      <option value="Noy">Նոյ</option>
+                      <option value="Ararat">Արարատ</option>
+                      <option value="Sis">Սիս</option>
+                      <option value="J7">J7</option>
+                      <option value="EtcBnakanHyut">Այլ</option>
+                    </select>
+                  </p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatBnakanHyut" disabled placeholder = "1"/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drBnakanHyut" disabled placeholder = "450"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "BnakanHyutPrice" class = "gumar" readonly/></p>
+                </div>
+              </div>       
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox" id = "GazayinHyut"/>
+                    <select name="character" id = "fifthSpice">
+                      <option value="CocaCola">Coca-Cola</option>
+                      <option value="Fanta">Fanta</option>
+                      <option value="Sprite">Sprite</option>
+                      <option value="PapaKarlo">Պապա Կառլո</option>
+                      <option value="Tnjri">Տնջրի</option>
+                      <option value="EtcGazayinHyut">Այլ</option> 
+                    </select>
+                  </p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatGazayinHyut" disabled placeholder = "1"/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drGazayinHyut" disabled placeholder = "390"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "GazayinHyutPrice" class = "gumar" readonly/></p>
+                </div>
+              </div> 
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox" id = "Jur"/>
+                    <select name="character" id = "SixthSpice">
+                      <option value="Jermuk">Ջերմուկ</option>
+                      <option value="Bjni">Բջնի</option>
+                      <option value="Byuregh">Բյուրեղ</option>
+                      <option value="Noy">Նոյ</option>
+                      <option value="Arzni">Արզնի</option>
+                      <option value="EtcJur">Այլ</option> 
+                    </select>
+                  </p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatJur" disabled placeholder = "1"/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drJur" disabled placeholder = "250"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "JurPrice" class = "gumar" readonly/></p>
+                </div>
+              </div>
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox" value = "Tan" id = "Tan"/>Թան</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatTan" disabled placeholder = "1"/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drTan" disabled placeholder = "180"/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "TanPrice" class = "gumar" readonly/></p>
+                </div>
+              </div>  
+              <div class = "row item">
+                <div class = "col-sm-3">
+                  <p><input type="checkbox"   id = "etcXmichq"/>Այլ
+                    <input type = "text" id = "EtcNameXmichq" placeholder="Անուն" size = "8" disabled>
+                  </p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "hatEtcXmichq" disabled/>հատ</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "drEtcXmichq" disabled/>դր</p>
+                </div>
+                <div class = "col-sm-2">
+                  <p><input type = "text" size = "5" id = "EtcXmichqPrice" class = "gumar" readonly/></p>
+                </div>
+              </div>             
+              <div class="row">
+                <hr>
+                <div class="col-md-2 col-md-offset-10">
+                  <input type = "text" size = "5" class = "Input" readonly placeholder= "Ընդամենը" id = "totalKhimchq"/>
+                </div>
+              </div>              
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Բանջարեղեն">
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "Lolik"/>Լոլիկ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class =  "mass" type = "text" min = "0" size="5"max = "99" id = "kgLolik" placeholder = "1" disabled />կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drLolik" placeholder = "300" disabled />դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "LolikPrice"/> </p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "Varung"/>Վարունգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size= "5"  min = "0" max = "99" id = "kgVarung" placeholder = "1" disabled />կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drVarung" placeholder = "400" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "VarungPrice"/> </p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "Smbuk"/>Սմբուկ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgSmbuk" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drSmbuk"placeholder = "500" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "SmbukPrice"/> </p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "Sox"/>Սոխ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgSox" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drSox" placeholder = "350" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "SoxPrice"/> </p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "Kanachi"/>Կանաչի</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "punjKanachi" placeholder = "1" disabled />փունջ</p>
+                </div> 
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" id = "drKanachi" placeholder = "250" disabled />դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "KanachiPrice"/> </p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "Kartofil"/>Կարտոֆիլ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgKartofil" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drKartofil" placeholder = "200" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "KartofilPrice"/></p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id= "Bibar"/>Բիբար</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" max = "99" id = "kgBibar" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drBibar" placeholder = "450" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "BibarPrice"/> </p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "EtcB"/>Այլ
+                    <input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcBName"/></p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" id = "kgEtcB" disabled/ >կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drEtcB" disabled/ >դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly id = "EtcBPrice"/> </p>
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+                <div class="col-md-2 col-md-offset-10">
+                  <input type = "text" size = "5" class = "Input" readonly placeholder= "Ընդամենը" id = "totalVegetable"/>
+                </div>
+              </div>              
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Դեսերտ">
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id="Konfet"/>Կոնֆետ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input  type ="text" id="kgKonfet"size="5" min = "0" max = "99" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text"  id="drKonfet"size="5" placeholder = "2300" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="KonfetPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id="Shokolad"/>Շոկոլադ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input  type = "text" id="kgShokolad" size="5" min = "0" max = "99" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="drShokolad" size="5" placeholder = "3000" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="ShokoladPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id="Txvacq"/>Թխվածք</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input  type ="text" id="kgTxvacq"size="5" min = "0" max = "99" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text"  id="drTxvacq"size="5" placeholder = "2300" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="TxvacqPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox"id="Tey"/>Թեյ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text"id="kgTey" size="5" min = "0" max = "99" placeholder = "1" disabled/>տուփ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="drTey" size="5" placeholder = "450" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="TeyPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id="Surch"/>Սուրճ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input  type = "text" id="kgSurch" size="5" min = "0" max = "99" placeholder = "1" disabled/>տուփ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="drSurch"  size="5" placeholder = "350" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="SurchPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id="LS"/>Լուծվող սուրճ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="kgLS"size="5" min = "0" max = "99" placeholder = "1" disabled/>հատ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="drLS"size="5" placeholder = "70" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text"  id="LSPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input  type="checkbox" id="Mrger"/>Մրգեր
+                    <select name="character" id = "firstMrger">
+                      <option value="Apple">Խնձոր</option>
+                      <option value="Pear">Տանձ</option>
+                      <option value="Banana">Բանան</option>
+                      <option value="Orange">Նարինջ</option>
+                      <option value="Mandarin">Մանդարին</option>
+                      <option value="EtcFruit">Այլ</option>
+                    </select>
+                  </p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text"id="kgMrger" size="5" min = "0" max = "99" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input  type="text" id="drMrger"size="5" placeholder = "250" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="MrgerPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" name="spice" id="Axander"/>Աղանդեր
+                    <select name="character" id = "firstAxander">
+                      <option value="Chips">Չիպս</option>
+                      <option value="Sunflower">Արևածաղիկ</option>
+                      <option value="Peanut">Գետնանուշ</option>
+                      <option value="Salt_sticks">Աղի ձողիկներ</option>
+                      <option value="EtcDesserts">Այլ</option>
+                    </select>
+                  </p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input  type = "text" id= "kgAxander" size="5" min = "0" max = "99" placeholder = "1" disabled/>կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type="text" id="drAxander"size="5" placeholder = "450" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="AxanderPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2">
+                  <p><input  type="checkbox" id="Hac" name="spice">Հաց
+                    <select name="character" id = "firstHac">
+                      <option value="Lavash">Լավաշ</option>
+                      <option value="Matnaqash">Մատնաքաշ</option>
+                      <option value="Romashka">Ռոմաշկա</option>
+                      <option value="Baton">Բատոն</option>
+                      <option value="etcBread">Այլ</option>
+                    </select>
+                  </p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input  type = "text" id="hatHac" size="5" min = "0" max = "99" placeholder = "1" disabled/>հատ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type="text" id="drHac" size="5" placeholder = "370" disabled/>դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" id="HacPrice" class = "gumar" size="5"/></p>
+                </div>
+              </div>
+              <div  class="row">
+                <div class="col-sm-2">
+                  <p><input type="checkbox" id = "EtcD">Այլ
+                    <input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcDName"/></p>
+                </div>      
+                <div class="col-sm-2">
+                  <p><input class = "mass" type = "text" size="5" min = "0" id = "kgEtcD" disabled >/կգ</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" class = "mass" size="5" id = "drEtcD" disabled />դր</p>
+                </div>
+                <div class="col-sm-2">
+                  <p><input type = "text" size="5" readonly class = "gumar" id = "EtcDPrice"/> </p>
+                </div>
+              </div>
+              <div class="row">
+                <hr>
+                <div class="col-md-2 col-md-offset-10">
+                  <input type = "text" size = "5" class = "Input" readonly placeholder= "Ընդամենը" id = "totalDesert"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="Գիշերակաց">
+        <div class="tab-content col-sm-10">
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "Hyuranoc"/>Հյուրանոց</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "HyuranocHamar" placeholder = "1" disabled/>համար</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "HyuranocDr" placeholder = "2000" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "HyuranocPrice"/></p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" size = "5" id = "Vran"/>Վրան</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "VranHat" placeholder = "1" disabled/>հատ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "VranDr" placeholder = "2000" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "VranPrice"/></p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "Taxavar"/>Տաղավար</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "TaxavarHat" placeholder = "1" disabled/>հատ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "TaxavarDr" placeholder = "5000" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "TaxavarPrice"/></p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "EtcGisherakac">Այլ
+                <input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcGisherakacName"/></p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "EtcGisherakacHat" disabled/>հատ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" id = "EtcGisherakacDr" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "EtcGisherakacPrice"/></p>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+            <div class="col-md-2 col-md-offset-10">
+              <input type = "text" size = "5" class = "Input" readonly placeholder= "Ընդամենը" id = "totalOvernight"/>
+            </div>             
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane col-sm-10" id="Պարագաներ">
+        <div class="tab-content">
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox"/>Առաջին բուժօգնության պարագաներ</p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+             <p><input type = "checkbox"/>ժամանցի պարագաներ (գնդակ, բադմինտոն և այլ )</p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox"/>Ծածկոցներ</p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox"/>Ինքնաեռ</p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "Ax"/>Աղ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" placeholder = "1" id = "AxTup" disabled/>տուփ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5"  placeholder = "200" id = "AxDr" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "AxPrice"/></p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "Pxpex"/>Պղպեղ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5"  placeholder = "1" id = "PxpexTup" disabled/>տուփ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5"  placeholder = "150" id = "PxpexDr" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "PxpexPrice"/></p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "Spasq"/>Սպասք</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" placeholder = "1" id = "SpasqHat" disabled/>հատ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" placeholder = "5000" id = "SpasqDr" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "SpasqPrice"/></p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "Shampur"/>Շամփուր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" placeholder = "1" id = "ShampurQanak" disabled/>քանակ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5"  placeholder = "200" id = "ShampurDr" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "ShampurPrice"/></p>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-3 col-md-offset-3">
+              <p><input type = "checkbox" id = "Toprak"/>Տոպրակ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5" placeholder = "1" id = "ToprakQanak" disabled/>քանակ</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" size = "5"  placeholder = "100" id = "ToprakDr" disabled/>դր</p>
+            </div>
+            <div class = "col-sm-2">
+              <p><input type = "text" readonly size = "5" id = "ToprakPrice"/></p>
+            </div>
+          </div>
+          <div  class="row">
+            <div class="col-md-3 col-md-offset-3">
+              <p><input type="checkbox" id = "EtcP">Այլ
+              <input type = "text" size = "5" placeholder = "Անուն" disabled id = "EtcPName"/></p>
+            </div>
+            <div class="col-sm-2">
+              <p><input class = "mass" type = "text" size="5" min = "0" id = "qanakEtcP" disabled />քանակ</p>
+            </div>
+            <div class="col-sm-2">
+              <p><input type = "text" class = "mass" size="5" id = "drEtcP" disabled />դր</p>
+            </div>
+            <div class="col-sm-2">
+              <p><input type = "text" size="5" readonly id = "EtcPPrice"/> </p>
+            </div>
+          </div>
+          <div class="row">
+            <hr>
+            <div class="col-md-2 col-md-offset-10">
+              <input type = "text" size = "5" class = "Input" readonly placeholder= "Ընդամենը" id = "totalAccessories"/>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class = "col-md-3 col-md-offset-9">
+      <div class = "well">  
+        <div class="row">
+          <div class = "col-md-9">
+            <p><b>Ընդհանուր ծախսը</b></p>
+          </div>
+          <div class = "col-md-3">
+            <input type = "text"  size="5" id = "total" readonly/>  
+          </div> 
+        </div>
+        <div class="row">  
+          <div class = "col-md-9">
+            <p><b>Մեկ հոգու ծախսը</b></p>
+          </div>
+          <div class = "col-md-3">
+            <input type = "text" size="5" id = "totalForOne" readonly/>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
